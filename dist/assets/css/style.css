@@ -1,3 +1,115 @@
+@font-face {
+  font-family: intro;
+  src: url("../fonts/intro.otf") format("opentype"); }
+
+@font-face {
+  font-family: gotham;
+  src: url("../fonts/gotham.ttf") format("truetype"); }
+
+.button {
+  background-color: #7fc214;
+  color: #FFFFFF;
+  padding: 25px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.5s; }
+  .button:hover {
+    padding: 30px; }
+
+@font-face {
+  font-family: intro;
+  src: url("../fonts/intro.otf") format("opentype"); }
+
+@font-face {
+  font-family: gotham;
+  src: url("../fonts/gotham.ttf") format("truetype"); }
+
 body {
-  background-color: blue;
-}
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  font-family: gotham; }
+  body #site-container {
+    margin: 0 auto;
+    position: relative; }
+
+.logo-container {
+  background-color: white;
+  display: inline-block;
+  position: absolute; }
+
+#bloc-video {
+  height: 500px; }
+  #bloc-video * {
+    box-sizing: border-box; }
+  #bloc-video .video-background {
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99; }
+  #bloc-video .video-foreground,
+  #bloc-video .video-background iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; }
+  #bloc-video #vidtop-content {
+    top: 0;
+    color: #fff; }
+
+@font-face {
+  font-family: intro;
+  src: url("../fonts/intro.otf") format("opentype"); }
+
+@font-face {
+  font-family: gotham;
+  src: url("../fonts/gotham.ttf") format("truetype"); }
+
+#bloc-infos {
+  position: relative;
+  margin: 0px;
+  height: 40vh;
+  background-color: #004588;
+  color: white; }
+  #bloc-infos p {
+    font-style: normal;
+    font-weight: 100;
+    line-height: 20px;
+    margin-top: 0px; }
+  #bloc-infos .bloc-infos-container {
+    position: absolute;
+    display: inline-block;
+    width: 250px;
+    left: 20%;
+    top: 15px; }
+  #bloc-infos .bloc-infos-bullet-container {
+    position: absolute;
+    display: inline-block;
+    width: 250px;
+    right: 20%;
+    top: 150px; }
+
+#bloc-membership {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 25vh;
+  padding-top: 45px; }
+  #bloc-membership .text-center-container {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto; }
+    #bloc-membership .text-center-container p {
+      margin: 0; }
+  #bloc-membership .become-member-container {
+    padding-top: 45px;
+    text-align: center;
+    /*Please refer to general/button.scss for button related style and behaviour*/ }
+
+#bloc-membership-overlay,
+#membership-form-validation-message {
+  display: none; }

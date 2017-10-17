@@ -1,0 +1,29 @@
+@import "../general/font.scss";
+#bloc-infos {
+    position: relative;
+    margin:0px;
+    height: 40vh;
+    background-color: $mainBlue;
+    color: white;
+    // Remove unwanted margin
+    p {
+        @include font-regular-bloc;
+        margin-top:0px;
+    }
+
+    .bloc-infos-container {
+        position: absolute;
+        display:inline-block;
+        width: 250px;
+        left: 20%;
+        top: 15px;
+    }
+    .bloc-infos-bullet-container {
+        position: absolute;
+        display: inline-block;
+        width: 250px;
+        right: 20%;
+        top: 150px;
+    }
+
+}

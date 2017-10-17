@@ -1,0 +1,12 @@
+.button {
+    background-color:$mainGreen;
+    color: $mainWhite;
+    padding: 25px;
+    display: inline-block;
+    cursor:pointer;
+    transition: all 0.5s;
+    &:hover {
+        padding:30px;
+
+    }
+}

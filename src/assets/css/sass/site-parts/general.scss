@@ -1,0 +1,17 @@
+@import "../general/font.scss";
+body {
+    // background image
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+    margin:0;
+    @include font-gotham;
+    #site-container {
+        margin:0 auto;
+        position: relative;
+    }
+}

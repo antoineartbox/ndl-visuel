@@ -1,0 +1,29 @@
+#bloc-membership {
+
+    background-color: $whiteTransparent;
+    height: 25vh;
+    padding-top: 45px;
+    .text-center-container {
+
+        text-align: center;
+        width: 50%;
+        margin:0 auto;
+        p {
+            margin:0;
+        }
+
+    }
+    .become-member-container {
+        padding-top: 45px;
+        text-align: center;
+
+        /*Please refer to general/button.scss for button related style and behaviour*/
+    }
+}
+
+// Hidden Form
+#bloc-membership-overlay,
+#membership-form-validation-message {
+
+    display: none;
+}

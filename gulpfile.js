@@ -12,7 +12,7 @@ var destination = './dist'; // dossier à livrer
 
 gulp.task('sass', function () {
   return gulp.src(source + '/assets/css/sass/booter.scss')
-    .pipe(plugins.less())
+    .pipe(plugins.sass())
     .pipe(concat('style.css')) // Concatenate to single file
     .pipe(gulp.dest(destination + '/assets/css/'));
 });

@@ -1,1 +1,10 @@
-@import 'core/colors.scss';
+@import 'general/colors.scss';
+@import 'general/font.scss';
+@import 'general/buttons.scss';
+
+// general sites styling
+@import 'site-parts/general.scss';
+@import 'site-parts/header.scss';
+@import 'site-parts/bloc-video.scss';
+@import 'site-parts/bloc-infos.scss';
+@import 'site-parts/bloc-membership.scss';
