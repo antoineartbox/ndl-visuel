@@ -8,12 +8,15 @@
     <div id="events-container">
         <div class="single-event-container event-1">
             <h4>Événement 1 (Musique, art et humour)</h4>
+            <img src="assets/images/events/event_void.png" alt="Single event void">
             <div class="button call-to-action become-member">
                 <span>Inscrivez-vous</span>
             </div>
         </div>
         <div class="single-event-container event-2">
+
             <h4>Événement 2 (Sport)</h4>
+            <img src="assets/images/events/event_void.png" alt="Single event void">
             <div class="button call-to-action become-member">
                 <span>Inscrivez-vous</span>
             </div>
@@ -21,6 +24,7 @@
 
         <div class="single-event-container event-1">
             <h4>Événement 3 (PEI International et Corpo )</h4>
+            <img src="assets/images/events/event_void.png" alt="Single event void">
             <div class="button call-to-action become-member">
                 <span>Inscrivez-vous</span>
             </div>
@@ -28,6 +32,7 @@
 
         <div class="single-event-container event-1">
             <h4>Événement 4 (Musique, art et humour)</h4>
+            <img src="assets/images/events/event_void.png" alt="Single event void">
             <div class="button call-to-action become-member">
                 <span>Inscrivez-vous</span>
             </div>

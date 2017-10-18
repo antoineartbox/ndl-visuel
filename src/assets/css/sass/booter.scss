@@ -1,10 +1,15 @@
+// including core scss
+@import 'core/layout-rules.scss';
+
+// Including general scss
 @import 'general/colors.scss';
 @import 'general/font.scss';
 @import 'general/buttons.scss';
 
-// general sites styling
+// Including site parts
 @import 'site-parts/general.scss';
 @import 'site-parts/header.scss';
 @import 'site-parts/bloc-video.scss';
 @import 'site-parts/bloc-infos.scss';
 @import 'site-parts/bloc-membership.scss';
+@import 'site-parts/bloc-events.scss';

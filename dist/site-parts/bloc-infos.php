@@ -1,7 +1,11 @@
 <div id="bloc-infos">
+    <div class="bloc-title-center">
+        <h3>Ancien élève de NDL ? Notre groupe Alumni s’adresse à vous ! </h3>
+    </div>
+
     <div class="bloc-infos-container">
         <div class="text-right-container">
-            <p>Le Collège Notre-Dame-de-Lourdes propose un nouveau programme nommé Alumni, qui s’adresse à ses anciens étudiants diplômés. Ils pourront maintenant contribuer à la notoriété de l’institution en créant des projets uniques, novateurs et inspirants. </p>
+            <p>Nous vous invitons à contribuer à la notoriété du collège en vous impliquant dans des projets novateurs et inspirants tout en profitant d’événements exclusifs. Une belle façon de renforcer votre réseau professionnel et personnel et de rencontrer de talentueux étudiants et parents de la cohorte actuelle.</p>
         </div>
     </div>
     <div class="bloc-infos-bullet-container">

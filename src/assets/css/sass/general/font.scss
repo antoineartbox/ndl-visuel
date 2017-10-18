@@ -19,5 +19,14 @@
 @mixin font-regular-bloc {
     font-style: normal;
     font-weight: 100;
-    line-height: 20px;
+    font-size:22px;
+    line-height: 22px;
+}
+
+
+@mixin font-regular-bloc-larger {
+    font-style: normal;
+    font-weight: 100;
+    font-size:22px;
+    line-height: 22px;
 }

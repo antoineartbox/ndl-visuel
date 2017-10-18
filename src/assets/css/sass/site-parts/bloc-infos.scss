@@ -3,7 +3,7 @@
     position: relative;
     margin:0px;
     height: 40vh;
-    background-color: $mainBlue;
+    background-color: $mainBlueTransparent;
     color: white;
     // Remove unwanted margin
     p {
@@ -11,12 +11,20 @@
         margin-top:0px;
     }
 
+    .bloc-title-center {
+
+        h3 {
+            margin-top: 0px;
+            padding-top: 45px;
+            text-align: center;
+        }
+    }
     .bloc-infos-container {
         position: absolute;
         display:inline-block;
-        width: 250px;
+        width: 400px;
         left: 20%;
-        top: 15px;
+        top: 85px;
     }
     .bloc-infos-bullet-container {
         position: absolute;
