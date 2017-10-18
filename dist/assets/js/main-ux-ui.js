@@ -17,6 +17,11 @@ $( document ).ready(function() {
             enableScrolling('body');
         });
     })
+
+
+     $(".call-to-action .become-involve").click(function() {
+        console.log("salurt");
+     });
 });
 
 

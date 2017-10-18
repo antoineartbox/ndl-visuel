@@ -1,27 +1,58 @@
 <div id="bloc-involve" class="bloc">
     <div class="text-center-container">
         <div class="text-center">
-            <p>Vous souhaitez redonner au Collège Notre-Dame-de-Lourdes? Cliquez sur le bouton « Impliquez-vous », et un membre de notre équipe se fera un plaisir de communiquer avec vous rapidement.</p>
+            <h3>Vous souhaitez redonner au Collège Notre-Dame-de-Lourdes?</h3>
+            <p>Impliquez-vous à votre façon</p>
+        </div>
+        <div class="list-center-infos">
+            <ul>
+                <li>- En offrant de votre temps ou de votre expertise</li>
+                <li>- En développant un projet novateur avec votre employeur</li>
+                <li>- En contribuant monétairement</li>
+                <li>- Ou toutes autres idées originales</li>
+            </ul>
+        </div>
+        <div class="button call-to-action  main-page-button become-evolve">
+            <span>Impliquez-vous</span>
         </div>
     </div>
 
 </div>
 
+
+
+
 <!-- Is hidden by default -->
 <div id="bloc-involve-overlay">
+
     <div class="invole-form-container">
+        <h3>Impliquez-vous</h3>
+        <span class="closing-button">x</span>
         <form class="" action="" method="post">
-            Prénom: <input type="text" name="FirstName" value=""><br>
-            Nom: <input type="text" name="LastName" value=""><br>
-            Age: <input type="number" name="Age" value=""><br>
-            Employeur: <input type="text" name="employer" value=""><br>
-            Poste occupé: <input type="text" name="job-title" value=""><br>
-            Courriel: <input type="email" name="Email" value="">
-            <div class="newsletter-choice">
-                <p>*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni et de ses événements.</p>
-                <input type="checkbox" name="newsletter" value="">
+            <div class="form-item">
+            <span class="label">Prénom :</span>
+            <input type="text" name="FirstName" value=""><br>
             </div>
-            <div class="button call-to-action become-member">
+            <div class="form-item">
+            <span class="label">Nom :</span>
+            <input type="text" name="LastName" value=""><br>
+            </div>
+
+            <div class="form-item">
+            <span class="label">Age : </span> <input type="number" name="age" value=""><br>
+            </div>
+            <div class="form-item">
+            <span class="label">Employeur :</span> <input type="text" name="employer" value=""><br>
+            </div>
+            <div class="form-item">
+                <span class="label">Poste Occupé :</span> <input type="email" name="jobTitle" value="">
+            </div>
+
+            <div class="form-item">
+                <span class="label">Email :</span> <input type="email" name="email" value="">
+            </div>
+
+            <div class="button call-to-action get-involve">
                 <span>Envoyer</span>
             </div>
         </form>

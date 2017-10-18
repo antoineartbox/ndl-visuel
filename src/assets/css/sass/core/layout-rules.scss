@@ -7,6 +7,14 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin  center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
 
 @mixin wrap-all-childs() {
 
@@ -14,4 +22,13 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+
+@mixin center-flex-childs() {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

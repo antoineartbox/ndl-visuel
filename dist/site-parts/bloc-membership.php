@@ -6,7 +6,7 @@
     </div>
     <div class="become-member-container">
         <div class="button call-to-action become-member">
-            <span>Devenez-member</span>
+            <span>Devenez-membre</span>
         </div>
     </div>
 </div>
@@ -14,6 +14,7 @@
 <!-- Is hidden by default -->
 <div id="bloc-membership-overlay">
     <div class="membership-form-container">
+        <h3>Merci de vous inscrire</h3>
         <span class="closing-button">x</span>
         <form class="" action="" method="post">
 
@@ -40,8 +41,8 @@
 
 
             <div class="newsletter-choice">
-                <p>*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni et de ses événements.</p>
                 <input type="checkbox" name="newsletter" value="">
+                <p>*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni et de ses événements.</p>
             </div>
             <div class="button call-to-action become-member">
                 <span>Envoyer</span>

@@ -1,6 +1,7 @@
 <div id="bloc-infos">
     <div class="bloc-title-center">
         <h3>Ancien élève de NDL ? Notre groupe Alumni s’adresse à vous ! </h3>
+        <span class="underline"></span>
     </div>
 
     <div class="bloc-infos-container">
@@ -14,15 +15,19 @@
 
             <div class="bullet-list-container">
                 <ul>
-                    <li class="first">Des rencontres enrichissantes</li>
-                    <li>Des événements exclusifs</li>
-                    <li>Un programme ambitieux</li>
-                    <li>Une approche différente</li>
-                    <li class="last">S’impliquer en redonnant</li>
+                    <li class="first">-Des rencontres enrichissantes</li>
+                    <li>-Des événements exclusifs</li>
+                    <li>-Un programme ambitieux</li>
+                    <li>-Une approche différente</li>
+                    <li class="last">-S’impliquer en redonnant</li>
                 </ul>
             </div>
 
         </div>
     </div>
-
+    <div class="become-member-container">
+        <div class="button call-to-action main-page-button  become-member">
+            <span>Devenez-member</span>
+        </div>
+    </div>
 </div>

@@ -7,15 +7,46 @@
   font-family: gotham;
   src: url("../fonts/gotham.ttf") format("truetype"); }
 
+@font-face {
+  font-family: intro;
+  src: url("../fonts/intro.otf") format("opentype"); }
+
+@font-face {
+  font-family: gotham;
+  src: url("../fonts/gotham.ttf") format("truetype"); }
+
 .button {
   background-color: #7fc214;
   color: #FFFFFF;
-  padding: 25px;
+  padding: 35px 90px 35px 90px;
   display: inline-block;
   cursor: pointer;
   transition: all 0.5s; }
   .button:hover {
-    padding: 30px; }
+    padding: 40px 95px 40px 95px; }
+
+.button.main-page-button {
+  background-color: #7fc214;
+  color: #FFFFFF;
+  padding: 20px 30px 20px 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-style: normal;
+  font-size: 25px;
+  text-transform: uppercase; }
+  .button.main-page-button:hover {
+    padding: 20px 30px 20px 30px; }
+
+.closing-button {
+  position: absolute;
+  font-size: 22px;
+  color: white;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  transition: all 0.1s; }
+  .closing-button:hover {
+    font-size: 20px; }
 
 @font-face {
   font-family: intro;
@@ -38,12 +69,11 @@ body {
     position: relative; }
 
 .logo-container {
-  background-color: white;
   display: inline-block;
   position: absolute; }
 
 #bloc-video {
-  height: 500px; }
+  height: 100vh; }
   #bloc-video * {
     box-sizing: border-box; }
   #bloc-video .video-background {
@@ -75,31 +105,71 @@ body {
 #bloc-infos {
   position: relative;
   margin: 0px;
-  height: 40vh;
-  background-color: rgba(0, 69, 136, 0.75);
+  height: 100vh;
+  background-color: #004588;
   color: white; }
   #bloc-infos p {
     font-style: normal;
-    font-weight: 100;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 25px;
+    line-height: 25px;
     margin-top: 0px; }
+    @media screen and (max-width: 600px) {
+      #bloc-infos p {
+        font-size: 17px; } }
   #bloc-infos .bloc-title-center h3 {
     margin-top: 0px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 25px;
     padding-top: 45px;
     text-align: center; }
+  #bloc-infos .bloc-title-center .underline {
+    display: block;
+    border: solid white 2px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 20%; }
   #bloc-infos .bloc-infos-container {
-    position: absolute;
-    display: inline-block;
-    width: 400px;
-    left: 20%;
-    top: 85px; }
+    font-style: normal;
+    font-size: 25px;
+    line-height: 25px;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 5%; }
+    @media screen and (max-width: 600px) {
+      #bloc-infos .bloc-infos-container {
+        font-size: 17px; } }
   #bloc-infos .bloc-infos-bullet-container {
+    font-style: normal;
+    font-size: 25px;
+    line-height: 25px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+    text-align: center;
+    width: 50%; }
+    @media screen and (max-width: 600px) {
+      #bloc-infos .bloc-infos-bullet-container {
+        font-size: 17px; } }
+    @media screen and (max-width: 600px) {
+      #bloc-infos .bloc-infos-bullet-container {
+        width: 75%; } }
+    #bloc-infos .bloc-infos-bullet-container ul {
+      padding-left: 0px;
+      list-style: none; }
+  #bloc-infos .become-member-container {
     position: absolute;
-    display: inline-block;
-    width: 250px;
-    right: 20%;
-    top: 150px; }
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    padding-bottom: 120px; }
+    @media screen and (max-width: 600px) {
+      #bloc-infos .become-member-container {
+        padding-top: 100px;
+        padding-bottom: 50px; } }
 
 @font-face {
   font-family: intro;
@@ -144,52 +214,224 @@ body {
   #bloc-membership-overlay.active-membership .membership-form-container {
     padding-top: 20px;
     position: relative;
-    background-color: lightgrey;
+    background-color: #7fc214;
+    padding: 30px;
+    color: white;
     position: fixed;
     top: 50%;
     left: 50%;
     /* bring your own prefixes */
-    transform: translate(-50%, -50%); }
-    #bloc-membership-overlay.active-membership .membership-form-container .closing-button {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      cursor: pointer;
-      transition: all 0.1s; }
-      #bloc-membership-overlay.active-membership .membership-form-container .closing-button:hover {
-        font-size: 20px; }
+    transform: translate(-50%, -50%);
+    width: 75%;
+    text-align: center; }
+    #bloc-membership-overlay.active-membership .membership-form-container h3 {
+      margin-top: 0px;
+      font-size: 40px;
+      color: white;
+      text-align: center; }
     #bloc-membership-overlay.active-membership .membership-form-container .form-item {
       margin-top: 10px; }
       #bloc-membership-overlay.active-membership .membership-form-container .form-item .label {
+        color: white;
         display: inline-block;
         width: 150px; }
       #bloc-membership-overlay.active-membership .membership-form-container .form-item input {
         height: 25px;
-        width: 250px; }
+        width: 75%; }
+    #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice p {
+      display: inline-block; }
+    #bloc-membership-overlay.active-membership .membership-form-container .button {
+      background-color: #004588; }
 
 /*This file mixins for helping centering, disposing and placing elements*/
+@font-face {
+  font-family: intro;
+  src: url("../fonts/intro.otf") format("opentype"); }
+
+@font-face {
+  font-family: gotham;
+  src: url("../fonts/gotham.ttf") format("truetype"); }
+
 #bloc-events {
-  height: 35vh;
-  background-color: #004588; }
+  padding-top: 75px;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.5); }
+  #bloc-events .text-center-container {
+    color: #004588; }
+    #bloc-events .text-center-container h3 {
+      margin-top: 0px;
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      color: #004588; }
   #bloc-events p {
+    text-align: center;
     margin: 0px; }
   #bloc-events #events-container {
-    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    color: #FFFFFF; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: #004588;
+    text-align: center; }
     #bloc-events #events-container .single-event-container {
+      display: inline-block;
+      background-color: #FFFFFF;
       position: relative;
-      width: 300px;
-      height: 300px; }
+      width: 220px;
+      height: 320px;
+      text-align: center;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 15px; }
       #bloc-events #events-container .single-event-container h4 {
-        height: 20px; }
+        height: 20px;
+        margin-bottom: 15px; }
       #bloc-events #events-container .single-event-container img {
         width: 150px;
         height: 150px;
+        margin: 0 auto;
         display: block;
         margin-bottom: 15px; }
+      #bloc-events #events-container .single-event-container .event-description {
+        margin-bottom: 5px; }
       #bloc-events #events-container .single-event-container .button {
-        position: absolute; }
+        padding: 10px 20px 10px 20px;
+        transition: all 0.5s;
+        font-size: 20px; }
+        #bloc-events #events-container .single-event-container .button:hover {
+          padding: 12px 22px 12px 22px; }
+
+@font-face {
+  font-family: intro;
+  src: url("../fonts/intro.otf") format("opentype"); }
+
+@font-face {
+  font-family: gotham;
+  src: url("../fonts/gotham.ttf") format("truetype"); }
+
+.button {
+  background-color: #7fc214;
+  color: #FFFFFF;
+  padding: 35px 90px 35px 90px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.5s; }
+  .button:hover {
+    padding: 40px 95px 40px 95px; }
+
+.button.main-page-button {
+  background-color: #7fc214;
+  color: #FFFFFF;
+  padding: 20px 30px 20px 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-style: normal;
+  font-size: 25px;
+  text-transform: uppercase; }
+  .button.main-page-button:hover {
+    padding: 20px 30px 20px 30px; }
+
+.closing-button {
+  position: absolute;
+  font-size: 22px;
+  color: white;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  transition: all 0.1s; }
+  .closing-button:hover {
+    font-size: 20px; }
+
+@font-face {
+  font-family: intro;
+  src: url("../fonts/intro.otf") format("opentype"); }
+
+@font-face {
+  font-family: gotham;
+  src: url("../fonts/gotham.ttf") format("truetype"); }
+
+/*This file mixins for helping centering, disposing and placing elements*/
+#bloc-involve {
+  background-color: rgba(0, 69, 136, 0.75);
+  text-align: center;
+  height: 50vh;
+  position: relative; }
+  #bloc-involve .text-center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    color: white; }
+    #bloc-involve .text-center-container h3 {
+      margin-top: 0px;
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      margin-top: 0px; }
+    #bloc-involve .text-center-container p {
+      margin-top: 0px;
+      font-size: 40px;
+      color: white;
+      text-align: center; }
+    #bloc-involve .text-center-container .list-center-infos ul {
+      padding-left: 0;
+      list-style: none; }
+
+#bloc-involve-overlay {
+  display: none; }
+
+#bloc-involve-overlay.active-involving {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.7); }
+  #bloc-involve-overlay.active-involving .invole-form-container {
+    padding-top: 20px;
+    position: relative;
+    background-color: #7fc214;
+    padding: 30px;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    width: 75%;
+    text-align: center; }
+    #bloc-involve-overlay.active-involving .invole-form-container h3 {
+      margin-top: 0px;
+      font-size: 40px;
+      color: white;
+      text-align: center; }
+    #bloc-involve-overlay.active-involving .invole-form-container .closing-button {
+      position: absolute;
+      top: 0px;
+      right: 0px; }
+    #bloc-involve-overlay.active-involving .invole-form-container .form-item {
+      margin-top: 10px; }
+      #bloc-involve-overlay.active-involving .invole-form-container .form-item .label {
+        color: white;
+        display: inline-block;
+        width: 150px; }
+      #bloc-involve-overlay.active-involving .invole-form-container .form-item input {
+        height: 25px;
+        width: 75%; }
+    #bloc-involve-overlay.active-involving .invole-form-container .newsletter-choice p {
+      display: inline-block; }
+    #bloc-involve-overlay.active-involving .invole-form-container .button {
+      background-color: #004588; }
+      #bloc-involve-overlay.active-involving .invole-form-container .button.get-involve {
+        font-style: normal;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-top: 25px; }

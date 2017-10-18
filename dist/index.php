@@ -17,7 +17,7 @@
 			<?php require "site-parts/bloc-infos.php";?>
 
 			<!-- Bloc 3 -->
-			<?php require "site-parts/bloc-membership.php";?>
+			<?php /* require "site-parts/bloc-membership.php"; */?> 
 
 			<!-- Bloc 4 -->
 			<?php require "site-parts/bloc-events.php";?>
@@ -32,7 +32,7 @@
 			<?php require "site-parts/footer.php";?>
 		</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="assets/js/main-ux-ui.js"></script>
 	</body>
 

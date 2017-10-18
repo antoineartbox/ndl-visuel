@@ -8,7 +8,7 @@
 </div>
 
 <!-- Is hidden by default -->
-<div id="bloc-involve-overlay">
+<div id="bloc-question-overlay">
     <div class="invole-form-container">
         <form class="" action="" method="post">
             Prénom: <input type="text" name="FirstName" value=""><br>

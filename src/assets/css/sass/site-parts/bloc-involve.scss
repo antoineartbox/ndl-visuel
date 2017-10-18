@@ -1,41 +1,39 @@
-// Import related files
+@import "../general/buttons.scss";
 @import "../general/font.scss";
 @import "../core/layout-rules.scss";
+#bloc-involve {
 
-#bloc-membership {
+    background-color: $mainBlueTransparent;
+    text-align:center;
+    height: 50vh;
+    position: relative;
 
-    background-color: $whiteTransparent;
-    height: 30vh;
-    padding-top: 45px;
     .text-center-container {
 
-        text-align: center;
-        width: 50%;
-        margin:0 auto;
-        p {
-            @include font-regular-bloc-larger;
-            margin:0;
-        }
+            @include center-content;
+            color: white;
+            h3 {
+                @include font-title;
+                margin-top: 0px;
+            }
+            p {
+                @include font-title;
+            }
 
-    }
-    .become-member-container {
-        padding-top: 45px;
-        text-align: center;
-
-        /*Please refer to general/button.scss for button related style and behaviour*/
+            .list-center-infos {
+                ul {
+                    padding-left: 0;
+                    list-style:none;
+                }
+            }
     }
 }
 
-// Hidden Form
-#bloc-membership-overlay,
-#membership-form-validation-message {
-    display:none;
-    transition: all 1s;
-
+#bloc-involve-overlay {
+    display: none;
 }
 
-
-#bloc-membership-overlay.active-membership {
+#bloc-involve-overlay.active-involving {
 
     display: block;
     width: 100%;
@@ -44,7 +42,7 @@
     top: 0px;
     background-color:rgba(255,255,255,0.7);
 
-    .membership-form-container {
+    .invole-form-container {
 
         padding-top: 20px;
         position: relative;
@@ -57,6 +55,11 @@
         h3 {
 
             @include font-title;
+        }
+        .closing-button {
+            position: absolute;
+            top:0px;
+            right:0px;
         }
         .form-item {
             margin-top:10px;
@@ -78,6 +81,10 @@
         // Overide button for color
         .button {
             background-color: $mainBlue;
+            &.get-involve {
+                @include font-button-main-page;
+                margin-top: 25px;
+            }
         }
     }
 }
