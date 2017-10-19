@@ -1,0 +1,51 @@
+@import "../core/layout-rules.scss";
+@import "../core/animation.scss";
+@import "../general/font.scss";
+
+#bloc-home {
+    background: url("../images/bloc-background/bloc-home-whitey.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+    .content-container {
+        @include center-content;
+
+        h3 {
+            display: block;
+            @include font-home-italic;
+
+        }
+
+        .button-container {
+
+            text-align: center;
+            .arrow {
+                animation: animation-button-call-action infinite 1s;
+                &.arrow-left {
+
+                    animation:animation-arrow-left infinite 1s;
+                    display: inline-block;
+                    background: url("../images/component/arrow-trans-left.png");
+                    background-size: cover;
+                    height: 20px;
+                    width: 40px;
+                    margin-right: 25px;
+                }
+                &.arrow-right {
+                    animation:animation-arrow-right infinite 1s; 
+                    display: inline-block;
+                    background: url("../images/component/arrow-trans-right.png");
+                    background-size: cover;
+                    margin-left: 25px;
+                    width: 40px;
+                    height: 20px;
+                }
+            }
+            .button-video {
+                background-color: $mainBlue;
+                @include font-button-main-page;
+            }
+        }
+    }
+}

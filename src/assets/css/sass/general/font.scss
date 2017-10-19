@@ -16,6 +16,15 @@
     font-family: gotham;
 }
 
+
+@mixin font-home-italic {
+    font-style: italic;
+    font-weight: 900;
+    font-size:68px;
+    color: $mainBlue;
+
+}
+
 @mixin font-regular-bloc-larger {
     font-style: normal;
     font-weight: 100;

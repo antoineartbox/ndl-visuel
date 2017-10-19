@@ -12,7 +12,7 @@
                 <li>- Ou toutes autres idées originales</li>
             </ul>
         </div>
-        <div class="button call-to-action  main-page-button become-evolve">
+        <div class="button call-to-action  main-page-button become-involve">
             <span>Impliquez-vous</span>
         </div>
     </div>

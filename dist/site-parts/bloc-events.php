@@ -1,4 +1,7 @@
 <div id="bloc-events" class="bloc">
+    <div class="white-transparancy">
+
+    </div>
     <div class="content-container">
         <div class="text-center-container">
             <div class="text-center">

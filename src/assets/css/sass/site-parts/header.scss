@@ -1,6 +1,7 @@
 .logo-container {
-    
+
     display: inline-block;
     position:absolute;
-
+    /* Video starts at 10*/
+    z-index: 11;
 }

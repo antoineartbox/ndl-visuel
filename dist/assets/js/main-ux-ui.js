@@ -11,17 +11,25 @@ $( document ).ready(function() {
         $("#bloc-membership-overlay").addClass("active-membership");
         blockScrolling('body')
 
-        $(".membership-form-container").click(function() {
+        $(".membership-form-container .closing-button").click(function() {
 
-            $(this).parent().removeClass("active-membership");
+            $(this).parent().parent().removeClass("active-membership");
             enableScrolling('body');
         });
     })
 
+    $(".become-involve").click(function() {
+        $("#bloc-involve-overlay").addClass("active-involving");
+        blockScrolling('body')
 
-     $(".call-to-action .become-involve").click(function() {
+        $(".invole-form-container .closing-button").click(function() {
 
-     });
+            $(this).parent().parent().removeClass("active-involving");
+            enableScrolling('body');
+        });
+    });
+
+
 });
 
 
