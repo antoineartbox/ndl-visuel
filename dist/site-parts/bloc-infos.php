@@ -1,4 +1,4 @@
-<div id="bloc-infos">
+<div id="bloc-infos" class="bloc">
     <div class="bloc-title-center">
         <h3>Ancien élève de NDL ? Notre groupe Alumni s’adresse à vous ! </h3>
         <span class="underline"></span>

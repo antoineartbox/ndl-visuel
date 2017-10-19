@@ -5,6 +5,7 @@
     height: 100vh;
     background-color: $mainBlue;
     color: white;
+    overflow:hidden;
     // Remove unwanted margin
     p {
         @include font-regular-bloc;
@@ -46,8 +47,19 @@
 
         width: 50%;
         // Responsive
-        @media screen and (max-width: 600px) {
-            width: 75%;
+        @media screen and (max-width: 675px) {
+            width: 95%;
+        }
+
+        // Responsive
+        @media screen and (max-height: 775px) {
+            margin-top:5px;
+            font-size: 20px;
+        }
+        @media screen and (max-height: 650px) {
+            display: none;
+            margin-top:5px;
+            font-size: 20px;
         }
         ul {
             padding-left:0px;
@@ -61,13 +73,18 @@
         text-align:center;
         bottom: 0px;
         width: 100%;
-        padding-bottom: 120px;
+        bottom: 7%;
         // Responsive
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 620px) {
             padding-top: 100px;
-            padding-bottom: 50px;
+
         }
 
+        // Responsive
+        @media screen and (max-height: 775px) {
+            bottom:2%;
+            font-size: 10px;
+        }
         .button {
 
         }

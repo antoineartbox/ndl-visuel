@@ -1,5 +1,6 @@
 @import "../general/font.scss";
 body {
+    .bloc {overflow: hidden;}
     // background image
     background: url("../images/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
