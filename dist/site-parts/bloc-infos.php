@@ -31,3 +31,45 @@
         </div>
     </div>
 </div>
+
+
+<!-- Is hidden by default -->
+<div id="bloc-membership-overlay">
+    <div class="membership-form-container">
+        <h3>Merci de vous inscrire</h3>
+        <span class="closing-button">x</span>
+        <form class="" action="" method="post">
+
+            <div class="form-item">
+                <span class="label">Prénom :</span>
+                <input type="text" name="FirstName" value=""><br>
+            </div>
+            <div class="form-item">
+                <span class="label">Nom :</span>
+                <input type="text" name="LastName" value=""><br>
+            </div>
+
+            <div class="form-item">
+                <span class="label">Age : </span> <input type="number" name="Age" value=""><br>
+            </div>
+
+            <div class="form-item">
+                <span class="label">Profession :</span> <input type="text" name="Profession" value=""><br>
+            </div>
+
+            <div class="form-item">
+                <span class="label">Courriel :</span> <input type="email" name="Email" value="">
+            </div>
+
+
+            <div class="newsletter-choice">
+                <input type="checkbox" name="newsletter" value="">
+                <p>*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni et de ses événements.</p>
+            </div>
+            <div class="button call-to-action become-member">
+                <span>Envoyer</span>
+            </div>
+        </form>
+    </div>
+
+</div>

@@ -20,7 +20,7 @@ $( document ).ready(function() {
 
 
      $(".call-to-action .become-involve").click(function() {
-        console.log("salurt");
+
      });
 });
 
@@ -38,3 +38,5 @@ function enableScrolling(element) {
         height: 'auto'
     });
 }
+
+/**/

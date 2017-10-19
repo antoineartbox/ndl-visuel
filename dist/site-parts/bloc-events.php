@@ -12,6 +12,7 @@
                 <h4>Événement 1 </h4>
                 <span class="event-date">8 FEV</span>
                 <img src="assets/images/events/event_void.png" alt="Single event void">
+                <p class="event-price">25$</p>
                 <p class="event-description">Inc bouchés et vin</p>
                 <div class="button call-to-action become-member">
                     <span>RSVP</span>
@@ -22,6 +23,7 @@
                 <h4>Événement 2</h4>
                 <span class="event-date">8 FEV</span>
                 <img src="assets/images/events/event_void.png" alt="Single event void">
+                <p class="event-price">25$</p>
                 <p class="event-description">Inc bouchés et vin</p>
                 <div class="button call-to-action become-member">
                     <span>RSVP</span>
@@ -32,6 +34,7 @@
                 <h4>Événement 3</h4>
                 <span class="event-date">8 FEV</span>
                 <img src="assets/images/events/event_void.png" alt="Single event void">
+                <p class="event-price">25$</p>
                 <p class="event-description">Inc bouchés et vin</p>
                 <div class="button call-to-action become-member">
                     <span>RSVP</span>
@@ -42,6 +45,7 @@
                 <h4>Événement 4</h4>
                 <span class="event-date">8 FEV</span>
                 <img src="assets/images/events/event_void.png" alt="Single event void">
+                <p class="event-price">25$</p>
                 <p class="event-description">Inc bouchés et vin</p>
                 <div class="button call-to-action become-member">
                     <span>RSVP</span>

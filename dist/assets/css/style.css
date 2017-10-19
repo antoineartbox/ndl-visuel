@@ -272,6 +272,12 @@ body {
   background-color: rgba(255, 255, 255, 0.5); }
   #bloc-events .content-container {
     padding-top: 7.5%; }
+    @media screen and (max-height: 680px) {
+      #bloc-events .content-container {
+        padding-top: 1%; } }
+  @media screen and (max-width: 1200px) {
+    #bloc-events {
+      height: 100%; } }
   #bloc-events .text-center-container {
     color: #004588; }
     #bloc-events .text-center-container h3 {
@@ -302,14 +308,14 @@ body {
       background-color: #FFFFFF;
       position: relative;
       width: 250px;
-      height: 350px;
+      height: 360px;
       text-align: center;
       margin-left: 15px;
       margin-right: 15px;
       margin-bottom: 15px; }
       #bloc-events #events-container .single-event-container h4 {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         font-size: 25px;
         height: 20px; }
       #bloc-events #events-container .single-event-container img {
@@ -318,9 +324,11 @@ body {
         margin: 0 auto;
         display: block;
         margin-bottom: 15px; }
+      #bloc-events #events-container .single-event-container .event-price {
+        font-size: 17px; }
       #bloc-events #events-container .single-event-container .event-description {
         font-size: 15px;
-        margin-bottom: 5px; }
+        margin-bottom: 20px; }
       #bloc-events #events-container .single-event-container .button {
         padding: 10px 20px 10px 20px;
         transition: all 0.5s;
