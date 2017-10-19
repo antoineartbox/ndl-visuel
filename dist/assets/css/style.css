@@ -47,6 +47,16 @@
   transition: all 0.1s; }
   .closing-button:hover {
     font-size: 20px; }
+  .closing-button.video {
+    pointer-events: all;
+    cursor: pointer;
+    color: white;
+    font-size: 45px;
+    right: -50px;
+    transition: all 0.3s; }
+    .closing-button.video.active-button-video {
+      z-index: 15;
+      right: 15px; }
 
 @font-face {
   font-family: intro;
@@ -71,73 +81,79 @@ body {
   /* Video starts at 10*/
   z-index: 11; }
 
-#bloc-video.kill-video {
-  display: none; }
+#bloc-video * {
+  box-sizing: border-box; }
 
-#bloc-video {
-  height: 100vh; }
-  #bloc-video * {
-    box-sizing: border-box; }
-  #bloc-video .video-background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-    height: 100vh;
-    overflow: hidden; }
-  #bloc-video .video-foreground,
-  #bloc-video .video-background iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; }
-  #bloc-video #vidtop-content {
-    top: 0;
-    color: #fff; }
+#bloc-video .video-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none; }
+
+#bloc-video .video-foreground,
+#bloc-video .video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  pointer-events: none; }
+
+#bloc-video #vidtop-content {
+  top: 0;
+  color: #fff; }
+
+#bloc-video .vid-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33%;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 1rem;
+  font-family: Avenir, Helvetica, sans-serif; }
+
+#bloc-video .vid-info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+  line-height: 1.2; }
+
+#bloc-video .vid-info a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  transition: .6s background;
+  border-bottom: none;
+  margin: 1rem auto;
+  text-align: center; }
+
+@media (min-aspect-ratio: 16 / 9) {
+  #bloc-video .video-foreground {
+    height: 300%;
+    top: -100%; } }
+
+@media (max-aspect-ratio: 16 / 9) {
+  #bloc-video .video-foreground {
+    width: 300%;
+    left: -100%; } }
+
+@media all and (max-width: 600px) {
   #bloc-video .vid-info {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 33%;
-    background: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    padding: 1rem;
-    font-family: Avenir, Helvetica, sans-serif; }
+    width: 50%;
+    padding: .5rem; }
   #bloc-video .vid-info h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-top: 0;
-    line-height: 1.2; }
-  #bloc-video .vid-info a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    background: rgba(0, 0, 0, 0.5);
-    transition: .6s background;
-    border-bottom: none;
-    margin: 1rem auto;
-    text-align: center; }
-  @media (min-aspect-ratio: 16 / 9) {
-    #bloc-video .video-foreground {
-      height: 300%;
-      top: -100%; } }
-  @media (max-aspect-ratio: 16 / 9) {
-    #bloc-video .video-foreground {
-      width: 300%;
-      left: -100%; } }
-  @media all and (max-width: 600px) {
-    #bloc-video .vid-info {
-      width: 50%;
-      padding: .5rem; }
-    #bloc-video .vid-info h1 {
-      margin-bottom: .2rem; } }
-  @media all and (max-width: 500px) {
-    #bloc-video .vid-info .acronym {
-      display: none; } }
+    margin-bottom: .2rem; } }
+
+@media all and (max-width: 500px) {
+  #bloc-video .vid-info .acronym {
+    display: none; } }
 
 @font-face {
   font-family: intro;
@@ -423,6 +439,16 @@ body {
   transition: all 0.1s; }
   .closing-button:hover {
     font-size: 20px; }
+  .closing-button.video {
+    pointer-events: all;
+    cursor: pointer;
+    color: white;
+    font-size: 45px;
+    right: -50px;
+    transition: all 0.3s; }
+    .closing-button.video.active-button-video {
+      z-index: 15;
+      right: 15px; }
 
 @font-face {
   font-family: intro;
@@ -589,6 +615,16 @@ body {
   transition: all 0.1s; }
   .closing-button:hover {
     font-size: 20px; }
+  .closing-button.video {
+    pointer-events: all;
+    cursor: pointer;
+    color: white;
+    font-size: 45px;
+    right: -50px;
+    transition: all 0.3s; }
+    .closing-button.video.active-button-video {
+      z-index: 15;
+      right: 15px; }
 
 @font-face {
   font-family: intro;

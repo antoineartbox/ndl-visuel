@@ -37,4 +37,18 @@
 
         font-size:20px;
     }
+
+    // Define all type of exeption in button
+    &.video {
+        pointer-events: all;
+        cursor:pointer;
+        color: white;
+        font-size:45px;
+        right: -50px;
+        transition:all 0.3s;
+        &.active-button-video {
+            z-index: 15;
+            right:15px;
+        }
+    }
 }
