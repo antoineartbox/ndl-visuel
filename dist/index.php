@@ -28,6 +28,10 @@
 			<!-- Bloc 5 -->
 			<?php require "site-parts/bloc-involve.php";?>
 
+			<!-- Bloc 5.5 -->
+			<?php require "site-parts/bloc-involve-infos.php";?>
+
+
 			<!-- Bloc 6 -->
 			<?php require "site-parts/bloc-question.php";?>
 
@@ -35,8 +39,9 @@
 			<?php require "site-parts/footer.php";?>
 		</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="assets/js/main-ux-ui.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="assets/js/main-ux-ui.js"></script>
+		<script src="assets/js/menu.js"></script>
 	</body>
 
 </html>

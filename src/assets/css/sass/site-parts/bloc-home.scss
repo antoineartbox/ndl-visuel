@@ -10,11 +10,15 @@
 
     .content-container {
         @include center-content;
-
+        width: 50%;
         h3 {
             display: block;
             @include font-home-italic;
-
+            background-color: rgba(255,255,255,0.25);
+            text-align:center;
+            width: 100%;
+            padding-top:75px;
+            padding-bottom:75px;
         }
 
         .button-container {
@@ -33,7 +37,7 @@
                     margin-right: 25px;
                 }
                 &.arrow-right {
-                    animation:animation-arrow-right infinite 1s; 
+                    animation:animation-arrow-right infinite 1s;
                     display: inline-block;
                     background: url("../images/component/arrow-trans-right.png");
                     background-size: cover;

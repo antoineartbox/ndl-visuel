@@ -1,13 +1,114 @@
 @import "../general/buttons.scss";
 @import "../general/font.scss";
 @import "../core/layout-rules.scss";
+
 #bloc-involve {
+    background: url("../images/bloc-background/bloc-involve-whitey.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+    .content-container {
+        @include center-content;
+
+        h3 {
+            display: block;
+            @include font-home-italic;
+
+        }
+
+        .button-container {
+
+            text-align: center;
+            .button {
+                display: block;
+
+                margin:0 auto;
+                margin-bottom:25px;
+                width: 275px;
+            }
+            .watch-video-involve {
+                background-color: $mainBlue;
+            }
+
+            .button-video {
+                background-color: $mainBlue;
+                @include font-button-main-page;
+            }
+        }
+    }
+}
+#bloc-involve-overlay {
+    display: none;
+}
+
+#bloc-involve-overlay.active-involving {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background-color:rgba(255,255,255,0.7);
+
+    .invole-form-container {
+        @include centered;
+        background-color:$mainGreen;
+        color: white;
+
+        padding: 30px;
+        padding-top: 20px;
+        text-align: center;
+        width: 75%;
+        z-index: 500;
+        h3 {
+
+            @include font-title;
+        }
+        .closing-button {
+            position: absolute;
+            top:15px;
+            right:15px;
+        }
+        .form-item {
+            margin-top:10px;
+            .label {
+                color: white;
+                display: inline-block;
+                width: 150px;
+            }
+            input {
+                height: 25px;
+                width: 75%;
+            }
+        }
+        .newsletter-choice {
+            p {
+                display: inline-block;
+            }
+        }
+        // Overide button for color
+        .button {
+            background-color: $mainBlue;
+            &.get-involve {
+                @include font-button-main-page;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+.involve-form-validation-message {
+    display: none;
+}
+
+#bloc-involve-infos {
 
     background-color: $mainBlue;
     text-align:center;
     height: 100vh;
     position: relative;
-    
+
     .text-center-container {
 
             @media screen and (max-width: 1200px) {
@@ -77,68 +178,4 @@
                 margin-top: 5%;
             }
     }
-}
-
-#bloc-involve-overlay {
-    display: none;
-}
-
-#bloc-involve-overlay.active-involving {
-
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    background-color:rgba(255,255,255,0.7);
-
-    .invole-form-container {
-        @include centered;
-        background-color:$mainGreen;
-        color: white;
-
-        padding: 30px;
-        padding-top: 20px;
-        text-align: center;
-        width: 75%;
-        z-index: 500;
-        h3 {
-
-            @include font-title;
-        }
-        .closing-button {
-            position: absolute;
-            top:15px;
-            right:15px;
-        }
-        .form-item {
-            margin-top:10px;
-            .label {
-                color: white;
-                display: inline-block;
-                width: 150px;
-            }
-            input {
-                height: 25px;
-                width: 75%;
-            }
-        }
-        .newsletter-choice {
-            p {
-                display: inline-block;
-            }
-        }
-        // Overide button for color
-        .button {
-            background-color: $mainBlue;
-            &.get-involve {
-                @include font-button-main-page;
-                margin-top: 25px;
-            }
-        }
-    }
-}
-
-.involve-form-validation-message {
-    display: none;
 }

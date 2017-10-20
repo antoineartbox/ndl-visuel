@@ -1,4 +1,4 @@
-<div id="bloc-events" class="bloc">
+<div id="bloc-events" class="bloc white">
     <div class="white-transparancy">
 
     </div>

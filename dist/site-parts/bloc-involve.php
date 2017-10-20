@@ -1,4 +1,4 @@
-<div id="bloc-involve" class="bloc">
+<!-- <div id="bloc-involve" class="bloc">
     <div class="text-center-container">
         <div class="text-center">
             <h3>Vous souhaitez redonner au Collège Notre-Dame-de-Lourdes?</h3>
@@ -18,8 +18,23 @@
     </div>
 
 </div>
+-->
 
-
+<div id="bloc-involve" class="bloc blue">
+    <div class="content-container">
+        <h3>Comment est-ce que je peux m'inpliquer?</h3>
+        <div class="button-container button-video">
+            <div class="button call-to-action  main-page-button watch-video-involve">
+                <span>Regarder la vidéo</span>
+            </div>
+            <!--
+            <div class="button call-to-action  main-page-button become-involve">
+                <span>Impliquez-vous</span>
+            </div>
+            -->
+        </div>
+    </div>
+</div>
 
 
 <!-- Is hidden by default -->

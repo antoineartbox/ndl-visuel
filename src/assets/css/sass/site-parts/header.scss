@@ -1,7 +1,38 @@
-.logo-container {
+header {
+    .logo-container {
 
-    display: inline-block;
-    position:absolute;
-    /* Video starts at 10*/
-    z-index: 11;
+        display: inline-block;
+        position:absolute;
+        /* Video starts at 10*/
+        z-index: 11;
+    }
+    #menu-container {
+        position: fixed;
+        top: 0px;
+        right: 50px;
+        z-index:1000;
+        nav {
+            color:$mainBlue;
+            text-transform: uppercase;
+            ul {
+                list-style: none;
+                li{
+                    display: inline-block;
+                    transition:all 0.5s;
+                    padding:15px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $mainWhite;
+                    }
+
+                    &.menu-membership {
+
+                        background-color: $mainGreen;
+                        color:$mainWhite;
+
+                    }
+                }
+            }
+        }
+    }
 }
