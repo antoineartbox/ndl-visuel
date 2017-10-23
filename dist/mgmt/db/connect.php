@@ -10,7 +10,6 @@ function connectToDb() {
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     } else {
-        echo "TI moun conecter";
         return $conn;
     }
 }

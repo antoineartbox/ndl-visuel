@@ -30,6 +30,7 @@ function getUsers($db = false) {
 
     }
 }
+
 function logUser($db, $username,$password) {
     if ($db) {
         if ($username) {
@@ -63,6 +64,7 @@ function logUser($db, $username,$password) {
                         // Then generate a session token
                         initUserSession($userId, $db);
 
+                        redirect("../../");
                     }
                 }
             }
@@ -102,6 +104,11 @@ function generateToken($userId = false) {
 function setSession() {
 
 }
+
+function redirect($url) {
+    echo "<script>location.href='$url';</script>";
+
+};
 $users = getUsers($db);
 
 logUser($db,"antoine", "meuh");
