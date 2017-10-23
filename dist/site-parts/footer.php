@@ -12,4 +12,8 @@
             </ul>
         </div>
     </div>
+    <div class="connection">
+        <h3>Déjà membre?</h3>
+        <a href=""><p>Connecter-vous</p></a>
+    </div>
 </footer>
