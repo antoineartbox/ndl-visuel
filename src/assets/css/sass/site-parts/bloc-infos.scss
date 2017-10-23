@@ -1,11 +1,68 @@
 @import "../general/font.scss";
+@import "../core/layout-rules.scss";
 #bloc-infos {
+
     position: relative;
     margin:0px;
     height: 100vh;
     background-color: $mainBlue;
     color: white;
     overflow:hidden;
+    // Center content
+    .content-container {
+        width:60%;
+        .line-wrapper {
+            padding:100px;
+            border: solid rgba(255,255,255,0.5) 1px;
+        }
+        @include center-content;
+        .dual-block-container {
+            position: relative;
+            .group-right,
+            .group-left {
+
+                display: inline-block;
+                width: 48%;
+            }
+            .group-left {
+                @include font-regular-bloc;
+                font-weight: 100;
+
+                text-align: right;
+                left: 0px;
+                .bloc-infos-container {
+
+                    width:100%;
+                    margin-top:0px;
+                    p {
+                        line-height: 30px;
+                    }
+                }
+
+            }
+            .group-right {
+                position: absolute;
+                right: 0px;
+                text-align: left;
+
+                .bloc-infos-bullet-container {
+                    text-align:left;
+                    width: 100%;
+                    margin-bottom: -50px;
+                    margin-top: 0px;
+                    margin-left: 0px;
+                    li{
+                        padding-top: 5px;
+                    }
+                }
+                h3 {
+                    margin-top: 0px;
+                }
+
+            }
+
+        }
+    }
     // Remove unwanted margin
     p {
         @include font-regular-bloc;
@@ -20,6 +77,7 @@
             margin-bottom:25px;
             padding-top: 45px;
             text-align: center;
+            font-style: italic;
         }
         .underline {
             display: block;
@@ -69,7 +127,7 @@
     }
 
     .become-member-container {
-        position: absolute;
+        padding-top:55px;
         text-align:center;
         bottom: 0px;
         width: 100%;

@@ -75,32 +75,38 @@ body {
     margin: 0 auto;
     position: relative; }
 
-header .logo-container {
-  display: inline-block;
-  position: absolute;
-  /* Video starts at 10*/
-  z-index: 11; }
-
-header #menu-container {
+header {
   position: fixed;
   top: 0px;
-  right: 50px;
-  z-index: 1000; }
-  header #menu-container nav {
-    color: #004588;
-    text-transform: uppercase; }
-    header #menu-container nav ul {
-      list-style: none; }
-      header #menu-container nav ul li {
-        display: inline-block;
-        transition: all 0.5s;
-        padding: 15px;
-        cursor: pointer; }
-        header #menu-container nav ul li:hover {
-          background-color: #FFFFFF; }
-        header #menu-container nav ul li.menu-membership {
-          background-color: #7fc214;
-          color: #FFFFFF; }
+  z-index: 200;
+  width: 100%; }
+  header .logo-container {
+    display: inline-block;
+    position: absolute;
+    height: 150px;
+    /* Video starts at 10*/
+    z-index: 11; }
+    header .logo-container img {
+      height: 75px; }
+  header #menu-container {
+    text-align: right;
+    padding-right: 75px;
+    z-index: 1000; }
+    header #menu-container nav {
+      color: #004588;
+      text-transform: uppercase; }
+      header #menu-container nav ul {
+        list-style: none; }
+        header #menu-container nav ul li {
+          display: inline-block;
+          transition: all 0.5s;
+          padding: 15px;
+          cursor: pointer; }
+          header #menu-container nav ul li:hover {
+            background-color: #FFFFFF; }
+          header #menu-container nav ul li.menu-membership {
+            background-color: #7fc214;
+            color: #FFFFFF; }
 
 #bloc-video * {
   box-sizing: border-box; }
@@ -184,6 +190,7 @@ header #menu-container {
   font-family: gotham;
   src: url("../fonts/gotham.ttf") format("truetype"); }
 
+/*This file mixins for helping centering, disposing and placing elements*/
 #bloc-infos {
   position: relative;
   margin: 0px;
@@ -191,6 +198,51 @@ header #menu-container {
   background-color: #004588;
   color: white;
   overflow: hidden; }
+  #bloc-infos .content-container {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%); }
+    #bloc-infos .content-container .line-wrapper {
+      padding: 100px;
+      border: solid rgba(255, 255, 255, 0.5) 1px; }
+    #bloc-infos .content-container .dual-block-container {
+      position: relative; }
+      #bloc-infos .content-container .dual-block-container .group-right,
+      #bloc-infos .content-container .dual-block-container .group-left {
+        display: inline-block;
+        width: 48%; }
+      #bloc-infos .content-container .dual-block-container .group-left {
+        font-style: normal;
+        font-size: 25px;
+        line-height: 25px;
+        font-weight: 100;
+        text-align: right;
+        left: 0px; }
+        @media screen and (max-width: 600px) {
+          #bloc-infos .content-container .dual-block-container .group-left {
+            font-size: 17px; } }
+        #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container {
+          width: 100%;
+          margin-top: 0px; }
+          #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container p {
+            line-height: 30px; }
+      #bloc-infos .content-container .dual-block-container .group-right {
+        position: absolute;
+        right: 0px;
+        text-align: left; }
+        #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container {
+          text-align: left;
+          width: 100%;
+          margin-bottom: -50px;
+          margin-top: 0px;
+          margin-left: 0px; }
+          #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container li {
+            padding-top: 5px; }
+        #bloc-infos .content-container .dual-block-container .group-right h3 {
+          margin-top: 0px; }
   #bloc-infos p {
     font-style: normal;
     font-size: 25px;
@@ -207,7 +259,8 @@ header #menu-container {
     margin-top: 0px;
     margin-bottom: 25px;
     padding-top: 45px;
-    text-align: center; }
+    text-align: center;
+    font-style: italic; }
   #bloc-infos .bloc-title-center .underline {
     display: block;
     border: solid white 2px;
@@ -253,7 +306,7 @@ header #menu-container {
       padding-left: 0px;
       list-style: none; }
   #bloc-infos .become-member-container {
-    position: absolute;
+    padding-top: 55px;
     text-align: center;
     bottom: 0px;
     width: 100%;
@@ -698,6 +751,7 @@ header #menu-container {
     padding-top: 50px;
     background-color: rgba(255, 255, 255, 0.5);
     width: 50%;
+    padding-bottom: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
