@@ -2,9 +2,7 @@
 // Start the session
 session_start();
 
-require "../connect.php";
-
-$db = connectToDb();
+require "connect.php";
 
 function getUsers($db = false) {
     if($db) {
@@ -31,7 +29,7 @@ function getUsers($db = false) {
     }
 }
 
-function logUser($db, $username,$password) {
+function logUser($db, $username,$password, $redirect = false) {
     if ($db) {
         if ($username) {
 
@@ -64,7 +62,10 @@ function logUser($db, $username,$password) {
                         // Then generate a session token
                         initUserSession($userId, $db);
 
-                        redirect("../../");
+                        if ($redirect) {
+                            // Redirect
+                            redirect("../../");
+                        }
                     }
                 }
             }
@@ -84,6 +85,8 @@ function initUserSession($userId = false, $db) {
             // Then declare the client side session
             $_SESSION["is_logged_in"] = TRUE;
             $_SESSION["session_token"] = $token;
+            $_SESSION["uid"] = $userId;
+
             return true;
         }
     }
@@ -105,13 +108,15 @@ function setSession() {
 
 }
 
+function setMessage($loginMessageError = false) {
+    if ($loginMessageError) {
+        $loginMessage = "Une erreur de connection est arrivée";
+    } else {
+        $loginMessage = "Vous êtes connecté";
+    }
+    return $loginMessage;
+}
+
 function redirect($url) {
     echo "<script>location.href='$url';</script>";
-
-};
-$users = getUsers($db);
-
-logUser($db,"antoine", "meuh");
-
-//getUsers($db);*/
- ?>
+}
