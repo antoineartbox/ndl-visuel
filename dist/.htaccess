@@ -1,0 +1,4 @@
+<Files "utils/*">
+Order Allow,Deny
+Deny from all
+</Files>

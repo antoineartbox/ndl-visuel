@@ -16,27 +16,27 @@
     <div class="membership-form-container">
         <h3>Merci de vous inscrire</h3>
         <span class="closing-button">x</span>
-        <form class="" action="" method="post">
+        <form class="" action="utils/forms/forms_process.php" method="post">
 
             <div class="form-item">
                 <span class="label">Prénom :</span>
-                <input type="text" name="FirstName" value=""><br>
+                <input type="text" name="firstname" value=""><br>
             </div>
             <div class="form-item">
                 <span class="label">Nom :</span>
-                <input type="text" name="LastName" value=""><br>
+                <input type="text" name="lastname" value=""><br>
             </div>
 
             <div class="form-item">
-                <span class="label">Age : </span> <input type="number" name="Age" value=""><br>
+                <span class="label">Age : </span> <input type="number" name="age" value=""><br>
             </div>
 
             <div class="form-item">
-                <span class="label">Profession :</span> <input type="text" name="Profession" value=""><br>
+                <span class="label">Profession :</span> <input type="text" name="profession" value=""><br>
             </div>
 
             <div class="form-item">
-                <span class="label">Courriel :</span> <input type="email" name="Email" value="">
+                <span class="label">Courriel :</span> <input type="email" name="email" value="">
             </div>
 
 
@@ -45,7 +45,8 @@
                 <p>*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni et de ses événements.</p>
             </div>
             <div class="button call-to-action become-member">
-                <span>Envoyer</span>
+                <span>Envoyer<input class="membership-form-trigger" type="submit" name="membership-form" value=""></span>
+
             </div>
         </form>
     </div>

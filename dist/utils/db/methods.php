@@ -4,9 +4,11 @@ session_start();
 
 require "connect.php";
 
-function getUsers($db = false) {
-    if($db) {
 
+// Return all the users in the dabatase
+function getUsers($db = false) {
+
+    if($db) {
         //Declare user array
         $users = array();
 

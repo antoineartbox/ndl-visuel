@@ -20,4 +20,6 @@ $_SESSION["firstname"] = getUserInfos($db, $_SESSION["uid"], "firstname");
 
 
 
+
+
 echo "<script>location.href='../../';</script>";

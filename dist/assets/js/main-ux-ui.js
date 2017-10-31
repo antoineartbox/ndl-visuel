@@ -38,6 +38,13 @@ $( document ).ready(function() {
 
     });
 
+    // Handle login display
+    $("header .connection p").click(function() {
+        $("#bloc-login-overlay").addClass("active-login");
+
+    });
+
+
 });
 
 

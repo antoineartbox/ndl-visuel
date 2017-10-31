@@ -51,37 +51,39 @@
     <div class="membership-form-container">
         <h3>Merci de vous inscrire</h3>
         <span class="closing-button">x</span>
-        <form class="" action="" method="post">
+        <form id="form-membership" class="" action="utils/forms/forms_process.php" method="post">
 
             <div class="form-item">
                 <span class="label">Prénom :</span>
-                <input type="text" name="FirstName" value=""><br>
+                <input type="text" name="firstname" value=""><br>
             </div>
             <div class="form-item">
                 <span class="label">Nom :</span>
-                <input type="text" name="LastName" value=""><br>
+                <input type="text" name="lastname" value=""><br>
             </div>
 
             <div class="form-item">
-                <span class="label">Age : </span> <input type="number" name="Age" value=""><br>
+                <span class="label">Age : </span> <input type="number" name="age" value=""><br>
             </div>
 
             <div class="form-item">
-                <span class="label">Profession :</span> <input type="text" name="Profession" value=""><br>
+                <span class="label">Profession :</span> <input type="text" name="profession" value=""><br>
             </div>
 
             <div class="form-item">
-                <span class="label">Courriel :</span> <input type="email" name="Email" value="">
+                <span class="label">Courriel :</span> <input type="email" name="email" value="">
             </div>
 
+            <input style="display:none;" type="form-type" name="form-type" value="membership">
 
             <div class="newsletter-choice">
                 <input type="checkbox" name="newsletter" value="">
                 <p>*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni et de ses événements.</p>
             </div>
-            <div class="button call-to-action become-member">
+            <div class="button call-to-action become-member submit">
                 <span>Envoyer</span>
             </div>
+            <input style="display:none;" type="submit" name="" value="">
         </form>
     </div>
 

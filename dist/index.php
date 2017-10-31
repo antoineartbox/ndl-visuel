@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -46,6 +47,7 @@
 		<script src="assets/js/main-ux-ui.js"></script>
 		<script src="assets/js/menu.js"></script>
 		<script src="assets/js/events-blocker.js"></script>
+		<script src="assets/js/form-handler.js"></script>
 	</body>
 
 </html>

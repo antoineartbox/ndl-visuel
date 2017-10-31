@@ -23,10 +23,6 @@
         </div>
     <?php } ?>
 
-    <?php if ($_SESSION["is_logged_in"]) { ?>
-        <div class="disconnect-user-container">
-            <span><a href="utils/users/user_disconnect.php">Déconnexion</a></span>
-        </div>
-    <?php } ?>
-    
+
+
 </div>
