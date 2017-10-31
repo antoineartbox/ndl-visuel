@@ -26,6 +26,16 @@ function processInvolveForm($form = false) {
 
 }
 
+function processQuestionForms($form = false) {
+    if ($form) {
+
+        processQuestionFormValidation($form, $customFilters = false);
+    } else {
+        return false;
+    }
+
+}
+
 function processMembershipFormValidation($form){
 
     $errors = array();
@@ -35,7 +45,7 @@ function processMembershipFormValidation($form){
     foreach ($form as $key => $value) {
 
         // Flag if an item contains something different than letter and digit or email @ and characters.
-        if (preg_match("/[^A-Za-z0-9@.:;¨ç^!@#$%?&*()+=_!', âàäÂÄÀêëéèÉÈÊËÎÏîïöÖüû; ]/", $value)) {
+        if (preg_match("/[^A-Za-z0-9@.:;¨ç^!@#$%?&*()+=_-!', âàäÂÄÀêëéèÉÈÊËÎÏîïöÖüû; ]/", $value)) {
 
             // Than put it on the error stack
             $errors["unvalid-character"][$key] = $value;
@@ -59,7 +69,8 @@ function processMembershipFormValidation($form){
     }
 
     if(count($errors) >= 1) {
-        var_dump("errors");
+
+        var_dump($errors);
         die();
     } else {
         persistMembershipToBd($toPersist, "ndl_membership", connectToDb());
@@ -68,8 +79,6 @@ function processMembershipFormValidation($form){
 }
 
 function processInvolveFormValidation($form){
-
-    var_dump($form);
 
     $errors = array();
     $toPersist = array();
@@ -109,6 +118,47 @@ function processInvolveFormValidation($form){
 
 }
 
+function processQuestionFormValidation($form){
+
+    var_dump($form);
+
+    $errors = array();
+    $toPersist = array();
+
+    // Loop through each form values
+    foreach ($form as $key => $value) {
+
+        // Flag if an item contains something different than letter and digit or email @ and characters.
+        if (preg_match("/[^A-Za-z0-9@.:;¨ç^!@#$%?&*()+=_!', \-\ âàäÂÄÀêëéèÉÈÊËÎÏîïöÖüû; ]/", $value)) {
+
+            // Than put it on the error stack
+            $errors["unvalid-character"][$key] = $value;
+
+        }
+
+        if ($key == "age") {
+
+            // Force age to be int
+            intval($value);
+            $age = $value;
+
+            // Check for any negative number and switch to positive
+            if ($age <= 0) {
+                $age = ($age * 1) + 1;
+            }
+        }
+
+        $toPersist[$key] = processSanitize($value);
+    }
+
+    if(count($errors) >= 1) {
+        var_dump("errors");
+        die();
+    } else {
+        persistQuestionToDb($toPersist, "ndl_questions", connectToDb());
+    }
+
+}
 /*
     string fx(string, int)
     return a sanitize string of the input
@@ -215,7 +265,39 @@ function persistInvolveToBd($values, $tableName, $db) {
     }
 }
 
+function persistQuestionToDb($values, $tableName, $db) {
 
-function processQuestionForms() {
+    // Unset form type from values
+    unset($values["form-type"]);
+
+    // Get the number of values + init counter
+    $valuesLength = count($values);
+    $counter = 1;
+
+    // Start building the query
+    $query = "INSERT INTO $tableName (firstname, lastname, age, profession, email, phone, object) VALUES (";
+
+    // Build the query by adding values and handling " sql related characters"
+    foreach($values as $key => $value) {
+        if ($counter < $valuesLength) {
+            $query .= " '" .$value . "'" . ",";
+        } else {
+            $query .= " '" .$value . "'" . ")";
+        }
+        $counter++;
+    }
+
+    if ($db->query($query) === TRUE) {
+
+        require "../emails/email_methods.php";
+        $messageContent = buildQuestionMessageContent($values);
+
+        sendQuestionMessage($messageContent, "philippe@artbox.agency");
+
+
+
+    } else {
+        echo "Error: " . $sql . "<br>" . $db->error;
+    }
 
 }

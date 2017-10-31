@@ -14,4 +14,11 @@ $(document).ready(function() {
         $("form#form-involve").submit();
     });
 
+    // Detect click on button
+    $(".button.question.submit").click(function() {
+
+        // Then submit related form
+        $("form#question").submit();
+    });
+
 });

@@ -36,7 +36,7 @@
             </div>
 
             <div class="form-item">
-                <span class="label">Courriel :</span> <input type="email" name="email" value="">
+                <span class="label">Courriel :</span> <input type="tel" name="email" value="">
             </div>
 
 

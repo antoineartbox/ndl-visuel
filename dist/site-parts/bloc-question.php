@@ -8,40 +8,47 @@
         </div>
         <div class="question-form-container">
 
-            <form class="" action="" method="post">
+            <form class="" id="question" action="utils/forms/forms_process.php" method="post">
 
                 <div class="form-item">
                     <span class="label">Prénom :</span>
-                    <input type="text" name="FirstName" value=""><br>
+                    <input type="text" name="firstname" value=""><br>
                 </div>
                 <div class="form-item">
                     <span class="label">Nom :</span>
-                    <input type="text" name="LastName" value=""><br>
+                    <input type="text" name="lastname" value=""><br>
                 </div>
 
                 <div class="form-item">
-                    <span class="label">Âge : </span> <input type="text" name="Subject" value=""><br>
+                    <span class="label">Âge : </span> <input type="age" name="age" value=""><br>
                 </div>
 
                 <div class="form-item">
-                    <span class="label">Profession :</span> <input type="text" name="Message" value=""><br>
+                    <span class="label">Profession :</span> <input type="text" name="profession" value=""><br>
                 </div>
 
                 <div class="form-item">
-                    <span class="label">Courriel :</span> <input type="text" name="Message" value=""><br>
+                    <span class="label">Courriel :</span> <input type="text" name="email" value=""><br>
                 </div>
 
                 <div class="form-item">
-                    <span class="label">Téléphone :</span> <input type="text" name="Message" value=""><br>
+                    <span class="label">Téléphone :</span> <input type="text" name="phone" value=""><br>
+                </div>
+
+                <div class="form-item">
+                    <span class="label">Objet :</span> <input type="text" name="object" value=""><br>
                 </div>
 
                 <div class="newsletter-choice">
                     <input type="checkbox" name="newsletter" value="">
                     <span class="label">*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni et de ses événements.</span>
                 </div>
-                <div class="button call-to-action become-member main-page-button">
+                <input style="display:none;" type="form-type" name="form-type" value="question">
+                <div class="button call-to-action question submit main-page-button">
                     <span>Envoyer</span>
                 </div>
+
+                <input style="display:none;"id="" type="submit" name="" value="">
             </form>
 
         </div>

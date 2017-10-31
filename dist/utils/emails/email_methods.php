@@ -6,7 +6,7 @@ date_default_timezone_set('Etc/UTC');
 require '../../../vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 require "emails_settings/general_settings.php";
 require "templates/emails_template.php";
-
+require "CONST.php";
 function sendMemberShipMessage($messageContent) {
 
     //Create a new PHPMailer instance
@@ -97,6 +97,49 @@ function sendInvolveMessage($messageContent) {
 
 }
 
+function sendQuestionMessage($messageContent) {
+    //Create a new PHPMailer instance
+    $mail = new PHPMailer;
+
+    $mail->isSMTP();
+    $mail->SMTPDebug = 2;
+
+    //Set the hostname of the mail server
+    $mail->Host = 'smtp.gmail.com';
+    $mail->Port = 587;
+    $mail->SMTPSecure = 'tls';
+    $mail->SMTPAuth = true;
+    $mail->Username = "antoinefortin1995@gmail.com";
+    $mail->Password = "abletonreasonfl";
+
+    $mail->setFrom(SENDER, 'Antoine Fortin');
+    $mail->addReplyTo(REPLYER, 'Tony prod');
+
+    $emails = unserialize (RECEIVERS);
+
+
+    //Set who the message is to be sent to
+    foreach($emails as $key => $email) {
+        $mail->addAddress($email, 'user');
+    }
+
+    // Mail Subject
+    $mail->Subject = "Nouvelle Question ALUMNI";
+    $mail->AltBody = "Nouvelle Question ALUMNI";
+
+    $mail->Body = $messageContent;
+
+    //send the message, check for errors
+    logEmailMessage(array($mail->Subject));
+    if (!$mail->send()) {
+        echo "Mailer Error: " . $mail->ErrorInfo;
+
+    } else {
+        echo "Message sent!";
+    }
+
+}
+
 /*
     Void
     Input->Array
@@ -112,7 +155,7 @@ function logEmailMessage($logContent) {
     $logMessage = "Email sent at  :  " . date('l jS \of F Y h:i:s A');
     $logMessage .= "       ----      Sent from  " . SENDER;
     $logMessage .= "       ----      To  " . unserializeEmail();
-    $logMessage .= "       ----      Message  Title" . $messageTitle;
+    $logMessage .= "       ----      Message  Title" . $messageTitle . "\r\n";
 
     // Write inside file from stream
     $my_file = '../emails/emails_log/emails_log.txt';
