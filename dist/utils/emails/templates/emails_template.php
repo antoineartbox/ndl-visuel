@@ -53,9 +53,6 @@ function buildInvolveMessageContent($content) {
 
 function buildQuestionMessageContent($content) {
 
-
-
-
     $message = "<div id='message-container'>";
     $message .= "<h1 style=''>Bonjour</h1>,";
     $message .= "<strong>le message suivant tient à vous faire part d'une nouvelle question pour le groupe ALUMNI!</strong>";
@@ -68,11 +65,24 @@ function buildQuestionMessageContent($content) {
     $message .= "<h3>Merci de ne pas répondre à ce message.</h3>";
     $message .= "<h3>Ce message est généré par le système de mail de Artbox.</h3>";
     $message .= "</div>";
-
-
     includeStyling();
-    echo $message;
 
-    die();
     return $message;
+}
+
+function buildSubscriptionMessage($content) {
+
+
+
+    var_dump($content);
+
+    $message = "<div id='message-container'>";
+    $message .= "<h1 style=''>Bonjour</h1>,";
+    $message .= "Merci de vous êtres inscrit au groupe ALUMNI";
+    $message .= "Pour valider votre inscription, veuillez cliquer ici";
+    $message .= "<a href='". ROOT.  "/validate-user.php?token=" . $content["token"] ."'>ICITTE</a>";
+    $message .= "</div>";
+    var_dump($message);
+    includeStyling();
+
 }

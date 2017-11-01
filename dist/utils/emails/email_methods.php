@@ -9,7 +9,7 @@ require "templates/emails_template.php";
 require "CONST.php";
 
 
-function sendNewUserMail($messageContent) {
+function sendNewUserMail($messageContent, $newUserEmail) {
     //Create a new PHPMailer instance
     $mail = new PHPMailer;
 
@@ -50,7 +50,7 @@ function sendNewUserMail($messageContent) {
             echo "Message sent!";
         }
         echo "<script>location.href='../../';</script>";
-        
+
 
 }
 

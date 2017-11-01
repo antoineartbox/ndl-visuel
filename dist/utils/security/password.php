@@ -11,10 +11,9 @@ function encryptPassword($passwordEntry) {
 
 function verifyPassword($passwordEntry, $hash) {
     if (password_verify($passwordEntry, $hash)) {
-        echo "Pass Fits";
         return true;
     } else {
-        echo "Bummer";
+
         return false;
     }
 }

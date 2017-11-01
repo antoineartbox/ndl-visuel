@@ -22,16 +22,21 @@ function initNewUser($form, $db) {
     $age = $form["age"];
     $email = $form["email"];
     $profession = $form["profession"];
-    $email = $form["email"];
     $username = $form["username"];
     $password = $form["password"];
-
-    // Let's encrypt th password
+    // Let's encrypt the password
     $password = encryptPassword($password);
 
     // Populate a token
     $validationToken  = populateToken($x["alpha-numeric"]);
-    var_dump($validationToken);
+
+    // Smash them into an array for building message template
+    $messageContent["firstname"] = $firstname;
+    $messageContent["lastname"] = $lastname;
+    $messageContent["email"] = $email;
+    $messageContent["username"] = $username;
+     
+    $messageContent["token"] = $validationToken;
 
 
     // Let's persist into our database
@@ -45,6 +50,13 @@ function initNewUser($form, $db) {
     }
 
     // Send email of new user
+    $messageContent = buildSubscriptionMessage($messageContent);
+
     // TODO: Create a function for sending email to the user for account validation
+
+    // TODO: Send the email
+}
+
+function validateNewUser($token) {
 
 }

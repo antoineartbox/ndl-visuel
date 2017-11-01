@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 	<body>
+
 		<div id="site-container">
 			<!-- Top header infos -->
 			<?php require "site-parts/header.php"; ?>
@@ -48,6 +49,7 @@
 		<script src="assets/js/menu.js"></script>
 		<script src="assets/js/events-blocker.js"></script>
 		<script src="assets/js/form-handler.js"></script>
+
 	</body>
 
 </html>
