@@ -7,9 +7,9 @@ require_once "forms_methods.php";
 // Transfer post to $form
 $form = $_POST;
 
-
+// Process each form
 switch ($form["form-type"]) {
-    case "membership_new_user":
+    case "membership-new-user":
         processNewUser($form);
         break;
 

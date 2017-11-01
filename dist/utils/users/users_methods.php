@@ -89,7 +89,7 @@ function logOutUser($userId = false) {
 */
 function killUserSession() {
 
-    
+
     // Unset all of the session variables.
     $_SESSION = array();
 
@@ -125,4 +125,4 @@ function checkPassword($passwordEntry, $hashedPassword) {
     }
 }
 
- ?>
+?>

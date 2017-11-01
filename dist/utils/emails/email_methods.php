@@ -7,6 +7,53 @@ require '../../../vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 require "emails_settings/general_settings.php";
 require "templates/emails_template.php";
 require "CONST.php";
+
+
+function sendNewUserMail($messageContent) {
+    //Create a new PHPMailer instance
+    $mail = new PHPMailer;
+
+    $mail->isSMTP();
+    $mail->SMTPDebug = 2;
+
+    //Set the hostname of the mail server
+    $mail->Host = 'smtp.gmail.com';
+    $mail->Port = 587;
+    $mail->SMTPSecure = 'tls';
+    $mail->SMTPAuth = true;
+    $mail->Username = "antoinefortin1995@gmail.com";
+    $mail->Password = "abletonreasonfl";
+
+    $mail->setFrom(SENDER, 'Antoine Fortin');
+    $mail->addReplyTo(REPLYER, 'Tony prod');
+
+    $emails = unserialize (RECEIVERS);
+
+
+    //Set who the message is to be sent to
+    foreach($emails as $key => $email) {
+        $mail->addAddress($email, 'user');
+    }
+
+    // Mail Subject
+    $mail->Subject = "Nouvelle demande de membre ALUMNI";
+    $mail->AltBody = "Nouvelle demande de membre ALUMNI";
+
+    $mail->Body = $messageContent;
+
+    //send the message, check for errors
+        logEmailMessage(array($mail->Subject));
+        if (!$mail->send()) {
+            echo "Mailer Error: " . $mail->ErrorInfo;
+
+        } else {
+            echo "Message sent!";
+        }
+        echo "<script>location.href='../../';</script>";
+        
+
+}
+
 function sendMemberShipMessage($messageContent) {
 
     //Create a new PHPMailer instance

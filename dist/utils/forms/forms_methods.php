@@ -1,12 +1,24 @@
 <?php
 require "../db/connect.php";
 require "component/CONST.php";
+require "../users/users_new.php";
 
 
 /*
     void f(x) -> input x  array[]
     x-> A form array
 */
+
+function processNewUser($form) {
+
+    if ($form) {
+        initNewUser($form, connectToDb());
+    } else {
+        return false;
+    }
+}
+
+
 function processMembershipForm($form = false) {
     if ($form) {
         processMembershipFormValidation($form, $customFilters = false);
@@ -299,5 +311,10 @@ function persistQuestionToDb($values, $tableName, $db) {
     } else {
         echo "Error: " . $sql . "<br>" . $db->error;
     }
+
+}
+
+function persistNewUser($form, $db) {
+    var_dump($form);
 
 }

@@ -74,7 +74,15 @@
                 <span class="label">Courriel :</span> <input type="email" name="email" value="">
             </div>
 
-            <input style="display:none;" type="form-type" name="form-type" value="membership">
+            <div class="form-item">
+                <span class="label">Nom d'utilisateur :</span> <input type="text" name="username" value="">
+            </div>
+
+            <div class="form-item">
+                <span class="label">Mot de passe :</span> <input type="text" name="password" value="">
+            </div>
+
+            <input style="display:none;" type="form-type" name="form-type" value="membership-new-user">
 
             <div class="newsletter-choice">
                 <input type="checkbox" name="newsletter" value="">
