@@ -1,8 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-date_default_timezone_set('Etc/UTC');
 require '../../../vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 require "emails_settings/general_settings.php";
 require "templates/emails_template.php";
@@ -14,7 +10,7 @@ function sendNewUserMail($messageContent, $newUserEmail) {
     $mail = new PHPMailer;
 
     $mail->isSMTP();
-    $mail->SMTPDebug = 2;
+
 
     //Set the hostname of the mail server
     $mail->Host = 'smtp.gmail.com';
@@ -31,26 +27,25 @@ function sendNewUserMail($messageContent, $newUserEmail) {
 
 
     //Set who the message is to be sent to
-    foreach($emails as $key => $email) {
-        $mail->addAddress($email, 'user');
-    }
+
+    $mail->addAddress($newUserEmail, 'user');
+
 
     // Mail Subject
-    $mail->Subject = "Nouvelle demande de membre ALUMNI";
-    $mail->AltBody = "Nouvelle demande de membre ALUMNI";
+    $mail->Subject = "Valider votre inscription au groupe ALUMNI";
+    $mail->AltBody = "Valider votre inscription au groupe ALUMNI";
 
     $mail->Body = $messageContent;
 
     //send the message, check for errors
         logEmailMessage(array($mail->Subject));
         if (!$mail->send()) {
-            echo "Mailer Error: " . $mail->ErrorInfo;
+
+
 
         } else {
-            echo "Message sent!";
-        }
-        echo "<script>location.href='../../';</script>";
 
+        }
 
 }
 

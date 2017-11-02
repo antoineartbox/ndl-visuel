@@ -50,6 +50,12 @@
 		<script src="assets/js/events-blocker.js"></script>
 		<script src="assets/js/form-handler.js"></script>
 
+		<!-- Check for error -->
+		<?php if($_GET["errors"]|| $_GET["success"]) {?>
+
+			<script src="assets/js/message-setter.js"></script>
+		<?php } ?>
+
 	</body>
 
 </html>

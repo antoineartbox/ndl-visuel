@@ -3,6 +3,7 @@
         <h3>Merci de votre inscription</h3>
         <?php
             require "utils/actions/validate-new-user.php";
+            
         ?>
     </div>
 </div>

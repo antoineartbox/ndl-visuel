@@ -5,12 +5,28 @@ require "../security/tokens.php";
 require "../emails/email_methods.php";
 
 /*
-    This function handle the db entry for a temporary db entry
-    This function handle
+	This function init a new user
+	-> It's the entry point for all user processing
+		-Data processing
+		-Email sending
+		-Flagger etc...
+
+	bool f(x, y)
+	input y =The functions takes a $db object as argument,
+				->db is passed as argument to others argument,
+				-> Please note that all other function calling db
+				   use a copy of this params.
+
 */
 function initNewUser($form, $db) {
 
-    var_dump($form);
+	// Start by checking if a user already exist
+	if (checkIfUserExist($form["email"], $db)) {
+		// Set errors
+		$errors["flag"]["email"] = "Ce email est déjà lié à un compte.";
+		echo json_encode($errors);
+		return false;
+	}
 
     /*
         For processing the SQL request let's build our data
@@ -28,6 +44,7 @@ function initNewUser($form, $db) {
     $password = encryptPassword($password);
 
     // Populate a token
+	$x = array();
     $validationToken  = populateToken($x["alpha-numeric"]);
 
     // Smash them into an array for building message template
@@ -35,7 +52,6 @@ function initNewUser($form, $db) {
     $messageContent["lastname"] = $lastname;
     $messageContent["email"] = $email;
     $messageContent["username"] = $username;
-     
     $messageContent["token"] = $validationToken;
 
 
@@ -44,19 +60,49 @@ function initNewUser($form, $db) {
     VALUES ('$firstname', '$lastname', $age, '$profession', '$email', '$username', '$password', '$validationToken')";
 
     if ($db->query($sql) === TRUE) {
-        echo "New record created successfully";
+
     } else {
-        echo "Error: " . $sql . "<br>" . $db->error;
+
     }
 
     // Send email of new user
     $messageContent = buildSubscriptionMessage($messageContent);
 
     // TODO: Create a function for sending email to the user for account validation
+    sendNewUserMail($messageContent, $email);
 
-    // TODO: Send the email
 }
 
-function validateNewUser($token) {
+function validateNewUser($token, $db) {
+    var_dump($token);
+}
 
+function checkIfUserExist($userEmail = false, $db) {
+
+	if ($userEmail) {
+
+		// Build the query
+		$sql = "SELECT email from ndl_users";
+
+		// Get the results
+		$result = $db->query($sql);
+
+		// check is some results
+		if ($result->num_rows > 0) {
+
+			// Loop through all records
+			while($row = $result->fetch_assoc()) {
+
+				// If a record with user email exist
+				if($row["email"] == $userEmail) {
+
+					// Return true so email exists
+					return true;
+				}
+			}
+		}
+
+	} else {
+		return false;
+	}
 }

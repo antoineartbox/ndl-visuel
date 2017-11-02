@@ -1,15 +1,17 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+
 require_once "forms_methods.php";
 
 // Transfer post to $form
 $form = $_POST;
 
+
 // Process each form
 switch ($form["form-type"]) {
     case "membership-new-user":
+
+        // Init errors
+        $errors = array();
         processNewUser($form);
         break;
 
@@ -29,4 +31,3 @@ switch ($form["form-type"]) {
 
 }
 
- ?>

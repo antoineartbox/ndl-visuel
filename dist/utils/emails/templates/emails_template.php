@@ -11,7 +11,7 @@ function includeStyling() {
     $stylePath = dirname(__FILE__) . "/styles/styles.css";
     $styles = file_get_contents($stylePath);
 
-    echo "<style>"  .  $styles  .  "</style>" ;
+    return "<style>"  .  $styles  .  "</style>" ;
 }
 
 function buildMemberShipMessageContent($content) {
@@ -72,17 +72,13 @@ function buildQuestionMessageContent($content) {
 
 function buildSubscriptionMessage($content) {
 
-
-
-    var_dump($content);
-
     $message = "<div id='message-container'>";
     $message .= "<h1 style=''>Bonjour</h1>,";
     $message .= "Merci de vous êtres inscrit au groupe ALUMNI";
-    $message .= "Pour valider votre inscription, veuillez cliquer ici";
-    $message .= "<a href='". ROOT.  "/validate-user.php?token=" . $content["token"] ."'>ICITTE</a>";
+    $message .= "Pour valider votre inscription, veuillez cliquer";
+    $message .= "<a href='". ROOT.  "/validate-user.php?token=" . $content["token"] ."'>ici.</a>";
     $message .= "</div>";
-    var_dump($message);
-    includeStyling();
+    $message .= includeStyling();
 
+    return $message;
 }

@@ -13,9 +13,9 @@ function verifyPassword($passwordEntry, $hash) {
     if (password_verify($passwordEntry, $hash)) {
         return true;
     } else {
-
+        
         return false;
     }
 }
 
- ?>
+

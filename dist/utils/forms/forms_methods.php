@@ -12,7 +12,10 @@ require "../users/users_new.php";
 function processNewUser($form) {
 
     if ($form) {
-        initNewUser($form, connectToDb());
+
+        if(initNewUser($form, connectToDb()) == false) {
+
+		}
     } else {
         return false;
     }

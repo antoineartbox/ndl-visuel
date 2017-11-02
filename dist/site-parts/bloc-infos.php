@@ -51,7 +51,7 @@
     <div class="membership-form-container">
         <h3>Merci de vous inscrire</h3>
         <span class="closing-button">x</span>
-        <form id="form-membership" class="" action="utils/forms/forms_process.php" method="post">
+        <form id="form-membership" class="" action="" method="post">
 
             <div class="form-item">
                 <span class="label">Prénom :</span>
@@ -91,7 +91,7 @@
             <div class="button call-to-action become-member submit">
                 <span>Envoyer</span>
             </div>
-            <input style="display:none;" type="submit" name="" value="">
+
         </form>
     </div>
 
