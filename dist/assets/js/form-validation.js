@@ -12,21 +12,46 @@ $( document ).ready(function () {
 
 function handleSingleField(field) {
 
-	// Capitalize first character
+	// Case
+	if(field[0].name == "email") {
+		$(field[0]).addClass("not-valid");
+		if(verifyEmail(field.val()) == "valid") {
+			$(field[0]).removeClass("not-valid");
+		}
+	}
 
+	if(field[0].name == "phone") {
 
-
+	}
 }
 
 
+function verifyEmail(value) {
 
-function handleNewUserForm(form) {
 
+	var forcedCharacter = ["@", "."];
+	var char = value.split("");
+	var validator = 0;
+	for(var i = 0; i < value.length; i++) {
+		for(var j = 0; j < forcedCharacter.length; j++) {
+			if(value[i] == forcedCharacter[j]) {
+				validator++;
+			}
+		}
+	}
+
+	if(validator >= forcedCharacter.length) {
+		return validateEmail(true);
+	}
+	return validateEmail(false);
 }
 
 
+function validateEmail(state) {
+	if(state == true) {
+		return "valid";
+	} else {
 
-function capitalizer(value) {
-	value += value.charAt(0).toUpperCase();
-	return value;
+		return "not";
+	}
 }
