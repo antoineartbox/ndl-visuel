@@ -20,13 +20,27 @@ require "../emails/email_methods.php";
 */
 function initNewUser($form, $db) {
 
+
+	/* Handle error case */
 	// Start by checking if a user already exist
+	// Void fx($formField)
 	if (checkIfUserExist($form["email"], $db)) {
+
 		// Set errors
 		$errors["flag"]["email"] = "Ce email est déjà lié à un compte.";
-		echo json_encode($errors);
-		return false;
 	}
+	// Void
+	if(checkIfSingleUsername($form["username"], $db)) {
+
+		// Set errors
+		$errors["flag"]["username"] = "Ce nom d'utilisateur existe déjà";
+	}
+
+	// Print Errors
+	if (count($errors) > 0) {
+		echo json_encode($errors);
+	}
+
 
     /*
         For processing the SQL request let's build our data
@@ -95,6 +109,37 @@ function checkIfUserExist($userEmail = false, $db) {
 
 				// If a record with user email exist
 				if($row["email"] == $userEmail) {
+
+					// Return true so email exists
+					return true;
+				}
+			}
+		}
+
+	} else {
+		return false;
+	}
+}
+
+
+function checkIfSingleUsername($username= false, $db) {
+
+	if ($username) {
+
+		// Build the query
+		$sql = "SELECT username from ndl_users";
+
+		// Get the results
+		$result = $db->query($sql);
+
+		// check is some results
+		if ($result->num_rows > 0) {
+
+			// Loop through all records
+			while($row = $result->fetch_assoc()) {
+
+				// If a record with user email exist
+				if($row["username"] == $username) {
 
 					// Return true so email exists
 					return true;

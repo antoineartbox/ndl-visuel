@@ -20,9 +20,12 @@
 <div id="bloc-involve-overlay">
 
     <div class="invole-form-container">
-        <h3>Impliquez-vous</h3>
-        <span class="closing-button">x</span>
-        <form id="form-involve" class="" action="utils/forms/forms_process.php" method="post">
+
+		<h3>Impliquez-vous</h3>
+		<span class="closing-button">x</span>
+        <span class="errors-display"></span>
+
+		<form id="form-involve" class="" action="" method="post">
             <div class="form-item">
             <span class="label">Prénom :</span>
             <input type="text" name="firstname" value=""><br>

@@ -50,6 +50,10 @@
 <div id="bloc-membership-overlay">
     <div class="membership-form-container">
         <h3>Merci de vous inscrire</h3>
+
+		<div class="errors-container">
+			<!-- Refers to JS -->
+		</div>
         <span class="closing-button">x</span>
         <form id="form-membership" class="" action="" method="post">
 
@@ -70,11 +74,11 @@
                 <span class="label">Profession :</span> <input type="text" name="profession" value=""><br>
             </div>
 
-            <div class="form-item">
+            <div class="form-item email-container">
                 <span class="label">Courriel :</span> <input type="email" name="email" value="">
             </div>
 
-            <div class="form-item">
+            <div class="form-item username-container">
                 <span class="label">Nom d'utilisateur :</span> <input type="text" name="username" value="">
             </div>
 

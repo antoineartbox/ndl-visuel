@@ -1047,6 +1047,9 @@
   font-family: gotham;
   src: url("../fonts/gotham.ttf") format("truetype"); }
 
+.error {
+  color: red; }
+
 @font-face {
   font-family: intro;
   src: url("../fonts/intro.otf") format("opentype"); }
@@ -1054,6 +1057,9 @@
 @font-face {
   font-family: gotham;
   src: url("../fonts/gotham.ttf") format("truetype"); }
+
+.error {
+  color: red; }
 
 .button {
   background-color: #7fc214;
@@ -1105,6 +1111,9 @@
 @font-face {
   font-family: gotham;
   src: url("../fonts/gotham.ttf") format("truetype"); }
+
+.error {
+  color: red; }
 
 body {
   margin: 0;
@@ -1235,6 +1244,9 @@ header {
 @font-face {
   font-family: gotham;
   src: url("../fonts/gotham.ttf") format("truetype"); }
+
+.error {
+  color: red; }
 
 /*This file mixins for helping centering, disposing and placing elements*/
 #bloc-infos {
@@ -1373,6 +1385,9 @@ header {
   font-family: gotham;
   src: url("../fonts/gotham.ttf") format("truetype"); }
 
+.error {
+  color: red; }
+
 /*This file mixins for helping centering, disposing and placing elements*/
 #bloc-membership {
   background-color: rgba(255, 255, 255, 0.5);
@@ -1446,6 +1461,9 @@ header {
 @font-face {
   font-family: gotham;
   src: url("../fonts/gotham.ttf") format("truetype"); }
+
+.error {
+  color: red; }
 
 #bloc-events {
   background: url("../images/bloc-background/bloc-events-whitey.png") no-repeat center center fixed;
@@ -1540,6 +1558,9 @@ header {
   font-family: gotham;
   src: url("../fonts/gotham.ttf") format("truetype"); }
 
+.error {
+  color: red; }
+
 .button {
   background-color: #7fc214;
   color: #FFFFFF;
@@ -1590,6 +1611,9 @@ header {
 @font-face {
   font-family: gotham;
   src: url("../fonts/gotham.ttf") format("truetype"); }
+
+.error {
+  color: red; }
 
 /*This file mixins for helping centering, disposing and placing elements*/
 #bloc-involve {
@@ -1748,6 +1772,9 @@ header {
   font-family: gotham;
   src: url("../fonts/gotham.ttf") format("truetype"); }
 
+.error {
+  color: red; }
+
 .button {
   background-color: #7fc214;
   color: #FFFFFF;
@@ -1798,6 +1825,9 @@ header {
 @font-face {
   font-family: gotham;
   src: url("../fonts/gotham.ttf") format("truetype"); }
+
+.error {
+  color: red; }
 
 /*This file mixins for helping centering, disposing and placing elements*/
 #bloc-question {
@@ -1971,6 +2001,9 @@ header {
 @font-face {
   font-family: gotham;
   src: url("../fonts/gotham.ttf") format("truetype"); }
+
+.error {
+  color: red; }
 
 #bloc-home {
   background: url("../images/bloc-background/bloc-home-whitey.png") no-repeat center center fixed;

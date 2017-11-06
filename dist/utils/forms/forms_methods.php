@@ -14,7 +14,7 @@ function processNewUser($form) {
     if ($form) {
 
         if(initNewUser($form, connectToDb()) == false) {
-
+			return false;
 		}
     } else {
         return false;
@@ -125,7 +125,7 @@ function processInvolveFormValidation($form){
     }
 
     if(count($errors) >= 1) {
-        var_dump("errors");
+
         die();
     } else {
         persistInvolveToBd($toPersist, "ndl_involves", connectToDb());
@@ -270,13 +270,13 @@ function persistInvolveToBd($values, $tableName, $db) {
         echo "New record created successfully";
         require "../emails/email_methods.php";
         $messageContent = buildInvolveMessageContent($values);
-        var_dump($messageContent);
 
+		echo "gland";
         sendInvolveMessage($messageContent, "philippe@artbox.agency");
         // echo "<script>location.href='../../?membership-message=submit';</script>";
 
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+
     }
 }
 
