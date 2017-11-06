@@ -1110,6 +1110,9 @@
       z-index: 15;
       right: 15px; }
 
+body input.not-valid {
+  border: solid 2px red; }
+
 @font-face {
   font-family: intro;
   src: url("../fonts/intro.otf") format("opentype"); }

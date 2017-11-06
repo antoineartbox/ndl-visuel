@@ -82,8 +82,9 @@
                 <span class="label">Nom d'utilisateur :</span> <input type="text" name="username" value="">
             </div>
 
-            <div class="form-item">
+            <div class="form-item password-setter-container">
                 <span class="label">Mot de passe :</span> <input type="text" name="password" value="">
+				<span class="password-message-container"></span>
             </div>
 
             <input style="display:none;" type="form-type" name="form-type" value="membership-new-user">

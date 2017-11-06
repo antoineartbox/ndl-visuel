@@ -10,26 +10,30 @@ $( document ).ready(function () {
 	});
 });
 
+
 function handleSingleField(field) {
 
 	// Case
 	if(field[0].name == "email") {
-		$(field[0]).addClass("not-valid");
-		if(verifyEmail(field.val()) == "valid") {
-			$(field[0]).removeClass("not-valid");
+		$(field).addClass("not-valid");
+		if(verifyCharacter(field.val(), ["@", "."]) == "valid") {
+			$(field).removeClass("not-valid");
 		}
 	}
 
+	if(field[0].name == "password") {
+		validatePassword($(field).val());
+
+	}
 	if(field[0].name == "phone") {
 
 	}
 }
 
 
-function verifyEmail(value) {
+function verifyCharacter(value, forcedCharacter) {
 
 
-	var forcedCharacter = ["@", "."];
 	var char = value.split("");
 	var validator = 0;
 	for(var i = 0; i < value.length; i++) {
@@ -41,17 +45,57 @@ function verifyEmail(value) {
 	}
 
 	if(validator >= forcedCharacter.length) {
-		return validateEmail(true);
+		return validateField(true);
 	}
-	return validateEmail(false);
+	return validateField(false);
 }
 
 
-function validateEmail(state) {
+function validateField(state) {
 	if(state == true) {
 		return "valid";
 	} else {
-
 		return "not";
+	}
+}
+
+
+
+var passwordMinimumLength = 12;
+var intCount = 2;
+var messages = [];
+// Special function for Password
+function validatePassword(passwordValue) {
+	messages = [];
+	var intCounter = 0;
+	var char = passwordValue.split("");
+	for(var i =0; i < char.length; i++) {
+
+		// Check for integer in password
+		if(isNaN(char[i]) == false) {
+			intCounter++;
+		}
+
+	}
+
+	if(intCounter >= intCount && passwordValue.length >= passwordMinimumLength) {
+		messages.push("Le mot de passe est valide");
+	} else {
+		if(intCounter <= intCount) {
+			messages.push("Le mot de passe doit contenir au moins deux charactère numérique");
+		}
+		if(intCounter <= intCount) {
+			messages.push("Le mot de passe doit contenir au moins 12 charactère");
+		}
+	}
+	displayPasswordMessage(messages);
+}
+
+function displayPasswordMessage(messages) {
+
+	var container = $(".password-message-container");
+	container.html("");
+	for(var i = 0;i < messages.length; i++) {
+		container.append("<div class='message'>" + messages[i] + "</div>");
 	}
 }
