@@ -25,24 +25,24 @@
 		<span class="closing-button">x</span>
         <span class="errors-display"></span>
 
-		<form id="form-involve" class="" action="" method="post">
+		<form id="form-involve" class="form-user-input" action="" method="post">
             <div class="form-item">
             <span class="label">Prénom :</span>
-            <input type="text" name="firstname" value=""><br>
+            <input class="capital" type="text" name="firstname" value=""><br>
             </div>
             <div class="form-item">
             <span class="label">Nom :</span>
-            <input type="text" name="lastname" value=""><br>
+            <input class="capital" type="text" name="lastname" value=""><br>
             </div>
 
             <div class="form-item">
             <span class="label">Age : </span> <input type="number" name="age" value=""><br>
             </div>
             <div class="form-item">
-            <span class="label">Employeur :</span> <input type="text" name="employer" value=""><br>
+            <span class="label">Employeur :</span> <input class="capital" type="text" name="employer" value=""><br>
             </div>
             <div class="form-item">
-                <span class="label">Poste Occupé :</span> <input type="email" name="jobtitle" value="">
+                <span class="label">Poste Occupé :</span> <input class="capital" type="email" name="jobtitle" value="">
             </div>
 
             <div class="form-item">

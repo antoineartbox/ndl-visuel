@@ -34,6 +34,7 @@ function buildMemberShipMessageContent($content) {
 
 function buildInvolveMessageContent($content) {
 
+
     $message  = "<div id='message-container'>";
     $message .= "<h1 style=''>Bonjour</h1>,";
     $message .= "<strong>le message suivant tient à vous faire part d'une nouvelle demande d'implications pour le groupe ALUMNI!</strong>";

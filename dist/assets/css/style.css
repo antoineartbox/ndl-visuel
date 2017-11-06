@@ -1050,6 +1050,9 @@
 .error {
   color: red; }
 
+.form-user-input input.capital {
+  text-transform: capitalize; }
+
 @font-face {
   font-family: intro;
   src: url("../fonts/intro.otf") format("opentype"); }
@@ -1060,6 +1063,9 @@
 
 .error {
   color: red; }
+
+.form-user-input input.capital {
+  text-transform: capitalize; }
 
 .button {
   background-color: #7fc214;
@@ -1114,6 +1120,9 @@
 
 .error {
   color: red; }
+
+.form-user-input input.capital {
+  text-transform: capitalize; }
 
 body {
   margin: 0;
@@ -1247,6 +1256,9 @@ header {
 
 .error {
   color: red; }
+
+.form-user-input input.capital {
+  text-transform: capitalize; }
 
 /*This file mixins for helping centering, disposing and placing elements*/
 #bloc-infos {
@@ -1388,6 +1400,9 @@ header {
 .error {
   color: red; }
 
+.form-user-input input.capital {
+  text-transform: capitalize; }
+
 /*This file mixins for helping centering, disposing and placing elements*/
 #bloc-membership {
   background-color: rgba(255, 255, 255, 0.5);
@@ -1464,6 +1479,9 @@ header {
 
 .error {
   color: red; }
+
+.form-user-input input.capital {
+  text-transform: capitalize; }
 
 #bloc-events {
   background: url("../images/bloc-background/bloc-events-whitey.png") no-repeat center center fixed;
@@ -1561,6 +1579,9 @@ header {
 .error {
   color: red; }
 
+.form-user-input input.capital {
+  text-transform: capitalize; }
+
 .button {
   background-color: #7fc214;
   color: #FFFFFF;
@@ -1614,6 +1635,9 @@ header {
 
 .error {
   color: red; }
+
+.form-user-input input.capital {
+  text-transform: capitalize; }
 
 /*This file mixins for helping centering, disposing and placing elements*/
 #bloc-involve {
@@ -1775,6 +1799,9 @@ header {
 .error {
   color: red; }
 
+.form-user-input input.capital {
+  text-transform: capitalize; }
+
 .button {
   background-color: #7fc214;
   color: #FFFFFF;
@@ -1828,6 +1855,9 @@ header {
 
 .error {
   color: red; }
+
+.form-user-input input.capital {
+  text-transform: capitalize; }
 
 /*This file mixins for helping centering, disposing and placing elements*/
 #bloc-question {
@@ -2004,6 +2034,9 @@ header {
 
 .error {
   color: red; }
+
+.form-user-input input.capital {
+  text-transform: capitalize; }
 
 #bloc-home {
   background: url("../images/bloc-background/bloc-home-whitey.png") no-repeat center center fixed;

@@ -7,16 +7,16 @@
             <span class="line"></span>
         </div>
         <div class="question-form-container">
-
-            <form class="" id="question" action="utils/forms/forms_process.php" method="post">
+			<div class="error-container"></div>
+            <form class="form-user-input" id="form-question" action="" method="post">
 
                 <div class="form-item">
                     <span class="label">Prénom :</span>
-                    <input type="text" name="firstname" value=""><br>
+                    <input class="capital" type="text" name="firstname" value=""><br>
                 </div>
                 <div class="form-item">
                     <span class="label">Nom :</span>
-                    <input type="text" name="lastname" value=""><br>
+                    <input class="capital" type="text" name="lastname" value=""><br>
                 </div>
 
                 <div class="form-item">
@@ -24,11 +24,11 @@
                 </div>
 
                 <div class="form-item">
-                    <span class="label">Profession :</span> <input type="text" name="profession" value=""><br>
+                    <span class="label">Profession :</span> <input class="capital" type="text" name="profession" value=""><br>
                 </div>
 
                 <div class="form-item">
-                    <span class="label">Courriel :</span> <input type="text" name="email" value=""><br>
+                    <span class="label">Courriel :</span> <input type="text" name="email" class="no-capitalize"value=""><br>
                 </div>
 
                 <div class="form-item">

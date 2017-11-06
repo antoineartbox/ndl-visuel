@@ -10,10 +10,10 @@ $form = $_POST;
 switch ($form["form-type"]) {
 
 	case "membership-new-user":
-        // Init errors
+
+		// Init errors
         $errors = array();
         processNewUser($form);
-
         break;
 
     case "membership":
@@ -30,7 +30,7 @@ switch ($form["form-type"]) {
 
         processQuestionForms($form);
         break;
+
     default:
 
 }
-

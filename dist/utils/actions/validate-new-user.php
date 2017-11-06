@@ -21,13 +21,13 @@ function validateNewUser($token, $db) {
 
 		}
 	} else {
-		echo "0 results";
+
 	}
 	$db->close();
 }
 
 function populateNewUser($datas, $db) {
-	var_dump($datas);
+
 	// Collect good datas for query
 	$username = $datas["username"];
 	$password = $datas["password"];

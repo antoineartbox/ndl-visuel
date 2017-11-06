@@ -55,15 +55,15 @@
 			<!-- Refers to JS -->
 		</div>
         <span class="closing-button">x</span>
-        <form id="form-membership" class="" action="" method="post">
+        <form id="form-membership" class="form-user-input" action="" method="post">
 
             <div class="form-item">
                 <span class="label">Prénom :</span>
-                <input type="text" name="firstname" value=""><br>
+                <input class="capital" type="text" name="firstname" value=""><br>
             </div>
             <div class="form-item">
                 <span class="label">Nom :</span>
-                <input type="text" name="lastname" value=""><br>
+                <input class="capital" type="text" name="lastname" value=""><br>
             </div>
 
             <div class="form-item">
@@ -71,7 +71,7 @@
             </div>
 
             <div class="form-item">
-                <span class="label">Profession :</span> <input type="text" name="profession" value=""><br>
+                <span class="label">Profession :</span> <input class="capital" type="text" name="profession" value=""><br>
             </div>
 
             <div class="form-item email-container">

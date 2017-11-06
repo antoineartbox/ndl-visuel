@@ -22,8 +22,8 @@ $(document).ready(function () {
 
 		// Clear error message
 		$(".errors-container").html("");
-		if(false){
-			submitMembershipForm(datastring);
+		if(true){
+			submitInvolveForm(datastring);
 		}
 
 
@@ -32,8 +32,15 @@ $(document).ready(function () {
 	// Detect click on button
 	$(".button.question.submit").click(function () {
 
-		// Then submit related form
-		$("form#question").submit();
+		// Build datas
+		var datastring = $("#form-question").serialize();
+		console.log(datastring);
+
+		// Clear error message
+		$(".errors-container").html("");
+		if(true){
+			submitQuestionForm(datastring);
+		}
 	});
 
 
@@ -80,7 +87,128 @@ $(document).ready(function () {
 		}
 	}
 
+	function submitInvolveForm(datastring) {
 
+		killFormDisplay($("#form-involve"));
+		enableLoader($(".invole-form-container"));
+
+
+		// Submit form via post method
+		if (true) {
+
+			// Define asynchronous ajax call for form processing
+			$.ajax({
+
+				// Define ajax options
+				method: "POST",
+				url: "utils/forms/forms_process.php",
+				data: datastring,
+
+				// Build the function when the asynchronous call is success
+				success: function (output) {
+					console.log(output);
+					if (output.length > 2) {
+
+						// Decode the JSON answer
+						var decode = JSON.parse(output);
+
+						// If Errors are found then  process the error
+						if (decode.flag) {
+
+							// Verify error and happend them
+							verifyError($(".membership-form-container .errors-container"), decode.flag);
+
+							// Reload form display
+							enableFormDisplay($("#form-membership"));
+
+							// Kill the loader
+							killLoader();
+						}
+					} else {
+
+						// Kill loader
+						killLoader();
+
+						// Initiate the form success
+						validatedFormSuccess($(".invole-form-container"), "<h4>Merci de vous être inscrit</h4>");
+
+						//
+						setTimeout(function(){ otherMessage(); }, 300);
+						function otherMessage() {
+							validatedFormSuccess($(".invole-form-container"), "<h4>Un adminisatrateur vous conactera sous peu.</h4>");
+						}
+
+						$(document).click(function(){
+							$("#bloc-involve-overlay").fadeOut(500);
+						});
+					}
+
+
+				}
+			})
+		}
+	}
+
+	function submitQuestionForm(datastring) {
+
+		killFormDisplay($("#form-question"));
+		enableLoader($(".question-form-container"));
+
+		// Submit form via post method
+		if (true) {
+
+			// Define asynchronous ajax call for form processing
+			$.ajax({
+
+				// Define ajax options
+				method: "POST",
+				url: "utils/forms/forms_process.php",
+				data: datastring,
+
+				// Build the function when the asynchronous call is success
+				success: function (output) {
+					console.log(output);
+					if (output.length > 2) {
+
+						// Decode the JSON answer
+						var decode = JSON.parse(output);
+
+						// If Errors are found then  process the error
+						if (decode.flag) {
+
+							// Verify error and happend them
+							verifyError($(".question-form-container .error-container"), decode.flag);
+
+							// Reload form display
+							enableFormDisplay($("#form-question"));
+
+							// Kill the loader
+							killLoader();
+						}
+					} else {
+
+						// Kill loader
+						killLoader();
+
+						// Initiate the form success
+						validatedFormSuccess($(".invole-form-container"), "<h4>Merci de vous être inscrit</h4>");
+
+						//
+						setTimeout(function(){ otherMessage(); }, 300);
+						function otherMessage() {
+							validatedFormSuccess($(".invole-form-container"), "<h4>Un adminisatrateur vous conactera sous peu.</h4>");
+						}
+
+						$(document).click(function(){
+							$("#bloc-involve-overlay").fadeOut(500);
+						});
+					}
+
+
+				}
+			})
+		}
+	}
 	/*
 	* void fx(x,y)
 	* inputs => x = Dom element to use a parent à
@@ -130,5 +258,3 @@ $(document).ready(function () {
 		$("#loader-image").fadeOut(75).remove();
 	}
 });
-
-

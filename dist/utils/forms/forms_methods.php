@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 require "../db/connect.php";
 require "component/CONST.php";
 require "../users/users_new.php";
@@ -32,6 +35,7 @@ function processMembershipForm($form = false) {
 }
 
 function processInvolveForm($form = false) {
+
     if ($form) {
         processInvolveFormValidation($form);
 
@@ -85,7 +89,7 @@ function processMembershipFormValidation($form){
 
     if(count($errors) >= 1) {
 
-        var_dump($errors);
+
         die();
     } else {
         persistMembershipToBd($toPersist, "ndl_membership", connectToDb());
@@ -94,6 +98,7 @@ function processMembershipFormValidation($form){
 }
 
 function processInvolveFormValidation($form){
+
 
     $errors = array();
     $toPersist = array();
@@ -126,16 +131,15 @@ function processInvolveFormValidation($form){
 
     if(count($errors) >= 1) {
 
-        die();
+        echo json_encode($errors);
     } else {
+
         persistInvolveToBd($toPersist, "ndl_involves", connectToDb());
     }
 
 }
 
 function processQuestionFormValidation($form){
-
-    var_dump($form);
 
     $errors = array();
     $toPersist = array();
@@ -234,7 +238,7 @@ function persistMembershipToBd($values, $tableName, $db) {
         // echo "<script>location.href='../../?membership-message=submit';</script>";
 
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+
     }
 }
 
@@ -245,6 +249,7 @@ function persistMembershipToBd($values, $tableName, $db) {
     TODO Makes arguments list such as $values, $tableName, $tableRows
 */
 function persistInvolveToBd($values, $tableName, $db) {
+
 
     // Unset form type from values
     unset($values["form-type"]);
@@ -265,18 +270,17 @@ function persistInvolveToBd($values, $tableName, $db) {
         }
         $counter++;
     }
-
+		
     if ($db->query($query) === TRUE) {
-        echo "New record created successfully";
-        require "../emails/email_methods.php";
+
+        // require "../emails/email_methods.php";
         $messageContent = buildInvolveMessageContent($values);
 
-		echo "gland";
-        sendInvolveMessage($messageContent, "philippe@artbox.agency");
+        sendInvolveMessage($messageContent, "");
         // echo "<script>location.href='../../?membership-message=submit';</script>";
 
     } else {
-
+		echo "Error: " . $query . "<br>" . $db->error;
     }
 }
 
@@ -304,7 +308,7 @@ function persistQuestionToDb($values, $tableName, $db) {
 
     if ($db->query($query) === TRUE) {
 
-        require "../emails/email_methods.php";
+        // require "../emails/email_methods.php";
         $messageContent = buildQuestionMessageContent($values);
 
         sendQuestionMessage($messageContent, "philippe@artbox.agency");

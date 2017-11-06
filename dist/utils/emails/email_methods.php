@@ -100,7 +100,6 @@ function sendInvolveMessage($messageContent) {
     $mail = new PHPMailer;
 
     $mail->isSMTP();
-    $mail->SMTPDebug = 2;
 
     //Set the hostname of the mail server
     $mail->Host = 'smtp.gmail.com';
@@ -122,8 +121,8 @@ function sendInvolveMessage($messageContent) {
     }
 
     // Mail Subject
-    $mail->Subject = "Nouvelle d'implication ALUMNI";
-    $mail->AltBody = "Nouvelle d'implication ALUMNI";
+    $mail->Subject = "Nouvelle demande d'implication ALUMNI";
+    $mail->AltBody = "Nouvelle demande d'implication ALUMNI";
 
     $mail->Body = $messageContent;
 
@@ -133,9 +132,9 @@ function sendInvolveMessage($messageContent) {
         echo "Mailer Error: " . $mail->ErrorInfo;
 
     } else {
-        echo "Message sent!";
+    	
     }
-    echo "<script>location.href='../../';</script>";
+    // echo "<script>location.href='../../';</script>";
 
 }
 
@@ -144,7 +143,6 @@ function sendQuestionMessage($messageContent) {
     $mail = new PHPMailer;
 
     $mail->isSMTP();
-    $mail->SMTPDebug = 2;
 
     //Set the hostname of the mail server
     $mail->Host = 'smtp.gmail.com';
