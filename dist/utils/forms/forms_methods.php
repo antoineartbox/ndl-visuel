@@ -157,14 +157,19 @@ function processQuestionFormValidation($form){
 
         if ($key == "age") {
 
-            // Force age to be int
-            intval($value);
-            $age = $value;
+        	if(!$value) {
+        		$value = 45;
+			} else {
+				// Force age to be int
+				intval($value);
+				$age = $value;
 
-            // Check for any negative number and switch to positive
-            if ($age <= 0) {
-                $age = ($age * 1) + 1;
-            }
+				// Check for any negative number and switch to positive
+				if ($age <= 0) {
+					$age = ($age * 1) + 1;
+				}
+			}
+
         }
 
         $toPersist[$key] = processSanitize($value);
@@ -232,7 +237,7 @@ function persistMembershipToBd($values, $tableName, $db) {
         echo "New record created successfully";
         require "../emails/email_methods.php";
         $messageContent = buildMemberShipMessageContent($values);
-        var_dump($messageContent);
+
 
         sendMemberShipMessage($messageContent, "philippe@artbox.agency");
         // echo "<script>location.href='../../?membership-message=submit';</script>";
@@ -311,12 +316,12 @@ function persistQuestionToDb($values, $tableName, $db) {
         // require "../emails/email_methods.php";
         $messageContent = buildQuestionMessageContent($values);
 
-        sendQuestionMessage($messageContent, "philippe@artbox.agency");
+        sendQuestionMessage($messageContent, "");
 
 
 
     } else {
-        echo "Error: " . $sql . "<br>" . $db->error;
+        echo "Error: " . $query . "<br>" . $db->error;
     }
 
 }

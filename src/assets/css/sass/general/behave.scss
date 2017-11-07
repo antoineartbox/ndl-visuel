@@ -3,4 +3,11 @@ body {
   input.not-valid {
     border:solid 2px #F2003C;
   }
+
+  .password-message-container {
+    display: inline-block;
+    .message {
+      color: #F2003C;
+    }
+  }
 }

@@ -47,7 +47,9 @@
         right: -50px;
         transition:all 0.3s;
         &.active-button-video {
-            z-index: 15;
+            cursor:pointer;
+            pointer-event:all;
+            z-index: 500;
             right:15px;
         }
     }

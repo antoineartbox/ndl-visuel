@@ -1111,7 +1111,12 @@
       right: 15px; }
 
 body input.not-valid {
-  border: solid 2px red; }
+  border: solid 2px #F2003C; }
+
+body .password-message-container {
+  display: inline-block; }
+  body .password-message-container .message {
+    color: #F2003C; }
 
 @font-face {
   font-family: intro;

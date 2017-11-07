@@ -88,7 +88,7 @@ function sendMemberShipMessage($messageContent) {
             echo "Mailer Error: " . $mail->ErrorInfo;
 
         } else {
-            echo "Message sent!";
+
         }
         echo "<script>location.href='../../';</script>";
 
@@ -175,7 +175,7 @@ function sendQuestionMessage($messageContent) {
         echo "Mailer Error: " . $mail->ErrorInfo;
 
     } else {
-        echo "Message sent!";
+
     }
 
 }

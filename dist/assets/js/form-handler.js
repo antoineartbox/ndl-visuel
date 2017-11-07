@@ -191,12 +191,12 @@ $(document).ready(function () {
 						killLoader();
 
 						// Initiate the form success
-						validatedFormSuccess($(".invole-form-container"), "<h4>Merci de vous être inscrit</h4>");
+						validatedFormSuccess($(".question-form-container"), "<h4>Merci de votre question</h4>");
 
 						//
 						setTimeout(function(){ otherMessage(); }, 300);
 						function otherMessage() {
-							validatedFormSuccess($(".invole-form-container"), "<h4>Un adminisatrateur vous conactera sous peu.</h4>");
+							validatedFormSuccess($(".question-form-container"), "<h4>Un administrateur vous contactera sous peu.</h4>");
 						}
 
 						$(document).click(function(){

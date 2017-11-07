@@ -1,5 +1,4 @@
 $( document ).ready(function () {
-	console.log("form validation file ready");
 
 	// Get all input field
 	var inputs = $(".form-user-input input");

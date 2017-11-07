@@ -30,9 +30,11 @@ $( document ).ready(function() {
 
     // Handle video
     $(".button.button-video").click(function() {
+        // Hide Menu
+        $("header").fadeOut(400);
         displayVideo(true);
-
         $(".closing-button.video").click(function() {
+			$("header").fadeIn(400);
             displayVideo(false);
         });
 
