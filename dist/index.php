@@ -9,6 +9,15 @@
 	<body>
 
 		<div id="site-container">
+			<div id="menu-linker">
+				<ul>
+					<li class="menu-infos-anchor"></li>
+					<li class="menu-about-anchor"></li>
+					<li class="menu-events-anchor"></li>
+					<li class="menu-involve-anchor"></li>
+					<li class="menu-question-anchor"></li>
+				</ul>
+			</div>
 			<!-- Top header infos -->
 			<?php require "site-parts/header.php"; ?>
 

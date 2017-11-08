@@ -59,15 +59,12 @@ function printCurrentBlocMenu(scroll) {
 			"background-color":"#004588",
 			"color":"white"
 		});
-    } else if(scroll > bloc) {
-
     }
-
 }
 
 function clearMenu() {
 
-    $("#menu-div li").css({
+    $("#menu-div li.menu-item").css({
         "background-color" : "transparent",
         'color' : "#004588"
     });
