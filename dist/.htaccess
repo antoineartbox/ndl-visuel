@@ -1,8 +1,7 @@
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+<Files ~ "^.*">
+  Deny from all
+</Files>
 
-<Files "utils/*">
-Order Allow,Deny
-Deny from all
+<Files ~ "^index\.php|css|js|.*\.png|.*\.jpg|.*\.gif">
+  Allow from all
 </Files>
