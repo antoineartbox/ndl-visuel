@@ -35,7 +35,6 @@ $(window).scroll(function() {
     // Verify Menu
 	printCurrentBlocMenu(currentScroll);
 
-
 });
 
 // Define functions
