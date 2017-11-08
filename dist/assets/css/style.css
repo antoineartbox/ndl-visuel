@@ -1107,8 +1107,17 @@
     right: -50px;
     transition: all 0.3s; }
     .closing-button.video.active-button-video {
-      z-index: 15;
+      cursor: pointer;
+      pointer-event: all;
+      z-index: 500;
       right: 15px; }
+
+body #menu-linker {
+  width: 100px;
+  height: 100px;
+  background-color: #1dc116;
+  position: fixed;
+  top: 100px; }
 
 body input.not-valid {
   border: solid 2px #F2003C; }
@@ -1168,6 +1177,8 @@ header {
           transition: all 0.5s;
           padding: 15px;
           cursor: pointer; }
+          header #menu-container nav ul li.active-menu-user {
+            display: none; }
           header #menu-container nav ul li:hover {
             background-color: #FFFFFF; }
           header #menu-container nav ul li.menu-membership {
@@ -1283,6 +1294,9 @@ header {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%); }
+    @media screen and (max-width: 1200px) {
+      #bloc-infos .content-container {
+        width: 75%; } }
     #bloc-infos .content-container .line-wrapper {
       padding: 100px;
       border: solid rgba(255, 255, 255, 0.5) 1px; }
@@ -1630,7 +1644,9 @@ header {
     right: -50px;
     transition: all 0.3s; }
     .closing-button.video.active-button-video {
-      z-index: 15;
+      cursor: pointer;
+      pointer-event: all;
+      z-index: 500;
       right: 15px; }
 
 @font-face {
@@ -1850,7 +1866,9 @@ header {
     right: -50px;
     transition: all 0.3s; }
     .closing-button.video.active-button-video {
-      z-index: 15;
+      cursor: pointer;
+      pointer-event: all;
+      z-index: 500;
       right: 15px; }
 
 @font-face {

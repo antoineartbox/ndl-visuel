@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f73647a4-68e1-4af1-8ca5-a96aa1addd3f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/test-db.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/.htaccess" afterPath="$PROJECT_DIR$/dist/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/js/menu.js" afterPath="$PROJECT_DIR$/dist/assets/js/menu.js" />
@@ -337,12 +338,12 @@
       <workItem from="1509716057224" duration="16367000" />
       <workItem from="1509981788925" duration="14594000" />
       <workItem from="1510065442146" duration="9303000" />
-      <workItem from="1510153124309" duration="5245000" />
+      <workItem from="1510153124309" duration="5343000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61157000" />
+    <option name="totallyTimeSpent" value="61255000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
