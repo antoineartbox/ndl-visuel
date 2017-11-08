@@ -1,4 +1,5 @@
 // Define variables
+var blocHome= [$("#bloc-home").offset().top, "blue", "bloc-home"];
 var blocInfos = [$("#bloc-infos").offset().top, "blue", "bloc-infos"];
 var blocEvents = [$("#bloc-events").offset().top, "transparent", "bloc-event"];
 var blocInvolve = [$("#bloc-involve").offset().top, "transparent", "bloc-involve"];
@@ -13,8 +14,9 @@ var menuInvolve = $(".menu-involve");
 var blocQuestion = $("#bloc-question");
 
 // Define Pin
+var homeAnchor = $(".menu-home-anchor");
 var infosAchor = $(".menu-infos-anchor");
-var eventAnchor = $(".menu-about-anchor");
+var eventAnchor = $(".menu-events-anchor");
 var involveAnchor = $(".menu-involve-anchor");
 var questionAnchor = $(".menu-question-anchor");
 
@@ -52,7 +54,13 @@ function printCurrentBlocMenu(scroll) {
 	clearMenu();
 	clearAnchor();
 
-    if(scroll > blocInfos[0] && scroll < (blocInfos[0] + 700)) {
+	if(scroll > blocHome[0] && scroll < (blocHome[0] + window.innerHeight)) {
+
+		homeAnchor.css({
+			"background-color":"white"
+		});
+
+	} else if(scroll > blocInfos[0] && scroll < (blocInfos[0] + window.innerHeight)) {
         menuAbout.css({
             "background-color":"#004588",
             "color" : "white"
@@ -61,7 +69,7 @@ function printCurrentBlocMenu(scroll) {
 			"background-color":"white"
 		});
 
-    } else if(scroll > blocEvents[0] && scroll < (blocEvents[0] + 700)) {
+    } else if(scroll > blocEvents[0] && scroll < (blocEvents[0] + window.innerHeight)) {
 		menuEvents.css({
             "background-color":"#004588",
             "color":"white"
@@ -69,7 +77,7 @@ function printCurrentBlocMenu(scroll) {
 		eventAnchor.css({
 			"background-color":"white"
 		});
-    } else if(scroll > blocInvolve[0] && scroll < (blocInvolve[0] + 700)) {
+    } else if(scroll > blocInvolve[0] && scroll < (blocInvolve[0] + (window.innerHeight))) {
 		menuInvolve.css({
 			"background-color":"#004588",
 			"color":"white"
@@ -77,7 +85,17 @@ function printCurrentBlocMenu(scroll) {
 		involveAnchor.css({
 			"background-color":"white"
 		});
-    } else if (scroll > blocQuestions[0] && scroll <(blocQuestions[0]) + 700) {
+	} else if (scroll > blocInvolveInfos[0] && scroll <(blocInvolveInfos[0]) + window.innerHeight) {
+		menuInvolve.css({
+			"background-color":"#004588",
+			"color":"white"
+		});
+
+		involveAnchor.css({
+			"background-color":"white"
+		});
+
+	} else if (scroll > blocQuestions[0] && scroll <(blocQuestions[0]) + window.innerHeight) {
 
 		questionAnchor.css({
 			"background-color":"white"
