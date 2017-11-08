@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f73647a4-68e1-4af1-8ca5-a96aa1addd3f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/css/style.css" afterPath="$PROJECT_DIR$/dist/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/js/form-handler.js" afterPath="$PROJECT_DIR$/dist/assets/js/form-handler.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/js/form-validation.js" afterPath="$PROJECT_DIR$/dist/assets/js/form-validation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/js/main-ux-ui.js" afterPath="$PROJECT_DIR$/dist/assets/js/main-ux-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/js/menu.js" afterPath="$PROJECT_DIR$/dist/assets/js/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/utils/emails/email_methods.php" afterPath="$PROJECT_DIR$/dist/utils/emails/email_methods.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/utils/emails/emails_log/emails_log.txt" afterPath="$PROJECT_DIR$/dist/utils/emails/emails_log/emails_log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/utils/forms/forms_methods.php" afterPath="$PROJECT_DIR$/dist/utils/forms/forms_methods.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/sass/general/behave.scss" afterPath="$PROJECT_DIR$/src/assets/css/sass/general/behave.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/sass/general/buttons.scss" afterPath="$PROJECT_DIR$/src/assets/css/sass/general/buttons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-home.scss" afterPath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/sass/site-parts/header.scss" afterPath="$PROJECT_DIR$/src/assets/css/sass/site-parts/header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss" afterPath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,12 +38,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/assets/js/menu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="65" column="1" lean-forward="true" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+            <state relative-caret-position="126">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bloc-infos.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/utils/db/setup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="methods.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dist/utils/db/methods.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1172">
+              <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+              <folding>
+                <marker date="1509984218000" expanded="true" signature="262:285" ph="SELECT * FRO... ndl_users" />
+                <marker date="1509984218000" expanded="true" signature="640:690" ph="SELECT * FRO... ndl_users" />
+                <marker date="1509984218000" expanded="true" signature="1112:1151" ph="UPDATE ndl_u... " />
+                <marker date="1509984218000" expanded="true" signature="1541:1663" ph="INSERT INTO ndl_sessions... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,51 +103,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main-ux-ui.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/assets/js/main-ux-ui.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="buttons.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/css/sass/general/buttons.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="bloc-video.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-video.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="194">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="39" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bloc-home.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-home.scss">
+      <file leaf-file-name="bloc-question.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-question.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form-handler.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/assets/js/form-handler.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="198" column="28" lean-forward="false" selection-start-line="198" selection-start-column="28" selection-end-line="198" selection-end-column="28" />
+            <state relative-caret-position="304">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="38" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -148,6 +142,8 @@
       <find>send</find>
       <find>message</find>
       <find>video</find>
+      <find>media</find>
+      <find>medias</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -168,7 +164,6 @@
         <option value="$PROJECT_DIR$/dist/utils/security/password.php" />
         <option value="$PROJECT_DIR$/dist/utils/users/users_methods.php" />
         <option value="$PROJECT_DIR$/dist/assets/js/message-setter.js" />
-        <option value="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss" />
         <option value="$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.phpmailer.php" />
         <option value="$PROJECT_DIR$/dist/utils/users/users_new.php" />
         <option value="$PROJECT_DIR$/dist/utils/emails/templates/emails_template.php" />
@@ -190,6 +185,8 @@
         <option value="$PROJECT_DIR$/dist/assets/js/main-ux-ui.js" />
         <option value="$PROJECT_DIR$/src/assets/css/sass/site-parts/header.scss" />
         <option value="$PROJECT_DIR$/dist/assets/js/menu.js" />
+        <option value="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss" />
+        <option value="$PROJECT_DIR$/dist/utils/db/setup.php" />
       </list>
     </option>
   </component>
@@ -279,7 +276,7 @@
               <item name="ndl-visuel" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="utils" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="forms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="db" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ndl-visuel" type="b2602c69:ProjectViewProjectNode" />
@@ -388,12 +385,12 @@
       <workItem from="1509635500763" duration="15184000" />
       <workItem from="1509716057224" duration="16367000" />
       <workItem from="1509981788925" duration="14594000" />
-      <workItem from="1510065442146" duration="7979000" />
+      <workItem from="1510065442146" duration="9303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54588000" />
+    <option name="totallyTimeSpent" value="55912000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -463,21 +460,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2574">
-          <caret line="143" column="8" lean-forward="true" selection-start-line="143" selection-start-column="8" selection-end-line="143" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/general/buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/css/sass/general/behaviour.sass" />
     <entry file="file://$PROJECT_DIR$/dist/utils/forms/forms_methods.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -557,13 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/utils/db/methods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/site-parts/bloc-home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -583,13 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="143" column="8" lean-forward="false" selection-start-line="143" selection-start-column="8" selection-end-line="143" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -653,6 +621,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -782,14 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-video.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/css/sass/general/buttons.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -852,9 +813,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/assets/js/menu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="65" column="1" lean-forward="true" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-video.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="39" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-question.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="38" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/utils/db/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/utils/db/methods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1172">
+          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <marker date="1509984218000" expanded="true" signature="262:285" ph="SELECT * FRO... ndl_users" />
+            <marker date="1509984218000" expanded="true" signature="640:690" ph="SELECT * FRO... ndl_users" />
+            <marker date="1509984218000" expanded="true" signature="1112:1151" ph="UPDATE ndl_u... " />
+            <marker date="1509984218000" expanded="true" signature="1541:1663" ph="INSERT INTO ndl_sessions... " />
+          </folding>
         </state>
       </provider>
     </entry>

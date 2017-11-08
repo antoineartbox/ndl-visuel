@@ -11,6 +11,12 @@
     // Center content
     .content-container {
         width:60%;
+
+        // Mobile
+        @media screen and (max-width: 1200px) {
+            width:75%;
+        }
+
         .line-wrapper {
             padding:100px;
             border: solid rgba(255,255,255,0.5) 1px;
