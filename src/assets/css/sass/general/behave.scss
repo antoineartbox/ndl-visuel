@@ -1,13 +1,14 @@
 body {
-
   #menu-linker {
+
     width:15px;
     height:100px;
     position:fixed;
-    background-color: #1dc116;
-    top:100px;
+    transform:translateY(-100%);
+    top:50%;
     z-index:100;
-    right:0px;
+    right:35px;
+
     ul {
       margin:0px;
       display: inline;
@@ -15,8 +16,28 @@ body {
       li {
         border-radius:100%;
         border:solid $mainBlue 2px;
-        height: 12px;
-        width:12px;
+        background-color:$mainBlue;
+        height: 5px;
+        width:5px;
+        margin-bottom:20px;
+
+        &.all-white {
+          border:solid 2px white;
+          background-color:white;
+        }
+
+        &.all-blue {
+          border:solid 2px $mainBlue;
+          background-color:$mainBlue;
+        }
+        &.single-white {
+          background-color: white;
+        }
+
+        &.single-blue{
+          background-color:$mainBlue;
+
+        }
       }
     }
   }

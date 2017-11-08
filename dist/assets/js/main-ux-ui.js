@@ -4,17 +4,22 @@ $( document ).ready(function() {
 // Code to be executed when the whole document object model has loaded
     // Handle closing toggling membership menu
     $(".become-member-container .button").click(function() {
+		enableMembershipForm();
 
-        $("#bloc-membership-overlay").addClass("active-membership");
-        blockScrolling('body')
-
-        $(".membership-form-container .closing-button").click(function() {
-
-            $(this).parent().parent().removeClass("active-membership");
-            enableScrolling('body');
-        });
     })
+    $(".menu-membership").click(function() {
+        enableMembershipForm();
+    });
+    function enableMembershipForm() {
+		$("#bloc-membership-overlay").addClass("active-membership");
+		blockScrolling('body')
 
+		$(".membership-form-container .closing-button").click(function() {
+
+			$(this).parent().parent().removeClass("active-membership");
+			enableScrolling('body');
+		});
+    }
     // Handle closing of involve
     $(".become-involve").click(function() {
         $("#bloc-involve-overlay").addClass("active-involving");

@@ -1074,8 +1074,6 @@
   display: inline-block;
   cursor: pointer;
   transition: all 0.5s; }
-  .button:hover {
-    padding: 40px 95px 40px 95px; }
 
 .button.main-page-button {
   background-color: #7fc214;
@@ -1086,8 +1084,6 @@
   font-style: normal;
   font-size: 25px;
   text-transform: uppercase; }
-  .button.main-page-button:hover {
-    padding: 20px 30px 20px 30px; }
 
 .closing-button {
   position: absolute;
@@ -1116,10 +1112,10 @@ body #menu-linker {
   width: 15px;
   height: 100px;
   position: fixed;
-  background-color: #1dc116;
-  top: 100px;
+  transform: translateY(-100%);
+  top: 50%;
   z-index: 100;
-  right: 0px; }
+  right: 35px; }
   body #menu-linker ul {
     margin: 0px;
     display: inline;
@@ -1127,8 +1123,20 @@ body #menu-linker {
     body #menu-linker ul li {
       border-radius: 100%;
       border: solid #004588 2px;
-      height: 12px;
-      width: 12px; }
+      background-color: #004588;
+      height: 5px;
+      width: 5px;
+      margin-bottom: 20px; }
+      body #menu-linker ul li.all-white {
+        border: solid 2px white;
+        background-color: white; }
+      body #menu-linker ul li.all-blue {
+        border: solid 2px #004588;
+        background-color: #004588; }
+      body #menu-linker ul li.single-white {
+        background-color: white; }
+      body #menu-linker ul li.single-blue {
+        background-color: #004588; }
 
 body input.not-valid {
   border: solid 2px #F2003C; }
@@ -1169,7 +1177,8 @@ header {
   header .logo-container {
     display: inline-block;
     position: absolute;
-    height: 150px;
+    padding-left: 25px;
+    padding-top: 25px;
     /* Video starts at 10*/
     z-index: 11; }
     header .logo-container img {
@@ -1467,7 +1476,8 @@ header {
   height: 100%;
   position: absolute;
   top: 0px;
-  background-color: rgba(255, 255, 255, 0.7); }
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 499; }
   #bloc-membership-overlay.active-membership .membership-form-container {
     z-index: 500;
     padding-top: 20px;
@@ -1622,8 +1632,6 @@ header {
   display: inline-block;
   cursor: pointer;
   transition: all 0.5s; }
-  .button:hover {
-    padding: 40px 95px 40px 95px; }
 
 .button.main-page-button {
   background-color: #7fc214;
@@ -1634,8 +1642,6 @@ header {
   font-style: normal;
   font-size: 25px;
   text-transform: uppercase; }
-  .button.main-page-button:hover {
-    padding: 20px 30px 20px 30px; }
 
 .closing-button {
   position: absolute;
@@ -1844,8 +1850,6 @@ header {
   display: inline-block;
   cursor: pointer;
   transition: all 0.5s; }
-  .button:hover {
-    padding: 40px 95px 40px 95px; }
 
 .button.main-page-button {
   background-color: #7fc214;
@@ -1856,8 +1860,6 @@ header {
   font-style: normal;
   font-size: 25px;
   text-transform: uppercase; }
-  .button.main-page-button:hover {
-    padding: 20px 30px 20px 30px; }
 
 .closing-button {
   position: absolute;
