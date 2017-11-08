@@ -1113,11 +1113,22 @@
       right: 15px; }
 
 body #menu-linker {
-  width: 100px;
+  width: 15px;
   height: 100px;
-  background-color: #1dc116;
   position: fixed;
-  top: 100px; }
+  background-color: #1dc116;
+  top: 100px;
+  z-index: 100;
+  right: 0px; }
+  body #menu-linker ul {
+    margin: 0px;
+    display: inline;
+    list-style: none; }
+    body #menu-linker ul li {
+      border-radius: 100%;
+      border: solid #004588 2px;
+      height: 12px;
+      width: 12px; }
 
 body input.not-valid {
   border: solid 2px #F2003C; }

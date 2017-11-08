@@ -1,11 +1,24 @@
 body {
 
   #menu-linker {
-    width:100px;
+    width:15px;
     height:100px;
-    background-color: #1dc116;
     position:fixed;
+    background-color: #1dc116;
     top:100px;
+    z-index:100;
+    right:0px;
+    ul {
+      margin:0px;
+      display: inline;
+      list-style:none;
+      li {
+        border-radius:100%;
+        border:solid $mainBlue 2px;
+        height: 12px;
+        width:12px;
+      }
+    }
   }
 
   input.not-valid {

@@ -11,6 +11,13 @@ var menuAbout = $(".menu-about");
 var menuEvents = $(".menu-events");
 var menuInvolve = $(".menu-involve");
 var blocQuestion = $("#bloc-question");
+
+// Define Pin
+var infosAchor = $(".menu-infos-anchor");
+var eventAnchor = $(".menu-about-anchor");
+var involveAnchor = $(".menu-involve-anchor");
+var questionAnchor = $(".menu-question-anchor");
+
 // Define user behaviour
 $(window).scroll(function() {
 
@@ -43,23 +50,39 @@ function displayHeaderBackground(blocInfos) {
 // Get all menus items
 function printCurrentBlocMenu(scroll) {
 	clearMenu();
+	clearAnchor();
 
     if(scroll > blocInfos[0] && scroll < (blocInfos[0] + 700)) {
         menuAbout.css({
             "background-color":"#004588",
             "color" : "white"
         });
+		infosAchor.css({
+			"background-color":"white"
+		});
+
     } else if(scroll > blocEvents[0] && scroll < (blocEvents[0] + 700)) {
 		menuEvents.css({
             "background-color":"#004588",
             "color":"white"
         });
+		eventAnchor.css({
+			"background-color":"white"
+		});
     } else if(scroll > blocInvolve[0] && scroll < (blocInvolve[0] + 700)) {
 		menuInvolve.css({
 			"background-color":"#004588",
 			"color":"white"
 		});
-    }
+		involveAnchor.css({
+			"background-color":"white"
+		});
+    } else if (scroll > blocQuestions[0] && scroll <(blocQuestions[0]) + 700) {
+
+		questionAnchor.css({
+			"background-color":"white"
+		});
+	}
 }
 
 function clearMenu() {
@@ -70,4 +93,10 @@ function clearMenu() {
     });
 }
 
+function clearAnchor() {
+	$("#menu-linker ul li").css({
+		"background-color" : "transparent",
+	});
+
+}
 
