@@ -1,4 +1,4 @@
-- menu toujours blanc
+- menu toujours blanc[x]
 - connectez-vous (pas déjà membre)
 - logo alumni logo page refresh
 - menu anchors click

@@ -1154,7 +1154,7 @@ header .menu-hambuger {
   top: 15px;
   right: 50px;
   z-index: 2500; }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 900px) {
     header .menu-hambuger {
       display: block; } }
   header .menu-hambuger.activated-menu-container {
@@ -1180,7 +1180,7 @@ header .menu-hambuger {
         margin-top: -4px;
         transform: rotate(-45deg); }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   header #menu-container {
     position: absolute;
     right: -250%;
@@ -1233,7 +1233,8 @@ header {
   position: fixed;
   top: 0px;
   z-index: 200;
-  width: 100%; }
+  width: 100%;
+  background-color: #FFFFFF; }
   header .logo-container {
     display: inline-block;
     position: absolute;

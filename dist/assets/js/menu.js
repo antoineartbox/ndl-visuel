@@ -42,9 +42,9 @@ $(window).scroll(function() {
 function displayHeaderBackground(blocInfos) {
 
     if (blocInfos[1] == "blue") {
-        $('header').css({"background-color":"white"});
+
     } else {
-        $('header').css({"background-color":"transparent"});
+
     }
 }
 
