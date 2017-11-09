@@ -1159,7 +1159,7 @@ header .menu-hambuger {
     header .menu-hambuger {
       display: block; } }
   header .menu-hambuger.activated-menu-container {
-    margin-top: 15px; }
+    margin-top: 25px; }
   header .menu-hambuger span {
     color: #004588;
     display: block;
@@ -1176,7 +1176,7 @@ header .menu-hambuger {
       header .menu-hambuger span.active-menu.line-2 {
         transition: all 0.2s;
         width: 0px;
-        display: none; }
+        height: 0px; }
       header .menu-hambuger span.active-menu.line-3 {
         margin-top: -4px;
         transform: rotate(-45deg); }
