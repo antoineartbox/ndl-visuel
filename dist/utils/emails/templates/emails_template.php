@@ -77,7 +77,7 @@ function buildSubscriptionMessage($content) {
     $message .= "<h1 style=''>Bonjour</h1>,";
     $message .= "Merci de vous êtres inscrit au groupe ALUMNI";
     $message .= "Pour valider votre inscription, veuillez cliquer";
-    $message .= "<a href='". ROOT.  "/validate-user.php?token=" . $content["token"] ."'>ici.</a>";
+    $message .= "<a href='". ROOT .  "/validate-user.php?token=" . $content["token"] ."'>ici.</a>";
     $message .= "</div>";
     $message .= includeStyling();
 
