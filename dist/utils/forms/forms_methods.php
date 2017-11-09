@@ -1,7 +1,5 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+
 require "../db/connect.php";
 require "component/CONST.php";
 require "../users/users_new.php";
