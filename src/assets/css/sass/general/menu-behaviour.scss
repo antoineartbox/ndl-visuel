@@ -13,13 +13,14 @@ header {
     top:15px;
     right:50px;
     z-index:2500;
+    margin-top: 15px;
     span {
-      color:white;
+      color: $mainBlue;
       display: block;
       height:5px;
       width:45px;
       margin-bottom:10px;
-      background-color: white;
+      background-color: $mainBlue;
       transition:all 0.5s;
 
       &.active-menu {
