@@ -1,6 +1,6 @@
 - menu toujours blanc[x]
-- connectez-vous (pas déjà membre)
-- logo alumni logo page refresh
+- connectez-vous (pas déjà membre) [x]
+- logo alumni logo page refresh [x]
 - menu anchors click
 - devenez membre pop-up background bleu + bouton envoyé vert 
 - bouton envoyé vert text et grosseur proportionnel

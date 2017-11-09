@@ -1232,6 +1232,7 @@ body {
 header {
   position: fixed;
   top: 0px;
+  height: 100px;
   z-index: 200;
   width: 100%;
   background-color: #FFFFFF; }
@@ -1247,6 +1248,7 @@ header {
   header #menu-container {
     text-align: right;
     padding-right: 75px;
+    padding-top: 10px;
     z-index: 1000; }
     header #menu-container nav {
       color: #004588;

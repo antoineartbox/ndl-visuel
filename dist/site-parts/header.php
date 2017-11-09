@@ -1,7 +1,7 @@
 
 <header>
     <div class="logo-container">
-        <img src="assets/images/ndl-logo-bleu.png" alt="CNDL LOGO">
+		<a href="http://alumni.ndl.qc.ca/"><img src="assets/images/ndl-logo-bleu.png" alt="CNDL LOGO"></a>
     </div>
 	<div class="menu-hambuger">
 		<span class="line-1"></span>
@@ -22,7 +22,6 @@
 
                 <?php if(isset($_SESSION["is_logged_in"]) == FALSE) { ?>
                 <div class="connection">
-                    <h3>Déjà membre?</h3>
                     <p>Connecter-vous</p>
                 </div>
                 <?php }  ?>
