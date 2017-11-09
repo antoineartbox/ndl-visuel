@@ -1039,6 +1039,7 @@
 .slideOutUp {
   animation-name: slideOutUp; }
 
+/*This file mixins for helping centering, disposing and placing elements*/
 @font-face {
   font-family: intro;
   src: url("../fonts/intro.otf") format("opentype"); }
@@ -1146,6 +1147,65 @@ body .password-message-container {
   body .password-message-container .message {
     color: #F2003C; }
 
+/*This file mixins for helping centering, disposing and placing elements*/
+header .menu-hambuger {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  z-index: 2500; }
+  @media screen and (max-width: 750px) {
+    header .menu-hambuger {
+      display: block; } }
+  header .menu-hambuger.activated-menu-container {
+    margin-top: 15px; }
+  header .menu-hambuger span {
+    color: white;
+    display: block;
+    height: 5px;
+    width: 45px;
+    margin-bottom: 10px;
+    background-color: white;
+    transition: all 0.5s; }
+    header .menu-hambuger span.active-menu {
+      background-color: black;
+      margin-bottom: 0px; }
+      header .menu-hambuger span.active-menu.line-1 {
+        transform: rotate(45deg); }
+      header .menu-hambuger span.active-menu.line-2 {
+        transition: all 0.2s;
+        width: 0px;
+        display: none; }
+      header .menu-hambuger span.active-menu.line-3 {
+        margin-top: -4px;
+        transform: rotate(-45deg); }
+
+@media screen and (max-width: 750px) {
+  header #menu-container {
+    position: absolute;
+    right: -250%;
+    transition: all 0.5s; }
+    header #menu-container.display-menu-mobile {
+      padding-right: 0px;
+      right: 0%;
+      width: 100vw;
+      height: 100vh;
+      background-color: #FFFFFF; }
+      header #menu-container.display-menu-mobile nav {
+        padding-left: 0px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+        width: 100%; }
+        header #menu-container.display-menu-mobile nav ul {
+          padding-left: 0px; }
+          header #menu-container.display-menu-mobile nav ul li {
+            text-align: center;
+            display: block;
+            border-top: solid 1px #004588; } }
+
 @font-face {
   font-family: intro;
   src: url("../fonts/intro.otf") format("opentype"); }
@@ -1178,7 +1238,7 @@ header {
     display: inline-block;
     position: absolute;
     padding-left: 25px;
-    padding-top: 25px;
+    padding-top: 10px;
     /* Video starts at 10*/
     z-index: 11; }
     header .logo-container img {
@@ -1314,18 +1374,52 @@ header {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%); }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1300px) {
       #bloc-infos .content-container {
-        width: 75%; } }
+        width: 85%; } }
+    @media screen and (max-height: 900px) {
+      #bloc-infos .content-container {
+        width: 85%; } }
+    @media screen and (max-width: 650px) {
+      #bloc-infos .content-container {
+        width: 100%; } }
     #bloc-infos .content-container .line-wrapper {
       padding: 100px;
       border: solid rgba(255, 255, 255, 0.5) 1px; }
+      @media screen and (max-width: 1700px) {
+        #bloc-infos .content-container .line-wrapper {
+          padding: 90px; } }
+      @media screen and (max-width: 1650px) {
+        #bloc-infos .content-container .line-wrapper {
+          padding: 80px; } }
+      @media screen and (max-width: 1600px) {
+        #bloc-infos .content-container .line-wrapper {
+          padding: 75px; } }
+      @media screen and (max-width: 1550px) {
+        #bloc-infos .content-container .line-wrapper {
+          padding: 70px; } }
+      @media screen and (max-width: 1500px) {
+        #bloc-infos .content-container .line-wrapper {
+          padding: 60px; } }
+      @media screen and (max-width: 1300px) {
+        #bloc-infos .content-container .line-wrapper {
+          padding: 50px; } }
+      @media screen and (max-width: 920px) {
+        #bloc-infos .content-container .line-wrapper {
+          padding: 25px; } }
+      @media screen and (max-width: 850px) {
+        #bloc-infos .content-container .line-wrapper {
+          padding: 10px; } }
     #bloc-infos .content-container .dual-block-container {
       position: relative; }
       #bloc-infos .content-container .dual-block-container .group-right,
       #bloc-infos .content-container .dual-block-container .group-left {
         display: inline-block;
         width: 48%; }
+        @media screen and (max-width: 800px) {
+          #bloc-infos .content-container .dual-block-container .group-right,
+          #bloc-infos .content-container .dual-block-container .group-left {
+            width: 90%; } }
       #bloc-infos .content-container .dual-block-container .group-left {
         font-style: normal;
         font-size: 25px;
@@ -1336,15 +1430,33 @@ header {
         @media screen and (max-width: 600px) {
           #bloc-infos .content-container .dual-block-container .group-left {
             font-size: 17px; } }
+        @media screen and (max-width: 800px) {
+          #bloc-infos .content-container .dual-block-container .group-left {
+            text-align: left; } }
         #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container {
           width: 100%;
           margin-top: 0px; }
           #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container p {
             line-height: 30px; }
+            @media screen and (max-height: 800px) {
+              #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container p {
+                font-size: 20px; } }
+            @media screen and (max-width: 900px) {
+              #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container p {
+                font-size: 20px; } }
+            @media screen and (max-width: 750px) {
+              #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container p {
+                font-size: 18px;
+                line-height: 20px; } }
       #bloc-infos .content-container .dual-block-container .group-right {
         position: absolute;
         right: 0px;
         text-align: left; }
+        @media screen and (max-width: 800px) {
+          #bloc-infos .content-container .dual-block-container .group-right {
+            position: relative;
+            width: 100%;
+            text-align: center; } }
         #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container {
           text-align: left;
           width: 100%;
@@ -1353,6 +1465,15 @@ header {
           margin-left: 0px; }
           #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container li {
             padding-top: 5px; }
+          @media screen and (max-width: 900px) {
+            #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container {
+              font-size: 20px; } }
+          @media screen and (max-width: 750px) {
+            #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container {
+              font-size: 18px; } }
+          @media screen and (max-width: 750px) {
+            #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container {
+              text-align: center; } }
         #bloc-infos .content-container .dual-block-container .group-right h3 {
           margin-top: 0px; }
   #bloc-infos p {

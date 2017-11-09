@@ -13,13 +13,44 @@
         width:60%;
 
         // Mobile
-        @media screen and (max-width: 1200px) {
-            width:75%;
+        @media screen and (max-width: 1300px) {
+            width:85%;
+        }
+        @media screen and (max-height: 900px) {
+            width:85%;
+        }
+        @media screen and (max-width: 650px) {
+            width:100%;
         }
 
         .line-wrapper {
             padding:100px;
             border: solid rgba(255,255,255,0.5) 1px;
+            @media screen and (max-width: 1700px) {
+                padding:90px;
+            }
+            @media screen and (max-width: 1650px) {
+                padding:80px;
+            }
+            @media screen and (max-width: 1600px) {
+                padding:75px;
+            }
+            @media screen and (max-width: 1550px) {
+                padding:70px;
+            }
+            @media screen and (max-width: 1500px) {
+                padding:60px;
+            }
+            @media screen and (max-width: 1300px) {
+                padding:50px;
+            }
+
+            @media screen and (max-width: 920px) {
+                padding:25px;
+            }
+            @media screen and (max-width: 850px) {
+                padding:10px;
+            }
         }
         @include center-content;
         .dual-block-container {
@@ -29,6 +60,10 @@
 
                 display: inline-block;
                 width: 48%;
+                @media screen and (max-width: 800px) {
+                    width:90%;
+
+                }
             }
             .group-left {
                 @include font-regular-bloc;
@@ -36,12 +71,28 @@
 
                 text-align: right;
                 left: 0px;
+                @media screen and (max-width: 800px) {
+                    text-align:left;
+
+                }
                 .bloc-infos-container {
 
                     width:100%;
                     margin-top:0px;
                     p {
+
                         line-height: 30px;
+                        @media screen and (max-height: 800px) {
+                            font-size:20px;
+
+                        }
+                        @media screen and (max-width: 900px) {
+                            font-size:20px;
+                        }
+                        @media screen and (max-width: 750px) {
+                            font-size:18px;
+                            line-height: 20px;
+                        }
                     }
                 }
 
@@ -51,14 +102,33 @@
                 right: 0px;
                 text-align: left;
 
+                @media screen and (max-width: 800px) {
+                    position: relative;
+                    width:100%;
+                    text-align: center;
+
+                }
+
                 .bloc-infos-bullet-container {
                     text-align:left;
                     width: 100%;
                     margin-bottom: -50px;
                     margin-top: 0px;
                     margin-left: 0px;
+
                     li{
                         padding-top: 5px;
+                    }
+                    @media screen and (max-width: 900px) {
+                        font-size:20px;
+                    }
+                    @media screen and (max-width: 750px) {
+                        font-size:18px;
+                    }
+                    .bullet-right-container {
+                        @media screen and (max-width: 750px) {
+                            text-align:center;
+                        }
                     }
                 }
                 h3 {
@@ -68,6 +138,8 @@
             }
 
         }
+
+
     }
     // Remove unwanted margin
     p {
@@ -113,6 +185,7 @@
         // Responsive
         @media screen and (max-width: 675px) {
             width: 95%;
+
         }
 
         // Responsive

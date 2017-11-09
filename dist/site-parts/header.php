@@ -1,13 +1,19 @@
 
 <header>
     <div class="logo-container">
-        <img src="assets/images/cndl-logo.png" alt="CNDL LOGO">
+        <img src="assets/images/ndl-logo-bleu.png" alt="CNDL LOGO">
     </div>
+	<div class="menu-hambuger">
+		<span class="line-1"></span>
+		<span class="line-2"></span>
+		<span class="line-3"></span>
+	</div>
     <div id="menu-container">
 
         <nav>
 
             <ul id="menu-div">
+
                 <li class="menu-infos menu-item">Intro</li>
                 <li class="menu-about menu-item">À propos</li>
                 <li class="menu-events menu-item">Événements</li>

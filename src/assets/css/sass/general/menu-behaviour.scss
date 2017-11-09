@@ -1,0 +1,74 @@
+@import "../core/layout-rules.scss";
+header {
+  .menu-hambuger {
+
+    @media screen and (max-width: 750px) {
+      display: block;
+    }
+    &.activated-menu-container{
+      margin-top: 15px;
+    }
+    display: none;
+    position: absolute;
+    top:15px;
+    right:50px;
+    z-index:2500;
+    span {
+      color:white;
+      display: block;
+      height:5px;
+      width:45px;
+      margin-bottom:10px;
+      background-color: white;
+      transition:all 0.5s;
+
+      &.active-menu {
+        background-color: black;
+        margin-bottom:0px;
+        &.line-1 {
+          transform: rotate(45deg);
+        }
+        &.line-2 {
+          transition: all 0.2s;
+          width:0px;
+          display: none;
+        }
+        &.line-3 {
+          margin-top: -4px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  #menu-container {
+
+    @media screen and (max-width: 750px) {
+      position: absolute;
+      right:-250%;
+      transition:all 0.5s;
+      &.display-menu-mobile  {
+        padding-right:0px;
+        right:0%;
+        width:100vw;
+        height:100vh;
+        background-color:$mainWhite;
+        nav {
+          padding-left:0px;
+          @include centered;
+          width:100%;
+          ul {
+            padding-left:0px;
+            li {
+              text-align:center;
+              display: block;
+              border-top:solid 1px $mainBlue;
+
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

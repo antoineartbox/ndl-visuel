@@ -59,6 +59,7 @@
 		<script src="assets/js/events-blocker.js"></script>
 		<script src="assets/js/form-handler.js"></script>
 		<script src="assets/js/form-validation.js"></script>
+		<script src="assets/js/menu-behaviour.js"></script>
 		<!-- Check for error -->
 		<?php if($_GET["errors"]|| $_GET["success"]) {?>
 

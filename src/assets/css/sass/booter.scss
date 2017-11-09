@@ -1,12 +1,14 @@
 // including core scss
 @import 'core/layout-rules.scss';
 @import 'core/animate.scss';
+@import 'core/typo-responsive.scss';
 
 // Including general scss
 @import 'general/colors.scss';
 @import 'general/font.scss';
 @import 'general/buttons.scss';
 @import 'general/behave.scss';
+@import 'general/menu-behaviour.scss';
 
 // Including site parts
 @import 'site-parts/general.scss';
