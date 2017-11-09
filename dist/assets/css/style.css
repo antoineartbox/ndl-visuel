@@ -1154,7 +1154,7 @@ header .menu-hambuger {
   top: 15px;
   right: 50px;
   z-index: 2500; }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 900px) {
     header .menu-hambuger {
       display: block; } }
   header .menu-hambuger.activated-menu-container {
@@ -1180,7 +1180,7 @@ header .menu-hambuger {
         margin-top: -4px;
         transform: rotate(-45deg); }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   header #menu-container {
     position: absolute;
     right: -250%;
@@ -1380,6 +1380,9 @@ header {
     @media screen and (max-height: 900px) {
       #bloc-infos .content-container {
         width: 85%; } }
+    @media screen and (max-height: 850px) {
+      #bloc-infos .content-container {
+        width: 100%; } }
     @media screen and (max-width: 650px) {
       #bloc-infos .content-container {
         width: 100%; } }
@@ -2036,6 +2039,15 @@ header {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%); }
+    @media screen and (max-height: 900px) {
+      #bloc-question .content-container {
+        width: 85%; } }
+    @media screen and (max-height: 850px) {
+      #bloc-question .content-container {
+        width: 100%; } }
+    @media screen and (max-width: 650px) {
+      #bloc-question .content-container {
+        width: 100%; } }
     @media screen and (max-width: 1400px) {
       #bloc-question .content-container {
         width: 75%; } }

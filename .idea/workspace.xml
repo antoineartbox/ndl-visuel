@@ -4,9 +4,7 @@
     <list default="true" id="f73647a4-68e1-4af1-8ca5-a96aa1addd3f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/css/style.css" afterPath="$PROJECT_DIR$/dist/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.php" afterPath="$PROJECT_DIR$/dist/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/sass/general/menu-behaviour.scss" afterPath="$PROJECT_DIR$/src/assets/css/sass/general/menu-behaviour.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-home.scss" afterPath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-home.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/utils/db/setup.php" afterPath="$PROJECT_DIR$/dist/utils/db/setup.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss" afterPath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-question.scss" afterPath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-question.scss" />
     </list>
@@ -32,18 +30,18 @@
       <file leaf-file-name="bloc-infos.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="324">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="27" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu-behaviour.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu-behaviour.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/css/sass/general/menu-behaviour.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+            <state relative-caret-position="774">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -62,8 +60,18 @@
       <file leaf-file-name="bloc-question.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-question.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="710">
-              <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+            <state relative-caret-position="450">
+              <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dist/utils/db/setup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -130,7 +138,6 @@
         <option value="$PROJECT_DIR$/dist/utils/forms/forms_methods.php" />
         <option value="$PROJECT_DIR$/dist/utils/emails/email_methods.php" />
         <option value="$PROJECT_DIR$/dist/assets/js/form-handler.js" />
-        <option value="$PROJECT_DIR$/dist/utils/db/setup.php" />
         <option value="$PROJECT_DIR$/dist/utils/.htaccess" />
         <option value="$PROJECT_DIR$/dist/test-db.php" />
         <option value="$PROJECT_DIR$/dist/.htaccess" />
@@ -145,11 +152,12 @@
         <option value="$PROJECT_DIR$/src/assets/css/sass/booter.scss" />
         <option value="$PROJECT_DIR$/dist/site-parts/header.php" />
         <option value="$PROJECT_DIR$/dist/assets/js/menu-behaviour.js" />
-        <option value="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-question.scss" />
         <option value="$PROJECT_DIR$/dist/index.php" />
-        <option value="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss" />
         <option value="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-home.scss" />
         <option value="$PROJECT_DIR$/src/assets/css/sass/general/menu-behaviour.scss" />
+        <option value="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss" />
+        <option value="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-question.scss" />
+        <option value="$PROJECT_DIR$/dist/utils/db/setup.php" />
       </list>
     </option>
   </component>
@@ -221,20 +229,14 @@
               <item name="ndl-visuel" type="b2602c69:ProjectViewProjectNode" />
               <item name="ndl-visuel" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="utils" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ndl-visuel" type="b2602c69:ProjectViewProjectNode" />
               <item name="ndl-visuel" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ndl-visuel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ndl-visuel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="site-parts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="utils" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="db" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ndl-visuel" type="b2602c69:ProjectViewProjectNode" />
@@ -376,12 +378,12 @@
       <workItem from="1509981788925" duration="14594000" />
       <workItem from="1510065442146" duration="9303000" />
       <workItem from="1510153124309" duration="15830000" />
-      <workItem from="1510237583679" duration="7007000" />
+      <workItem from="1510237583679" duration="7756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78749000" />
+    <option name="totallyTimeSpent" value="79498000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -610,6 +612,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3132">
           <caret line="174" column="49" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -621,17 +624,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/utils/db/setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/utils/db/methods.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <marker date="1509984218000" expanded="true" signature="262:285" ph="SELECT * FRO... ndl_users" />
+            <marker date="1509984218000" expanded="true" signature="640:690" ph="SELECT * FRO... ndl_users" />
+            <marker date="1509984218000" expanded="true" signature="1112:1151" ph="UPDATE ndl_u... " />
+            <marker date="1509984218000" expanded="true" signature="1541:1663" ph="INSERT INTO ndl_sessions... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -793,14 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-question.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -817,18 +811,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss">
+    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/general/menu-behaviour.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="774">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/general/menu-behaviour.scss">
+    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        <state relative-caret-position="324">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-question.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/utils/db/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <folding />
         </state>
       </provider>

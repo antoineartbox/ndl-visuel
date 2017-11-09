@@ -7,6 +7,6 @@
 
 define('HOST', '127.0.0.1');
 define('PORT', '');
-define('USERNAME', 'root');
-define('PASSWORD', 'ipod');
-define('DB', 'ndl');
+define('USERNAME', 'ndlqc_alumni');
+define('PASSWORD', 'uQQ{^tIf#Q3$');
+define('DB', 'ndlqc_www_alumni');
