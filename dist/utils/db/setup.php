@@ -1,16 +1,8 @@
 <?php
 
-$servername = "127.0.0.1";
-$username = "ndlqc_alumni";
-$password = "uQQ{^tIf#Q3$";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, "ndlqc_www_alumni");
-// Check connection
-if ($conn->connect_error) {
-	die("Connection failed: " . $conn->connect_error);
-}
-
-// Create database
-
-$conn->close();
+// Define DB Acess
+//$conn = new mysqli(HOST, USERNAME, PASSWORD, DB);
+DEFINE("HOST", "149.202.68.162");
+DEFINE("USERNAME", "ndlqc_alumni");
+DEFINE("PASSWORD", "uQQ{^tIf#Q3$");
+DEFINE("DB", "ndlqc_www_alumni");
