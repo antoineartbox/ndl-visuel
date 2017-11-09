@@ -1606,7 +1606,7 @@ header {
     z-index: 500;
     padding-top: 20px;
     position: relative;
-    background-color: #7fc214;
+    background-color: #004588;
     padding: 30px;
     color: white;
     position: fixed;
@@ -1633,7 +1633,7 @@ header {
     #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice p {
       display: inline-block; }
     #bloc-membership-overlay.active-membership .membership-form-container .button {
-      background-color: #004588; }
+      background-color: #7fc214; }
 
 /*This file mixins for helping centering, disposing and placing elements*/
 @font-face {

@@ -1,8 +1,7 @@
 - menu toujours blanc[x]
 - connectez-vous (pas déjà membre) [x]
 - logo alumni logo page refresh [x]
-- menu anchors click
-- devenez membre pop-up background bleu + bouton envoyé vert 
+- devenez membre pop-up background bleu + bouton envoyé vert
 - bouton envoyé vert text et grosseur proportionnel
 - garder fond blanc menu mobile
 - hamburger bleu centré
@@ -11,7 +10,7 @@
 - connectez x pour fermer
 
 
-
+- menu anchors click
 BLOC 1
 - button lateral contour blanc
 - init intro button lateral blanc
