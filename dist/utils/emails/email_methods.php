@@ -1,5 +1,5 @@
 <?php
-require '../../../vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+require '../../vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 require "emails_settings/general_settings.php";
 require "templates/emails_template.php";
 require "CONST.php";
