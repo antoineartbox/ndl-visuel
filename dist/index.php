@@ -46,8 +46,8 @@
 			<!-- Bloc 6 -->
 			<?php require "site-parts/bloc-question.php";?>
 
-			<!-- Bottom Fotter infos -->
-			<?php require "site-parts/footer.php";?>
+
+
 
 			<!-- Require login -->
 			<?php require "site-parts/bloc-login.php";?>

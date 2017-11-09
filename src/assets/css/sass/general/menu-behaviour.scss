@@ -2,7 +2,7 @@
 header {
   .menu-hambuger {
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 900px) {
       display: block;
     }
     &.activated-menu-container{
@@ -42,7 +42,7 @@ header {
   }
   #menu-container {
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 900px) {
       position: absolute;
       right:-250%;
       transition:all 0.5s;

@@ -2036,23 +2036,29 @@ header {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%); }
+    @media screen and (max-width: 1400px) {
+      #bloc-question .content-container {
+        width: 75%; } }
+    @media screen and (max-width: 1200px) {
+      #bloc-question .content-container {
+        width: 80%; } }
+    @media screen and (max-width: 1000px) {
+      #bloc-question .content-container {
+        width: 85%; } }
+    @media screen and (max-width: 950px) {
+      #bloc-question .content-container {
+        width: 90%; } }
+    @media screen and (max-width: 900px) {
+      #bloc-question .content-container {
+        width: 95%; } }
+    @media screen and (max-width: 820px) {
+      #bloc-question .content-container {
+        width: 100%; } }
   #bloc-question .text-center-container {
     width: 100%; }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1000px) {
       #bloc-question .text-center-container {
-        width: 75%; } }
-    @media screen and (max-width: 900px) {
-      #bloc-question .text-center-container {
-        width: 80%; } }
-    @media screen and (max-width: 800px) {
-      #bloc-question .text-center-container {
-        width: 85%; } }
-    @media screen and (max-width: 700px) {
-      #bloc-question .text-center-container {
-        width: 90%; } }
-    @media screen and (max-width: 650px) {
-      #bloc-question .text-center-container {
-        width: 95%; } }
+        width: 100%; } }
     #bloc-question .text-center-container p {
       font-style: normal;
       font-size: 25px;
@@ -2068,6 +2074,9 @@ header {
       @media screen and (max-width: 600px) {
         #bloc-question .text-center-container p {
           font-size: 17px; } }
+      @media screen and (max-width: 700px) {
+        #bloc-question .text-center-container p {
+          line-height: 15px; } }
     #bloc-question .text-center-container .list-center-infos ul {
       padding-left: 0;
       list-style: none; }
@@ -2112,6 +2121,9 @@ header {
       #bloc-question .question-form-container .form-item input {
         height: 25px;
         width: 75%; }
+        @media screen and (max-width: 800px) {
+          #bloc-question .question-form-container .form-item input {
+            width: 100%; } }
     #bloc-question .question-form-container .newsletter-choice {
       margin-top: 30px; }
     #bloc-question .question-form-container .button {
@@ -2210,6 +2222,9 @@ header {
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
     width: 50%; }
+    @media screen and (max-width: 800px) {
+      #bloc-home .content-container {
+        width: 100%; } }
     #bloc-home .content-container h3 {
       display: block;
       font-style: italic;
