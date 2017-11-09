@@ -1,0 +1,54 @@
+- menu toujours blanc[x]
+- connectez-vous (pas déjà membre) [x]
+- logo alumni logo page refresh [x]
+- devenez membre pop-up background bleu + bouton envoyé vert[x]
+- bouton envoyé vert text et grosseur proportionnel[x]
+- garder fond blanc menu mobile ? [x]
+
+
+- hamburger bleu centré[x]
+- Hamburger open
+- bouton submit pour connecter
+- connectez-vous ( lien pour devenir membre)
+- connectez x pour fermer
+-
+
+
+- menu anchors click
+BLOC 1
+- button lateral contour blanc
+- init intro button lateral blanc
+- buttons lateraux cachés quand video fullscreen
+- fullscreen qui casse quand full screen et qu'on resize
+- rajouter continuer avec flèche en bas
+- video background auto play?
+- button latéraux click et anchors
+
+BLOC 2 
+- espace après les tirets
+- continuer plus flèche en bas
+- lignes de chaque côté de la boite
+
+
+BLOC 3
+- cadenas verts 
+- click sur cadenas (pas login) popup login
+- collège avec C majuscule
+- rajouter continuer avec flèche en bas
+
+
+BLOC 4
+- rajouter continuer avec flèche en bas
+- fond blanc
+
+
+BLOC 5
+- rajouter continuer avec flèche en bas
+- mise en page
+
+Bloc 6 
+- envoyer click pop up
+- le formulaire reste 
+- champs obligatoire (nom. prenom, email)
+
+

@@ -1,9 +1,10 @@
 header {
     position: fixed;
     top: 0px;
+    height:100px;
     z-index: 200;
     width: 100%;
-
+    background-color: $mainWhite;
     .logo-container {
 
         display: inline-block;
@@ -21,6 +22,7 @@ header {
 
         text-align: right;
         padding-right: 75px;
+        padding-top:10px;
         z-index:1000;
 
         nav {

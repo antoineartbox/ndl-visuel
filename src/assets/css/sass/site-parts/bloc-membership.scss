@@ -1,7 +1,7 @@
 // Import related files
 @import "../general/font.scss";
 @import "../core/layout-rules.scss";
-
+@import "../general/buttons.scss";
 #bloc-membership {
 
     background-color: $whiteTransparent;
@@ -48,7 +48,7 @@
         z-index:500;
         padding-top: 20px;
         position: relative;
-        background-color:$mainGreen;
+        background-color:$mainBlue;
         padding: 30px;
         color: white;
         @include centered;
@@ -77,7 +77,7 @@
         }
         // Overide button for color
         .button {
-            background-color: $mainBlue;
+            background-color:$mainGreen;
         }
     }
 }

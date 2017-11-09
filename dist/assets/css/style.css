@@ -1153,19 +1153,20 @@ header .menu-hambuger {
   position: absolute;
   top: 15px;
   right: 50px;
-  z-index: 2500; }
+  z-index: 2500;
+  margin-top: 15px; }
   @media screen and (max-width: 900px) {
     header .menu-hambuger {
       display: block; } }
   header .menu-hambuger.activated-menu-container {
-    margin-top: 15px; }
+    margin-top: 25px; }
   header .menu-hambuger span {
-    color: white;
+    color: #004588;
     display: block;
     height: 5px;
     width: 45px;
     margin-bottom: 10px;
-    background-color: white;
+    background-color: #004588;
     transition: all 0.5s; }
     header .menu-hambuger span.active-menu {
       background-color: black;
@@ -1175,7 +1176,7 @@ header .menu-hambuger {
       header .menu-hambuger span.active-menu.line-2 {
         transition: all 0.2s;
         width: 0px;
-        display: none; }
+        height: 0px; }
       header .menu-hambuger span.active-menu.line-3 {
         margin-top: -4px;
         transform: rotate(-45deg); }
@@ -1232,8 +1233,10 @@ body {
 header {
   position: fixed;
   top: 0px;
+  height: 100px;
   z-index: 200;
-  width: 100%; }
+  width: 100%;
+  background-color: #FFFFFF; }
   header .logo-container {
     display: inline-block;
     position: absolute;
@@ -1246,6 +1249,7 @@ header {
   header #menu-container {
     text-align: right;
     padding-right: 75px;
+    padding-top: 10px;
     z-index: 1000; }
     header #menu-container nav {
       color: #004588;
@@ -1570,6 +1574,61 @@ header {
   text-transform: capitalize; }
 
 /*This file mixins for helping centering, disposing and placing elements*/
+@font-face {
+  font-family: intro;
+  src: url("../fonts/intro.otf") format("opentype"); }
+
+@font-face {
+  font-family: gotham;
+  src: url("../fonts/gotham.ttf") format("truetype"); }
+
+.error {
+  color: red; }
+
+.form-user-input input.capital {
+  text-transform: capitalize; }
+
+.button {
+  background-color: #7fc214;
+  color: #FFFFFF;
+  padding: 35px 90px 35px 90px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.5s; }
+
+.button.main-page-button {
+  background-color: #7fc214;
+  color: #FFFFFF;
+  padding: 20px 30px 20px 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-style: normal;
+  font-size: 25px;
+  text-transform: uppercase; }
+
+.closing-button {
+  position: absolute;
+  font-size: 22px;
+  color: white;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  transition: all 0.1s; }
+  .closing-button:hover {
+    font-size: 20px; }
+  .closing-button.video {
+    pointer-events: all;
+    cursor: pointer;
+    color: white;
+    font-size: 45px;
+    right: -50px;
+    transition: all 0.3s; }
+    .closing-button.video.active-button-video {
+      cursor: pointer;
+      pointer-event: all;
+      z-index: 500;
+      right: 15px; }
+
 #bloc-membership {
   background-color: rgba(255, 255, 255, 0.5);
   height: 30vh;
@@ -1606,7 +1665,7 @@ header {
     z-index: 500;
     padding-top: 20px;
     position: relative;
-    background-color: #7fc214;
+    background-color: #004588;
     padding: 30px;
     color: white;
     position: fixed;
@@ -1633,7 +1692,7 @@ header {
     #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice p {
       display: inline-block; }
     #bloc-membership-overlay.active-membership .membership-form-container .button {
-      background-color: #004588; }
+      background-color: #7fc214; }
 
 /*This file mixins for helping centering, disposing and placing elements*/
 @font-face {
