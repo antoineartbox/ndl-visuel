@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f73647a4-68e1-4af1-8ca5-a96aa1addd3f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/css/style.css" afterPath="$PROJECT_DIR$/dist/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/utils/db/setup.php" afterPath="$PROJECT_DIR$/dist/utils/db/setup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss" afterPath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-infos.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-question.scss" afterPath="$PROJECT_DIR$/src/assets/css/sass/site-parts/bloc-question.scss" />
-    </list>
+    <list default="true" id="f73647a4-68e1-4af1-8ca5-a96aa1addd3f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -378,12 +372,12 @@
       <workItem from="1509981788925" duration="14594000" />
       <workItem from="1510065442146" duration="9303000" />
       <workItem from="1510153124309" duration="15830000" />
-      <workItem from="1510237583679" duration="7756000" />
+      <workItem from="1510237583679" duration="7784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79498000" />
+    <option name="totallyTimeSpent" value="79526000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
