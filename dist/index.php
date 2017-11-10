@@ -12,11 +12,15 @@
 		<div id="site-container">
 			<div id="menu-linker">
 				<ul>
-					<li class="menu-home-anchor"></li>
-					<li class="menu-infos-anchor"></li>
-					<li class="menu-events-anchor"></li>
-					<li class="menu-involve-anchor"></li>
-					<li class="menu-question-anchor"></li>
+					<div class="white-rounder"><li class="menu-home-anchor"></li></div>
+
+					<div class="white-rounder"><li class="menu-infos-anchor"></li></div>
+
+					<div class="white-rounder"><li class="menu-events-anchor"></li></div>
+
+					<div class="white-rounder"><li class="menu-involve-anchor"></li></div>
+
+					<div class="white-rounder"><li class="menu-question-anchor"></li></div>
 				</ul>
 			</div>
 			<!-- Top header infos -->

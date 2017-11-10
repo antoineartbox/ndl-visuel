@@ -6,7 +6,13 @@ $( document ).ready(function() {
     $(".become-member-container .button").click(function() {
 		enableMembershipForm();
 
-    })
+    });
+
+    $(".become-member span").click(function() {
+		$(".login-form-container .closing-button").trigger("click");
+        $(".menu-membership").trigger("click");
+    });
+
     $(".menu-membership").click(function() {
         enableMembershipForm();
     });
@@ -20,6 +26,8 @@ $( document ).ready(function() {
 			enableScrolling('body');
 		});
     }
+
+
     // Handle closing of involve
     $(".become-involve").click(function() {
         $("#bloc-involve-overlay").addClass("active-involving");

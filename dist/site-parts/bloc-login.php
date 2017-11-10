@@ -20,7 +20,7 @@
                     Se connecter
                 </div>
             </form>
-			<div class="become-member">
+			<div class="become-member class-to-action">
 				<span>Devenir membre</span>
 			</div>
         </div>

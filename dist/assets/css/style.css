@@ -1124,6 +1124,12 @@ body #menu-linker {
     margin: 0px;
     display: inline;
     list-style: none; }
+    body #menu-linker ul .white-rounder {
+      margin-top: 30px;
+      border: solid 1px white;
+      border-radius: 100%;
+      width: 9px;
+      height: 9px; }
     body #menu-linker ul li {
       border-radius: 100%;
       border: solid #004588 2px;
@@ -2386,3 +2392,6 @@ footer {
         width: 40%; }
     #bloc-login-overlay.active-login .login-form-container .button {
       background-color: #004588; }
+    #bloc-login-overlay.active-login .login-form-container .become-member {
+      margin-top: 10px;
+      cursor: pointer; }
