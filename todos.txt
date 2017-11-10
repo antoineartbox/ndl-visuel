@@ -31,8 +31,8 @@ BLOC 1
 
 
 BLOC 2 
-- espace après les tirets
-- continuer plus flèche en bas
+- espace après les tirets[x]
+- continuer plus flèche en bas[x]
 - lignes de chaque côté de la boite
 
 
