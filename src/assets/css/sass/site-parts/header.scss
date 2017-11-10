@@ -7,6 +7,9 @@ header {
     background-color: $mainWhite;
     .logo-container {
 
+        @media screen and (max-width: 1175px) {
+            display: none;
+        }
         display: inline-block;
         position:absolute;
         padding-left:25px;
@@ -21,10 +24,13 @@ header {
     #menu-container {
 
         text-align: right;
-        padding-right: 75px;
+        padding-right: 30px;
         padding-top:10px;
         z-index:1000;
 
+        @media screen and (max-width: 1175px) {
+            text-align:center;
+        }
         nav {
             color:$mainBlue;
             text-transform: uppercase;
@@ -54,7 +60,7 @@ header {
 
                 .connection {
                     display:inline-block;
-
+                    margin-left:40px;
                     h3,p {
 
                         margin:0px;

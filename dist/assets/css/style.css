@@ -1109,6 +1109,9 @@
       z-index: 500;
       right: 15px; }
 
+.button.login {
+  margin-top: 25px; }
+
 body #menu-linker {
   width: 15px;
   height: 100px;
@@ -1121,6 +1124,12 @@ body #menu-linker {
     margin: 0px;
     display: inline;
     list-style: none; }
+    body #menu-linker ul .white-rounder {
+      margin-top: 30px;
+      border: solid 1px white;
+      border-radius: 100%;
+      width: 9px;
+      height: 9px; }
     body #menu-linker ul li {
       border-radius: 100%;
       border: solid #004588 2px;
@@ -1244,13 +1253,19 @@ header {
     padding-top: 10px;
     /* Video starts at 10*/
     z-index: 11; }
+    @media screen and (max-width: 1175px) {
+      header .logo-container {
+        display: none; } }
     header .logo-container img {
       height: 75px; }
   header #menu-container {
     text-align: right;
-    padding-right: 75px;
+    padding-right: 30px;
     padding-top: 10px;
     z-index: 1000; }
+    @media screen and (max-width: 1175px) {
+      header #menu-container {
+        text-align: center; } }
     header #menu-container nav {
       color: #004588;
       text-transform: uppercase; }
@@ -1269,11 +1284,35 @@ header {
             background-color: #7fc214;
             color: #FFFFFF; }
         header #menu-container nav ul .connection {
-          display: inline-block; }
+          display: inline-block;
+          margin-left: 40px; }
           header #menu-container nav ul .connection h3, header #menu-container nav ul .connection p {
             margin: 0px; }
           header #menu-container nav ul .connection h3 {
             padding-top: 15px; }
+
+/*This file mixins for helping centering, disposing and placing elements*/
+.video-component {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: absolute; }
+  .video-component .closing-button.video {
+    position: absolute;
+    top: 90px;
+    right: 120px;
+    color: black; }
+  .video-component iframe {
+    width: 0px;
+    height: 0px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%); }
+    .video-component iframe.active-video {
+      width: 75%;
+      height: 75%; }
 
 #bloc-video * {
   box-sizing: border-box; }
@@ -1629,6 +1668,9 @@ header {
       z-index: 500;
       right: 15px; }
 
+.button.login {
+  margin-top: 25px; }
+
 #bloc-membership {
   background-color: rgba(255, 255, 255, 0.5);
   height: 30vh;
@@ -1849,6 +1891,9 @@ header {
       z-index: 500;
       right: 15px; }
 
+.button.login {
+  margin-top: 25px; }
+
 @font-face {
   font-family: intro;
   src: url("../fonts/intro.otf") format("opentype"); }
@@ -2066,6 +2111,9 @@ header {
       pointer-event: all;
       z-index: 500;
       right: 15px; }
+
+.button.login {
+  margin-top: 25px; }
 
 @font-face {
   font-family: intro;
@@ -2379,3 +2427,6 @@ footer {
         width: 40%; }
     #bloc-login-overlay.active-login .login-form-container .button {
       background-color: #004588; }
+    #bloc-login-overlay.active-login .login-form-container .become-member {
+      margin-top: 10px;
+      cursor: pointer; }

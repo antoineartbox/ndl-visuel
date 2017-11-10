@@ -7,17 +7,21 @@
 
 
 - hamburger bleu centré[x]
-- Hamburger open
-- bouton submit pour connecter
-- connectez-vous ( lien pour devenir membre)
-- connectez x pour fermer
+- Hamburger open[x]
+- bouton submit pour connecter[x]
+- connectez-vous ( lien pour devenir membre)[x]
+- connectez x pour fermer[x]
 -
 
+??
 
-- menu anchors click
+
+
+
 BLOC 1
-- button lateral contour blanc
-- init intro button lateral blanc
+- button lateral contour blanc[x]
+-Init intro bouton blanc[x]
+
 - buttons lateraux cachés quand video fullscreen
 - fullscreen qui casse quand full screen et qu'on resize
 - rajouter continuer avec flèche en bas
@@ -51,4 +55,5 @@ Bloc 6
 - le formulaire reste 
 - champs obligatoire (nom. prenom, email)
 
-
+Features
+- menu anchors click
