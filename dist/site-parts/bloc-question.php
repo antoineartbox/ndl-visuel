@@ -1,5 +1,7 @@
 <div id="bloc-question" class="bloc white">
-    <div class="content-container">
+
+	<a name="bloc-questions-anchor"></a>
+	<div class="content-container">
         <div class="text-center-container">
             <div class="text-center">
                 <p>Vous avez des questions à propos du programme? Remplissez le formulaire suivant et un membre de notre équipe vous contactera sous peu.</p>

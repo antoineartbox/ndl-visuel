@@ -13,7 +13,7 @@ $( document ).ready(function () {
 	var menuAbout = $(".menu-about");
 	var menuEvents = $(".menu-events");
 	var menuInvolve = $(".menu-involve");
-	var blocQuestion = $("#bloc-question");
+	var menuQuestion = $(".menu-question");
 
 // Define Pin
 	var homeAnchor = $(".menu-home-anchor");
@@ -87,7 +87,7 @@ $( document ).ready(function () {
 			eventAnchor.addClass("single-white");
 
 
-		} else if(scroll > blocInvolve[0] && scroll < (blocInvolve[0] + (window.innerHeight))) {
+		} else if(scroll > blocInvolve[0] - 5 && scroll < (blocInvolve[0] + (window.innerHeight))) {
 			menuInvolve.css({
 				"background-color":"#004588",
 				"color":"white"
@@ -104,9 +104,13 @@ $( document ).ready(function () {
 			$("#menu-linker li").addClass("all-white");
 			involveAnchor.addClass("single-blue");
 
-		} else if (scroll > blocQuestions[0] && scroll <(blocQuestions[0]) + window.innerHeight) {
+		} else if (scroll > blocQuestions[0] - 45 && scroll <(blocQuestions[0]) + window.innerHeight) {
 
-
+			menuQuestion.css({
+				"background-color":"#004588",
+				"color":"white"
+			});
+			clearAnchor();
 			questionAnchor.addClass("single-white");
 		}
 	}

@@ -7,5 +7,9 @@
             <span class="button call-to-action button-video">Regarder la vidéo</span>
             <!-- <span class="arrow arrow-right"></span>-->
         </div>
+		<div class="arrow-container">
+			<a href="#block-infos"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
+		</div>
     </div>
+
 </div>

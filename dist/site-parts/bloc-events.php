@@ -1,19 +1,24 @@
 <div id="bloc-events" class="bloc white">
+	<br>
+	<a name="bloc-events-anchor"></a>
     <div class="white-transparancy">
 
     </div>
     <div class="content-container">
+
         <div class="text-center-container">
+
             <div class="text-center">
                 <h3>Une programmation aux couleurs du collège</h3>
                 <p>Culture, sports et vision internationale seront aux rendez-vous lors de ces événements uniques</p>
             </div>
+
         </div>
 
         <div id="events-container" <?php if (!$_SESSION["is_logged_in"]): ?>
             class="blocked-access blurred"
         <?php endif; ?>>
-            <?php for($i = 0; $i < 4; $i++ ) { ?>
+            <?php for($i = 1; $i < 4; $i++ ) { ?>
                 <div class="single-event-container <?= "events-".$i ?>">
                     <span class="over-blocker"></span>
                     <h4><?= "Événement " . $i; ?></h4>
@@ -27,6 +32,9 @@
                 </div>
             <?php } ?>
         </div>
-    </div>
+		<div class="arrow-container">
+			<a href="#bloc-involve-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
+		</div>
+	</div>
 
 </div>
