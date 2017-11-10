@@ -13,10 +13,15 @@
 - connectez x pour fermer[x]
 -
 
+??
+
+
+
 
 BLOC 1
-- button lateral contour blanc[]
-- init intro button lateral blanc
+- button lateral contour blanc[x]
+-Init intro bouton blanc[x]
+
 - buttons lateraux cachés quand video fullscreen
 - fullscreen qui casse quand full screen et qu'on resize
 - rajouter continuer avec flèche en bas

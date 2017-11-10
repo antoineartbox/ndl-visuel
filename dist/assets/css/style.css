@@ -1291,6 +1291,29 @@ header {
           header #menu-container nav ul .connection h3 {
             padding-top: 15px; }
 
+/*This file mixins for helping centering, disposing and placing elements*/
+.video-component {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: absolute; }
+  .video-component .closing-button.video {
+    position: absolute;
+    top: 90px;
+    right: 120px;
+    color: black; }
+  .video-component iframe {
+    width: 0px;
+    height: 0px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%); }
+    .video-component iframe.active-video {
+      width: 75%;
+      height: 75%; }
+
 #bloc-video * {
   box-sizing: border-box; }
 

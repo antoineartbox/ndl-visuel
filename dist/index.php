@@ -23,6 +23,9 @@
 					<div class="white-rounder"><li class="menu-question-anchor"></li></div>
 				</ul>
 			</div>
+			<?php
+				require "site-parts/component-blue-print/video-component.php";
+			?>
 			<!-- Top header infos -->
 			<?php require "site-parts/header.php"; ?>
 
@@ -65,6 +68,7 @@
 		<script src="assets/js/form-handler.js"></script>
 		<script src="assets/js/form-validation.js"></script>
 		<script src="assets/js/menu-behaviour.js"></script>
+		<script src="assets/js/video-component.js"></script>
 		<!-- Check for error -->
 		<?php if($_GET["errors"]|| $_GET["success"]) {?>
 
