@@ -15,20 +15,19 @@
 
 ??
 
-
-
+- video background auto play?[Besoin des shots]
+- buttons lateraux cachés quand video fullscreen[On a enlevé la video full screen.]
+- fullscreen qui casse quand full screen et qu'on resize [On a enlevé la video full screen.]
 
 BLOC 1
 - button lateral contour blanc[x]
 -Init intro bouton blanc[x]
 
-- buttons lateraux cachés quand video fullscreen[On a enlevé la video full screen.]
-- fullscreen qui casse quand full screen et qu'on resize [On a enlevé la video full screen.]
-- video background auto play?
+
 
 - rajouter continuer avec flèche en bas[x]
 -
-- button latéraux click et anchors
+- button latéraux click et anchors[x]
 
 
 BLOC 2 

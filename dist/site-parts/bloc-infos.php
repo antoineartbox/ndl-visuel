@@ -21,11 +21,11 @@
                             <h3>Le programme Alumni c’est...</h3>
                             <div class="bullet-list-container">
                                 <ul>
-                                    <li class="first">-Des rencontres enrichissantes</li>
-                                    <li>-Des événements exclusifs</li>
-                                    <li>-Un programme ambitieux</li>
-                                    <li>-Une approche différente</li>
-                                    <li class="last">-S’impliquer en redonnant</li>
+                                    <li class="first">- Des rencontres enrichissantes</li>
+                                    <li>- Des événements exclusifs</li>
+                                    <li>- Un programme ambitieux</li>
+                                    <li>- Une approche différente</li>
+                                    <li class="last">- S’impliquer en redonnant</li>
                                 </ul>
                             </div>
                         </div>

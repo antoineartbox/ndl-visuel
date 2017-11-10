@@ -21,7 +21,7 @@
             </div>
         </div>
 		<div class="arrow-container">
-			<a href="#bloc-involve-questions-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
+			<a href="#bloc-questions-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
 		</div>
     </div>
 </div>
