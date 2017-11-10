@@ -54,10 +54,10 @@ BLOC 5
 - rajouter continuer avec flèche en bas
 - mise en page
 
-Bloc 6 
+Bloc 6
 - envoyer click pop up
-- le formulaire reste 
+- le formulaire reste
 - champs obligatoire (nom. prenom, email)
 
 Features
-- menu anchors click
+
