@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f73647a4-68e1-4af1-8ca5-a96aa1addd3f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/css/style.css" afterPath="$PROJECT_DIR$/dist/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/js/form-handler.js" afterPath="$PROJECT_DIR$/dist/assets/js/form-handler.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/js/main-ux-ui.js" afterPath="$PROJECT_DIR$/dist/assets/js/main-ux-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.php" afterPath="$PROJECT_DIR$/dist/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/site-parts/bloc-login.php" afterPath="$PROJECT_DIR$/dist/site-parts/bloc-login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/sass/general/buttons.scss" afterPath="$PROJECT_DIR$/src/assets/css/sass/general/buttons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/sass/site-parts/header.scss" afterPath="$PROJECT_DIR$/src/assets/css/sass/site-parts/header.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todos.txt" afterPath="$PROJECT_DIR$/todos.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +17,8 @@
       <file leaf-file-name="todos.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todos.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="198">
+              <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -41,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form-handler.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="form-handler.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/assets/js/form-handler.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
@@ -51,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bloc-login.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bloc-login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dist/site-parts/bloc-login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="414">
+              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -154,11 +147,11 @@
         <option value="$PROJECT_DIR$/dist/assets/js/menu.js" />
         <option value="$PROJECT_DIR$/dist/index.php" />
         <option value="$PROJECT_DIR$/src/assets/css/sass/site-parts/header.scss" />
-        <option value="$PROJECT_DIR$/todos.txt" />
         <option value="$PROJECT_DIR$/src/assets/css/sass/general/buttons.scss" />
         <option value="$PROJECT_DIR$/dist/assets/js/main-ux-ui.js" />
-        <option value="$PROJECT_DIR$/dist/site-parts/bloc-login.php" />
         <option value="$PROJECT_DIR$/dist/assets/js/form-handler.js" />
+        <option value="$PROJECT_DIR$/todos.txt" />
+        <option value="$PROJECT_DIR$/dist/site-parts/bloc-login.php" />
       </list>
     </option>
   </component>
@@ -389,7 +382,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88031000" />
+    <option name="totallyTimeSpent" value="88156000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -805,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todos.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="198">
+          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -819,13 +812,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/site-parts/bloc-login.php">
+    <entry file="file://$PROJECT_DIR$/dist/assets/js/form-handler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -837,11 +828,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/assets/js/form-handler.js">
+    <entry file="file://$PROJECT_DIR$/dist/site-parts/bloc-login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="414">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

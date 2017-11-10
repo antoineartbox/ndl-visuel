@@ -20,6 +20,9 @@
                     Se connecter
                 </div>
             </form>
+			<div class="become-member">
+				<span>Devenir membre</span>
+			</div>
         </div>
     <?php } ?>
 
