@@ -3,7 +3,7 @@
 @import "../core/layout-rules.scss";
 
 #bloc-involve {
-    background: url("../images/bloc-background/bloc-involve-whitey.png") no-repeat center center fixed;
+    background-color:$mainWhite;
     background-size: cover;
     height: 100vh;
     position: relative;

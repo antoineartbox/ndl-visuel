@@ -15,37 +15,38 @@
 
 ??
 
-
-
+- video background auto play?[Besoin des shots]
+- buttons lateraux cachés quand video fullscreen[On a enlevé la video full screen.]
+- fullscreen qui casse quand full screen et qu'on resize [On a enlevé la video full screen.]
 
 BLOC 1
 - button lateral contour blanc[x]
 -Init intro bouton blanc[x]
 
-- buttons lateraux cachés quand video fullscreen[On a enlevé la video full screen.]
-- fullscreen qui casse quand full screen et qu'on resize [On a enlevé la video full screen.]
-- video background auto play?
+
 
 - rajouter continuer avec flèche en bas[x]
 -
-- button latéraux click et anchors
+- button latéraux click et anchors[x]
 
 
 BLOC 2 
-- espace après les tirets
-- continuer plus flèche en bas
-- lignes de chaque côté de la boite
+- espace après les tirets[x]
+- continuer plus flèche en bas[x]
+- lignes de chaque côté de la boite[x]
+- ligne disparaisse [x]
+
 
 
 BLOC 3
-- cadenas verts 
-- click sur cadenas (pas login) popup login
-- collège avec C majuscule
-- rajouter continuer avec flèche en bas
+- cadenas verts
+- click sur cadenas (pas login) popup login[x]
+- collège avec C majuscule[x]
+- rajouter continuer avec flèche en bas[X]
 
 
 BLOC 4
-- rajouter continuer avec flèche en bas
+- rajouter continuer avec flèche en bas[x]
 - fond blanc
 
 
@@ -53,10 +54,10 @@ BLOC 5
 - rajouter continuer avec flèche en bas
 - mise en page
 
-Bloc 6 
+Bloc 6
 - envoyer click pop up
-- le formulaire reste 
+- le formulaire reste
 - champs obligatoire (nom. prenom, email)
 
 Features
-- menu anchors click
+

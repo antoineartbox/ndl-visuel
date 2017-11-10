@@ -1438,6 +1438,35 @@ header {
   background-color: #004588;
   color: white;
   overflow: hidden; }
+  #bloc-infos .line-left {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 15%;
+    height: 3px;
+    border: solid rgba(255, 255, 255, 0.5) 1px;
+    left: 10%; }
+    @media screen and (max-width: 900px) {
+      #bloc-infos .line-left {
+        display: none; } }
+  #bloc-infos .line-right {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    right: 15px;
+    width: 15%;
+    left: 90%;
+    height: 3px;
+    border: solid rgba(255, 255, 255, 0.5) 1px; }
+    @media screen and (max-width: 900px) {
+      #bloc-infos .line-right {
+        display: none; } }
   #bloc-infos .content-container {
     width: 60%;
     position: absolute;
@@ -2181,7 +2210,7 @@ header {
 
 /*This file mixins for helping centering, disposing and placing elements*/
 #bloc-involve {
-  background: url("../images/bloc-background/bloc-involve-whitey.png") no-repeat center center fixed;
+  background-color: #FFFFFF;
   background-size: cover;
   height: 100vh;
   position: relative; }
