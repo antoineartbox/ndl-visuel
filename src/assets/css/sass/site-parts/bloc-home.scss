@@ -25,9 +25,24 @@
             padding-bottom: 75px;
         }
 
+        .arrow-container {
+            position: absolute;
+            top: 130%;
+            width: 100%;
+            text-align: center;
+
+            .arrow-bottom{
+                cursor: pointer;
+                width:15px;
+                img {
+                    width:80px;
+                }
+            }
+        }
         .button-container {
             text-align: center;
             .arrow {
+
                 animation: animation-button-call-action infinite 1s;
                 &.arrow-left {
                     animation: animation-arrow-left infinite 1s;

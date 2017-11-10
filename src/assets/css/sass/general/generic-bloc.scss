@@ -1,0 +1,48 @@
+.content-container {
+    .arrow-container {
+        position: absolute;
+        top: 130%;
+        width: 100%;
+        text-align: center;
+
+        .arrow-bottom{
+            cursor: pointer;
+            width:15px;
+            img {
+                width:80px;
+            }
+        }
+    }
+}
+
+
+// Exeption
+#bloc-infos {
+    .arrow-container {
+        top:100%;
+    }
+}
+
+// Exeption
+#bloc-events{
+    .arrow-container {
+        top: 90%;
+    }
+}
+
+#bloc-involve-infos {
+    .arrow-container {
+        position: absolute;
+        top: 85%;
+        width: 100%;
+        text-align: center;
+
+        .arrow-bottom{
+            cursor: pointer;
+            width:15px;
+            img {
+                width:80px;
+            }
+        }
+    }
+}

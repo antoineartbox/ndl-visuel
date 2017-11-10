@@ -11,7 +11,7 @@
 - bouton submit pour connecter[x]
 - connectez-vous ( lien pour devenir membre)[x]
 - connectez x pour fermer[x]
--
+- Rajouter menu Question[x]
 
 ??
 
@@ -22,11 +22,14 @@ BLOC 1
 - button lateral contour blanc[x]
 -Init intro bouton blanc[x]
 
-- buttons lateraux cachés quand video fullscreen
-- fullscreen qui casse quand full screen et qu'on resize
-- rajouter continuer avec flèche en bas
+- buttons lateraux cachés quand video fullscreen[On a enlevé la video full screen.]
+- fullscreen qui casse quand full screen et qu'on resize [On a enlevé la video full screen.]
 - video background auto play?
+
+- rajouter continuer avec flèche en bas[x]
+-
 - button latéraux click et anchors
+
 
 BLOC 2 
 - espace après les tirets

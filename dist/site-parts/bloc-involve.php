@@ -1,11 +1,15 @@
-
+<a style="padding-top:40px;" name="bloc-involve-anchor"></a>
 <div id="bloc-involve" class="bloc blue">
-    <div class="content-container">
+
+	<div class="content-container">
         <h3>Comment est-ce que je peux m'inpliquer?</h3>
         <div class="button-container button-video">
             <div class="button call-to-action  main-page-button watch-video-involve">
                 <span>Regarder la vidéo</span>
             </div>
+			<div class="arrow-container">
+				<a href="#bloc-involve-infos-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
+			</div>
             <!--
             <div class="button call-to-action  main-page-button become-involve">
                 <span>Impliquez-vous</span>

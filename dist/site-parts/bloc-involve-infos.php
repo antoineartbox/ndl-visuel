@@ -1,5 +1,7 @@
 <div id="bloc-involve-infos" class="bloc blue">
-    <div class="bloc-container">
+
+	<a name="bloc-involve-infos-anchor"></a>
+	<div class="bloc-container">
         <div class="text-center-container">
             <div class="text-center">
                 <h3>Vous souhaitez redonner au Collège Notre-Dame-de-Lourdes?</h3>
@@ -18,6 +20,8 @@
                 <span>Impliquez-vous</span>
             </div>
         </div>
-
+		<div class="arrow-container">
+			<a href="#bloc-involve-questions-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
+		</div>
     </div>
 </div>

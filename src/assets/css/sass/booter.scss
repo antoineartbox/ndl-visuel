@@ -9,16 +9,16 @@
 @import 'general/buttons.scss';
 @import 'general/behave.scss';
 @import 'general/menu-behaviour.scss';
-
+@import 'general/generic-bloc.scss';
 // Including site parts
 @import 'site-parts/general.scss';
 @import 'site-parts/header.scss';
 @import 'site-parts/bloc-video.scss';
 @import 'site-parts/bloc-infos.scss';
 @import 'site-parts/bloc-membership.scss';
+@import 'site-parts/bloc-question.scss';
 @import 'site-parts/bloc-events.scss';
 @import 'site-parts/bloc-involve.scss';
-@import 'site-parts/bloc-question.scss';
 @import 'site-parts/bloc-home.scss';
 @import 'site-parts/footer.scss';
 @import 'site-parts/blog-login.scss';

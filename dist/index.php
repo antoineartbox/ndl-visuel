@@ -9,18 +9,21 @@
 	</head>
 	<body>
 
+
+
+	<li class="menu-membership">Devenir Membre</li>
 		<div id="site-container">
 			<div id="menu-linker">
 				<ul>
 					<div class="white-rounder"><li class="menu-home-anchor"></li></div>
 
-					<div class="white-rounder"><li class="menu-infos-anchor"></li></div>
+					<a href="#bloc-infos-anchor" ><div class="white-rounder"><li class="menu-infos-anchor"></li></div></a>
 
-					<div class="white-rounder"><li class="menu-events-anchor"></li></div>
+					<a href="#bloc-events-anchor"><div class="white-rounder" ><li class="menu-events-anchor"></li></div></a>
 
-					<div class="white-rounder"><li class="menu-involve-anchor"></li></div>
+					<a href="#bloc-involve-anchor"><div  class="white-rounder"><li class="menu-involve-anchor"></li></div></a>
 
-					<div class="white-rounder"><li class="menu-question-anchor"></li></div>
+					<a href="#bloc-questions-anchor"><div class="white-rounder"><li class="menu-question-anchor"></li></div></a>
 				</ul>
 			</div>
 			<?php
@@ -69,6 +72,7 @@
 		<script src="assets/js/form-validation.js"></script>
 		<script src="assets/js/menu-behaviour.js"></script>
 		<script src="assets/js/video-component.js"></script>
+		<script src="assets/js/arrow-section-behaviour.js"></script>
 		<!-- Check for error -->
 		<?php if($_GET["errors"]|| $_GET["success"]) {?>
 

@@ -14,10 +14,11 @@
 
             <ul id="menu-div">
 
-                <li class="menu-infos menu-item">Intro</li>
-                <li class="menu-about menu-item">À propos</li>
-                <li class="menu-events menu-item">Événements</li>
-                <li class="menu-involve menu-item">Impliquez-vous</li>
+				<a href=""><li class="menu-infos menu-item">Intro</li></a>
+				<a href="#block-infos"><li class="menu-about menu-item">À propos</li></a>
+				<a href="#bloc-events-anchor"><li class="menu-events menu-item">Événements</li></a>
+				<a href="#bloc-involve-anchor"><li class="menu-involve menu-item">Impliquez-vous</li></a>
+				<a href="#bloc-questions-anchor"><li class="menu-question menu-item">Questions</li></a>
                 <li class="menu-membership">Devenir Membre</li>
 
                 <?php if(isset($_SESSION["is_logged_in"]) == FALSE) { ?>

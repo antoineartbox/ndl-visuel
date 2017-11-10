@@ -1,6 +1,6 @@
 <div id="bloc-infos" class="bloc blue">
-
-    <div class="content-container">
+	<a name="block-infos"></a>
+	<div class="content-container">
 
         <div class="line-wrapper">
             <div class="bloc-title-center">
@@ -41,6 +41,9 @@
                 <span>Devenez-membre</span>
             </div>
         </div>
+		<div class="arrow-container">
+			<a href="#bloc-events-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
+		</div>
     </div>
 
 </div>
