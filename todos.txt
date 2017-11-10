@@ -7,7 +7,7 @@
 
 
 - hamburger bleu centré[x]
-- Hamburger open
+- Hamburger open[x]
 - bouton submit pour connecter
 - connectez-vous ( lien pour devenir membre)
 - connectez x pour fermer

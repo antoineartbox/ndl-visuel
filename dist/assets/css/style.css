@@ -1109,6 +1109,9 @@
       z-index: 500;
       right: 15px; }
 
+.button.login {
+  margin-top: 25px; }
+
 body #menu-linker {
   width: 15px;
   height: 100px;
@@ -1244,13 +1247,19 @@ header {
     padding-top: 10px;
     /* Video starts at 10*/
     z-index: 11; }
+    @media screen and (max-width: 1175px) {
+      header .logo-container {
+        display: none; } }
     header .logo-container img {
       height: 75px; }
   header #menu-container {
     text-align: right;
-    padding-right: 75px;
+    padding-right: 30px;
     padding-top: 10px;
     z-index: 1000; }
+    @media screen and (max-width: 1175px) {
+      header #menu-container {
+        text-align: center; } }
     header #menu-container nav {
       color: #004588;
       text-transform: uppercase; }
@@ -1269,7 +1278,8 @@ header {
             background-color: #7fc214;
             color: #FFFFFF; }
         header #menu-container nav ul .connection {
-          display: inline-block; }
+          display: inline-block;
+          margin-left: 40px; }
           header #menu-container nav ul .connection h3, header #menu-container nav ul .connection p {
             margin: 0px; }
           header #menu-container nav ul .connection h3 {
@@ -1626,6 +1636,9 @@ header {
       z-index: 500;
       right: 15px; }
 
+.button.login {
+  margin-top: 25px; }
+
 #bloc-membership {
   background-color: rgba(255, 255, 255, 0.5);
   height: 30vh;
@@ -1846,6 +1859,9 @@ header {
       z-index: 500;
       right: 15px; }
 
+.button.login {
+  margin-top: 25px; }
+
 @font-face {
   font-family: intro;
   src: url("../fonts/intro.otf") format("opentype"); }
@@ -2063,6 +2079,9 @@ header {
       pointer-event: all;
       z-index: 500;
       right: 15px; }
+
+.button.login {
+  margin-top: 25px; }
 
 @font-face {
   font-family: intro;

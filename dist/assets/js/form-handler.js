@@ -1,5 +1,9 @@
 $(document).ready(function () {
+	// Form login
+	$(".login-form-container .button.login").click(function() {
 
+		$("#loginform").submit();
+	});
 	// Detect click on button
 	$(".button.become-member.submit").click(function () {
 

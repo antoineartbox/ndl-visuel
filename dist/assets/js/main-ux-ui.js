@@ -49,6 +49,9 @@ $( document ).ready(function() {
     $("header .connection p").click(function() {
         $("#bloc-login-overlay").addClass("active-login");
 
+        $("#bloc-login-overlay .closing-button").click(function() {
+			$("#bloc-login-overlay").removeClass("active-login");
+        });
     });
 
 
