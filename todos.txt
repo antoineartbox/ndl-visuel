@@ -33,18 +33,20 @@ BLOC 1
 BLOC 2 
 - espace après les tirets[x]
 - continuer plus flèche en bas[x]
-- lignes de chaque côté de la boite
+- lignes de chaque côté de la boite[x]
+- ligne disparaisse [x]
+
 
 
 BLOC 3
-- cadenas verts 
-- click sur cadenas (pas login) popup login
-- collège avec C majuscule
-- rajouter continuer avec flèche en bas
+- cadenas verts
+- click sur cadenas (pas login) popup login[x]
+- collège avec C majuscule[x]
+- rajouter continuer avec flèche en bas[X]
 
 
 BLOC 4
-- rajouter continuer avec flèche en bas
+- rajouter continuer avec flèche en bas[x]
 - fond blanc
 
 

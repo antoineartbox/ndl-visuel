@@ -9,7 +9,7 @@
         <div class="text-center-container">
 
             <div class="text-center">
-                <h3>Une programmation aux couleurs du collège</h3>
+                <h3>Une programmation aux couleurs du Collège</h3>
                 <p>Culture, sports et vision internationale seront aux rendez-vous lors de ces événements uniques</p>
             </div>
 

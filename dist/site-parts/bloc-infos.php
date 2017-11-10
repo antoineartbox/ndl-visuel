@@ -1,7 +1,7 @@
 <div id="bloc-infos" class="bloc blue">
 	<a name="block-infos"></a>
 	<span class="line-left"></span>
-	<span class="line-left"></span>
+	<span class="line-right"></span>
 	<div class="content-container">
 
         <div class="line-wrapper">
