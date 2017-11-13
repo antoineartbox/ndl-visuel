@@ -1,5 +1,6 @@
+<a name="block-infos"></a>
 <div id="bloc-infos" class="bloc blue">
-	<a name="block-infos"></a>
+
 	<span class="line-left"></span>
 	<span class="line-right"></span>
 	<div class="content-container">
@@ -43,11 +44,10 @@
                 <span>Devenez-membre</span>
             </div>
         </div>
-		<div class="arrow-container">
-			<a href="#bloc-events-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
-		</div>
     </div>
-
+	<div class="arrow-container">
+		<a href="#bloc-events-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
+	</div>
 </div>
 
 
