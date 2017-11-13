@@ -4,12 +4,12 @@ $( document ).ready(function () {
 	var blocHome= [$("#bloc-home").offset().top, "blue", "bloc-home"];
 	var blocInfos = [$("#bloc-infos").offset().top, "blue", "bloc-infos"];
 	var blocEvents = [$("#bloc-events").offset().top, "transparent", "bloc-event"];
-	var blocInvolve = [$("#bloc-involve").offset().top, "transparent", "bloc-involve"];
+	// var blocInvolve = [$("#bloc-involve").offset().top, "transparent", "bloc-involve"];
 	var blocInvolveInfos = [$("#bloc-involve-infos").offset().top, "blue", "bloc-involve-infos"];
 	var blocQuestions = [$("#bloc-question").offset().top, "transparent", "block-question"]
-	var blocs = [blocInfos, blocEvents, blocInvolve,blocInvolveInfos, blocQuestions];
+	var blocs = [blocInfos, blocEvents,blocInvolveInfos, blocQuestions];
 
-	var menuInfos = $(".menu-infos");
+	var menuHome = $(".menu-home");
 	var menuAbout = $(".menu-about");
 	var menuEvents = $(".menu-events");
 	var menuInvolve = $(".menu-involve");
@@ -23,19 +23,42 @@ $( document ).ready(function () {
 	var involeInfosAnchor = $(".menu-involve-infos-anchor");
 	var questionAnchor = $(".menu-question-anchor");
 
-// Set default white on first anchor point
+	// Load require code on document laod
+	executeOnDocReady();
+	// Set on load document color
+	function executeOnDocReady() {
 
-	$(".menu-home-anchor").addClass("single-white");
+		$(".menu-home-anchor").addClass("single-white");
+		$("nav .menu-home").css({
+			"background-color":"#004588",
+			"color" : "white"
+		});
+		$('header').css({
+			"background-color":"transparent"
+		});
+
+		// Print the current menu
+		printCurrentBlocMenu($(window).scrollTop());
+
+		// Check for printing the good color of header
+		if($(window).scrollTop() > blocHome[0]) {
+			$("header").css({"background-color": "white"});
+		}
+	}
+
 // Define user behaviour
 	$(window).scroll(function() {
 
+
 		var currentScroll = $(window).scrollTop();
+
 		// Loop through all blocks
 		for (var i = 0; i < blocs.length; i++) {
 			var currentBlock = blocs[i];
 			if (currentScroll >= currentBlock[0] && currentScroll < currentBlock[0] + 500) {
 				displayHeaderBackground(currentBlock)
 			}
+
 		}
 
 		// Verify Menu
@@ -57,11 +80,17 @@ $( document ).ready(function () {
 // Get all menus items
 	function printCurrentBlocMenu(scroll) {
 		clearMenu();
-
 		clearAnchor();
-		if(scroll > blocHome[0] && scroll < (blocHome[0] + window.innerHeight)) {
+
+		if(scroll > blocHome[0] - 100 && scroll < (blocHome[0] + window.innerHeight)) {
 
 			$("#menu-linker li").addClass("all-blue");
+			menuHome.css({
+				"background-color":"#004588",
+				"color":"white"
+			});
+
+			$("header").css({"background-color":"transparent"});
 
 			homeAnchor.addClass("single-white");
 
@@ -71,7 +100,9 @@ $( document ).ready(function () {
 				"color" : "white"
 			});
 
-
+			$('header').css({
+				"background-color":"white"
+			});
 			$("#menu-linker li").addClass("all-white");
 			infosAchor.addClass("single-blue");
 
@@ -87,7 +118,7 @@ $( document ).ready(function () {
 			eventAnchor.addClass("single-white");
 
 
-		} else if(scroll > blocInvolve[0] - 5 && scroll < (blocInvolve[0] + (window.innerHeight))) {
+		} else if(scroll > blocInvolveInfos[0] - 5 && scroll < (blocInvolveInfos[0] + (window.innerHeight))) {
 			menuInvolve.css({
 				"background-color":"#004588",
 				"color":"white"
@@ -96,7 +127,7 @@ $( document ).ready(function () {
 			$("#menu-linker li").addClass("all-blue");
 			involveAnchor.addClass("single-white");
 
-		} else if (scroll > blocInvolveInfos[0] && scroll <(blocInvolveInfos[0]) + window.innerHeight) {
+		} else if (scroll > blocInvolveInfos[0] && scroll <(blocInvolveInfos[0]) + (window.innerHeight - 100)) {
 			menuInvolve.css({
 				"background-color":"#004588",
 				"color":"white"
@@ -104,7 +135,7 @@ $( document ).ready(function () {
 			$("#menu-linker li").addClass("all-white");
 			involveAnchor.addClass("single-blue");
 
-		} else if (scroll > blocQuestions[0] - 45 && scroll <(blocQuestions[0]) + window.innerHeight) {
+		} else if(scroll > (blocQuestions[0] - 100)){
 
 			menuQuestion.css({
 				"background-color":"#004588",

@@ -2,12 +2,15 @@
 @import "../core/layout-rules.scss";
 #bloc-infos {
     .line-left {
+        @media screen and (max-width: 1350px) {
+            display: none;
+        }
+
         @media screen and (max-width: 900px) {
             display: none;
         }
 
-        @include centered;
-
+        @include center-content;
         display: inline-block;
         width: 15%;
         height: 3px;
@@ -16,10 +19,13 @@
     }
 
     .line-right  {
+        @media screen and (max-width: 1350px) {
+            display: none;
+        }
         @media screen and (max-width: 900px) {
             display: none;
         }
-        @include centered;
+        @include center-content;
         display: inline-block;
         right:15px;
         width: 15%;
@@ -52,7 +58,7 @@
         }
 
         .line-wrapper {
-            padding:100px;
+            padding:60px;
             border: solid rgba(255,255,255,0.5) 1px;
             @media screen and (max-width: 1700px) {
                 padding:90px;

@@ -35,15 +35,16 @@ BLOC 2
 - continuer plus flèche en bas[x]
 - lignes de chaque côté de la boite[x]
 - ligne disparaisse [x]
-
+- Changer les lignes de position []
+-Fixer le Arrow behaviour[X]
 
 
 BLOC 3
 - cadenas verts
-- click sur cadenas (pas login) popup login[x]
+- click sur cadenas (pas login) popup membership[x]
 - collège avec C majuscule[x]
 - rajouter continuer avec flèche en bas[X]
-
+-Fixer le Arrow behaviour[X]
 
 BLOC 4
 - rajouter continuer avec flèche en bas[x]
@@ -61,3 +62,10 @@ Bloc 6
 
 Features
 
+// Premier bloc menu est transparent
+// On va enlever section deuxieme video plein ecran blanc[X]
+		-> Donc video en pleine ecran bloc 1 => Teaser on clic full one [Wait for videos]
+
+// Mettre le contact form en pop-up
+// Mettre toutes les bloc bleus-verts
+Changer le *Connectez-vous*

@@ -21,7 +21,7 @@
             z-index:500;
             padding-top: 20px;
             position: relative;
-            background-color:$mainGreen;
+            background-color:$mainBlue;
             padding: 30px;
             color: white;
             @include centered;
@@ -45,7 +45,7 @@
             }
             // Overide button for color
             .button {
-                background-color: $mainBlue;
+                background-color: $mainGreen;
             }
             .become-member {
                 margin-top:10px;

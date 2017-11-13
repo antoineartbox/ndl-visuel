@@ -33,7 +33,7 @@
             <?php } ?>
         </div>
 		<div class="arrow-container">
-			<a href="#bloc-involve-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
+			<a href="#bloc-involve-infos-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
 		</div>
 	</div>
 
