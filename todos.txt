@@ -52,7 +52,7 @@ BLOC 4
 
 
 BLOC 5
-- rajouter continuer avec flèche en bas
+- rajouter continuer avec flèche en bas[X]
 - mise en page
 
 Bloc 6
@@ -62,10 +62,31 @@ Bloc 6
 
 Features
 
-// Premier bloc menu est transparent
+// Premier bloc menu est transparent[X]
 // On va enlever section deuxieme video plein ecran blanc[X]
 		-> Donc video en pleine ecran bloc 1 => Teaser on clic full one [Wait for videos]
 
-// Mettre le contact form en pop-up
-// Mettre toutes les bloc bleus-verts
-Changer le *Connectez-vous*
+
+// Mettre toutes les bloc bleus-verts[X]
+Changer le *Connectez-vous*[X]
+
+
+Pending Mardi
+BLoc 1 et menu
+-Mettre contact FORM en PopUp [COmme mentionné par Philippe]
+-Vérifier que le X du Video Youtube fonctionne toujours. Principalement au resizeing d'écran
+-S'assurer que le menu ne glitch pas sur le resize
+	-DDiminuer l'espacement entre les items du menu
+	-Diminuer la typo
+
+Sur le on click de la premiere sections vers la deuxieme
+	-Mettre le header en blanc automatiquement
+-Vérifier que le INTRO se set bien en responsive
+(Si tu vérifies bien il reste sur le resize)
+
+Sur le bloc 2
+-Ajouter une diminutation de la typo
+-Retirer un peu de padding
+-S'assurer que le bouton et la flèche ne se rencontre pas (Se reglera en changement les points ci-dessus.)
+-Ajouter les astérix sur les champs nécessaire
+-

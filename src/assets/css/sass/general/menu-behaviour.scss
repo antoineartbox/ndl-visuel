@@ -16,6 +16,11 @@ header {
         right: 50px;
         z-index: 2500;
         margin-top: 15px;
+
+        // Mostly iPhone
+        @media screen and (max-width: 400px) {
+            right:20px;
+        }
         span {
             color: $mainBlue;
             display: block;
@@ -24,6 +29,11 @@ header {
             margin-bottom: 10px;
             background-color: $mainBlue;
             transition: all 0.5s;
+            // Mostly iPhone
+            @media screen and (max-width: 400px) {
+                height:3px;
+                margin-bottom: 8px;
+            }
 
             &.active-menu {
                 background-color: black;
@@ -40,6 +50,7 @@ header {
                     margin-top: -4px;
                     transform: rotate(-45deg);
                 }
+
             }
         }
     }
@@ -47,7 +58,7 @@ header {
 
         @media screen and (max-width: 900px) {
             position: absolute;
-            right: -250%;
+            right: -500%;
             transition: all 0.5s;
             &.display-menu-mobile {
                 padding-right: 0px;

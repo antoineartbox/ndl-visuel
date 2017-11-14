@@ -1120,6 +1120,9 @@ body #menu-linker {
   top: 50%;
   z-index: 100;
   right: 35px; }
+  @media screen and (max-width: 400px) {
+    body #menu-linker {
+      right: 5px; } }
   body #menu-linker ul {
     margin: 0px;
     display: inline;
@@ -1130,6 +1133,9 @@ body #menu-linker {
       border-radius: 100%;
       width: 9px;
       height: 9px; }
+      @media screen and (max-width: 400px) {
+        body #menu-linker ul .white-rounder {
+          margin-top: 10px; } }
     body #menu-linker ul li {
       border-radius: 100%;
       border: solid #004588 2px;
@@ -1169,6 +1175,9 @@ header .menu-hambuger {
       display: block; } }
   header .menu-hambuger.activated-menu-container {
     margin-top: 25px; }
+  @media screen and (max-width: 400px) {
+    header .menu-hambuger {
+      right: 20px; } }
   header .menu-hambuger span {
     color: #004588;
     display: block;
@@ -1177,6 +1186,10 @@ header .menu-hambuger {
     margin-bottom: 10px;
     background-color: #004588;
     transition: all 0.5s; }
+    @media screen and (max-width: 400px) {
+      header .menu-hambuger span {
+        height: 3px;
+        margin-bottom: 8px; } }
     header .menu-hambuger span.active-menu {
       background-color: black;
       margin-bottom: 0px; }
@@ -1193,7 +1206,7 @@ header .menu-hambuger {
 @media screen and (max-width: 900px) {
   header #menu-container {
     position: absolute;
-    right: -250%;
+    right: -500%;
     transition: all 0.5s; }
     header #menu-container.display-menu-mobile {
       padding-right: 0px;
@@ -1312,8 +1325,16 @@ header {
     header #menu-container nav {
       color: #004588;
       text-transform: uppercase; }
+      header #menu-container nav .container-connection {
+        border-bottom: 1px solid #004588; }
+        header #menu-container nav .container-connection p {
+          padding-right: 5px; }
       header #menu-container nav ul {
         list-style: none; }
+        @media screen and (max-width: 1300px) {
+          header #menu-container nav ul a {
+            width: 10px;
+            font-size: 13px; } }
         header #menu-container nav ul li {
           display: inline-block;
           transition: all 0.5s;
@@ -1326,6 +1347,9 @@ header {
           header #menu-container nav ul li.menu-membership {
             background-color: #7fc214;
             color: #FFFFFF; }
+          @media screen and (max-width: 1300px) {
+            header #menu-container nav ul li {
+              padding: 10px; } }
         header #menu-container nav ul .connection {
           display: inline-block;
           margin-left: 40px; }
@@ -2278,7 +2302,7 @@ header {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
-    background-color: #7fc214;
+    background-color: #004588;
     color: white;
     padding: 30px;
     padding-top: 20px;
@@ -2306,7 +2330,7 @@ header {
     #bloc-involve-overlay.active-involving .invole-form-container .newsletter-choice p {
       display: inline-block; }
     #bloc-involve-overlay.active-involving .invole-form-container .button {
-      background-color: #004588; }
+      background-color: #7fc214; }
       #bloc-involve-overlay.active-involving .invole-form-container .button.get-involve {
         font-style: normal;
         font-size: 25px;
@@ -2433,6 +2457,15 @@ header {
       width: 100%;
       padding-top: 75px;
       padding-bottom: 75px; }
+      @media screen and (max-width: 1290px) {
+        #bloc-home .content-container h3 {
+          font-size: 45px;
+          padding-left: 5px;
+          padding-top: 50px;
+          padding-bottom: 50px; } }
+      @media screen and (max-width: 400px) {
+        #bloc-home .content-container h3 {
+          font-size: 22px; } }
     #bloc-home .content-container .arrow-container {
       position: absolute;
       top: 130%;
@@ -2445,29 +2478,21 @@ header {
           width: 80px; }
     #bloc-home .content-container .button-container {
       text-align: center; }
-      #bloc-home .content-container .button-container .arrow {
-        animation: animation-button-call-action infinite 1s; }
-        #bloc-home .content-container .button-container .arrow.arrow-left {
-          animation: animation-arrow-left infinite 1s;
-          display: inline-block;
-          background: url("../images/component/arrow-trans-left.png");
-          background-size: cover;
-          height: 20px;
-          width: 40px;
-          margin-right: 25px; }
-        #bloc-home .content-container .button-container .arrow.arrow-right {
-          animation: animation-arrow-right infinite 1s;
-          display: inline-block;
-          background: url("../images/component/arrow-trans-right.png");
-          background-size: cover;
-          margin-left: 25px;
-          width: 40px;
-          height: 20px; }
       #bloc-home .content-container .button-container .button-video {
         background-color: #004588;
         font-style: normal;
         font-size: 25px;
         text-transform: uppercase; }
+        @media screen and (max-width: 1300px) {
+          #bloc-home .content-container .button-container .button-video {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px; } }
+        @media screen and (max-width: 400px) {
+          #bloc-home .content-container .button-container .button-video {
+            padding: 15px;
+            font-size: 17px; } }
 
 footer {
   background-color: #7fc214; }
