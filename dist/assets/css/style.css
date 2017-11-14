@@ -1191,13 +1191,13 @@ header .menu-hambuger {
         height: 3px;
         margin-bottom: 8px; } }
     header .menu-hambuger span.active-menu {
-      background-color: black;
+      background-color: #004588;
       margin-bottom: 0px; }
       header .menu-hambuger span.active-menu.line-1 {
         transform: rotate(45deg); }
       header .menu-hambuger span.active-menu.line-2 {
         transition: all 0.2s;
-        width: 0px;
+        display: none;
         height: 0px; }
       header .menu-hambuger span.active-menu.line-3 {
         margin-top: -4px;
@@ -1206,7 +1206,7 @@ header .menu-hambuger {
 @media screen and (max-width: 900px) {
   header #menu-container {
     position: absolute;
-    right: -500%;
+    right: -250%;
     transition: all 0.5s; }
     header #menu-container.display-menu-mobile {
       padding-right: 0px;
@@ -1222,12 +1222,18 @@ header .menu-hambuger {
         /* bring your own prefixes */
         transform: translate(-50%, -50%);
         width: 100%; }
-        header #menu-container.display-menu-mobile nav ul {
-          padding-left: 0px; }
-          header #menu-container.display-menu-mobile nav ul li {
-            text-align: center;
-            display: block;
-            border-top: solid 1px #004588; } }
+        header #menu-container.display-menu-mobile nav a,
+        header #menu-container.display-menu-mobile nav a:link,
+        header #menu-container.display-menu-mobile nav a:visited {
+          text-decoration: none; }
+      header #menu-container.display-menu-mobile .container-connection {
+        margin-left: 0px;
+        border: 0px; }
+      header #menu-container.display-menu-mobile ul {
+        padding-left: 0px; }
+        header #menu-container.display-menu-mobile ul li {
+          text-align: center;
+          display: block; } }
 
 .bloc .arrow-container {
   position: absolute;
