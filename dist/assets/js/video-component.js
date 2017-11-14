@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
 	$("#bloc-home .button-video").click(function() {
 
-		initVideo($("#bloc-home"), "https://www.youtube.com/embed/I3X_tj-MWPM?rel=0&amp;controls=0");
+		initVideo($("#bloc-home"), "https://www.youtube.com/embed/I3X_tj-MWPM?autoplay=1");
 
 	})
 

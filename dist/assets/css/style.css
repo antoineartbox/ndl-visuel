@@ -1238,14 +1238,19 @@ header .menu-hambuger {
 
 .bloc .arrow-container {
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
   width: 100%;
   text-align: center; }
+  .bloc .arrow-container div {
+    color: #FFFFFF;
+    text-transform: uppercase; }
+    .bloc .arrow-container div p {
+      display: inline-block; }
   .bloc .arrow-container .arrow-bottom {
     cursor: pointer;
     width: 15px; }
     .bloc .arrow-container .arrow-bottom img {
-      width: 80px; }
+      width: 40px; }
 
 /*
 // Exeption
@@ -1319,6 +1324,9 @@ header {
     @media screen and (max-width: 1175px) {
       header .logo-container {
         display: none; } }
+    @media screen and (max-width: 900px) {
+      header .logo-container {
+        display: block; } }
     header .logo-container img {
       height: 75px; }
   header #menu-container {
@@ -1335,6 +1343,7 @@ header {
       header #menu-container nav .container-connection {
         border-bottom: 1px solid #004588; }
         header #menu-container nav .container-connection p {
+          font-size: 13px;
           padding-right: 5px; }
       header #menu-container nav ul {
         list-style: none; }
@@ -1377,6 +1386,7 @@ header {
     right: 120px;
     color: black; }
   .video-component iframe {
+    margin-top: 45px;
     width: 0px;
     height: 0px;
     position: fixed;
@@ -2455,7 +2465,7 @@ header {
       @media screen and (max-width: 1290px) {
         #bloc-home .content-container h3 {
           font-size: 45px;
-          padding-left: 5px;
+          padding-left: 0px;
           padding-top: 50px;
           padding-bottom: 50px; } }
       @media screen and (max-width: 400px) {

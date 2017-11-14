@@ -1,7 +1,14 @@
 .bloc {
     .arrow-container {
+        div {
+            color: $mainWhite;
+            text-transform: uppercase;
+            p {
+                display:inline-block;
+            }
+        }
         position: absolute;
-        bottom: 0px;
+        bottom:5px;
         width: 100%;
         text-align: center;
 
@@ -9,7 +16,7 @@
             cursor: pointer;
             width:15px;
             img {
-                width:80px;
+                width:40px;
             }
         }
     }
