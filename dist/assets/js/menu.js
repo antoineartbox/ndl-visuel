@@ -40,10 +40,7 @@ $( document ).ready(function () {
 		// Print the current menu
 		printCurrentBlocMenu($(window).scrollTop());
 
-		// Check for printing the good color of header
-		if($(window).scrollTop() > blocHome[0]) {
-			$("header").css({"background-color": "white"});
-		}
+
 	}
 
 // Define user behaviour
@@ -81,8 +78,10 @@ $( document ).ready(function () {
 	function printCurrentBlocMenu(scroll) {
 		clearMenu();
 		clearAnchor();
-
-		if(scroll > blocHome[0] - 100 && scroll < (blocHome[0] + window.innerHeight)) {
+		if(scroll == 0 )  {
+			$("header").css({"background-color":"transparent"});
+		}
+		if(scroll > blocHome[0] && scroll < (blocHome[0] + window.innerHeight)) {
 
 			$("#menu-linker li").addClass("all-blue");
 			menuHome.css({
@@ -90,7 +89,7 @@ $( document ).ready(function () {
 				"color":"white"
 			});
 
-			$("header").css({"background-color":"transparent"});
+			$("header").css({"background-color":"white"});
 
 			homeAnchor.addClass("single-white");
 
@@ -103,8 +102,10 @@ $( document ).ready(function () {
 			$('header').css({
 				"background-color":"white"
 			});
-			$("#menu-linker li").addClass("all-white");
-			infosAchor.addClass("single-blue");
+
+			$("#menu-linker li").addClass("all-blue");
+
+			infosAchor.addClass("single-white");
 
 		} else if(scroll > blocEvents[0] && scroll < (blocEvents[0] + window.innerHeight)) {
 			menuEvents.css({

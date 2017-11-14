@@ -8,6 +8,12 @@ body {
         z-index: 100;
         right: 35px;
 
+        // Mostly iPhone
+        @media screen and (max-width: 400px) {
+            right:5px;
+
+        }
+
         ul {
             margin: 0px;
             display: inline;
@@ -18,6 +24,12 @@ body {
                 border-radius: 100%;
                 width: 9px;
                 height: 9px;
+
+                // Mostly iPhone
+                @media screen and (max-width: 400px) {
+                    margin-top:10px;
+
+                }
             }
             li {
                 border-radius: 100%;

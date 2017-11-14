@@ -34,8 +34,24 @@ header {
         nav {
             color:$mainBlue;
             text-transform: uppercase;
+
+            .container-connection {
+
+                border-bottom: 1px solid $mainBlue;
+                p {
+                    padding-right:5px;
+                }
+            }
             ul {
                 list-style: none;
+                a {
+                    // Macbook 13 inches
+                    @media screen and (max-width: 1300px) {
+                        width:10px;
+                        font-size: 13px;
+
+                    }
+                }
                 li{
 
                     display: inline-block;
@@ -43,22 +59,28 @@ header {
                     padding:15px;
                     cursor: pointer;
 
+
                     &.active-menu-user {
                         display: none;
                     }
                     &:hover {
                         background-color: $mainWhite;
                     }
-
                     &.menu-membership {
 
                         background-color: $mainGreen;
                         color:$mainWhite;
 
                     }
+                    @media screen and (max-width: 1300px) {
+                        padding:10px;
+
+
+                    }
                 }
 
                 .connection {
+
                     display:inline-block;
                     margin-left:40px;
                     h3,p {
