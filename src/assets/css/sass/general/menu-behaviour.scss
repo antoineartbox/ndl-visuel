@@ -69,7 +69,10 @@ header {
                     padding-left: 0px;
                     @include centered;
                     width: 100%;
-
+                    position: absolute;
+                    &.active-menu-mobile {
+                        
+                    }
                     a,
                     a:link,
                     a:visited {

@@ -1221,7 +1221,8 @@ header .menu-hambuger {
         left: 50%;
         /* bring your own prefixes */
         transform: translate(-50%, -50%);
-        width: 100%; }
+        width: 100%;
+        position: absolute; }
         header #menu-container.display-menu-mobile nav a,
         header #menu-container.display-menu-mobile nav a:link,
         header #menu-container.display-menu-mobile nav a:visited {
