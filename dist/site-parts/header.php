@@ -23,7 +23,7 @@
 
                 <?php if(isset($_SESSION["is_logged_in"]) == FALSE) { ?>
                 <div class="connection">
-                    <p>Connecter-vous</p>
+                    <p>Connectez-vous</p>
                 </div>
                 <?php }  ?>
 				<li class="menu-membership">Devenir Membre</li>

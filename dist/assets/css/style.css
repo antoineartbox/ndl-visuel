@@ -2266,7 +2266,7 @@ header {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
-    background-color: #7fc214;
+    background-color: #004588;
     color: white;
     padding: 30px;
     padding-top: 20px;
@@ -2294,7 +2294,7 @@ header {
     #bloc-involve-overlay.active-involving .invole-form-container .newsletter-choice p {
       display: inline-block; }
     #bloc-involve-overlay.active-involving .invole-form-container .button {
-      background-color: #004588; }
+      background-color: #7fc214; }
       #bloc-involve-overlay.active-involving .invole-form-container .button.get-involve {
         font-style: normal;
         font-size: 25px;
