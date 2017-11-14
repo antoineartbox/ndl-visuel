@@ -1610,6 +1610,10 @@ header {
               #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container p {
                 font-size: 18px;
                 line-height: 20px; } }
+            @media screen and (max-width: 1290px) {
+              #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container p {
+                font-size: 15px;
+                line-height: 20px; } }
       #bloc-infos .content-container .dual-block-container .group-right {
         position: absolute;
         right: 0px;
@@ -1626,13 +1630,17 @@ header {
           margin-top: 0px;
           margin-left: 0px; }
           #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container li {
-            padding-top: 5px; }
+            padding-top: 5px;
+            line-height: 25px; }
           @media screen and (max-width: 900px) {
             #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container {
               font-size: 20px; } }
           @media screen and (max-width: 750px) {
             #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container {
               font-size: 18px; } }
+          #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
+            font-size: 15px;
+            line-height: 16px; }
           @media screen and (max-width: 750px) {
             #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container {
               text-align: center; } }

@@ -98,6 +98,7 @@
                     width:90%;
 
                 }
+
             }
             .group-left {
                 @include font-regular-bloc;
@@ -109,6 +110,7 @@
                     text-align:left;
 
                 }
+
                 .bloc-infos-container {
 
                     width:100%;
@@ -125,6 +127,12 @@
                         }
                         @media screen and (max-width: 750px) {
                             font-size:18px;
+                            line-height: 20px;
+                        }
+
+                        // Mostly mac book
+                        @media screen and (max-width: 1290px) {
+                            font-size: 15px;
                             line-height: 20px;
                         }
                     }
@@ -150,8 +158,9 @@
                     margin-top: 0px;
                     margin-left: 0px;
 
-                    li{
+                    li {
                         padding-top: 5px;
+                        line-height: 25px;
                     }
                     @media screen and (max-width: 900px) {
                         font-size:20px;
@@ -160,6 +169,13 @@
                         font-size:18px;
                     }
                     .bullet-right-container {
+
+                        ul {
+                            li {
+                                font-size:15px;
+                                line-height:16px;
+                            }
+                        }
                         @media screen and (max-width: 750px) {
                             text-align:center;
                         }
