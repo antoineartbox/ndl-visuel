@@ -23,11 +23,21 @@
 						<input class="capital" type="text" name="lastname" value=""><br>
 					</div>
 
-
 					<div class="form-item">
-						<span class="label">Courriel :</span> <input type="text" name="email" class="no-capitalize" value=""><br>
+						<span class="label">Âge : </span> <input type="age" name="age" value=""><br>
 					</div>
 
+					<div class="form-item">
+						<span class="label">Profession :</span> <input class="capital" type="text" name="profession" value=""><br>
+					</div>
+
+					<div class="form-item">
+						<span class="label">Courriel :</span> <input type="text" name="email" class="no-capitalize"value=""><br>
+					</div>
+
+					<div class="form-item">
+						<span class="label">Téléphone :</span> <input type="text" name="phone" value=""><br>
+					</div>
 
 					<div class="form-item">
 						<span class="label">Objet :</span> <input type="text" name="object" value=""><br>
