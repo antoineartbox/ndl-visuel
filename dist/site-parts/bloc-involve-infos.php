@@ -1,5 +1,6 @@
 <div id="bloc-involve-infos" class="bloc blue">
-
+	<span class="line-left"></span>
+	<span class="line-right"></span>
 	<a name="bloc-involve-infos-anchor"></a>
 	<div class="bloc-container">
 		<div class="bloc-content">
@@ -56,7 +57,7 @@
 			</div>
 
 			<div class="form-item">
-				<span class="label">Age : </span> <input type="number" name="age" value=""><br>
+				<span class="label">Âge : </span> <input type="number" name="age" value=""><br>
 			</div>
 			<div class="form-item">
 				<span class="label">Employeur :</span> <input class="capital" type="text" name="employer" value=""><br>

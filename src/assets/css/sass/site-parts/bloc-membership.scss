@@ -45,6 +45,7 @@
     background-color:rgba(255,255,255,0.7);
     z-index:499;
     .membership-form-container {
+        @include center-content;
         z-index:500;
         padding-top: 20px;
         position: relative;
@@ -53,11 +54,22 @@
         color: white;
         @include centered;
         width: 75%;
+        height: 60%;
         text-align: center;
 
+        @media screen and (max-width: 600px) {
+            width:95%;
+            height:85%;
+
+        }
         h3 {
 
             @include font-title;
+            margin-top: 40px;
+            @media screen and (max-width: 950px) {
+                font-size:22px;
+
+            }
         }
         .form-item {
             margin-top:10px;
@@ -65,13 +77,53 @@
                 color: white;
                 display: inline-block;
                 width: 150px;
+
+                @media screen and (max-width: 950px) {
+
+                    display: block;
+                    width:100%;
+                    text-align: center;
+
+                }
+
+                @media screen and (max-width: 950px) {
+
+                    display: inline-block;
+                    width:100%;
+                    font-size:12px;
+                    text-align: center;
+                    width:20%;
+
+                }
+
             }
             input {
                 height: 25px;
                 width: 35%;
+                @media screen and (max-width: 950px) {
+
+
+                    width:55%;
+
+
+                }
+            }
+        }
+        .password-message-container {
+            @media screen and (max-width: 650px) {
+                display: block;
+                width:100%;
+                font-size:12px;
+                text-align: center;
+                
+
             }
         }
         .newsletter-choice {
+            input {
+                display:inline-block;
+                width:1%;
+            }
             p {
                 display: inline-block;
             }

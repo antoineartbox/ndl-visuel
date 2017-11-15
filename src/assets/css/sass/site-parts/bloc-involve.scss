@@ -98,34 +98,67 @@
 
 #bloc-involve-infos {
 
+    .line-left {
+        @media screen and (max-width: 1350px) {
+            display: none;
+        }
 
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
+
+        @include center-content;
+        display: inline-block;
+        width: 15%;
+        border: solid rgba(255, 255, 255, 0.5) 1px;
+        left: 10%;
+    }
+
+    .line-right {
+        @media screen and (max-width: 1350px) {
+            display: none;
+        }
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
+        @include center-content;
+        display: inline-block;
+        right: 15px;
+        width: 15%;
+        left: 90%;
+        border: solid rgba(255, 255, 255, 0.5) 1px;
+    }
+
+    h3 {
+        @media screen and (max-width: 690px) {
+            font-size:17px;
+        }
+    }
     background-color: $mainBlue;
     text-align: center;
     height: 100vh;
     position: relative;
     .bloc-bottom {
-        width:100%;
-        bottom:0px;
+        width: 100%;
+        bottom: 0px;
         position: absolute;
         .become-involve {
-            margin-bottom:75px;
+            margin-bottom: 75px;
         }
     }
     .bloc-container {
         @include center-content;
-        width:90%;
-
+        width: 90%;
     }
     .bloc-bottom {
         position: absolute;
     }
 
-
     .text-center-container {
         @include center-content;
         border: solid 1px $whiteTransparent;
         padding: 15px;
-        width: 70%;
+        width: 60%;
         .white-line {
             display: inline-block;
             margin-top: 30px;
@@ -171,6 +204,13 @@
                 font-size: 33px;
             }
 
+            @media screen and (max-width: 600px) {
+                margin-top: 5px;
+                font-size: 17px;
+            }
+
+
+
         }
         p {
             @include font-title;
@@ -180,14 +220,17 @@
             font-size: 20px;
             text-align: left;
             padding-left: 130px;
+            @media screen and (max-width: 600px) {
+                padding-left:0px;
+            }
             ul {
                 padding-left: 0;
                 list-style: none;
                 li {
                     font-size: 20px;
                     font-weight: 100;
-                    @media screen and (max-width: 1200px) {
-                        font-size: 20px;
+                    @media screen and (max-width: 600px) {
+                        font-size: 12px;
                     }
                 }
             }

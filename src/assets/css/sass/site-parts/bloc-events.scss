@@ -2,7 +2,7 @@
 @import "../general/font.scss";
 
 #bloc-events {
-    background: url("../images/bloc-background/bloc-events-whitey.png") no-repeat center center fixed;
+    background: url("../images/bloc-background/bloc-events-whitey.png") no-repeat center center;
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -29,13 +29,24 @@
             @media screen and (max-width: 1290px) {
                 margin-bottom: 15px;
             }
+            // Responsive
+            @media screen and (max-width: 600px) {
+                font-size: 19px;
+                padding-left:15px;
+                padding-right:15px;
+            }
         }
         color: $mainBlue;
     }
 
     p {
         text-align: center;
-
+        // Responsive
+        @media screen and (max-width: 600px) {
+            font-size: 13px;
+            padding-left:15px;
+            padding-right:15px;
+        }
 
     }
 

@@ -7,9 +7,16 @@
 
     .closing-button.video  {
         position: absolute;
-        top: 90px;
-        right:120px;
-        color: black;
+        top: 175px;
+        right:100px;
+        color: $mainWhite;
+        z-index:5000;
+        @media screen and (max-width: 600px) {
+
+            top: 175px;
+            right:2%;
+
+        }
     }
     iframe {
         margin-top:45px;
@@ -19,9 +26,11 @@
 
         @include centered;
         &.active-video {
-            width: 75%;
+            width: 90%;
             height:75%;
-
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+            }
         }
 
     }
