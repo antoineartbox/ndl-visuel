@@ -46,7 +46,8 @@
         </div>
     </div>
 	<div class="arrow-container">
-		<a href="#bloc-events-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
+		<a href="#block-events-anchor"><div><p>Continuer</p></div></a>
+		<a href="#bloc-events-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-white.png" alt=""></span></a>
 	</div>
 </div>
 

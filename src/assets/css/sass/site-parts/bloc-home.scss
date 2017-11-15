@@ -25,7 +25,7 @@
             padding-bottom: 75px;
             @media screen and (max-width: 1290px) {
                 font-size:45px;
-                padding-left:5px;
+                padding-left:0px;
                 padding-top: 50px;
                 padding-bottom: 50px;
             }
@@ -51,7 +51,6 @@
         .button-container {
 
             text-align: center;
-
             .button-video {
                 background-color: $mainBlue;
                 @include font-button-main-page;

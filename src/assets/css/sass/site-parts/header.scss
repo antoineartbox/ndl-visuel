@@ -10,6 +10,9 @@ header {
         @media screen and (max-width: 1175px) {
             display: none;
         }
+        @media screen and (max-width: 900px) {
+            display: block;
+        }
         display: inline-block;
         position:absolute;
         padding-left:25px;
@@ -39,6 +42,7 @@ header {
 
                 border-bottom: 1px solid $mainBlue;
                 p {
+                    font-size:13px;
                     padding-right:5px;
                 }
             }
