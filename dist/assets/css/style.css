@@ -2143,9 +2143,9 @@ header {
   #bloc-events .content-container {
     padding-top: 7.5%;
     width: 100%; }
-    @media screen and (max-height: 680px) {
+    @media screen and (max-width: 1290px) {
       #bloc-events .content-container {
-        padding-top: 1%; } }
+        padding-top: 50px; } }
   @media screen and (max-width: 1200px) {
     #bloc-events {
       height: auto; } }

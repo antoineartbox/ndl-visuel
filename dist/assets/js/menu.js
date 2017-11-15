@@ -26,6 +26,7 @@ $( document ).ready(function () {
 	// Change color on click
 	$(".menu-item").click(function() {
 		$("header").css({"background-color":"white"});
+		printCurrentBlocMenu($(window).scrollTop());
 	});
 
 
@@ -44,7 +45,10 @@ $( document ).ready(function () {
 		$('header').css({
 			"background-color":"transparent"
 		});
+		if($(window).scrollTop() > 4) {
 
+			$("header").css({"background-color":"white"});
+		}
 		// Print the current menu
 		printCurrentBlocMenu($(window).scrollTop());
 
@@ -86,10 +90,12 @@ $( document ).ready(function () {
 	function printCurrentBlocMenu(scroll) {
 		clearMenu();
 		clearAnchor();
+
+		
 		if(scroll == 0 )  {
 			$("header").css({"background-color":"transparent"});
 		}
-		if(scroll > blocHome[0] && scroll < (blocHome[0] + window.innerHeight) ) {
+		if(scroll > blocHome[0] && scroll < (blocHome[0] + window.innerHeight)) {
 
 			$("#menu-linker li").addClass("all-blue");
 			menuHome.css({
@@ -99,9 +105,10 @@ $( document ).ready(function () {
 
 			$("header").css({"background-color":"white"});
 
+			console.log(scroll);
 
-
-		} else if(scroll > blocInfos[0] - 100 && scroll < (blocInfos[0] + 300)) {
+		} else if(scroll > blocInfos[0] && scroll < (blocInfos[0] + window.innerHeight)) {
+			console.log(scroll);
 			menuAbout.css({
 				"background-color":"#004588",
 				"color" : "white"
@@ -115,7 +122,7 @@ $( document ).ready(function () {
 
 			infosAchor.addClass("single-white");
 
-		} else if(scroll > blocEvents[0] && scroll < (blocEvents[0] + window.innerHeight) - 50) {
+		} else if(scroll > blocEvents[0] - 400 && scroll < (blocEvents[0] + window.innerHeight / 2)) {
 			menuEvents.css({
 				"background-color":"#004588",
 				"color":"white"
@@ -127,7 +134,7 @@ $( document ).ready(function () {
 			eventAnchor.addClass("single-white");
 
 
-		} else if(scroll > blocInvolveInfos[0] - 5 && scroll < (blocInvolveInfos[0] + (window.innerHeight) - 50)) {
+		} else if(scroll > blocInvolveInfos[0] - 400 && scroll < (blocInvolveInfos[0] + (window.innerHeight))) {
 			menuInvolve.css({
 				"background-color":"#004588",
 				"color":"white"
@@ -136,7 +143,7 @@ $( document ).ready(function () {
 			$("#menu-linker li").addClass("all-blue");
 			involveAnchor.addClass("single-white");
 
-		} else if (scroll > blocInvolveInfos[0] && scroll <(blocInvolveInfos[0]) + (window.innerHeight - 100)) {
+		} else if (scroll > blocInvolveInfos[0] - 400 && scroll <(blocInvolveInfos[0]) + (window.innerHeight)) {
 			menuInvolve.css({
 				"background-color":"#004588",
 				"color":"white"
@@ -144,7 +151,7 @@ $( document ).ready(function () {
 			$("#menu-linker li").addClass("all-white");
 			involveAnchor.addClass("single-blue");
 
-		} else if(scroll > (blocQuestions[0] - 100)){
+		} else if(scroll > (blocQuestions[0] - 400)){
 
 			menuQuestion.css({
 				"background-color":"#004588",

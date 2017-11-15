@@ -9,11 +9,11 @@
         .content-container {
             padding-top: 7.5%;
             width: 100%;
-
             // Responsive
-            @media screen and (max-height: 680px) {
-                padding-top: 1%;
+            @media screen and (max-width: 1290px) {
+                padding-top:50px;
             }
+
 
         }
 
