@@ -54,6 +54,7 @@
         @include centered;
         width: 75%;
         text-align: center;
+
         h3 {
 
             @include font-title;
@@ -67,7 +68,7 @@
             }
             input {
                 height: 25px;
-                width: 75%;
+                width: 35%;
             }
         }
         .newsletter-choice {

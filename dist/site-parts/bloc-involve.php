@@ -7,8 +7,11 @@
             <div class="button call-to-action  main-page-button watch-video-involve">
                 <span>Regarder la vidéo</span>
             </div>
+
+
 			<div class="arrow-container">
-				<a href="#bloc-involve-infos-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
+				<a href="#bloc-involve-infos-anchor"><div><p>Continuer</p></div></a>
+				<a href="#bloc-involve-infos-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-white.png" alt=""></span></a>
 			</div>
             <!--
             <div class="button call-to-action  main-page-button become-involve">

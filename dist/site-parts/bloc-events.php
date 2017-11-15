@@ -1,6 +1,7 @@
+
 <div id="bloc-events" class="bloc white">
-	<br>
 	<a name="bloc-events-anchor"></a>
+
     <div class="white-transparancy">
 
     </div>
@@ -32,8 +33,10 @@
                 </div>
             <?php } ?>
         </div>
+
 		<div class="arrow-container">
-			<a href="#bloc-involve-infos-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
+			<a href="#bloc-involve-infos-anchor"><div><p class="blue">Continuer</p></div></a>
+			<a href="#bloc-involve-infos-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-blue.png" alt=""></span></a>
 		</div>
 	</div>
 

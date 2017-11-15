@@ -3,28 +3,24 @@
 @import "../core/layout-rules.scss";
 
 #bloc-involve {
-    background-color:$mainWhite;
+    background-color: $mainWhite;
     background-size: cover;
     height: 100vh;
     position: relative;
 
     .content-container {
-        @include center-content;
 
         h3 {
             display: block;
             @include font-home-italic;
-
         }
 
         .button-container {
-
             text-align: center;
             .button {
                 display: block;
-
-                margin:0 auto;
-                margin-bottom:25px;
+                margin: 0 auto;
+                margin-bottom: 25px;
                 width: 275px;
             }
             .watch-video-involve {
@@ -38,40 +34,38 @@
         }
     }
 }
+
 #bloc-involve-overlay {
     display: none;
 }
 
 #bloc-involve-overlay.active-involving {
-
     display: block;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0px;
-    background-color:rgba(255,255,255,0.7);
+    background-color: rgba(255, 255, 255, 0.7);
 
     .invole-form-container {
         @include centered;
         background-color: $mainBlue;
         color: white;
-
         padding: 30px;
         padding-top: 20px;
         text-align: center;
         width: 75%;
         z-index: 500;
         h3 {
-
             @include font-title;
         }
         .closing-button {
             position: absolute;
-            top:15px;
-            right:15px;
+            top: 15px;
+            right: 15px;
         }
         .form-item {
-            margin-top:10px;
+            margin-top: 10px;
             .label {
                 color: white;
                 display: inline-block;
@@ -79,7 +73,7 @@
             }
             input {
                 height: 25px;
-                width: 75%;
+                width: 35%;
             }
         }
         .newsletter-choice {
@@ -104,78 +98,102 @@
 
 #bloc-involve-infos {
 
+
     background-color: $mainBlue;
-    text-align:center;
+    text-align: center;
     height: 100vh;
     position: relative;
+    .bloc-bottom {
+        width:100%;
+        bottom:0px;
+        position: absolute;
+        .become-involve {
+            margin-bottom:75px;
+        }
+    }
+    .bloc-container {
+        @include center-content;
+        width:90%;
+
+    }
+    .bloc-bottom {
+        position: absolute;
+    }
+
 
     .text-center-container {
+        @include center-content;
+        border: solid 1px $whiteTransparent;
+        padding: 15px;
+        width: 70%;
+        .white-line {
+            display: inline-block;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 2px;
+            background-color: white;
+            width: 50%;
+        }
+        @media screen and (max-width: 1200px) {
+            width: 75%;
+        }
+        @media screen and (max-width: 900px) {
+            width: 80%;
+        }
+        @media screen and (max-width: 800px) {
+            width: 85%;
+        }
 
-            @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 700px) {
+            width: 90%;
+        }
 
-                    width: 75%;
+        @media screen and (max-width: 650px) {
+            width: 95%;
+        }
+
+        @include center-content;
+        color: white;
+        h3 {
+            @include font-title;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            @media screen and (max-width: 1300px) {
+                font-size: 33px;
             }
-            @media screen and (max-width: 900px) {
-
-                    width: 80%;
+            // Responsive
+            @media screen and (max-height: 775px) {
+                margin-top: 5px;
+                font-size: 35px;
             }
-            @media screen and (max-width: 800px) {
-
-                    width: 85%;
-            }
-
-            @media screen and (max-width: 700px) {
-
-                    width: 90%;
+            @media screen and (max-height: 700px) {
+                margin-top: 5px;
+                font-size: 33px;
             }
 
-            @media screen and (max-width: 650px) {
+        }
+        p {
+            @include font-title;
+        }
 
-                    width: 95%;
-            }
-
-            @include center-content;
-            color: white;
-            h3 {
-                @include font-title;
-                margin-top: 0px;
-                // Responsive
-                @media screen and (max-height: 775px) {
-                    margin-top:5px;
-                    font-size: 35px;
-                }
-                @media screen and (max-height: 700px) {
-                    margin-top:5px;
-                    font-size: 33px;
-                }
-                @media screen and (max-height: 680px) {
-                    margin-top:5px;
-                    font-size: 27px;
-                }
-
-
-
-            }
-            p {
-                @include font-title;
-            }
-
-            .list-center-infos {
-                ul {
-                    padding-left: 0;
-                    list-style:none;
-                    li {
-                        font-size:25px;
-                        font-weight: 100;
-                        @media screen and (max-width: 1200px) {
-
-                            font-size:20px;
-                        }
+        .list-center-infos {
+            font-size: 20px;
+            text-align: left;
+            padding-left: 130px;
+            ul {
+                padding-left: 0;
+                list-style: none;
+                li {
+                    font-size: 20px;
+                    font-weight: 100;
+                    @media screen and (max-width: 1200px) {
+                        font-size: 20px;
                     }
                 }
             }
-            .button {
-                margin-top: 5%;
-            }
+        }
+        .button {
+            margin-top: 5%;
+        }
     }
 }

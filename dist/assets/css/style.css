@@ -1040,6 +1040,9 @@
   animation-name: slideOutUp; }
 
 /*This file mixins for helping centering, disposing and placing elements*/
+input {
+  width: 45%; }
+
 @font-face {
   font-family: intro;
   src: url("../fonts/intro.otf") format("opentype"); }
@@ -1321,7 +1324,10 @@ header {
   height: 100px;
   z-index: 200;
   width: 100%;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  transition: all 2s; }
+  header.activate-shadow {
+    box-shadow: 3px 3px 3px rgba(125, 125, 125, 0.5); }
   @media screen and (max-width: 900px) {
     header {
       height: 75px; } }
@@ -1592,6 +1598,11 @@ header {
       #bloc-infos .content-container .dual-block-container .group-left {
         display: inline-block;
         width: 48%; }
+        @media screen and (max-width: 500px) {
+          #bloc-infos .content-container .dual-block-container .group-right,
+          #bloc-infos .content-container .dual-block-container .group-left {
+            width: 100%;
+            text-align: left; } }
         @media screen and (max-width: 800px) {
           #bloc-infos .content-container .dual-block-container .group-right,
           #bloc-infos .content-container .dual-block-container .group-left {
@@ -1608,9 +1619,6 @@ header {
         @media screen and (max-width: 600px) {
           #bloc-infos .content-container .dual-block-container .group-left {
             font-size: 17px; } }
-        @media screen and (max-width: 800px) {
-          #bloc-infos .content-container .dual-block-container .group-left {
-            text-align: left; } }
         #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container {
           width: 100%;
           margin-top: 0px; }
@@ -1871,7 +1879,7 @@ header {
         width: 150px; }
       #bloc-membership-overlay.active-membership .membership-form-container .form-item input {
         height: 25px;
-        width: 75%; }
+        width: 35%; }
     #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice p {
       display: inline-block; }
     #bloc-membership-overlay.active-membership .membership-form-container .button {
@@ -2145,7 +2153,7 @@ header {
     width: 100%; }
     @media screen and (max-width: 1290px) {
       #bloc-events .content-container {
-        padding-top: 50px; } }
+        padding-top: 120px; } }
   @media screen and (max-width: 1200px) {
     #bloc-events {
       height: auto; } }
@@ -2157,10 +2165,11 @@ header {
       color: white;
       text-align: center;
       color: #004588; }
+      @media screen and (max-width: 1290px) {
+        #bloc-events .text-center-container h3 {
+          margin-bottom: 15px; } }
   #bloc-events p {
-    text-align: center;
-    margin: 0px;
-    font-size: 23px; }
+    text-align: center; }
   #bloc-events #events-container {
     display: flex;
     justify-content: center;
@@ -2174,6 +2183,9 @@ header {
     margin-bottom: 80px;
     color: #004588;
     text-align: center; }
+    @media screen and (max-width: 1300px) {
+      #bloc-events #events-container {
+        margin-top: 25px; } }
     #bloc-events #events-container.blocked-access .single-event-container .over-blocker {
       display: inline-block;
       left: 0px;
@@ -2212,7 +2224,7 @@ header {
         font-size: 17px; }
       #bloc-events #events-container .single-event-container .event-description {
         font-size: 15px;
-        margin-bottom: 20px; }
+        margin-bottom: 5px; }
       #bloc-events #events-container .single-event-container .button {
         padding: 10px 20px 10px 20px;
         transition: all 0.5s;
@@ -2298,32 +2310,26 @@ header {
   background-size: cover;
   height: 100vh;
   position: relative; }
-  #bloc-involve .content-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%); }
-    #bloc-involve .content-container h3 {
+  #bloc-involve .content-container h3 {
+    display: block;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 68px;
+    color: #004588; }
+  #bloc-involve .content-container .button-container {
+    text-align: center; }
+    #bloc-involve .content-container .button-container .button {
       display: block;
-      font-style: italic;
-      font-weight: 900;
-      font-size: 68px;
-      color: #004588; }
-    #bloc-involve .content-container .button-container {
-      text-align: center; }
-      #bloc-involve .content-container .button-container .button {
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 25px;
-        width: 275px; }
-      #bloc-involve .content-container .button-container .watch-video-involve {
-        background-color: #004588; }
-      #bloc-involve .content-container .button-container .button-video {
-        background-color: #004588;
-        font-style: normal;
-        font-size: 22px;
-        text-transform: uppercase; }
+      margin: 0 auto;
+      margin-bottom: 25px;
+      width: 275px; }
+    #bloc-involve .content-container .button-container .watch-video-involve {
+      background-color: #004588; }
+    #bloc-involve .content-container .button-container .button-video {
+      background-color: #004588;
+      font-style: normal;
+      font-size: 22px;
+      text-transform: uppercase; }
 
 #bloc-involve-overlay {
   display: none; }
@@ -2365,7 +2371,7 @@ header {
         width: 150px; }
       #bloc-involve-overlay.active-involving .invole-form-container .form-item input {
         height: 25px;
-        width: 75%; }
+        width: 35%; }
     #bloc-involve-overlay.active-involving .invole-form-container .newsletter-choice p {
       display: inline-block; }
     #bloc-involve-overlay.active-involving .invole-form-container .button {
@@ -2384,13 +2390,43 @@ header {
   text-align: center;
   height: 100vh;
   position: relative; }
+  #bloc-involve-infos .bloc-bottom {
+    width: 100%;
+    bottom: 0px;
+    position: absolute; }
+    #bloc-involve-infos .bloc-bottom .become-involve {
+      margin-bottom: 75px; }
+  #bloc-involve-infos .bloc-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    width: 90%; }
+  #bloc-involve-infos .bloc-bottom {
+    position: absolute; }
   #bloc-involve-infos .text-center-container {
     position: absolute;
     top: 50%;
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
     color: white; }
+    #bloc-involve-infos .text-center-container .white-line {
+      display: inline-block;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      height: 2px;
+      background-color: white;
+      width: 50%; }
     @media screen and (max-width: 1200px) {
       #bloc-involve-infos .text-center-container {
         width: 75%; } }
@@ -2411,7 +2447,11 @@ header {
       font-size: 40px;
       color: white;
       text-align: center;
-      margin-top: 0px; }
+      margin-top: 0px;
+      margin-bottom: 0px; }
+      @media screen and (max-width: 1300px) {
+        #bloc-involve-infos .text-center-container h3 {
+          font-size: 33px; } }
       @media screen and (max-height: 775px) {
         #bloc-involve-infos .text-center-container h3 {
           margin-top: 5px;
@@ -2420,24 +2460,24 @@ header {
         #bloc-involve-infos .text-center-container h3 {
           margin-top: 5px;
           font-size: 33px; } }
-      @media screen and (max-height: 680px) {
-        #bloc-involve-infos .text-center-container h3 {
-          margin-top: 5px;
-          font-size: 27px; } }
     #bloc-involve-infos .text-center-container p {
       margin-top: 0px;
       font-size: 40px;
       color: white;
       text-align: center; }
-    #bloc-involve-infos .text-center-container .list-center-infos ul {
-      padding-left: 0;
-      list-style: none; }
-      #bloc-involve-infos .text-center-container .list-center-infos ul li {
-        font-size: 25px;
-        font-weight: 100; }
-        @media screen and (max-width: 1200px) {
-          #bloc-involve-infos .text-center-container .list-center-infos ul li {
-            font-size: 20px; } }
+    #bloc-involve-infos .text-center-container .list-center-infos {
+      font-size: 20px;
+      text-align: left;
+      padding-left: 130px; }
+      #bloc-involve-infos .text-center-container .list-center-infos ul {
+        padding-left: 0;
+        list-style: none; }
+        #bloc-involve-infos .text-center-container .list-center-infos ul li {
+          font-size: 20px;
+          font-weight: 100; }
+          @media screen and (max-width: 1200px) {
+            #bloc-involve-infos .text-center-container .list-center-infos ul li {
+              font-size: 20px; } }
     #bloc-involve-infos .text-center-container .button {
       margin-top: 5%; }
 

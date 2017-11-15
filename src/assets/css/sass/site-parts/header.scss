@@ -5,9 +5,14 @@ header {
     z-index: 200;
     width: 100%;
     background-color: $mainWhite;
+    transition:all 2s;
+    &.activate-shadow {
+        box-shadow: 3px 3px 3px rgba(125,125,125,0.5);
+    }
     @media screen and (max-width: 900px) {
         height:75px;
     }
+
     .logo-container {
 
         @media screen and (max-width: 1175px) {

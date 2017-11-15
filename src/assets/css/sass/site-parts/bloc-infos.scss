@@ -99,6 +99,10 @@
 
                 display: inline-block;
                 width: 48%;
+                @media screen and (max-width: 500px) {
+                    width:100%;
+                    text-align:left;
+                }
                 @media screen and (max-width: 800px) {
                     width:90%;
 
@@ -114,7 +118,7 @@
                 text-align: right;
                 left: 0px;
                 @media screen and (max-width: 800px) {
-                    text-align:left;
+
 
                 }
 
@@ -208,6 +212,7 @@
     }
     // Remove unwanted margin
     .bloc-title-center {
+
 
         h3 {
             @include font-title;

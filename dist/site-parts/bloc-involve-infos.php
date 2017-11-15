@@ -2,30 +2,38 @@
 
 	<a name="bloc-involve-infos-anchor"></a>
 	<div class="bloc-container">
-        <div class="text-center-container">
-            <div class="text-center">
-                <h3>Vous souhaitez redonner au Collège Notre-Dame-de-Lourdes?</h3>
-                <p>Impliquez-vous à votre façon</p>
-            </div>
-            
-            <div class="list-center-infos">
-                <ul>
-                    <li>- En offrant de votre temps ou de votre expertise</li>
-                    <li>- En développant un projet novateur avec votre employeur</li>
-                    <li>- En contribuant monétairement</li>
-                    <li>- Ou toutes autres idées originales</li>
-                </ul>
-            </div>
-            <div class="button call-to-action  main-page-button become-involve">
-                <span>Impliquez-vous</span>
-            </div>
-        </div>
-		<div class="arrow-container">
-			<a href="#bloc-questions-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom.png" alt=""></span></a>
+		<div class="bloc-content">
+			<div class="text-center-container">
+				<div class="center-content">
+					<div class="text-center">
+						<h3>Vous souhaitez redonner au Collège <br>en contribuant à l'avenir des étudiants?</h3>
+					</div>
+					<span class="white-line"></span>
+					<div class="list-center-infos">
+						<span>Impliquez-vous </span>
+						<ul>
+							<li>- en offrant de votre temps ou de votre expertise</li>
+							<li>- en développant un projet novateur avec votre employeur</li>
+							<li>- en contribuant monétairement</li>
+							<li>- ou toutes autres idées originales</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-    </div>
-</div>
 
+
+	</div>
+	<div class="bloc-bottom">
+		<div class="button call-to-action  main-page-button become-involve">
+			<span>Je veux m'impliquer</span>
+		</div>
+		<div class="arrow-container">
+			<a href="#bloc-involve-infos-anchor"><div><p>Continuer</p></div></a>
+			<a href="#bloc-involve-infos-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-white.png" alt=""></span></a>
+		</div>
+	</div>
+</div>
 
 
 <!-- Is hidden by default -->
@@ -78,7 +86,8 @@
 <div class="involve-form-validation-message">
 	<div class="involve-form-validation-container">
 		<p class="validation-message">
-			Au nom du Collège Notre-Dame-de-Lourdes, merci de soutenir notre programme Alumni, qui fera une réelle différence dans le quotidien de nos étudiants. Le programme ALUMNI; redonner en créant l’avenir!
+			Au nom du Collège Notre-Dame-de-Lourdes, merci de soutenir notre programme Alumni, qui fera une réelle différence dans le quotidien de nos étudiants. Le programme
+			ALUMNI; redonner en créant l’avenir!
 		</p>
 	</div>
 </div>
