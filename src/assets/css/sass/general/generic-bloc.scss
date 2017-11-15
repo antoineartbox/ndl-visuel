@@ -5,6 +5,9 @@
             text-transform: uppercase;
             p {
                 display:inline-block;
+                &.blue {
+                    color:$mainBlue;
+                }
             }
         }
         position: absolute;

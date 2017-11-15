@@ -11,7 +11,7 @@
 
     </div>
 	<div class="arrow-container">
-		<a href="#block-infos"><div><p>Continuer</p></div></a>
-		<a href="#block-infos"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-white.png" alt=""></span></a>
+		<a href="#block-infos"><div><p class="blue">Continuer</p></div></a>
+		<a href="#block-infos"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-blue.png" alt=""></span></a>
 	</div>
 </div>
