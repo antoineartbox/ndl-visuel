@@ -2698,6 +2698,12 @@ header {
   background-size: cover;
   height: 100vh;
   position: relative; }
+  #bloc-home #videoDiv {
+    width: 100%;
+    height: 100%; }
+    #bloc-home #videoDiv video {
+      width: 100%;
+      height: 101%; }
   #bloc-home .content-container {
     position: absolute;
     top: 50%;

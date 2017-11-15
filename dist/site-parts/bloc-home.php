@@ -1,8 +1,8 @@
 <div id="bloc-home" class="bloc">
 	<div id="videoDiv">
 		<video preload="preload" id="video" autoplay="autoplay" loop="loop">
-			<source src="video/t12.webm" type="video/webm"></source>
-			<source src="video/t12.mp4" type="video/mp4"></source>
+			<source src="assets/video/birds.webm" type="video/webm"></source>
+			<source src="assets/video/birds.mp4" type="video/mp4"></source>
 		</video>
 	</div>
     <div class="content-container">
