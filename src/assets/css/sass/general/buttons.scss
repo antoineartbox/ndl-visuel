@@ -15,7 +15,7 @@
 .button.main-page-button {
     background-color:$mainGreen;
     color: $mainWhite;
-    padding:20px 30px 20px 30px;
+    padding:10px;
     cursor:pointer;
     transition: all 0.5s;
     @include font-button-main-page;

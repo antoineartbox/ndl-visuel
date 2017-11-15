@@ -43,26 +43,23 @@
     overflow:hidden;
     // Mostly 13 inches
     @media screen and (max-width: 1300px) {
-        height:110vh;
+
     }
     // Center content
     .content-container {
 
         width:60%;
 
+
+        @media screen and (max-height: 900px) {
+            width:75%;
+        }
         // Mobile
         @media screen and (max-width: 1300px) {
             width:60%;
         }
-        @media screen and (max-height: 900px) {
-            width:60%;
-        }
-        @media screen and (max-height: 850px) {
-            width:100%;
-        }
-
         @media screen and (max-width: 650px) {
-            width:100%;
+            width:95%;
         }
 
         .line-wrapper {
@@ -181,9 +178,10 @@
                     .bullet-right-container {
                         h3 {
 
-                            // Macbook probl
+                            // Macbook 13 inches
                             @media screen and (max-width: 1290px) {
                                 font-size:18px;
+
                             }
 
                             margin-top: 0px;
@@ -209,8 +207,6 @@
 
     }
     // Remove unwanted margin
-
-
     .bloc-title-center {
 
         h3 {
@@ -225,6 +221,7 @@
             @media screen and (max-width: 1290px) {
                 font-size: 25px;
                 max-width: 90%;
+                padding-top:0px;
             }
 
         }
@@ -265,7 +262,7 @@
             font-size: 20px;
         }
         @media screen and (max-height: 650px) {
-            display: none;
+
             margin-top:5px;
             font-size: 20px;
         }
@@ -285,8 +282,7 @@
 
         // Responsive
         @media screen and (max-width: 620px) {
-            padding-top: 100px;
-
+            padding-top: 15px;
         }
 
         // Responsive

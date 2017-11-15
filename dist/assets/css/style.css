@@ -1079,11 +1079,11 @@
 .button.main-page-button {
   background-color: #7fc214;
   color: #FFFFFF;
-  padding: 20px 30px 20px 30px;
+  padding: 10px;
   cursor: pointer;
   transition: all 0.5s;
   font-style: normal;
-  font-size: 25px;
+  font-size: 22px;
   text-transform: uppercase; }
 
 .closing-button {
@@ -1120,9 +1120,9 @@ body #menu-linker {
   top: 50%;
   z-index: 100;
   right: 35px; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 900px) {
     body #menu-linker {
-      right: 5px; } }
+      display: none; } }
   body #menu-linker ul {
     margin: 0px;
     display: inline;
@@ -1175,28 +1175,34 @@ header .menu-hambuger {
       display: block; } }
   header .menu-hambuger.activated-menu-container {
     margin-top: 25px; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 620px) {
     header .menu-hambuger {
-      right: 20px; } }
+      top: 15px;
+      right: 15px; } }
   header .menu-hambuger span {
     color: #004588;
     display: block;
     height: 5px;
-    width: 45px;
-    margin-bottom: 10px;
+    width: 40px;
+    margin-bottom: 7px;
     background-color: #004588;
     transition: all 0.5s; }
+    @media screen and (max-width: 500px) {
+      header .menu-hambuger span {
+        width: 25px;
+        height: 3px;
+        margin-bottom: 5px; } }
     @media screen and (max-width: 400px) {
       header .menu-hambuger span {
         height: 3px;
-        margin-bottom: 8px; } }
+        margin-bottom: 5px; } }
     header .menu-hambuger span.active-menu {
       background-color: #004588;
       margin-bottom: 0px; }
       header .menu-hambuger span.active-menu.line-1 {
         transform: rotate(45deg); }
       header .menu-hambuger span.active-menu.line-2 {
-        transition: all 0.2s;
+        transition: all 0s;
         display: none;
         height: 0px; }
       header .menu-hambuger span.active-menu.line-3 {
@@ -1316,6 +1322,9 @@ header {
   z-index: 200;
   width: 100%;
   background-color: #FFFFFF; }
+  @media screen and (max-width: 900px) {
+    header {
+      height: 75px; } }
   header .logo-container {
     display: inline-block;
     position: absolute;
@@ -1331,6 +1340,9 @@ header {
         display: block; } }
     header .logo-container img {
       height: 75px; }
+      @media screen and (max-width: 900px) {
+        header .logo-container img {
+          height: 50px; } }
   header #menu-container {
     text-align: right;
     padding-right: 30px;
@@ -1531,9 +1543,6 @@ header {
     @media screen and (max-width: 900px) {
       #bloc-infos .line-right {
         display: none; } }
-  @media screen and (max-width: 1300px) {
-    #bloc-infos {
-      height: 110vh; } }
   #bloc-infos .content-container {
     width: 60%;
     position: absolute;
@@ -1541,18 +1550,15 @@ header {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%); }
+    @media screen and (max-height: 900px) {
+      #bloc-infos .content-container {
+        width: 75%; } }
     @media screen and (max-width: 1300px) {
       #bloc-infos .content-container {
         width: 60%; } }
-    @media screen and (max-height: 900px) {
-      #bloc-infos .content-container {
-        width: 60%; } }
-    @media screen and (max-height: 850px) {
-      #bloc-infos .content-container {
-        width: 100%; } }
     @media screen and (max-width: 650px) {
       #bloc-infos .content-container {
-        width: 100%; } }
+        width: 95%; } }
     #bloc-infos .content-container .line-wrapper {
       padding: 60px;
       border: solid rgba(255, 255, 255, 0.5) 1px; }
@@ -1674,7 +1680,8 @@ header {
     @media screen and (max-width: 1290px) {
       #bloc-infos .bloc-title-center h3 {
         font-size: 25px;
-        max-width: 90%; } }
+        max-width: 90%;
+        padding-top: 0px; } }
   #bloc-infos .bloc-title-center .underline {
     display: block;
     border: solid white 1px;
@@ -1713,7 +1720,6 @@ header {
         font-size: 20px; } }
     @media screen and (max-height: 650px) {
       #bloc-infos .bloc-infos-bullet-container {
-        display: none;
         margin-top: 5px;
         font-size: 20px; } }
     #bloc-infos .bloc-infos-bullet-container ul {
@@ -1727,7 +1733,7 @@ header {
     bottom: 7%; }
     @media screen and (max-width: 620px) {
       #bloc-infos .become-member-container {
-        padding-top: 100px; } }
+        padding-top: 15px; } }
     @media screen and (max-height: 775px) {
       #bloc-infos .become-member-container {
         bottom: 2%;
@@ -1773,11 +1779,11 @@ header {
 .button.main-page-button {
   background-color: #7fc214;
   color: #FFFFFF;
-  padding: 20px 30px 20px 30px;
+  padding: 10px;
   cursor: pointer;
   transition: all 0.5s;
   font-style: normal;
-  font-size: 25px;
+  font-size: 22px;
   text-transform: uppercase; }
 
 .closing-button {
@@ -1896,11 +1902,11 @@ header {
 .button.main-page-button {
   background-color: #7fc214;
   color: #FFFFFF;
-  padding: 20px 30px 20px 30px;
+  padding: 10px;
   cursor: pointer;
   transition: all 0.5s;
   font-style: normal;
-  font-size: 25px;
+  font-size: 22px;
   text-transform: uppercase; }
 
 .closing-button {
@@ -2110,7 +2116,7 @@ header {
       background-color: #004588; }
       #bloc-question-overlay.active-involving .invole-form-container .button.get-involve {
         font-style: normal;
-        font-size: 25px;
+        font-size: 22px;
         text-transform: uppercase;
         margin-top: 25px; }
 
@@ -2239,11 +2245,11 @@ header {
 .button.main-page-button {
   background-color: #7fc214;
   color: #FFFFFF;
-  padding: 20px 30px 20px 30px;
+  padding: 10px;
   cursor: pointer;
   transition: all 0.5s;
   font-style: normal;
-  font-size: 25px;
+  font-size: 22px;
   text-transform: uppercase; }
 
 .closing-button {
@@ -2316,7 +2322,7 @@ header {
       #bloc-involve .content-container .button-container .button-video {
         background-color: #004588;
         font-style: normal;
-        font-size: 25px;
+        font-size: 22px;
         text-transform: uppercase; }
 
 #bloc-involve-overlay {
@@ -2366,7 +2372,7 @@ header {
       background-color: #7fc214; }
       #bloc-involve-overlay.active-involving .invole-form-container .button.get-involve {
         font-style: normal;
-        font-size: 25px;
+        font-size: 22px;
         text-transform: uppercase;
         margin-top: 25px; }
 
@@ -2514,7 +2520,7 @@ header {
       #bloc-home .content-container .button-container .button-video {
         background-color: #004588;
         font-style: normal;
-        font-size: 25px;
+        font-size: 22px;
         text-transform: uppercase; }
         @media screen and (max-width: 1300px) {
           #bloc-home .content-container .button-container .button-video {

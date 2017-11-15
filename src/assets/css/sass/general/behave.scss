@@ -9,9 +9,8 @@ body {
         right: 35px;
 
         // Mostly iPhone
-        @media screen and (max-width: 400px) {
-            right:5px;
-
+        @media screen and (max-width: 900px) {
+            display:none;
         }
 
         ul {

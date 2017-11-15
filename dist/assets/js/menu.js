@@ -23,12 +23,20 @@ $( document ).ready(function () {
 	var involeInfosAnchor = $(".menu-involve-infos-anchor");
 	var questionAnchor = $(".menu-question-anchor");
 
+	// Change color on click
+	$(".menu-item").click(function() {
+		$("header").css({"background-color":"white"});
+	});
+
+
+
+
 	// Load require code on document laod
 	executeOnDocReady();
 	// Set on load document color
 	function executeOnDocReady() {
 
-		$(".menu-home-anchor").addClass("single-white");
+
 		$("nav .menu-home").css({
 			"background-color":"#004588",
 			"color" : "white"
@@ -42,7 +50,7 @@ $( document ).ready(function () {
 
 
 	}
-
+	$(".menu-home-anchor").addClass("single-white");
 // Define user behaviour
 	$(window).scroll(function() {
 
@@ -81,7 +89,7 @@ $( document ).ready(function () {
 		if(scroll == 0 )  {
 			$("header").css({"background-color":"transparent"});
 		}
-		if(scroll > blocHome[0] && scroll < (blocHome[0] + window.innerHeight)) {
+		if(scroll > blocHome[0] && scroll < (blocHome[0] + window.innerHeight) ) {
 
 			$("#menu-linker li").addClass("all-blue");
 			menuHome.css({
@@ -91,9 +99,9 @@ $( document ).ready(function () {
 
 			$("header").css({"background-color":"white"});
 
-			homeAnchor.addClass("single-white");
 
-		} else if(scroll > blocInfos[0] && scroll < (blocInfos[0] + window.innerHeight)) {
+
+		} else if(scroll > blocInfos[0] - 100 && scroll < (blocInfos[0] + 300)) {
 			menuAbout.css({
 				"background-color":"#004588",
 				"color" : "white"
@@ -107,7 +115,7 @@ $( document ).ready(function () {
 
 			infosAchor.addClass("single-white");
 
-		} else if(scroll > blocEvents[0] && scroll < (blocEvents[0] + window.innerHeight)) {
+		} else if(scroll > blocEvents[0] && scroll < (blocEvents[0] + window.innerHeight) - 50) {
 			menuEvents.css({
 				"background-color":"#004588",
 				"color":"white"
@@ -119,7 +127,7 @@ $( document ).ready(function () {
 			eventAnchor.addClass("single-white");
 
 
-		} else if(scroll > blocInvolveInfos[0] - 5 && scroll < (blocInvolveInfos[0] + (window.innerHeight))) {
+		} else if(scroll > blocInvolveInfos[0] - 5 && scroll < (blocInvolveInfos[0] + (window.innerHeight) - 50)) {
 			menuInvolve.css({
 				"background-color":"#004588",
 				"color":"white"
@@ -165,6 +173,7 @@ $( document ).ready(function () {
 		$("#menu-linker li").removeClass("single-blue");
 
 	}
+
+	// Remove unwantes tyle
+
 })
-
-
