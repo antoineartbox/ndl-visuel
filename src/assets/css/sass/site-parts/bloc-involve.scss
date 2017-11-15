@@ -86,7 +86,8 @@
             background-color: $mainGreen;
             &.get-involve {
                 @include font-button-main-page;
-                margin-top: 25px;
+                margin-top:15px;
+                padding:15px;
             }
         }
     }
@@ -237,6 +238,12 @@
         }
         .button {
             margin-top: 5%;
+            padding:500px;
         }
+
     }
+}
+
+#form-involve {
+
 }

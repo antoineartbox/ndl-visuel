@@ -3,7 +3,7 @@ $( document ).ready(function() {
 
 
 	$("#bloc-home .button-video").click(function() {
-
+		console.log("penis");
 		initVideo($("#bloc-home"), "https://www.youtube.com/embed/I3X_tj-MWPM?autoplay=1");
 
 	})
@@ -14,24 +14,24 @@ $( document ).ready(function() {
 		var videoContainer = $("#prototype .video-component");
 
 		// Erase all references to the protoypeNode
-		videoContainer = videoContainer;
+		var prototypedVideoContainer = videoContainer;
 
 		parentContainer.html();
 		// Set the component to append to parent src
-		parentContainer.append(videoContainer);
+		parentContainer.append(prototypedVideoContainer);
 
 		// Set the video src
-		videoContainer.find('iframe').attr("src", videoSrc);
+		prototypedVideoContainer.find('iframe').attr("src", videoSrc);
 
 		// Active display
-		videoContainer.find('iframe').addClass("active-video");
+		prototypedVideoContainer.find('iframe').addClass("active-video");
 
 		blockScrolling($("body"));
 		// handle close
 		$(".closing-button.video").click(function() {
 			console.log("meoiee");
-			videoContainer.fadeOut(500);
-			videoContainer.remove();
+			prototypedVideoContainer.fadeOut(500);
+			prototypedVideoContainer.remove();
 
 			enableScrolling($("body"));
 		})

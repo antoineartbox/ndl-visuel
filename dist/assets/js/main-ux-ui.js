@@ -104,10 +104,10 @@ $(".white-rounder").click(function() {
 
 
 $(".call-to-action.button-video").click(function(){
-	$("#videoDiv").addClass("kill-display");
+	$("#fullScreenDiv").addClass("kill-display");
 
 
 	$(".closing-button.video").click(function() {
-		$("#videoDiv").removeClass("kill-display");
+		$("#fullScreenDiv").removeClass("kill-display");
     })
 })

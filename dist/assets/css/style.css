@@ -1446,80 +1446,6 @@ header {
         .video-component iframe.active-video {
           width: 100%; } }
 
-#bloc-video * {
-  box-sizing: border-box; }
-
-#bloc-video .video-background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-  height: 100vh;
-  overflow: hidden;
-  pointer-events: none; }
-
-#bloc-video .video-foreground,
-#bloc-video .video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  pointer-events: none; }
-
-#bloc-video #vidtop-content {
-  top: 0;
-  color: #fff; }
-
-#bloc-video .vid-info {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 33%;
-  background: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  padding: 1rem;
-  font-family: Avenir, Helvetica, sans-serif; }
-
-#bloc-video .vid-info h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-top: 0;
-  line-height: 1.2; }
-
-#bloc-video .vid-info a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.5);
-  transition: .6s background;
-  border-bottom: none;
-  margin: 1rem auto;
-  text-align: center; }
-
-@media (min-aspect-ratio: 16 / 9) {
-  #bloc-video .video-foreground {
-    height: 300%;
-    top: -100%; } }
-
-@media (max-aspect-ratio: 16 / 9) {
-  #bloc-video .video-foreground {
-    width: 300%;
-    left: -100%; } }
-
-@media all and (max-width: 600px) {
-  #bloc-video .vid-info {
-    width: 50%;
-    padding: .5rem; }
-  #bloc-video .vid-info h1 {
-    margin-bottom: .2rem; } }
-
-@media all and (max-width: 500px) {
-  #bloc-video .vid-info .acronym {
-    display: none; } }
-
 @font-face {
   font-family: intro;
   src: url("../fonts/intro.otf") format("opentype"); }
@@ -2567,7 +2493,8 @@ header {
         font-style: normal;
         font-size: 22px;
         text-transform: uppercase;
-        margin-top: 25px; }
+        margin-top: 15px;
+        padding: 15px; }
 
 .involve-form-validation-message {
   display: none; }
@@ -2709,7 +2636,8 @@ header {
             #bloc-involve-infos .text-center-container .list-center-infos ul li {
               font-size: 12px; } }
     #bloc-involve-infos .text-center-container .button {
-      margin-top: 5%; }
+      margin-top: 5%;
+      padding: 500px; }
 
 /*This file mixins for helping centering, disposing and placing elements*/
 @keyframes animation-arrow-left {
@@ -2744,18 +2672,29 @@ header {
   background: url("../images/bloc-background/bloc-home-whitey.png") no-repeat center center;
   background-size: cover;
   height: 100vh;
-  position: relative; }
-  #bloc-home #videoDiv {
+  position: relative;
+  /*
+    #videoDiv {
+        width:100%;
+        height:100%;
+        transition:all 0.5s;
+        margin-top:12px;
+
+        video {
+            width:100%;
+            height: 101%;
+        }
+    }
+*/ }
+  #bloc-home #fullScreenDiv {
     width: 100%;
-    height: 100%;
-    transition: all 0.5s;
-    margin-top: 12px; }
-    #bloc-home #videoDiv.kill-display {
-      height: 0px;
-      width: 0px; }
-    #bloc-home #videoDiv video {
-      width: 100%;
-      height: 101%; }
+    height: 100%; }
+    #bloc-home #fullScreenDiv.kill-display {
+      display: none; }
+    #bloc-home #fullScreenDiv video {
+      width: 102%;
+      object-fit: cover;
+      height: 100%; }
   #bloc-home .content-container {
     position: absolute;
     top: 50%;

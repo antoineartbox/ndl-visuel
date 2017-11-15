@@ -8,21 +8,32 @@
     height: 100vh;
     position: relative;
 
+    #fullScreenDiv {
+        width: 100%;
+        height: 100%;
+        &.kill-display{
+            display: none;
+        }
+        video {
+            width: 102%;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+
+/*
     #videoDiv {
         width:100%;
         height:100%;
         transition:all 0.5s;
         margin-top:12px;
-        &.kill-display{
-            height:0px;
-            width:0px;
-        }
+
         video {
             width:100%;
             height: 101%;
         }
     }
-
+*/
     .content-container {
         @include center-content;
         width: 50%;
