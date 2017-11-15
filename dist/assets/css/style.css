@@ -1895,12 +1895,14 @@ header {
         @media screen and (max-width: 950px) {
           #bloc-membership-overlay.active-membership .membership-form-container .form-item input {
             width: 55%; } }
-    @media screen and (max-width: 650px) {
-      #bloc-membership-overlay.active-membership .membership-form-container .password-message-container {
-        display: block;
-        width: 100%;
-        font-size: 12px;
-        text-align: center; } }
+    #bloc-membership-overlay.active-membership .membership-form-container .password-message-container {
+      display: block; }
+      @media screen and (max-width: 650px) {
+        #bloc-membership-overlay.active-membership .membership-form-container .password-message-container {
+          display: block;
+          width: 100%;
+          font-size: 12px;
+          text-align: center; } }
     #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice input {
       display: inline-block;
       width: 1%; }
@@ -2695,6 +2697,9 @@ header {
       width: 102%;
       object-fit: cover;
       height: 100%; }
+    @media screen and (max-width: 900px) {
+      #bloc-home #fullScreenDiv {
+        display: none; } }
   #bloc-home .content-container {
     position: absolute;
     top: 50%;

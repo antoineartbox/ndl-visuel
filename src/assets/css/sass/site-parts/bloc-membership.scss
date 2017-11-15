@@ -110,6 +110,7 @@
             }
         }
         .password-message-container {
+            display: block;
             @media screen and (max-width: 650px) {
                 display: block;
                 width:100%;
