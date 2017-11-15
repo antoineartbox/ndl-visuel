@@ -1,6 +1,9 @@
 @import "../general/font.scss";
 @import "../core/layout-rules.scss";
 #bloc-infos {
+
+
+
     .line-left {
         @media screen and (max-width: 1350px) {
             display: none;
@@ -328,9 +331,7 @@
             bottom:2%;
             font-size: 10px;
         }
-        .button {
 
-        }
 
     }
 }

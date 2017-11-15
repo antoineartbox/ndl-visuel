@@ -101,3 +101,8 @@ function enableScrolling(element) {
 $(".white-rounder").click(function() {
     console.log("salut");
 });
+
+
+$(".call-to-action.button-video").click(function(){
+	$("#videoDiv").addClass("kill-display");
+})

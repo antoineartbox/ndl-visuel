@@ -18,6 +18,7 @@
     padding:10px;
     cursor:pointer;
     transition: all 0.5s;
+
     @include font-button-main-page;
     @media screen and (max-width: 600px) {
 
@@ -65,4 +66,13 @@
 .button.login {
 
     margin-top:25px;
+}
+
+.button {
+    span{
+        font-size: 16px;
+        padding: 15px;
+    }
+
+
 }

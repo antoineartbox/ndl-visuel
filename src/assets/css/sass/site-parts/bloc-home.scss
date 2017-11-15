@@ -11,12 +11,20 @@
     #videoDiv {
         width:100%;
         height:100%;
+        &.kill-display{
+            height:0px;
+            width:0px;
+        }
         video {
             width:100%;
             height: 101%;
         }
     }
 
+    #videoDiv {
+        display: none;
+
+    }
     .content-container {
         @include center-content;
         width: 50%;
