@@ -2215,16 +2215,32 @@ header {
             font-size: 12px; } }
     #bloc-question .question-form-container .newsletter-choice {
       margin-top: 30px; }
+      #bloc-question .question-form-container .newsletter-choice .label p {
+        font-size: 15px;
+        line-height: 18px;
+        display: inline-block;
+        text-align: left; }
+      @media screen and (max-width: 1300px) {
+        #bloc-question .question-form-container .newsletter-choice .label {
+          font-size: 14px; }
+          #bloc-question .question-form-container .newsletter-choice .label p {
+            display: inline-block;
+            text-align: left; } }
       @media screen and (max-width: 600px) {
         #bloc-question .question-form-container .newsletter-choice .label p {
           display: inline-block;
           text-align: left; } }
-      @media screen and (max-width: 600px) {
-        #bloc-question .question-form-container .newsletter-choice input {
-          width: 20px;
-          float: left;
-          margin-left: 15px;
-          margin-top: 15px; } }
+      #bloc-question .question-form-container .newsletter-choice input {
+        float: left;
+        margin-left: 80px;
+        margin-top: 13px;
+        width: 20px; }
+        @media screen and (max-width: 600px) {
+          #bloc-question .question-form-container .newsletter-choice input {
+            width: 20px;
+            float: left;
+            margin-left: 15px;
+            margin-top: 15px; } }
     #bloc-question .question-form-container .button {
       margin-top: 75px;
       background-color: #004588; }
@@ -2731,15 +2747,15 @@ header {
   position: relative; }
   #bloc-home #videoDiv {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    transition: all 0.5s;
+    margin-top: 12px; }
     #bloc-home #videoDiv.kill-display {
       height: 0px;
       width: 0px; }
     #bloc-home #videoDiv video {
       width: 100%;
       height: 101%; }
-  #bloc-home #videoDiv {
-    display: none; }
   #bloc-home .content-container {
     position: absolute;
     top: 50%;

@@ -105,4 +105,9 @@ $(".white-rounder").click(function() {
 
 $(".call-to-action.button-video").click(function(){
 	$("#videoDiv").addClass("kill-display");
+
+
+	$(".closing-button.video").click(function() {
+		$("#videoDiv").removeClass("kill-display");
+    })
 })
