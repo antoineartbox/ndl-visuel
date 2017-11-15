@@ -12,27 +12,28 @@
 <div id="site-container">
 	<div id="menu-linker">
 		<ul>
-			<div class="white-rounder">
-				<li class="menu-home-anchor"></li>
-			</div>
 
-			<a href="#bloc-infos-anchor">
 				<div class="white-rounder">
-					<li class="menu-infos-anchor"></li>
+					<a href="#bloc-home"><li class="menu-home-anchor"></li></a>
 				</div>
-			</a>
 
-			<a href="#bloc-events-anchor">
-				<div class="white-rounder">
-					<li class="menu-events-anchor"></li>
-				</div>
-			</a>
 
-			<a href="#bloc-involve-anchor">
 				<div class="white-rounder">
-					<li class="menu-involve-anchor"></li>
+					<a href="#block-infos	"><li class="menu-infos-anchor"></li></a>
 				</div>
-			</a>
+
+
+
+				<div class="white-rounder">
+					<a href="#bloc-events-anchor"><li class="menu-events-anchor"></li></a>
+				</div>
+
+
+
+				<div class="white-rounder">
+					<a href="#bloc-involve-infos"><li class="menu-involve-anchor"></li></a>
+				</div>
+
 
 			<a href="#bloc-questions-anchor">
 				<div class="white-rounder">

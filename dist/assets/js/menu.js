@@ -88,7 +88,7 @@ $( document ).ready(function () {
 		clearMenu();
 		clearAnchor();
 
-
+		var limiter = 400;
 		if(scroll == 0 )  {
 			$("header").css({"background-color":"transparent"});
 			$("header").removeClass("activate-shadow");
@@ -97,7 +97,7 @@ $( document ).ready(function () {
 		if(scroll > 3) {
 			$("header").addClass("activate-shadow");
 		}
-		if(scroll > blocHome[0] && scroll < (blocHome[0] + window.innerHeight)) {
+		if(scroll > blocHome[0] - window.innerHeight - limiter && scroll < (blocHome[0] + window.innerHeight - limiter)) {
 
 			$("#menu-linker li").addClass("all-blue");
 			menuHome.css({
@@ -105,11 +105,14 @@ $( document ).ready(function () {
 				"color":"white"
 			});
 
+			homeAnchor.addClass("single-white");
+
+
 			$("header").css({"background-color":"white"});
 
 			console.log(scroll);
 
-		} else if(scroll > blocInfos[0] - 100 && scroll < (blocInfos[0] + window.innerHeight - 250)) {
+		} else if(scroll > blocInfos[0] - limiter && scroll < (blocInfos[0] + window.innerHeight - limiter)) {
 			console.log(scroll);
 			menuAbout.css({
 				"background-color":"#004588",
@@ -124,7 +127,7 @@ $( document ).ready(function () {
 
 			infosAchor.addClass("single-white");
 
-		} else if(scroll > blocEvents[0] - 250 && scroll < (blocEvents[0] + window.innerHeight)) {
+		} else if(scroll > blocEvents[0] - limiter && scroll < (blocEvents[0] + window.innerHeight - limiter)) {
 			menuEvents.css({
 				"background-color":"#004588",
 				"color":"white"

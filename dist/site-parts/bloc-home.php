@@ -1,4 +1,10 @@
 <div id="bloc-home" class="bloc">
+	<div id="videoDiv">
+		<video preload="preload" id="video" autoplay="autoplay" loop="loop">
+			<source src="video/t12.webm" type="video/webm"></source>
+			<source src="video/t12.mp4" type="video/mp4"></source>
+		</video>
+	</div>
     <div class="content-container">
         <h3>Redonner en créant l'avenir</h3>
         <div class="button-container button-video">

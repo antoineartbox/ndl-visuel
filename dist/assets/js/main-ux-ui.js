@@ -98,4 +98,6 @@ function enableScrolling(element) {
     });
 }
 
-
+$(".white-rounder").click(function() {
+    console.log("salut");
+});

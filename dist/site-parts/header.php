@@ -14,7 +14,7 @@
 
             <ul id="menu-div">
 
-				<a href=""><li class="menu-home menu-item">Intro</li></a>
+				<a href="#bloc-home"><li class="menu-home menu-item">Intro</li></a>
 				<a href="#block-infos"><li class="menu-about menu-item menu-about">À propos</li></a>
 				<a href="#bloc-events-anchor"><li class="menu-events menu-item">Événements</li></a>
 				<a href="#bloc-involve-infos-anchor"><li class="menu-involve menu-item">Impliquez-vous</li></a>
