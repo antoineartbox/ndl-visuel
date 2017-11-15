@@ -26,12 +26,9 @@ $( document ).ready(function () {
 	// Change color on click
 	$(".menu-item").click(function() {
 		$("header").css({"background-color":"white"});
-		printCurrentBlocMenu($(window).scrollTop());
+
 	});
-
-
-
-
+	
 	// Load require code on document laod
 	executeOnDocReady();
 	// Set on load document color
@@ -91,7 +88,7 @@ $( document ).ready(function () {
 		clearMenu();
 		clearAnchor();
 
-		
+
 		if(scroll == 0 )  {
 			$("header").css({"background-color":"transparent"});
 		}
