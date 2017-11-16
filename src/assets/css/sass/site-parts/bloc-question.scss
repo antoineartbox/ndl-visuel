@@ -13,13 +13,20 @@
         background-color: $whiteTransparent;
         width: 50%;
         padding-bottom: 50px;
+        h3 {
+            @include font-title;
+            color:$mainBlue;
+            font-style: italic;
+            margin-bottom:5px;
+            @media screen and (max-width: 800px) {
+                font-size:22px;
+            }
+        }
         @include center-content;
         @media screen and (max-height: 900px) {
             width: 85%;
         }
-        @media screen and (max-height: 850px) {
-            width: 100%;
-        }
+
 
         @media screen and (max-width: 650px) {
             width: 100%;
@@ -67,7 +74,7 @@
             @media screen and (max-width: 600px) {
                 font-size: 16px;
             }
-            font-size: 30px;
+            font-size: 20px;
             font-weight: 900;
             line-height: 33px;
             color: $mainBlue;
@@ -113,22 +120,27 @@
     }
     .question-form-container {
         color: white;
-        width: 82%;
+        width: 100%;
         text-align: center;
         form {
-            width: 120%;
+            width: 100%;
         }
         h3 {
             @include font-title;
         }
         .label {
             color: $mainBlue;
+
         }
         .form-item {
+            @media screen and (max-width: 950px) {
+
+            }
             margin-top: 25px;
             .label {
-                text-align: left;
-                font-size: 20px;
+                text-align: right;
+                padding-right:15px;
+                //font-size: 20px;
                 font-weight: 900;
                 color: $mainBlue;
                 display: inline-block;
@@ -136,27 +148,32 @@
 
                 @media screen and (max-width: 1300px) {
                     font-size: 14px;
+                    display: inline-block;
                 }
 
                 @media screen and (max-width: 950px) {
-                    display: block;
-                    width: 100%;
-                    text-align: center;
+
+
+                    display: inline-block;
+
+                }
+                @media screen and (max-width: 700px) {
+                    width:70px;
                 }
                 @media screen and (max-width: 600px) {
                     display: inline-block;
-                    width: 20%;
                     font-size: 12px;
                 }
             }
             input {
                 height: 25px;
-                width: 75%;
+                width: 50%;
                 @media screen and (max-width: 1300px) {
                     width: 45%;
                 }
                 @media screen and (max-width: 800px) {
-                    width: 100%;
+                    margin-top:15px;
+                    width:60%;
                 }
                 @media screen and (max-width: 600px) {
                     display: inline-block;
@@ -166,7 +183,6 @@
             }
         }
         .newsletter-choice {
-
             .label {
                 p{
                     font-size:15px;
@@ -212,7 +228,12 @@
         // Overide button for color
         .button {
             margin-top: 75px;
+
             background-color: $mainBlue;
+            @media screen and (max-width: 800px) {
+
+                margin-top:50px;
+            }
         }
     }
 }
@@ -240,6 +261,14 @@
         z-index: 500;
         h3 {
             @include font-title;
+            @media screen and (max-width: 1000px) {
+
+                font-size: 30px;
+            }
+            @media screen and (max-width: 600px) {
+
+                font-size: 20px;
+            }
         }
         .closing-button {
             position: absolute;

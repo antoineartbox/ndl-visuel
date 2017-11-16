@@ -5,7 +5,8 @@
 	<div class="content-container">
 		<div class="text-center-container">
 			<div class="text-center">
-				<p>Vous avez des questions à propos du programme? Remplissez le formulaire suivant et un membre de notre équipe vous contactera sous peu.</p>
+				<h3>Vous avez des questions à propos du programme?</h3>
+				<p>Remplissez le formulaire suivant et un membre de notre équipe vous contactera sous peu.</p>
 			</div>
 
 			<span class="line"></span>
@@ -27,15 +28,17 @@
 						<span class="label">Âge : </span> <input type="age" name="age" value=""><br>
 					</div>
 
-					<div <div style="display:none;" class="form-item">
+					<div
+					<div style="display:none;" class="form-item">
 						<span class="label">Profession :</span> <input class="capital" type="text" name="profession" value=""><br>
 					</div>
 
 					<div class="form-item">
-						<span class="label">Courriel :</span> <input type="text" name="email" class="no-capitalize"value=""><br>
+						<span class="label">Courriel :</span> <input type="text" name="email" class="no-capitalize" value=""><br>
 					</div>
 
-					<div <div style="display:none;" class="form-item">
+					<div
+					<div style="display:none;" class="form-item">
 						<span class="label">Téléphone :</span> <input type="text" name="phone" value=""><br>
 					</div>
 
@@ -43,7 +46,7 @@
 						<span class="label">Objet :</span> <input type="text" name="object" value=""><br>
 					</div>
 
-					<div class="newsletter-choice">
+					<div style="display:none" class="newsletter-choice">
 						<input type="checkbox" name="newsletter" value="">
 						<span class="label"><p>*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni et de ses événements.</p></span>
 					</div>
@@ -56,7 +59,6 @@
 				</form>
 
 			</div>
-
 
 
 		</div>

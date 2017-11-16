@@ -29,7 +29,7 @@
 
             .button-video {
                 background-color: $mainBlue;
-                @include font-button-main-page;
+
             }
         }
     }
@@ -131,19 +131,28 @@
     }
 
     h3 {
+        font-style: italic;
         @media screen and (max-width: 690px) {
             font-size:17px;
         }
     }
+
     background-color: $mainBlue;
     text-align: center;
     height: 100vh;
     position: relative;
     .bloc-bottom {
+
+        height:200px;
         width: 100%;
         bottom: 0px;
         position: absolute;
-
+        @media screen and (max-height: 750px) {
+            height: 180px;
+        }
+        @media screen and (max-height: 720px) {
+            height: 170px;
+        }
         .become-involve {
             margin-bottom: 75px;
         }

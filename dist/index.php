@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>NOTRE-DAME DE LOURDE</title>
+	<title>Notre-Dame-de-Lourdes</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -35,11 +35,10 @@
 				</div>
 
 
-			<a href="#bloc-questions-anchor">
 				<div class="white-rounder">
-					<li class="menu-question-anchor"></li>
+					<a href="#bloc-questions-anchor"><li class="menu-question-anchor"></li></a>
 				</div>
-			</a>
+
 		</ul>
 	</div>
 	<?php

@@ -42,13 +42,10 @@ $( document ).ready(function () {
 		$('header').css({
 			"background-color":"transparent"
 		});
-		if($(window).scrollTop() > 4) {
+		if($(window).scrollTop() > 2) {
 
 			$("header").css({"background-color":"white"});
 		}
-		// Print the current menu
-		printCurrentBlocMenu($(window).scrollTop());
-
 
 	}
 	$(".menu-home-anchor").addClass("single-white");
@@ -89,7 +86,9 @@ $( document ).ready(function () {
 		clearAnchor();
 
 		var limiter = 400;
+
 		if(scroll == 0 )  {
+
 			$("header").css({"background-color":"transparent"});
 			$("header").removeClass("activate-shadow");
 		}

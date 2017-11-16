@@ -1074,7 +1074,7 @@ input {
 .button {
   background-color: #7fc214;
   color: #FFFFFF;
-  padding: 35px 90px 35px 90px;
+  padding: 15px;
   display: inline-block;
   cursor: pointer;
   transition: all 0.5s; }
@@ -1082,11 +1082,8 @@ input {
 .button.main-page-button {
   background-color: #7fc214;
   color: #FFFFFF;
-  padding: 10px;
   cursor: pointer;
   transition: all 0.5s;
-  font-style: normal;
-  font-size: 22px;
   text-transform: uppercase; }
   @media screen and (max-width: 600px) {
     .button.main-page-button {
@@ -1121,6 +1118,14 @@ input {
 .button span {
   font-size: 16px;
   padding: 15px; }
+
+.button-patcher {
+  background-color: #7fc214;
+  color: #FFFFFF;
+  display: inline-block;
+  transition: all 0.5s;
+  padding: 15px;
+  cursor: pointer; }
 
 body #menu-linker {
   width: 15px;
@@ -1180,12 +1185,12 @@ header .menu-hambuger {
   right: 50px;
   z-index: 2500;
   margin-top: 15px; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1060px) {
     header .menu-hambuger {
       display: block; } }
   header .menu-hambuger.activated-menu-container {
     margin-top: 25px; }
-  @media screen and (max-width: 620px) {
+  @media screen and (max-width: 1060px) {
     header .menu-hambuger {
       top: 15px;
       right: 15px; } }
@@ -1197,12 +1202,12 @@ header .menu-hambuger {
     margin-bottom: 7px;
     background-color: #004588;
     transition: all 0.5s; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1060px) {
       header .menu-hambuger span {
         width: 25px;
         height: 3px;
         margin-bottom: 5px; } }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 1060px) {
       header .menu-hambuger span {
         height: 3px;
         margin-bottom: 5px; } }
@@ -1216,10 +1221,10 @@ header .menu-hambuger {
         display: none;
         height: 0px; }
       header .menu-hambuger span.active-menu.line-3 {
-        margin-top: -4px;
+        margin-top: -3px;
         transform: rotate(-45deg); }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1060px) {
   header #menu-container {
     position: absolute;
     right: -300%;
@@ -1348,7 +1353,7 @@ header {
   transition: all 2s; }
   header.activate-shadow {
     box-shadow: 3px 3px 3px rgba(125, 125, 125, 0.5); }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1060px) {
     header {
       height: 75px; } }
   header .logo-container {
@@ -1358,16 +1363,18 @@ header {
     padding-top: 10px;
     /* Video starts at 10*/
     z-index: 11; }
-    @media screen and (max-width: 1175px) {
-      header .logo-container {
-        display: none; } }
     @media screen and (max-width: 900px) {
       header .logo-container {
         display: block; } }
     header .logo-container img {
       height: 75px; }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 1175px) {
         header .logo-container img {
+          padding-top: 9px;
+          height: 50px; } }
+      @media screen and (max-width: 1060px) {
+        header .logo-container img {
+          padding-top: 0px;
           height: 50px; } }
   header #menu-container {
     text-align: right;
@@ -1376,15 +1383,15 @@ header {
     z-index: 1000; }
     @media screen and (max-width: 1175px) {
       header #menu-container {
-        text-align: center; } }
+        text-align: right; } }
     header #menu-container nav {
       color: #004588;
       text-transform: uppercase; }
-      header #menu-container nav .container-connection {
-        border-bottom: 1px solid #004588; }
-        header #menu-container nav .container-connection p {
-          font-size: 13px;
-          padding-right: 5px; }
+      header #menu-container nav .container-connection .underline {
+        border-bottom: solid #004588 1px; }
+      header #menu-container nav .container-connection p {
+        font-size: 13px;
+        padding-right: 5px; }
       header #menu-container nav ul {
         list-style: none; }
         @media screen and (max-width: 1300px) {
@@ -1403,9 +1410,6 @@ header {
           header #menu-container nav ul li.menu-membership {
             background-color: #7fc214;
             color: #FFFFFF; }
-          @media screen and (max-width: 1300px) {
-            header #menu-container nav ul li {
-              padding: 10px; } }
         header #menu-container nav ul .connection {
           display: inline-block;
           margin-left: 40px; }
@@ -1413,6 +1417,13 @@ header {
             margin: 0px; }
           header #menu-container nav ul .connection h3 {
             padding-top: 15px; }
+          @media screen and (max-width: 1300px) {
+            header #menu-container nav ul .connection {
+              margin-left: 0px;
+              display: inline; } }
+          @media screen and (max-width: 990px) {
+            header #menu-container nav ul .connection {
+              margin-left: 0px; } }
 
 /*This file mixins for helping centering, disposing and placing elements*/
 .video-component {
@@ -1484,6 +1495,10 @@ header {
     @media screen and (max-width: 900px) {
       #bloc-infos .line-left {
         display: none; } }
+    @media screen and (max-height: 900px) {
+      #bloc-infos .line-left {
+        width: 5%;
+        left: 8%; } }
   #bloc-infos .line-right {
     position: absolute;
     top: 50%;
@@ -1501,6 +1516,10 @@ header {
     @media screen and (max-width: 900px) {
       #bloc-infos .line-right {
         display: none; } }
+    @media screen and (max-height: 900px) {
+      #bloc-infos .line-right {
+        width: 5%;
+        margin-left: 2%; } }
   #bloc-infos .content-container {
     width: 60%;
     position: absolute;
@@ -1626,25 +1645,31 @@ header {
             margin-top: 0px; }
             @media screen and (max-width: 1290px) {
               #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container h3 {
-                font-size: 18px; } }
+                font-size: 18px;
+                margin-bottom: 0px; } }
             @media screen and (max-width: 600px) {
               #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container h3 {
                 margin-top: 15px;
+                margin-bottom: 0px;
                 font-size: 14px; } }
           #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul {
             margin-top: 0px; }
             #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
               font-size: 22px;
-              line-height: 16px; }
+              line-height: 25px; }
               @media screen and (max-width: 1300px) {
                 #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
-                  font-size: 15px; } }
+                  font-size: 15px;
+                  line-height: 14px; } }
               @media screen and (max-width: 600px) {
                 #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
                   font-size: 13px; } }
           @media screen and (max-width: 750px) {
             #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container {
               text-align: center; } }
+          @media screen and (max-width: 525px) {
+            #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container {
+              text-align: left; } }
   #bloc-infos .bloc-title-center h3 {
     margin-top: 0px;
     font-size: 40px;
@@ -1720,7 +1745,8 @@ header {
     bottom: 7%; }
     @media screen and (max-width: 620px) {
       #bloc-infos .become-member-container {
-        padding-top: 15px; } }
+        padding-top: 15px;
+        margin-top: 50px; } }
     @media screen and (max-height: 775px) {
       #bloc-infos .become-member-container {
         bottom: 2%;
@@ -1758,7 +1784,7 @@ header {
 .button {
   background-color: #7fc214;
   color: #FFFFFF;
-  padding: 35px 90px 35px 90px;
+  padding: 15px;
   display: inline-block;
   cursor: pointer;
   transition: all 0.5s; }
@@ -1766,11 +1792,8 @@ header {
 .button.main-page-button {
   background-color: #7fc214;
   color: #FFFFFF;
-  padding: 10px;
   cursor: pointer;
   transition: all 0.5s;
-  font-style: normal;
-  font-size: 22px;
   text-transform: uppercase; }
   @media screen and (max-width: 600px) {
     .button.main-page-button {
@@ -1805,6 +1828,14 @@ header {
 .button span {
   font-size: 16px;
   padding: 15px; }
+
+.button-patcher {
+  background-color: #7fc214;
+  color: #FFFFFF;
+  display: inline-block;
+  transition: all 0.5s;
+  padding: 15px;
+  cursor: pointer; }
 
 #bloc-membership {
   background-color: rgba(255, 255, 255, 0.5);
@@ -1928,7 +1959,7 @@ header {
 .button {
   background-color: #7fc214;
   color: #FFFFFF;
-  padding: 35px 90px 35px 90px;
+  padding: 15px;
   display: inline-block;
   cursor: pointer;
   transition: all 0.5s; }
@@ -1936,11 +1967,8 @@ header {
 .button.main-page-button {
   background-color: #7fc214;
   color: #FFFFFF;
-  padding: 10px;
   cursor: pointer;
   transition: all 0.5s;
-  font-style: normal;
-  font-size: 22px;
   text-transform: uppercase; }
   @media screen and (max-width: 600px) {
     .button.main-page-button {
@@ -1976,6 +2004,14 @@ header {
   font-size: 16px;
   padding: 15px; }
 
+.button-patcher {
+  background-color: #7fc214;
+  color: #FFFFFF;
+  display: inline-block;
+  transition: all 0.5s;
+  padding: 15px;
+  cursor: pointer; }
+
 @font-face {
   font-family: intro;
   src: url("../fonts/intro.otf") format("opentype"); }
@@ -2007,12 +2043,20 @@ header {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%); }
+    #bloc-question .content-container h3 {
+      margin-top: 0px;
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      color: #004588;
+      font-style: italic;
+      margin-bottom: 5px; }
+      @media screen and (max-width: 800px) {
+        #bloc-question .content-container h3 {
+          font-size: 22px; } }
     @media screen and (max-height: 900px) {
       #bloc-question .content-container {
         width: 85%; } }
-    @media screen and (max-height: 850px) {
-      #bloc-question .content-container {
-        width: 100%; } }
     @media screen and (max-width: 650px) {
       #bloc-question .content-container {
         width: 100%; } }
@@ -2049,7 +2093,7 @@ header {
       font-style: normal;
       font-size: 25px;
       line-height: 25px;
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 900;
       line-height: 33px;
       color: #004588;
@@ -2094,10 +2138,10 @@ header {
     margin-bottom: 30px; }
   #bloc-question .question-form-container {
     color: white;
-    width: 82%;
+    width: 100%;
     text-align: center; }
     #bloc-question .question-form-container form {
-      width: 120%; }
+      width: 100%; }
     #bloc-question .question-form-container h3 {
       margin-top: 0px;
       font-size: 40px;
@@ -2108,34 +2152,36 @@ header {
     #bloc-question .question-form-container .form-item {
       margin-top: 25px; }
       #bloc-question .question-form-container .form-item .label {
-        text-align: left;
-        font-size: 20px;
+        text-align: right;
+        padding-right: 15px;
         font-weight: 900;
         color: #004588;
         display: inline-block;
         width: 150px; }
         @media screen and (max-width: 1300px) {
           #bloc-question .question-form-container .form-item .label {
-            font-size: 14px; } }
+            font-size: 14px;
+            display: inline-block; } }
         @media screen and (max-width: 950px) {
           #bloc-question .question-form-container .form-item .label {
-            display: block;
-            width: 100%;
-            text-align: center; } }
+            display: inline-block; } }
+        @media screen and (max-width: 700px) {
+          #bloc-question .question-form-container .form-item .label {
+            width: 70px; } }
         @media screen and (max-width: 600px) {
           #bloc-question .question-form-container .form-item .label {
             display: inline-block;
-            width: 20%;
             font-size: 12px; } }
       #bloc-question .question-form-container .form-item input {
         height: 25px;
-        width: 75%; }
+        width: 50%; }
         @media screen and (max-width: 1300px) {
           #bloc-question .question-form-container .form-item input {
             width: 45%; } }
         @media screen and (max-width: 800px) {
           #bloc-question .question-form-container .form-item input {
-            width: 100%; } }
+            margin-top: 15px;
+            width: 60%; } }
         @media screen and (max-width: 600px) {
           #bloc-question .question-form-container .form-item input {
             display: inline-block;
@@ -2172,6 +2218,9 @@ header {
     #bloc-question .question-form-container .button {
       margin-top: 75px;
       background-color: #004588; }
+      @media screen and (max-width: 800px) {
+        #bloc-question .question-form-container .button {
+          margin-top: 50px; } }
 
 #bloc-question-overlay {
   display: none; }
@@ -2201,6 +2250,12 @@ header {
       font-size: 40px;
       color: white;
       text-align: center; }
+      @media screen and (max-width: 1000px) {
+        #bloc-question-overlay.active-involving .invole-form-container h3 {
+          font-size: 30px; } }
+      @media screen and (max-width: 600px) {
+        #bloc-question-overlay.active-involving .invole-form-container h3 {
+          font-size: 20px; } }
     #bloc-question-overlay.active-involving .invole-form-container .closing-button {
       position: absolute;
       top: 15px;
@@ -2357,7 +2412,7 @@ header {
 .button {
   background-color: #7fc214;
   color: #FFFFFF;
-  padding: 35px 90px 35px 90px;
+  padding: 15px;
   display: inline-block;
   cursor: pointer;
   transition: all 0.5s; }
@@ -2365,11 +2420,8 @@ header {
 .button.main-page-button {
   background-color: #7fc214;
   color: #FFFFFF;
-  padding: 10px;
   cursor: pointer;
   transition: all 0.5s;
-  font-style: normal;
-  font-size: 22px;
   text-transform: uppercase; }
   @media screen and (max-width: 600px) {
     .button.main-page-button {
@@ -2404,6 +2456,14 @@ header {
 .button span {
   font-size: 16px;
   padding: 15px; }
+
+.button-patcher {
+  background-color: #7fc214;
+  color: #FFFFFF;
+  display: inline-block;
+  transition: all 0.5s;
+  padding: 15px;
+  cursor: pointer; }
 
 @font-face {
   font-family: intro;
@@ -2441,10 +2501,7 @@ header {
     #bloc-involve .content-container .button-container .watch-video-involve {
       background-color: #004588; }
     #bloc-involve .content-container .button-container .button-video {
-      background-color: #004588;
-      font-style: normal;
-      font-size: 22px;
-      text-transform: uppercase; }
+      background-color: #004588; }
 
 #bloc-involve-overlay {
   display: none; }
@@ -2539,13 +2596,22 @@ header {
     @media screen and (max-width: 900px) {
       #bloc-involve-infos .line-right {
         display: none; } }
-  @media screen and (max-width: 690px) {
-    #bloc-involve-infos h3 {
-      font-size: 17px; } }
+  #bloc-involve-infos h3 {
+    font-style: italic; }
+    @media screen and (max-width: 690px) {
+      #bloc-involve-infos h3 {
+        font-size: 17px; } }
   #bloc-involve-infos .bloc-bottom {
+    height: 200px;
     width: 100%;
     bottom: 0px;
     position: absolute; }
+    @media screen and (max-height: 750px) {
+      #bloc-involve-infos .bloc-bottom {
+        height: 180px; } }
+    @media screen and (max-height: 720px) {
+      #bloc-involve-infos .bloc-bottom {
+        height: 170px; } }
     #bloc-involve-infos .bloc-bottom .become-involve {
       margin-bottom: 75px; }
     #bloc-involve-infos .bloc-bottom .main-page-button {
@@ -2745,20 +2811,7 @@ header {
     #bloc-home .content-container .button-container {
       text-align: center; }
       #bloc-home .content-container .button-container .button-video {
-        background-color: #004588;
-        font-style: normal;
-        font-size: 22px;
-        text-transform: uppercase; }
-        @media screen and (max-width: 1300px) {
-          #bloc-home .content-container .button-container .button-video {
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px; } }
-        @media screen and (max-width: 400px) {
-          #bloc-home .content-container .button-container .button-video {
-            padding: 15px;
-            font-size: 17px; } }
+        background-color: #004588; }
 
 footer {
   background-color: #7fc214; }

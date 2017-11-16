@@ -17,7 +17,7 @@
 		<div class="button-container button-video">
 
 			<!--  <span class="arrow arrow-left"></span> -->
-			<span class="button call-to-action button-video">Regarder la vidéo</span>
+			<span class="button call-to-action main-page-button button-video">Regarder la vidéo</span>
 			<!-- <span class="arrow arrow-right"></span>-->
 		</div>
 

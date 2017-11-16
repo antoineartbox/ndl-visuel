@@ -42,7 +42,7 @@
 
             <div class="newsletter-choice">
                 <input type="checkbox" name="newsletter" value="">
-                <p>*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni et de ses événements.</p>
+                <p>*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni.</p>
             </div>
             <div class="button  call-to-action become-member">
                 <span>Envoyer<input class="membership-form-trigger" type="submit" name="membership-form" value=""></span>

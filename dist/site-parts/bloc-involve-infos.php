@@ -11,7 +11,7 @@
 					</div>
 					<span class="white-line"></span>
 					<div class="list-center-infos">
-						<span>Impliquez-vous </span>
+						<span>Impliquez-vous à votre façon</span>
 						<ul>
 							<li>- en offrant de votre temps ou de votre expertise</li>
 							<li>- en développant un projet novateur avec votre employeur</li>
