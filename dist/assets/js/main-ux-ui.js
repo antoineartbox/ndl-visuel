@@ -111,3 +111,8 @@ $(".call-to-action.button-video").click(function(){
 		$("#fullScreenDiv").removeClass("kill-display");
     })
 })
+
+window.onload = function () {
+	var element = document.getElementById('video');
+	element.muted = "muted";
+}

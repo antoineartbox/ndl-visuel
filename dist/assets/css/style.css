@@ -2548,6 +2548,8 @@ header {
     position: absolute; }
     #bloc-involve-infos .bloc-bottom .become-involve {
       margin-bottom: 75px; }
+    #bloc-involve-infos .bloc-bottom .main-page-button {
+      margin-top: 15px; }
   #bloc-involve-infos .bloc-container {
     position: absolute;
     top: 50%;
