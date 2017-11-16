@@ -20,9 +20,9 @@ $( document ).ready(function() {
 		$("#bloc-membership-overlay").addClass("active-membership");
 		blockScrolling('body')
 
-		$(".membership-form-container .closing-button").click(function() {
+		$("#bloc-membership-overlay .closing-button").click(function() {
 
-			$(this).parent().parent().removeClass("active-membership");
+			$(this).parent().removeClass("active-membership");
 			enableScrolling('body');
 		});
     }
@@ -33,9 +33,9 @@ $( document ).ready(function() {
         $("#bloc-involve-overlay").addClass("active-involving");
         blockScrolling('body')
 
-        $(".invole-form-container .closing-button").click(function() {
+        $("#bloc-involve-overlay .closing-button").click(function() {
 
-            $(this).parent().parent().removeClass("active-involving");
+            $(this).parent().removeClass("active-involving");
             enableScrolling('body');
         });
     });
@@ -54,7 +54,7 @@ $( document ).ready(function() {
     });
 */
     // Handle login display
-    $("header .connection p").click(function() {
+    $("header .connection").click(function() {
         $("#bloc-login-overlay").addClass("active-login");
 
         $("#bloc-login-overlay .closing-button").click(function() {
@@ -116,3 +116,29 @@ window.onload = function () {
 	var element = document.getElementById('video');
 	element.muted = "muted";
 }
+
+
+$(".video-component .closing-button").click(function() {
+	$(this).parent().remove();
+	$("#fullScreenDiv").removeClass("kill-display");
+	enableScrolling($("body"));
+});
+
+$(".wrapper-item-news p").click(function() {
+
+	if($(this).find("input").is(":checked"))  {
+		$(this).find("input").prop('checked', false);
+	}  else {
+		$(this).find("input").prop('checked', true);
+	}
+});
+
+
+// Handle form selected moment
+$("#involve-moment-selection").change(function () {
+		var str = "";
+		$( "select option:selected" ).each(function() {
+			str += $(this).text() + " ";
+		});
+	$(".appointment-moment").val(str);
+})

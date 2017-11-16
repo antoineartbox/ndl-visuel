@@ -25,11 +25,11 @@
 
 <!-- Is hidden by default -->
 <div id="bloc-involve-overlay">
-
+	<span class="closing-button">x</span>
     <div class="invole-form-container">
 
 		<h3>Impliquez-vous</h3>
-		<span class="closing-button">x</span>
+
         <span class="errors-display"></span>
 
 		<form id="form-involve" class="form-user-input" action="" method="post">

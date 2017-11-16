@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	// Form login
-	$(".login-form-container .button.login").click(function() {
+	$(".login-form-container .button.login").click(function () {
 
 		$("#loginform").submit();
 	});
@@ -26,7 +26,7 @@ $(document).ready(function () {
 
 		// Clear error message
 		$(".errors-container").html("");
-		if(true){
+		if (true) {
 			submitInvolveForm(datastring);
 		}
 
@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 		// Clear error message
 		$(".errors-container").html("");
-		if(true){
+		if (true) {
 			submitQuestionForm(datastring);
 		}
 	});
@@ -75,11 +75,15 @@ $(document).ready(function () {
 						// If no error
 						killLoader();
 						validatedFormSuccess($(".membership-form-container"), "<h4>Merci de vous être inscrit</h4>");
-						setTimeout(function(){ otherMessage(); }, 300);
+						setTimeout(function () {
+							otherMessage();
+						}, 300);
+
 						function otherMessage() {
 							validatedFormSuccess($(".membership-form-container"), "<h4>Contactez vos courriels pour terminer l'inscription.</h4>");
 						}
-						$(document).click(function(){
+
+						$(document).click(function () {
 							$("#bloc-membership-overlay").fadeOut(500);
 
 						});
@@ -137,12 +141,15 @@ $(document).ready(function () {
 						validatedFormSuccess($(".invole-form-container"), "<h4>Merci de vous être inscrit</h4>");
 
 						//
-						setTimeout(function(){ otherMessage(); }, 300);
+						setTimeout(function () {
+							otherMessage();
+						}, 300);
+
 						function otherMessage() {
 							validatedFormSuccess($(".invole-form-container"), "<h4>Un adminisatrateur vous conactera sous peu.</h4>");
 						}
 
-						$(document).click(function(){
+						$(document).click(function () {
 							$("#bloc-involve-overlay").fadeOut(500);
 						});
 					}
@@ -198,12 +205,15 @@ $(document).ready(function () {
 						validatedFormSuccess($(".question-form-container"), "<h4>Merci de votre question</h4>");
 
 						//
-						setTimeout(function(){ otherMessage(); }, 300);
+						setTimeout(function () {
+							otherMessage();
+						}, 300);
+
 						function otherMessage() {
 							validatedFormSuccess($(".question-form-container"), "<h4>Un administrateur vous contactera sous peu.</h4>");
 						}
 
-						$(document).click(function(){
+						$(document).click(function () {
 							$("#bloc-involve-overlay").fadeOut(500);
 						});
 					}
@@ -213,6 +223,7 @@ $(document).ready(function () {
 			})
 		}
 	}
+
 	/*
 	* void fx(x,y)
 	* inputs => x = Dom element to use a parent à
@@ -222,12 +233,12 @@ $(document).ready(function () {
 	function verifyError(domElement, errors) {
 
 		// Each error case are done like this
-		if(errors.email) {
+		if (errors.email) {
 			domElement.append("<div class='error email-error'>" + errors.email + "</div>");
 			domElement.parent().find(".email-container").addClass("animated shake");
 		}
 
-		if(errors.username) {
+		if (errors.username) {
 			domElement.append("<div class='error username-error'>" + errors.username + "</div>");
 			domElement.parent().find(".username-container").addClass("animated shake");
 		}

@@ -57,12 +57,15 @@
 
 					<input style="display:none;" id="" type="submit" name="" value="">
 				</form>
-
 			</div>
-
-
 		</div>
 
+	</div>
+	<div class="arrow-container">
+		<a href="#bloc-home">
+			<div><p class="blue">Retour vers le haut</p></div>
+		</a>
+		<a href="#bloc-home"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-blue-reverse.png" alt=""></span></a>
 	</div>
 </div>
 

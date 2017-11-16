@@ -35,8 +35,8 @@
         </div>
 
 		<div class="arrow-container">
-			<a href="#bloc-involve-infos-anchor"><div><p class="blue">Continuer</p></div></a>
-			<a href="#bloc-involve-infos-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-blue.png" alt=""></span></a>
+			<a href="#bloc-involve-infos"><div><p class="blue">Continuer</p></div></a>
+			<a href="#bloc-involve-infos"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-blue.png" alt=""></span></a>
 		</div>
 	</div>
 

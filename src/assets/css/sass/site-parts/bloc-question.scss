@@ -18,6 +18,9 @@
             color:$mainBlue;
             font-style: italic;
             margin-bottom:5px;
+            @media screen and (max-width: 1300px) {
+                font-size:34px;
+            }
             @media screen and (max-width: 800px) {
                 font-size:22px;
             }
@@ -127,6 +130,7 @@
         }
         h3 {
             @include font-title;
+
         }
         .label {
             color: $mainBlue;

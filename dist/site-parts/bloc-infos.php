@@ -54,13 +54,14 @@
 
 <!-- Is hidden by default -->
 <div id="bloc-membership-overlay">
+	<span class="closing-button">x</span>
     <div class="membership-form-container">
         <h3>Merci de vous inscrire</h3>
 
 		<div class="errors-container">
 			<!-- Refers to JS -->
 		</div>
-        <span class="closing-button">x</span>
+
         <form id="form-membership" class="form-user-input" action="" method="post">
 
             <div class="form-item">
@@ -96,8 +97,10 @@
             <input style="display:none;" type="form-type" name="form-type" value="membership-new-user">
 
             <div class="newsletter-choice">
-                <input type="checkbox" name="newsletter" value="">
-                <p>*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni.</p>
+				<div class="wrapper-item-news">
+
+					<p><input type="checkbox" name="newsletter" value="">*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni.</p>
+				</div>
             </div>
             <div class="button main-page-button call-to-action become-member submit">
                 <span>Envoyer</span>

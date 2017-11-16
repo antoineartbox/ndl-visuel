@@ -30,8 +30,8 @@
 			<span>Je veux m'impliquer</span>
 		</div>
 		<div class="arrow-container">
-			<a href="#bloc-involve-infos-anchor"><div><p>Continuer</p></div></a>
-			<a href="#bloc-involve-infos-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-white.png" alt=""></span></a>
+			<a href="#bloc-questions-anchor"><div><p>Continuer</p></div></a>
+			<a href="#bloc-questions-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-white.png" alt=""></span></a>
 		</div>
 	</div>
 </div>
@@ -39,11 +39,11 @@
 
 <!-- Is hidden by default -->
 <div id="bloc-involve-overlay">
-
+	<span class="closing-button">x</span>
 	<div class="invole-form-container">
 
 		<h3>Impliquez-vous</h3>
-		<span class="closing-button">x</span>
+
 		<span class="errors-display"></span>
 
 		<form id="form-involve" class="form-user-input" action="" method="post">
@@ -70,8 +70,15 @@
 				<span class="label">Email :</span> <input type="email" name="email" value="">
 			</div>
 
-			<div class="form-item">
-				<span class="label">À quel moment est-il mieux de vous contacter :</span> <input type="text" name="appointment" value="">
+			<div class="form-item selector-item">
+				<span class="label">À quel moment est-il mieux de vous contacter :</span>
+				<select id="involve-moment-selection">
+					<option value="am">AM</option>
+					<option value="midi">Midi</option>
+					<option value="pm">PM</option>
+					<option value="soir">Soirée</option>
+				</select>
+				<input class="appointment-moment" style="display:none;" type="text" name="appointment" value="">
 			</div>
 			<input style="display:none;" type="text" name="form-type" value="involve">
 			<div class="button call-to-action get-involve submit">

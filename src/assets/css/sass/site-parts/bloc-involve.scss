@@ -13,6 +13,7 @@
         h3 {
             display: block;
             @include font-home-italic;
+
         }
 
         .button-container {
@@ -46,7 +47,7 @@
     position: absolute;
     top: 0px;
     background-color: rgba(255, 255, 255, 0.7);
-
+    z-index:5000;
     .invole-form-container {
         @include centered;
         background-color: $mainBlue;
@@ -58,6 +59,16 @@
         z-index: 500;
         h3 {
             @include font-title;
+
+            @media screen and (max-width: 1300px) {
+                margin-top:0px;
+                font-size:29px;
+
+            }
+            @media screen and (max-width: 950px) {
+                font-size:22px;
+
+            }
         }
         .closing-button {
             position: absolute;
@@ -66,15 +77,48 @@
         }
         .form-item {
             margin-top: 10px;
+            &.selector-item {
+                .label {
+                    width:50%;
+                }
+            }
             .label {
                 color: white;
                 display: inline-block;
                 width: 150px;
+
+
+                @media screen and (max-width: 950px) {
+
+                    display: inline-block;
+                    width:100%;
+                    font-size:12px;
+                    text-align: right;
+                    width:20%;
+
+                }
+                @media screen and (max-width: 600px) {
+
+                    display: inline-block;
+                    width:100%;
+                    font-size:12px;
+                    text-align: right;
+                    width:30%;
+
+                }
             }
             input {
                 height: 25px;
                 width: 35%;
+                @media screen and (max-width: 1300px) {
+                    height:15px;
+                    width:55%;
+                }
+                @media screen and (max-width: 600px) {
+                    width:50%;
+                }
             }
+
         }
         .newsletter-choice {
             p {
@@ -132,6 +176,12 @@
 
     h3 {
         font-style: italic;
+
+        @media screen and (max-width: 950px) {
+            font-size: 23px;
+
+        }
+
         @media screen and (max-width: 690px) {
             font-size:17px;
         }
@@ -202,28 +252,6 @@
         @include center-content;
         color: white;
         h3 {
-            @include font-title;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            @media screen and (max-width: 1300px) {
-                font-size: 33px;
-            }
-            // Responsive
-            @media screen and (max-height: 775px) {
-                margin-top: 5px;
-                font-size: 35px;
-            }
-            @media screen and (max-height: 700px) {
-                margin-top: 5px;
-                font-size: 33px;
-            }
-
-            @media screen and (max-width: 600px) {
-                margin-top: 5px;
-                font-size: 17px;
-            }
-
-
 
         }
         p {
@@ -243,6 +271,9 @@
                 li {
                     font-size: 20px;
                     font-weight: 100;
+                    @media screen and (max-width: 950px) {
+                        font-size: 16px;
+                    }
                     @media screen and (max-width: 600px) {
                         font-size: 12px;
                     }

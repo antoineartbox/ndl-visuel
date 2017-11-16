@@ -1090,15 +1090,20 @@ input {
       font-size: 10px; } }
 
 .closing-button {
-  position: absolute;
-  font-size: 60px;
-  color: white;
-  top: 15px;
-  right: 15px;
+  position: fixed;
+  font-size: 40px;
+  color: #004588;
+  top: 75px;
+  right: 50px;
   cursor: pointer;
   transition: all 0.1s; }
-  .closing-button:hover {
-    font-size: 62px; }
+  @media screen and (max-width: 600px) {
+    .closing-button {
+      font-size: 37px;
+      color: #004588;
+      top: 80px;
+      right: 20px;
+      cursor: pointer; } }
   .closing-button.video {
     pointer-events: all;
     cursor: pointer;
@@ -1430,7 +1435,8 @@ header {
   width: 100vw;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.75);
-  position: absolute; }
+  position: absolute;
+  z-index: 5000; }
   .video-component .closing-button.video {
     position: absolute;
     top: 175px;
@@ -1456,6 +1462,13 @@ header {
       @media screen and (max-width: 1200px) {
         .video-component iframe.active-video {
           width: 100%; } }
+      @media screen and (max-width: 700px) {
+        .video-component iframe.active-video {
+          height: 50%; } }
+      @media screen and (max-width: 600px) {
+        .video-component iframe.active-video {
+          top: 40%;
+          height: 50%; } }
 
 @font-face {
   font-family: intro;
@@ -1800,15 +1813,20 @@ header {
       font-size: 10px; } }
 
 .closing-button {
-  position: absolute;
-  font-size: 60px;
-  color: white;
-  top: 15px;
-  right: 15px;
+  position: fixed;
+  font-size: 40px;
+  color: #004588;
+  top: 75px;
+  right: 50px;
   cursor: pointer;
   transition: all 0.1s; }
-  .closing-button:hover {
-    font-size: 62px; }
+  @media screen and (max-width: 600px) {
+    .closing-button {
+      font-size: 37px;
+      color: #004588;
+      top: 80px;
+      right: 20px;
+      cursor: pointer; } }
   .closing-button.video {
     pointer-events: all;
     cursor: pointer;
@@ -1892,40 +1910,54 @@ header {
     @media screen and (max-width: 600px) {
       #bloc-membership-overlay.active-membership .membership-form-container {
         width: 95%;
-        height: 85%; } }
+        height: 54%; } }
     #bloc-membership-overlay.active-membership .membership-form-container h3 {
       margin-top: 0px;
       font-size: 40px;
       color: white;
       text-align: center;
       margin-top: 40px; }
+      @media screen and (max-width: 1300px) {
+        #bloc-membership-overlay.active-membership .membership-form-container h3 {
+          margin-top: 0px;
+          font-size: 29px; } }
       @media screen and (max-width: 950px) {
         #bloc-membership-overlay.active-membership .membership-form-container h3 {
           font-size: 22px; } }
     #bloc-membership-overlay.active-membership .membership-form-container .form-item {
       margin-top: 10px; }
+      @media screen and (max-width: 600px) {
+        #bloc-membership-overlay.active-membership .membership-form-container .form-item {
+          margin-left: -40px; } }
       #bloc-membership-overlay.active-membership .membership-form-container .form-item .label {
         color: white;
         display: inline-block;
-        width: 150px; }
-        @media screen and (max-width: 950px) {
-          #bloc-membership-overlay.active-membership .membership-form-container .form-item .label {
-            display: block;
-            width: 100%;
-            text-align: center; } }
+        width: 150px;
+        text-align: right; }
         @media screen and (max-width: 950px) {
           #bloc-membership-overlay.active-membership .membership-form-container .form-item .label {
             display: inline-block;
             width: 100%;
             font-size: 12px;
-            text-align: center;
+            text-align: right;
             width: 20%; } }
+        @media screen and (max-width: 600px) {
+          #bloc-membership-overlay.active-membership .membership-form-container .form-item .label {
+            display: inline-block;
+            width: 100%;
+            font-size: 12px;
+            text-align: right;
+            width: 30%; } }
       #bloc-membership-overlay.active-membership .membership-form-container .form-item input {
         height: 25px;
         width: 35%; }
-        @media screen and (max-width: 950px) {
+        @media screen and (max-width: 1300px) {
           #bloc-membership-overlay.active-membership .membership-form-container .form-item input {
+            height: 15px;
             width: 55%; } }
+        @media screen and (max-width: 600px) {
+          #bloc-membership-overlay.active-membership .membership-form-container .form-item input {
+            width: 50%; } }
     #bloc-membership-overlay.active-membership .membership-form-container .password-message-container {
       display: block; }
       @media screen and (max-width: 650px) {
@@ -1934,11 +1966,24 @@ header {
           width: 100%;
           font-size: 12px;
           text-align: center; } }
+    #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice .wrapper-item-news {
+      text-align: left;
+      display: inline-block;
+      margin-left: 40px;
+      width: 40%; }
+      @media screen and (max-width: 600px) {
+        #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice .wrapper-item-news {
+          width: 54%; } }
     #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice input {
       display: inline-block;
-      width: 1%; }
+      width: 4%; }
     #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice p {
-      display: inline-block; }
+      width: 100%;
+      display: inline-block;
+      padding-left: 15px; }
+      @media screen and (max-width: 950px) {
+        #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice p {
+          font-size: 12px; } }
     #bloc-membership-overlay.active-membership .membership-form-container .button {
       background-color: #7fc214; }
 
@@ -1975,15 +2020,20 @@ header {
       font-size: 10px; } }
 
 .closing-button {
-  position: absolute;
-  font-size: 60px;
-  color: white;
-  top: 15px;
-  right: 15px;
+  position: fixed;
+  font-size: 40px;
+  color: #004588;
+  top: 75px;
+  right: 50px;
   cursor: pointer;
   transition: all 0.1s; }
-  .closing-button:hover {
-    font-size: 62px; }
+  @media screen and (max-width: 600px) {
+    .closing-button {
+      font-size: 37px;
+      color: #004588;
+      top: 80px;
+      right: 20px;
+      cursor: pointer; } }
   .closing-button.video {
     pointer-events: all;
     cursor: pointer;
@@ -2051,6 +2101,9 @@ header {
       color: #004588;
       font-style: italic;
       margin-bottom: 5px; }
+      @media screen and (max-width: 1300px) {
+        #bloc-question .content-container h3 {
+          font-size: 34px; } }
       @media screen and (max-width: 800px) {
         #bloc-question .content-container h3 {
           font-size: 22px; } }
@@ -2428,15 +2481,20 @@ header {
       font-size: 10px; } }
 
 .closing-button {
-  position: absolute;
-  font-size: 60px;
-  color: white;
-  top: 15px;
-  right: 15px;
+  position: fixed;
+  font-size: 40px;
+  color: #004588;
+  top: 75px;
+  right: 50px;
   cursor: pointer;
   transition: all 0.1s; }
-  .closing-button:hover {
-    font-size: 62px; }
+  @media screen and (max-width: 600px) {
+    .closing-button {
+      font-size: 37px;
+      color: #004588;
+      top: 80px;
+      right: 20px;
+      cursor: pointer; } }
   .closing-button.video {
     pointer-events: all;
     cursor: pointer;
@@ -2512,7 +2570,8 @@ header {
   height: 100%;
   position: absolute;
   top: 0px;
-  background-color: rgba(255, 255, 255, 0.7); }
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 5000; }
   #bloc-involve-overlay.active-involving .invole-form-container {
     position: fixed;
     top: 50%;
@@ -2531,19 +2590,49 @@ header {
       font-size: 40px;
       color: white;
       text-align: center; }
+      @media screen and (max-width: 1300px) {
+        #bloc-involve-overlay.active-involving .invole-form-container h3 {
+          margin-top: 0px;
+          font-size: 29px; } }
+      @media screen and (max-width: 950px) {
+        #bloc-involve-overlay.active-involving .invole-form-container h3 {
+          font-size: 22px; } }
     #bloc-involve-overlay.active-involving .invole-form-container .closing-button {
       position: absolute;
       top: 15px;
       right: 15px; }
     #bloc-involve-overlay.active-involving .invole-form-container .form-item {
       margin-top: 10px; }
+      #bloc-involve-overlay.active-involving .invole-form-container .form-item.selector-item .label {
+        width: 50%; }
       #bloc-involve-overlay.active-involving .invole-form-container .form-item .label {
         color: white;
         display: inline-block;
         width: 150px; }
+        @media screen and (max-width: 950px) {
+          #bloc-involve-overlay.active-involving .invole-form-container .form-item .label {
+            display: inline-block;
+            width: 100%;
+            font-size: 12px;
+            text-align: right;
+            width: 20%; } }
+        @media screen and (max-width: 600px) {
+          #bloc-involve-overlay.active-involving .invole-form-container .form-item .label {
+            display: inline-block;
+            width: 100%;
+            font-size: 12px;
+            text-align: right;
+            width: 30%; } }
       #bloc-involve-overlay.active-involving .invole-form-container .form-item input {
         height: 25px;
         width: 35%; }
+        @media screen and (max-width: 1300px) {
+          #bloc-involve-overlay.active-involving .invole-form-container .form-item input {
+            height: 15px;
+            width: 55%; } }
+        @media screen and (max-width: 600px) {
+          #bloc-involve-overlay.active-involving .invole-form-container .form-item input {
+            width: 50%; } }
     #bloc-involve-overlay.active-involving .invole-form-container .newsletter-choice p {
       display: inline-block; }
     #bloc-involve-overlay.active-involving .invole-form-container .button {
@@ -2598,6 +2687,9 @@ header {
         display: none; } }
   #bloc-involve-infos h3 {
     font-style: italic; }
+    @media screen and (max-width: 950px) {
+      #bloc-involve-infos h3 {
+        font-size: 23px; } }
     @media screen and (max-width: 690px) {
       #bloc-involve-infos h3 {
         font-size: 17px; } }
@@ -2662,28 +2754,6 @@ header {
     @media screen and (max-width: 650px) {
       #bloc-involve-infos .text-center-container {
         width: 95%; } }
-    #bloc-involve-infos .text-center-container h3 {
-      margin-top: 0px;
-      font-size: 40px;
-      color: white;
-      text-align: center;
-      margin-top: 0px;
-      margin-bottom: 0px; }
-      @media screen and (max-width: 1300px) {
-        #bloc-involve-infos .text-center-container h3 {
-          font-size: 33px; } }
-      @media screen and (max-height: 775px) {
-        #bloc-involve-infos .text-center-container h3 {
-          margin-top: 5px;
-          font-size: 35px; } }
-      @media screen and (max-height: 700px) {
-        #bloc-involve-infos .text-center-container h3 {
-          margin-top: 5px;
-          font-size: 33px; } }
-      @media screen and (max-width: 600px) {
-        #bloc-involve-infos .text-center-container h3 {
-          margin-top: 5px;
-          font-size: 17px; } }
     #bloc-involve-infos .text-center-container p {
       margin-top: 0px;
       font-size: 40px;
@@ -2702,6 +2772,9 @@ header {
         #bloc-involve-infos .text-center-container .list-center-infos ul li {
           font-size: 20px;
           font-weight: 100; }
+          @media screen and (max-width: 950px) {
+            #bloc-involve-infos .text-center-container .list-center-infos ul li {
+              font-size: 16px; } }
           @media screen and (max-width: 600px) {
             #bloc-involve-infos .text-center-container .list-center-infos ul li {
               font-size: 12px; } }
@@ -2862,3 +2935,15 @@ footer {
     #bloc-login-overlay.active-login .login-form-container .become-member {
       margin-top: 10px;
       cursor: pointer; }
+
+body a:link {
+  color: #004588; }
+
+body a:visited {
+  color: #004588; }
+
+body a:hover {
+  color: #004588; }
+
+body a:active {
+  color: #004588; }

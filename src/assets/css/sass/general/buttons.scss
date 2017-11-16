@@ -32,16 +32,25 @@
 }
 
 .closing-button {
-    position:absolute;
-    font-size: 60px;
-    color: white;
-    top: 15px;
-    right:15px;
-    cursor:pointer;
-    transition:all 0.1s;
+    position: fixed;
+    font-size: 40px;
+    color: #004588;
+    top: 75px;
+    right: 50px;
+    cursor: pointer;
+    transition: all 0.1s;
+    @media screen and (max-width: 600px) {
+
+        font-size: 37px;
+        color: #004588;
+        top: 80px;
+        right: 20px;
+        cursor: pointer;
+    }
+
     &:hover {
 
-        font-size:62px;
+
     }
 
     // Define all type of exeption in button
