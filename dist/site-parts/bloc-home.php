@@ -1,4 +1,5 @@
 <div id="bloc-home" class="bloc">
+
 	<div id="fullScreenDiv">
 
 
@@ -29,6 +30,7 @@
 		</a>
 		<a href="#block-infos"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-blue.png" alt=""></span></a>
 	</div>
+	<div class="video-xyz"></div>
 </div>
 <style>
 
