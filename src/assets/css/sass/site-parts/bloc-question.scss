@@ -5,7 +5,7 @@
 #bloc-question {
     background: url("../images/bloc-background/bloc-events-whitey.png") no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
     position: relative;
     text-align: center;
     .content-container {
@@ -53,7 +53,7 @@
             width: 100%;
         }
         @media screen and (max-width: 600px) {
-            padding-top: 30%;
+            padding-top: 20%;
         }
     }
 
@@ -67,6 +67,12 @@
         // Responsive
         @media screen and (max-width: 1000px) {
             width: 100%;
+        }
+
+
+        // Responsive
+        @media screen and (max-width: 900px) {
+            margin-top:0px;
         }
 
         p {
@@ -118,8 +124,8 @@
         height: 2px;
         margin: 0 auto;
         background-color: $mainBlue;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     .question-form-container {
         color: white;
@@ -137,10 +143,12 @@
 
         }
         .form-item {
-            @media screen and (max-width: 950px) {
-
-            }
             margin-top: 25px;
+            @media screen and (max-width: 950px) {
+                margin-top: 5px;
+                margin-left: -50px;
+            }
+
             .label {
                 text-align: right;
                 padding-right:15px;
@@ -172,6 +180,9 @@
             input {
                 height: 25px;
                 width: 50%;
+                &.message-form-object {
+                    height: 100px;
+                }
                 @media screen and (max-width: 1300px) {
                     width: 45%;
                 }

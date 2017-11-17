@@ -16,7 +16,7 @@
 				<form class="form-user-input" id="form-question" action="" method="post">
 
 					<div class="form-item">
-						<span class="label">Prénom :</span>
+						<span class="label first">Prénom :</span>
 						<input class="capital" type="text" name="firstname" value=""><br>
 					</div>
 					<div class="form-item">
@@ -43,7 +43,8 @@
 					</div>
 
 					<div class="form-item">
-						<span class="label">Objet :</span> <input type="text" name="object" value=""><br>
+						<span class="label">Message :</span>
+						<input class="message-form-object" type="text" name="object" value=""><br>
 					</div>
 
 					<div style="display:none" class="newsletter-choice">

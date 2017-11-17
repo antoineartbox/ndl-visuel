@@ -2080,7 +2080,7 @@ header {
 #bloc-question {
   background: url("../images/bloc-background/bloc-events-whitey.png") no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
+  height: 110vh;
   position: relative;
   text-align: center; }
   #bloc-question .content-container {
@@ -2133,7 +2133,7 @@ header {
         width: 100%; } }
     @media screen and (max-width: 600px) {
       #bloc-question .content-container {
-        padding-top: 30%; } }
+        padding-top: 20%; } }
   #bloc-question .text-center-container {
     width: 100%; }
     @media screen and (max-width: 1300px) {
@@ -2142,6 +2142,9 @@ header {
     @media screen and (max-width: 1000px) {
       #bloc-question .text-center-container {
         width: 100%; } }
+    @media screen and (max-width: 900px) {
+      #bloc-question .text-center-container {
+        margin-top: 0px; } }
     #bloc-question .text-center-container p {
       font-style: normal;
       font-size: 25px;
@@ -2187,8 +2190,8 @@ header {
     height: 2px;
     margin: 0 auto;
     background-color: #004588;
-    margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-top: 5px;
+    margin-bottom: 5px; }
   #bloc-question .question-form-container {
     color: white;
     width: 100%;
@@ -2204,6 +2207,10 @@ header {
       color: #004588; }
     #bloc-question .question-form-container .form-item {
       margin-top: 25px; }
+      @media screen and (max-width: 950px) {
+        #bloc-question .question-form-container .form-item {
+          margin-top: 5px;
+          margin-left: -50px; } }
       #bloc-question .question-form-container .form-item .label {
         text-align: right;
         padding-right: 15px;
@@ -2228,6 +2235,8 @@ header {
       #bloc-question .question-form-container .form-item input {
         height: 25px;
         width: 50%; }
+        #bloc-question .question-form-container .form-item input.message-form-object {
+          height: 100px; }
         @media screen and (max-width: 1300px) {
           #bloc-question .question-form-container .form-item input {
             width: 45%; } }
