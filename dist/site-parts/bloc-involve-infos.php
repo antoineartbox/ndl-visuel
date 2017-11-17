@@ -1,40 +1,43 @@
-<div id="bloc-involve-infos" class="bloc blue">
-	<span class="line-left"></span>
-	<span class="line-right"></span>
-	<a name="bloc-involve-infos-anchor"></a>
-	<div class="bloc-container">
-		<div class="bloc-content">
-			<div class="text-center-container">
-				<div class="center-content">
-					<div class="text-center">
-						<h3>Vous souhaitez redonner au Collège <br>en contribuant à l'avenir des étudiants?</h3>
-					</div>
-					<span class="white-line"></span>
-					<div class="list-center-infos">
-						<span>Impliquez-vous à votre façon</span>
-						<ul>
-							<li>- en offrant de votre temps ou de votre expertise</li>
-							<li>- en développant un projet novateur avec votre employeur</li>
-							<li>- en contribuant monétairement</li>
-							<li>- ou toutes autres idées originales</li>
-						</ul>
+<div id="block">
+	<div id="bloc-involve-infos" class="bloc blue">
+		<span class="line-left"></span>
+		<span class="line-right"></span>
+		<a name="bloc-involve-infos-anchor"></a>
+		<div class="bloc-container">
+			<div class="bloc-content">
+				<div class="text-center-container">
+					<div class="center-content">
+						<div class="text-center">
+							<h3>Vous souhaitez redonner au Collège </br>en contribuant à l'avenir des étudiants?</h3>
+						</div>
+						<span class="white-line"></span>
+						<div class="list-center-infos">
+							<span>Impliquez-vous à votre façon</span>
+							<ul>
+								<li>- en offrant de votre temps ou de votre expertise</li>
+								<li>- en développant un projet novateur avec votre employeur</li>
+								<li>- en contribuant monétairement</li>
+								<li>- ou toutes autres idées originales</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
 
-	</div>
-	<div class="bloc-bottom">
-		<div class="button call-to-action  main-page-button become-involve">
-			<span>Je veux m'impliquer</span>
 		</div>
-		<div class="arrow-container">
-			<a href="#bloc-questions-anchor"><div><p>Continuer</p></div></a>
-			<a href="#bloc-questions-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-white.png" alt=""></span></a>
+		<div class="bloc-bottom">
+			<div class="button call-to-action  main-page-button become-involve">
+				<span>Je veux m'impliquer</span>
+			</div>
+			<div class="arrow-container">
+				<a href="#bloc-questions-anchor"><div><p>Continuer</p></div></a>
+				<a href="#bloc-questions-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-white.png" alt=""></span></a>
+			</div>
 		</div>
 	</div>
 </div>
+
 
 
 <!-- Is hidden by default -->

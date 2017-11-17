@@ -34,6 +34,7 @@
                 font-size: 19px;
                 padding-left:15px;
                 padding-right:15px;
+                font-style: italic;
             }
         }
         color: $mainBlue;
@@ -43,7 +44,7 @@
         text-align: center;
         // Responsive
         @media screen and (max-width: 600px) {
-            font-size: 13px;
+            font-size: 14px;
             padding-left:15px;
             padding-right:15px;
         }

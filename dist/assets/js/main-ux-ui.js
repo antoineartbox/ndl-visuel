@@ -1,5 +1,7 @@
 "use strict"
 $( document ).ready(function() {
+	console.log("oenis");
+	$("br").remove();
 
 // Code to be executed when the whole document object model has loaded
     // Handle closing toggling membership menu
@@ -142,3 +144,10 @@ $("#involve-moment-selection").change(function () {
 		});
 	$(".appointment-moment").val(str);
 })
+
+
+if(window.innerWidth < 550) {
+
+	$("#bloc-involve-infos	.center-content h3 br").remove();
+}
+

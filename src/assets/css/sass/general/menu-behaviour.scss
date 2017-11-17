@@ -65,9 +65,18 @@ header {
 
         @media screen and (max-width: 1060px) {
             position: absolute;
-            right: -300%;
-            transition: all 0.5s;
+            right: -500%;
+            transition: all 0.2s;
+            width: 100vw;
+            height: 100vh;
+            ul {
+                li {
+                    display: block;
+                    text-align:center;
+                }
+            }
             &.display-menu-mobile {
+
                 padding-right: 0px;
                 right: 0%;
                 width: 100vw;
@@ -79,7 +88,7 @@ header {
                     width: 100%;
                     position: absolute;
                     &.active-menu-mobile {
-                        
+
                     }
                     a,
                     a:link,

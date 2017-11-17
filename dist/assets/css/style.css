@@ -1232,8 +1232,13 @@ header .menu-hambuger {
 @media screen and (max-width: 1060px) {
   header #menu-container {
     position: absolute;
-    right: -300%;
-    transition: all 0.5s; }
+    right: -500%;
+    transition: all 2s;
+    width: 100vw;
+    height: 100vh; }
+    header #menu-container ul li {
+      display: block;
+      text-align: center; }
     header #menu-container.display-menu-mobile {
       padding-right: 0px;
       right: 0%;
@@ -1348,6 +1353,7 @@ body {
     margin: 0 auto;
     position: relative; }
 
+/*This file mixins for helping centering, disposing and placing elements*/
 header {
   position: fixed;
   top: 0px;
@@ -1429,6 +1435,27 @@ header {
           @media screen and (max-width: 990px) {
             header #menu-container nav ul .connection {
               margin-left: 0px; } }
+    @media screen and (max-width: 1060px) {
+      header #menu-container {
+        padding-right: 0px;
+        position: absolute;
+        right: -500%;
+        width: 100vw;
+        height: 100vh;
+        background-color: #FFFFFF; }
+        header #menu-container nav {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          /* bring your own prefixes */
+          transform: translate(-50%, -50%); }
+          header #menu-container nav ul {
+            width: 100%;
+            padding: 0px; }
+            header #menu-container nav ul li {
+              display: block;
+              text-align: center; } }
 
 /*This file mixins for helping centering, disposing and placing elements*/
 .video-component {
@@ -1550,6 +1577,10 @@ header {
       #bloc-infos .content-container {
         top: 47%;
         width: 95%; } }
+    @media screen and (max-width: 500px) {
+      #bloc-infos .content-container {
+        top: 56%;
+        width: 95%; } }
     #bloc-infos .content-container .line-wrapper {
       padding: 60px;
       border: solid rgba(255, 255, 255, 0.5) 1px; }
@@ -1604,7 +1635,7 @@ header {
         @media screen and (max-width: 600px) {
           #bloc-infos .content-container .dual-block-container .group-left {
             font-size: 17px; } }
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 800px) {
           #bloc-infos .content-container .dual-block-container .group-left {
             text-align: left; } }
         #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container {
@@ -1628,7 +1659,7 @@ header {
                 line-height: 20px; } }
             @media screen and (max-width: 600px) {
               #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container p {
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 14px; } }
       #bloc-infos .content-container .dual-block-container .group-right {
         position: absolute;
@@ -1672,11 +1703,13 @@ header {
               line-height: 25px; }
               @media screen and (max-width: 1300px) {
                 #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
-                  font-size: 15px;
                   line-height: 14px; } }
+              @media screen and (max-width: 800px) {
+                #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
+                  font-size: 20 px; } }
               @media screen and (max-width: 600px) {
                 #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
-                  font-size: 13px; } }
+                  font-size: 14px; } }
           @media screen and (max-width: 750px) {
             #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container {
               text-align: center; } }
@@ -1700,7 +1733,7 @@ header {
         padding-top: 0px; } }
     @media screen and (max-width: 600px) {
       #bloc-infos .bloc-title-center h3 {
-        font-size: 16px;
+        font-size: 22px;
         max-width: 100%;
         padding-top: 0px;
         margin-bottom: 7px; } }
@@ -1756,14 +1789,18 @@ header {
     bottom: 0px;
     width: 100%;
     bottom: 7%; }
-    @media screen and (max-width: 620px) {
-      #bloc-infos .become-member-container {
-        padding-top: 15px;
-        margin-top: 50px; } }
     @media screen and (max-height: 775px) {
       #bloc-infos .become-member-container {
         bottom: 2%;
         font-size: 10px; } }
+    @media screen and (max-width: 620px) {
+      #bloc-infos .become-member-container {
+        padding-top: 15px;
+        margin-top: 50px; } }
+    @media screen and (max-width: 420px) {
+      #bloc-infos .become-member-container {
+        height: 100px;
+        margin-top: 0px; } }
 
 @font-face {
   font-family: intro;
@@ -2211,6 +2248,10 @@ header {
         #bloc-question .question-form-container .form-item {
           margin-top: 5px;
           margin-left: -50px; } }
+      @media screen and (max-width: 400px) {
+        #bloc-question .question-form-container .form-item {
+          margin-top: 5px;
+          margin-left: -15px; } }
       #bloc-question .question-form-container .form-item .label {
         text-align: right;
         padding-right: 15px;
@@ -2387,12 +2428,13 @@ header {
         #bloc-events .text-center-container h3 {
           font-size: 19px;
           padding-left: 15px;
-          padding-right: 15px; } }
+          padding-right: 15px;
+          font-style: italic; } }
   #bloc-events p {
     text-align: center; }
     @media screen and (max-width: 600px) {
       #bloc-events p {
-        font-size: 13px;
+        font-size: 14px;
         padding-left: 15px;
         padding-right: 15px; } }
   #bloc-events #events-container {
@@ -2701,7 +2743,7 @@ header {
         font-size: 23px; } }
     @media screen and (max-width: 690px) {
       #bloc-involve-infos h3 {
-        font-size: 17px; } }
+        font-size: 22px; } }
   #bloc-involve-infos .bloc-bottom {
     height: 200px;
     width: 100%;
@@ -2717,6 +2759,9 @@ header {
       margin-bottom: 75px; }
     #bloc-involve-infos .bloc-bottom .main-page-button {
       margin-top: 15px; }
+      @media screen and (max-width: 400px) {
+        #bloc-involve-infos .bloc-bottom .main-page-button {
+          margin-top: 60px; } }
   #bloc-involve-infos .bloc-container {
     position: absolute;
     top: 50%;
@@ -2945,6 +2990,10 @@ footer {
       margin-top: 10px;
       cursor: pointer; }
 
+#block .white-line {
+  display: none; }
+
+/*Plase use carefully*/
 body a:link {
   color: #004588; }
 
@@ -2956,3 +3005,7 @@ body a:hover {
 
 body a:active {
   color: #004588; }
+
+#bloc-involve-infos .text-center-container .white-line {
+  margin-top: 10px;
+  margin-bottom: 10px; }

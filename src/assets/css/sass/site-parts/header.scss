@@ -1,66 +1,66 @@
+@import "../core/layout-rules.scss";
+
 header {
     position: fixed;
     top: 0px;
-    height:100px;
+    height: 100px;
     z-index: 200;
     width: 100%;
     background-color: $mainWhite;
-    transition:all 2s;
+    transition: all 2s;
     &.activate-shadow {
-        box-shadow: 3px 3px 3px rgba(125,125,125,0.5);
+        box-shadow: 3px 3px 3px rgba(125, 125, 125, 0.5);
     }
     @media screen and (max-width: 1060px) {
-        height:75px;
+        height: 75px;
     }
 
     .logo-container {
-
 
         @media screen and (max-width: 900px) {
             display: block;
         }
         display: inline-block;
-        position:absolute;
-        padding-left:25px;
-        padding-top:10px;
+        position: absolute;
+        padding-left: 25px;
+        padding-top: 10px;
         /* Video starts at 10*/
         z-index: 11;
         img {
-            height:75px;
+            height: 75px;
             @media screen and (max-width: 1175px) {
                 padding-top: 9px;
                 height: 50px;
             }
             @media screen and (max-width: 1060px) {
                 padding-top: 0px;
-
-                height:50px;
+                height: 50px;
             }
         }
     }
 
     #menu-container {
-
         text-align: right;
         padding-right: 30px;
-        padding-top:10px;
-        z-index:1000;
+        padding-top: 10px;
+        z-index: 1000;
 
         @media screen and (max-width: 1175px) {
-            text-align:right;
+            text-align: right;
         }
+
         nav {
-            color:$mainBlue;
+            color: $mainBlue;
             text-transform: uppercase;
 
             .container-connection {
 
                 .underline {
-                    border-bottom:solid $mainBlue 1px;
+                    border-bottom: solid $mainBlue 1px;
                 }
                 p {
-                    font-size:13px;
-                    padding-right:5px;
+                    font-size: 13px;
+                    padding-right: 5px;
                 }
             }
             ul {
@@ -68,18 +68,15 @@ header {
                 a {
                     // Macbook 13 inches
                     @media screen and (max-width: 1300px) {
-                        width:10px;
+                        width: 10px;
                         font-size: 13px;
-
                     }
                 }
-                li{
-
+                li {
                     display: inline-block;
-                    transition:all 0.5s;
-                    padding:15px;
+                    transition: all 0.5s;
+                    padding: 15px;
                     cursor: pointer;
-
 
                     &.active-menu-user {
                         display: none;
@@ -88,38 +85,50 @@ header {
                         background-color: $mainWhite;
                     }
                     &.menu-membership {
-
                         background-color: $mainGreen;
-                        color:$mainWhite;
-
+                        color: $mainWhite;
                     }
 
                 }
 
                 .connection {
-
-                    display:inline-block;
-                    margin-left:40px;
+                    display: inline-block;
+                    margin-left: 40px;
                     .underline {
-
                     }
-                    h3,p {
-
-                        margin:0px;
+                    h3, p {
+                        margin: 0px;
                     }
                     h3 {
-                        padding-top:15px;
+                        padding-top: 15px;
                     }
                     @media screen and (max-width: 1300px) {
-
-                        margin-left:0px;
+                        margin-left: 0px;
                         display: inline;
-
                     }
                     @media screen and (max-width: 990px) {
-
-                        margin-left:0px;
-
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+        // Mobile menu
+        @media screen and (max-width: 1060px) {
+            padding-right: 0px;
+            position: absolute;
+            right:-500%;
+            width: 100vw;
+            height: 100vh;
+            background-color: $mainWhite;
+            nav {
+                width:100%;
+                @include center-content;
+                ul {
+                    width:100%;
+                    padding:0px;
+                    li {
+                        display: block;
+                        text-align: center;
                     }
                 }
             }

@@ -13,7 +13,6 @@
         h3 {
             display: block;
             @include font-home-italic;
-
         }
 
         .button-container {
@@ -30,7 +29,6 @@
 
             .button-video {
                 background-color: $mainBlue;
-
             }
         }
     }
@@ -47,7 +45,7 @@
     position: absolute;
     top: 0px;
     background-color: rgba(255, 255, 255, 0.7);
-    z-index:5000;
+    z-index: 5000;
     .invole-form-container {
         @include centered;
         background-color: $mainBlue;
@@ -61,13 +59,11 @@
             @include font-title;
 
             @media screen and (max-width: 1300px) {
-                margin-top:0px;
-                font-size:29px;
-
+                margin-top: 0px;
+                font-size: 29px;
             }
             @media screen and (max-width: 950px) {
-                font-size:22px;
-
+                font-size: 22px;
             }
         }
         .closing-button {
@@ -79,7 +75,7 @@
             margin-top: 10px;
             &.selector-item {
                 .label {
-                    width:50%;
+                    width: 50%;
                 }
             }
             .label {
@@ -87,35 +83,30 @@
                 display: inline-block;
                 width: 150px;
 
-
                 @media screen and (max-width: 950px) {
-
                     display: inline-block;
-                    width:100%;
-                    font-size:12px;
+                    width: 100%;
+                    font-size: 12px;
                     text-align: right;
-                    width:20%;
-
+                    width: 20%;
                 }
                 @media screen and (max-width: 600px) {
-
                     display: inline-block;
-                    width:100%;
-                    font-size:12px;
+                    width: 100%;
+                    font-size: 12px;
                     text-align: right;
-                    width:30%;
-
+                    width: 30%;
                 }
             }
             input {
                 height: 25px;
                 width: 35%;
                 @media screen and (max-width: 1300px) {
-                    height:15px;
-                    width:55%;
+                    height: 15px;
+                    width: 55%;
                 }
                 @media screen and (max-width: 600px) {
-                    width:50%;
+                    width: 50%;
                 }
             }
 
@@ -130,8 +121,8 @@
             background-color: $mainGreen;
             &.get-involve {
                 @include font-button-main-page;
-                margin-top:15px;
-                padding:15px;
+                margin-top: 15px;
+                padding: 15px;
             }
         }
     }
@@ -179,11 +170,10 @@
 
         @media screen and (max-width: 950px) {
             font-size: 23px;
-
         }
 
         @media screen and (max-width: 690px) {
-            font-size:17px;
+            font-size: 22px;
         }
     }
 
@@ -192,8 +182,7 @@
     height: 100vh;
     position: relative;
     .bloc-bottom {
-
-        height:200px;
+        height: 200px;
         width: 100%;
         bottom: 0px;
         position: absolute;
@@ -207,7 +196,11 @@
             margin-bottom: 75px;
         }
         .main-page-button {
-            margin-top:15px;
+            margin-top: 15px;
+            @media screen and (max-width: 400px) {
+                margin-top:60px;
+            }
+
         }
     }
     .bloc-container {
@@ -252,7 +245,6 @@
         @include center-content;
         color: white;
         h3 {
-
         }
         p {
             @include font-title;
@@ -263,7 +255,7 @@
             text-align: left;
             padding-left: 130px;
             @media screen and (max-width: 600px) {
-                padding-left:0px;
+                padding-left: 0px;
             }
             ul {
                 padding-left: 0;
@@ -282,12 +274,11 @@
         }
         .button {
             margin-top: 5%;
-            padding:500px;
+            padding: 500px;
         }
 
     }
 }
 
 #form-involve {
-
 }
