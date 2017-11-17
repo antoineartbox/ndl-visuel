@@ -29,6 +29,7 @@ $( document ).ready(function() {
 
 		$(".video-xyz .closing-button").click(function() {
 			$(".video-xyz").html("");
+			enableScrolling($("body"));
 		});
 	}
 	function killScroll() {
