@@ -1233,7 +1233,7 @@ header .menu-hambuger {
   header #menu-container {
     position: absolute;
     right: -500%;
-    transition: all 2s;
+    transition: all 0.2s;
     width: 100vw;
     height: 100vh; }
     header #menu-container ul li {
