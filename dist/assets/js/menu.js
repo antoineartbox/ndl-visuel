@@ -188,3 +188,9 @@ $( document ).ready(function () {
 	// Remove unwantes tyle
 
 })
+
+var wH = window.innerHeight;
+
+$(".bloc").css({
+	"min-height": (wH - 100) + "px"
+})

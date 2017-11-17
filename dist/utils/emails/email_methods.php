@@ -17,11 +17,11 @@ function sendNewUserMail($messageContent, $newUserEmail) {
     $mail->Port = 587;
     $mail->SMTPSecure = 'tls';
     $mail->SMTPAuth = true;
-    $mail->Username = "antoinefortin1995@gmail.com";
-    $mail->Password = "abletonreasonfl";
+    $mail->Username = "alumninoreply@gmail.com";
+    $mail->Password = "34870tyqreghfiuvnidt87w4ouiwhjlr";
 
-    $mail->setFrom(SENDER, 'Antoine Fortin');
-    $mail->addReplyTo(REPLYER, 'Tony prod');
+    $mail->setFrom(SENDER, 'ALUMNI');
+    $mail->addReplyTo(REPLYER, 'ALUNI');
 
     $emails = unserialize (RECEIVERS);
 
@@ -32,8 +32,8 @@ function sendNewUserMail($messageContent, $newUserEmail) {
 
 
     // Mail Subject
-    $mail->Subject = "Valider votre inscription au groupe ALUMNI";
-    $mail->AltBody = "Valider votre inscription au groupe ALUMNI";
+    $mail->Subject = "Valider votre inscription au groupe ALUMNI!";
+    $mail->AltBody = "Valider votre inscription au groupe ALUMNI!";
 
     $mail->Body = $messageContent;
 
@@ -62,11 +62,12 @@ function sendMemberShipMessage($messageContent) {
     $mail->Port = 587;
     $mail->SMTPSecure = 'tls';
     $mail->SMTPAuth = true;
-    $mail->Username = "antoinefortin1995@gmail.com";
-    $mail->Password = "abletonreasonfl";
+	$mail->Username = "alumninoreply@gmail.com";
+	$mail->Password = "34870tyqreghfiuvnidt87w4ouiwhjlr";
 
-    $mail->setFrom(SENDER, 'Antoine Fortin');
-    $mail->addReplyTo(REPLYER, 'Tony prod');
+	$mail->setFrom(SENDER, 'ALUMNI');
+	$mail->addReplyTo(REPLYER, 'ALUNI');
+
 
     $emails = unserialize (RECEIVERS);
 
@@ -106,11 +107,11 @@ function sendInvolveMessage($messageContent) {
     $mail->Port = 587;
     $mail->SMTPSecure = 'tls';
     $mail->SMTPAuth = true;
-    $mail->Username = "antoinefortin1995@gmail.com";
-    $mail->Password = "abletonreasonfl";
+	$mail->Username = "alumninoreply@gmail.com";
+	$mail->Password = "34870tyqreghfiuvnidt87w4ouiwhjlr";
 
-    $mail->setFrom(SENDER, 'Antoine Fortin');
-    $mail->addReplyTo(REPLYER, 'Tony prod');
+	$mail->setFrom(SENDER, 'ALUMNI');
+	$mail->addReplyTo(REPLYER, 'ALUNI');
 
     $emails = unserialize (RECEIVERS);
 
@@ -149,11 +150,12 @@ function sendQuestionMessage($messageContent) {
     $mail->Port = 587;
     $mail->SMTPSecure = 'tls';
     $mail->SMTPAuth = true;
-    $mail->Username = "antoinefortin1995@gmail.com";
-    $mail->Password = "abletonreasonfl";
+	$mail->Username = "alumninoreply@gmail.com";
+	$mail->Password = "34870tyqreghfiuvnidt87w4ouiwhjlr";
 
-    $mail->setFrom(SENDER, 'Antoine Fortin');
-    $mail->addReplyTo(REPLYER, 'Tony prod');
+	$mail->setFrom(SENDER, 'ALUMNI');
+	$mail->addReplyTo(REPLYER, 'ALUNI');
+
 
     $emails = unserialize (RECEIVERS);
 

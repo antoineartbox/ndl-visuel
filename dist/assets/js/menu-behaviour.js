@@ -7,7 +7,7 @@ $( document ).ready(function() {
 
 		$("#menu-container").toggleClass("display-menu-mobile");
 
-		console.log(counter);
+
 		if(counter % 2 == 0) {
 			blockScrolling($("body"));
 		} else {
@@ -15,6 +15,9 @@ $( document ).ready(function() {
 		}
 		counter++;
 
+		$(".menu-item").click(function() {
+			$("#menu-container").removeClass("display-menu-mobile");
+		});
 	});
 
 })

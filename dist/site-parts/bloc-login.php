@@ -1,11 +1,12 @@
 <?php session_start(); ?>
 <!-- Is hidden by default -->
 <div id="bloc-login-overlay">
-
+	<span class="closing-button">x</span>
     <?php if (!$_SESSION["is_logged_in"]) { ?>
         <div class="login-form-container">
+
             <h3>Entrer vos informations de connections</h3>
-            <span class="closing-button">x</span>
+
             <form id="loginform" class="" action="./utils/users/user_connect.php" method="post">
                 <div class="form-item">
                     <span class="label">Nom d'utilisateur ou adresse courriel:</span>

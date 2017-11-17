@@ -8,7 +8,7 @@
 
 			<div class="line-wrapper">
 				<div class="bloc-title-center">
-					<h3>Ancien élève de NDL ? Notre groupe Alumni s’adresse à vous ! </h3>
+					<h3>Ancien élève de NDL? Notre groupe Alumni s’adresse à vous! </h3>
 					<span class="underline"></span>
 				</div>
 				<div class="dual-block-container">
@@ -38,17 +38,17 @@
 				</div>
 			</div>
 
-
-
+		</div>
+		<div class="bloc-bottom">
 			<div class="become-member-container">
 				<div class="button call-to-action main-page-button  become-member">
 					<span>Devenez-membre</span>
 				</div>
 			</div>
-		</div>
-		<div class="arrow-container">
-			<a href="#bloc-events-anchor"><div><p>Continuer</p></div></a>
-			<a href="#bloc-events-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-white.png" alt=""></span></a>
+			<div class="arrow-container">
+				<a href="#bloc-events-anchor"><div><p>Continuer</p></div></a>
+				<a href="#bloc-events-anchor"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-white.png" alt=""></span></a>
+			</div>
 		</div>
 	</div>
 </div>
