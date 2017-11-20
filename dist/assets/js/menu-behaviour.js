@@ -17,6 +17,8 @@ $( document ).ready(function() {
 
 		$(".menu-item").click(function() {
 			$("#menu-container").removeClass("display-menu-mobile");
+			$(".menu-hambuger").removeClass("activated-menu-container")
+
 		});
 	});
 

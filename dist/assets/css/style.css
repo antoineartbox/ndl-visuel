@@ -1642,7 +1642,7 @@ header {
         font-style: normal;
         font-size: 20px;
         line-height: 25px;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 100;
         text-align: right;
         left: 0px; }
@@ -1760,7 +1760,7 @@ header {
     font-style: normal;
     font-size: 20px;
     line-height: 25px;
-    font-size: 15px;
+    font-size: 20px;
     display: block;
     width: 75%;
     margin: 0 auto;
@@ -1776,7 +1776,7 @@ header {
     font-style: normal;
     font-size: 20px;
     line-height: 25px;
-    font-size: 15px;
+    font-size: 20px;
     display: block;
     margin: 0 auto;
     margin-top: 10%;
@@ -2221,7 +2221,7 @@ header {
       font-style: normal;
       font-size: 20px;
       line-height: 25px;
-      font-size: 15px;
+      font-size: 20px;
       font-size: 20px;
       font-weight: 900;
       line-height: 33px;
@@ -2522,7 +2522,7 @@ header {
     font-style: normal;
     font-size: 20px;
     line-height: 25px;
-    font-size: 15px;
+    font-size: 20px;
     margin: 0 auto;
     text-align: center;
     width: 60%; }
@@ -3135,7 +3135,7 @@ body .bloc .content-container {
     font-style: normal;
     font-size: 20px;
     line-height: 25px;
-    font-size: 15px; }
+    font-size: 20px; }
     @media screen and (max-width: 1300px) {
       body .bloc .content-container ul li {
         line-height: 20px;
