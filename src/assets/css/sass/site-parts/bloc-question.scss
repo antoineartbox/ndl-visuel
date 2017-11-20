@@ -140,6 +140,10 @@
         }
         .form-item {
             margin-top: 25px;
+            @media screen and (max-width: 1300px) {
+                margin-top: 15px;
+                margin-left: -50px;
+            }
             @media screen and (max-width: 950px) {
                 margin-top: 5px;
                 margin-left: -50px;
@@ -307,6 +311,7 @@
         }
         .form-item {
             margin-top: 10px;
+
             .label {
                 color: white;
                 display: inline-block;

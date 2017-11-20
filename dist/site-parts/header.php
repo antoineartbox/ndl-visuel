@@ -22,7 +22,7 @@
 
 
                 <?php if(isset($_SESSION["is_logged_in"]) == FALSE) { ?>
-                <a class="connection container-connection"><li class="menu-item">Connectez-vous</li></a>
+                <a style="display:none;"class="connection container-connection"><li class="menu-item">Connectez-vous</li></a>
                 <?php }  ?>
 				<li class="menu-membership">Devenir Membre</li>
                 <?php if ($_SESSION["is_logged_in"]) { ?>

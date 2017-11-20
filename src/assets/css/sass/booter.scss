@@ -25,9 +25,9 @@
 @import 'site-parts/blog-login.scss';
 
 
-// Mobile
+// Mobile & devices
 @import "general/mobile.scss";
-
+@import "general/devices/macbook13.scss";
 
 @import "emergency.scss";
 
