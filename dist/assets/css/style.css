@@ -1543,7 +1543,7 @@ header {
     left: 10%; }
     @media screen and (max-width: 1350px) {
       #bloc-infos .line-left {
-        display: none; } }
+        width: 10%; } }
     @media screen and (max-width: 900px) {
       #bloc-infos .line-left {
         display: none; } }
@@ -1564,7 +1564,7 @@ header {
     border: solid rgba(255, 255, 255, 0.5) 1px; }
     @media screen and (max-width: 1350px) {
       #bloc-infos .line-right {
-        display: none; } }
+        width: 10%; } }
     @media screen and (max-width: 900px) {
       #bloc-infos .line-right {
         display: none; } }
@@ -2518,27 +2518,29 @@ header {
       margin: 0 auto;
       margin-bottom: 25px;
       width: 15%; }
-  #bloc-events p {
-    font-style: normal;
-    font-size: 20px;
-    line-height: 25px;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
-    width: 60%; }
-    @media screen and (max-width: 1300px) {
-      #bloc-events p {
-        line-height: 20px;
-        font-size: 15px; } }
-    @media screen and (max-width: 600px) {
-      #bloc-events p {
-        font-size: 17px; } }
-    @media screen and (max-width: 600px) {
-      #bloc-events p {
-        font-size: 14px;
-        padding-left: 15px;
-        padding-right: 15px;
-        width: 90%; } }
+    #bloc-events .text-center-container p {
+      font-style: normal;
+      font-size: 20px;
+      line-height: 25px;
+      font-size: 20px;
+      margin: 0 auto;
+      text-align: center;
+      width: 60%; }
+      @media screen and (max-width: 1300px) {
+        #bloc-events .text-center-container p {
+          line-height: 20px;
+          font-size: 15px; } }
+      @media screen and (max-width: 600px) {
+        #bloc-events .text-center-container p {
+          font-size: 17px; } }
+      #bloc-events .text-center-container p.blue {
+        font-size: 12px; }
+      @media screen and (max-width: 600px) {
+        #bloc-events .text-center-container p {
+          font-size: 14px;
+          padding-left: 15px;
+          padding-right: 15px;
+          width: 90%; } }
   #bloc-events #events-container {
     display: flex;
     justify-content: center;
@@ -2818,9 +2820,9 @@ header {
     width: 15%;
     border: solid rgba(255, 255, 255, 0.5) 1px;
     left: 10%; }
-    @media screen and (max-width: 1350px) {
+    @media screen and (max-width: 1100px) {
       #bloc-involve-infos .line-left {
-        display: none; } }
+        width: 10%; } }
     @media screen and (max-width: 900px) {
       #bloc-involve-infos .line-left {
         display: none; } }
@@ -2835,9 +2837,9 @@ header {
     width: 15%;
     left: 90%;
     border: solid rgba(255, 255, 255, 0.5) 1px; }
-    @media screen and (max-width: 1350px) {
+    @media screen and (max-width: 1100px) {
       #bloc-involve-infos .line-right {
-        display: none; } }
+        width: 10%; } }
     @media screen and (max-width: 900px) {
       #bloc-involve-infos .line-right {
         display: none; } }

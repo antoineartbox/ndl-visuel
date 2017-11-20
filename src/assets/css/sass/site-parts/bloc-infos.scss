@@ -5,7 +5,7 @@
 
     .line-left {
         @media screen and (max-width: 1350px) {
-            display: none;
+            width:10%;
         }
 
         @media screen and (max-width: 900px) {
@@ -24,7 +24,7 @@
 
     .line-right {
         @media screen and (max-width: 1350px) {
-            display: none;
+            width:10%;
         }
         @media screen and (max-width: 900px) {
             display: none;

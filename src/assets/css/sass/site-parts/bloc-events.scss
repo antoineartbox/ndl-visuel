@@ -67,24 +67,27 @@
             width: 15%;
         }
         color: $mainBlue;
-    }
+        p {
+            @include font-regular-bloc;
+            margin: 0 auto;
+            text-align: center;
+            width: 60%;
+            &.blue {
+                font-size:12px;
+            }
+            // Responsive
+            @media screen and (max-width: 600px) {
+                font-size: 14px;
+                padding-left: 15px;
+                padding-right: 15px;
+                width:90%;
 
-    p {
-        @include font-regular-bloc;
-        margin: 0 auto;
-        text-align: center;
-        width: 60%;
-
-        // Responsive
-        @media screen and (max-width: 600px) {
-            font-size: 14px;
-            padding-left: 15px;
-            padding-right: 15px;
-            width:90%;
+            }
 
         }
-
     }
+
+
 
     #events-container {
         @include wrap-all-childs;
@@ -157,6 +160,17 @@
             }
 
             .last {
+            }
+        }
+    }
+    .arrow-container {
+        a {
+            div{
+                p {
+                    &.blue {
+
+                    }
+                }
             }
         }
     }
