@@ -2537,7 +2537,8 @@ header {
       #bloc-events p {
         font-size: 14px;
         padding-left: 15px;
-        padding-right: 15px; } }
+        padding-right: 15px;
+        width: 90%; } }
   #bloc-events #events-container {
     display: flex;
     justify-content: center;
