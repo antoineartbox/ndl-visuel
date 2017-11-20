@@ -5,11 +5,11 @@
     <?php if (!$_SESSION["is_logged_in"]) { ?>
         <div class="login-form-container">
 
-            <h3>Entrer vos informations de connections</h3>
+            <h3>Entrez vos informations de connexion</h3>
 
             <form id="loginform" class="" action="./utils/users/user_connect.php" method="post">
                 <div class="form-item">
-                    <span class="label">Nom d'utilisateur ou adresse courriel:</span>
+                    <span class="label">Nom d'utilisateur :</span>
                     <input type="text" name="username" value=""><br>
                 </div>
                 <div class="form-item">

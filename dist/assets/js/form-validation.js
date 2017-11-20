@@ -78,7 +78,7 @@ function validatePassword(passwordValue) {
 	}
 
 	if(intCounter >= intCount && passwordValue.length >= passwordMinimumLength) {
-		messages.push("Le mot de passe est valide");
+
 	} else {
 		if(intCounter <= intCount) {
 			messages.push("Le mot de passe doit contenir au moins deux charactère numérique");

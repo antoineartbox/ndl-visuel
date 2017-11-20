@@ -2,7 +2,7 @@
 <div id="bloc-involve" class="bloc blue">
 
 	<div class="content-container">
-        <h3>Comment est-ce que je peux m'inpliquer?</h3>
+        <h3>Comment est-ce que je peux m'impliquer?</h3>
         <div class="button-container button-video">
             <div class="button call-to-action  main-page-button watch-video-involve">
                 <span>Regarder la vidéo</span>

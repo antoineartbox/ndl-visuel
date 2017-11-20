@@ -8,7 +8,7 @@ $( document ).ready(function() {
     $(".become-member-container .button").click(function() {
 		enableMembershipForm();
 
-    });
+	});
 
     $(".become-member span").click(function() {
 		$(".login-form-container .closing-button").trigger("click");
@@ -151,3 +151,6 @@ if(window.innerWidth < 550) {
 	$("#bloc-involve-infos	.center-content h3 br").remove();
 }
 
+$(".login-form-container .become-member").click(function() {
+	$("#bloc-login-overlay").hide();
+})

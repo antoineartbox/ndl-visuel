@@ -36,13 +36,16 @@ $(document).ready(function () {
 	// Detect click on button
 	$(".button.question.submit").click(function () {
 
+		var valueText = $("#text-area-question").val();
+		console.log(valueText);
+		$(".message-form-object").val(valueText);
 		// Build datas
 		var datastring = $("#form-question").serialize();
 		console.log(datastring);
 
 		// Clear error message
 		$(".errors-container").html("");
-		if (true) {
+		if (false) {
 			submitQuestionForm(datastring);
 		}
 	});
@@ -85,7 +88,7 @@ $(document).ready(function () {
 
 						$(document).click(function () {
 							$("#bloc-membership-overlay").fadeOut(500);
-
+							enableScrolling($("body"));
 						});
 					}
 
@@ -138,7 +141,7 @@ $(document).ready(function () {
 						killLoader();
 
 						// Initiate the form success
-						validatedFormSuccess($(".invole-form-container"), "<h4>Merci de vous être inscrit</h4>");
+						validatedFormSuccess($(".invole-form-container"), "<h4>Merci de votre implication</h4>");
 
 						//
 						setTimeout(function () {
@@ -146,11 +149,12 @@ $(document).ready(function () {
 						}, 300);
 
 						function otherMessage() {
-							validatedFormSuccess($(".invole-form-container"), "<h4>Un adminisatrateur vous conactera sous peu.</h4>");
+							validatedFormSuccess($(".invole-form-container"), "<h4>Un adminisatrateur vous contactera sous peu.</h4>");
 						}
 
 						$(document).click(function () {
 							$("#bloc-involve-overlay").fadeOut(500);
+							enableScrolling($("body"));
 						});
 					}
 
@@ -215,6 +219,7 @@ $(document).ready(function () {
 
 						$(document).click(function () {
 							$("#bloc-involve-overlay").fadeOut(500);
+							enableScrolling($("body"));
 						});
 					}
 

@@ -15,21 +15,24 @@
 					<div class="group-left">
 						<div class="bloc-infos-container">
 							<div class="text-right-container">
-								<p>Nous vous invitons à contribuer à la notoriété du collège en vous impliquant dans des projets novateurs et inspirants tout en profitant d’événements exclusifs. Une belle façon de renforcer votre réseau professionnel et personnel et de rencontrer de talentueux étudiants et parents de la cohorte actuelle.</p>
+								<p>Nous vous invitons à contribuer à la notoriété du Collège en vous impliquant dans des projets novateurs et inspirants tout en profitant d’événements exclusifs. Une belle façon de renforcer votre réseau professionnel et personnel et de rencontrer de talentueux élèves et parents de la cohorte actuelle.</p>
+								<p>Devenez membre de la grande communauté des anciens de NDL.</p></p>
 							</div>
 						</div>
 					</div>
 					<div class="group-right">
 						<div class="bloc-infos-bullet-container">
 							<div class="bullet-right-container">
-								<h3>Le programme Alumni c’est...</h3>
+								<h3>Le programme Alumni, c'est: </h3>
 								<div class="bullet-list-container">
 									<ul>
-										<li class="first">- Des rencontres enrichissantes</li>
-										<li>- Des événements exclusifs</li>
-										<li>- Un programme ambitieux</li>
-										<li>- Une approche différente</li>
-										<li class="last">- S’impliquer en redonnant</li>
+										<li class="first">- des rencontres enrichissantes</li>
+										<li>- des événements uniques</li>
+										<li>- du réseautage professionnel</li>
+										<li>- une implication volontaire</li>
+										<li>- une implication volontaire</li>
+										<li>- une contribution personnalisée </li>
+										<li class="last">- une communauté dynamique</li>
 									</ul>
 								</div>
 							</div>
@@ -42,7 +45,7 @@
 		<div class="bloc-bottom">
 			<div class="become-member-container">
 				<div class="button call-to-action main-page-button  become-member">
-					<span>Devenez-membre</span>
+					<span>Devenez membre</span>
 				</div>
 			</div>
 			<div class="arrow-container">
@@ -59,7 +62,8 @@
 <div id="bloc-membership-overlay">
 	<span class="closing-button">x</span>
     <div class="membership-form-container">
-        <h3>Merci de vous inscrire</h3>
+        <h3>Complétez le formulaire ci-dessous pour vous inscrire pour vous inscrire</h3>
+
 
 		<div class="errors-container">
 			<!-- Refers to JS -->
@@ -77,7 +81,7 @@
             </div>
 
             <div class="form-item">
-                <span class="label">Age : </span> <input type="number" name="age" value=""><br>
+                <span class="label">Âge : </span> <input type="number" name="age" value=""><br>
             </div>
 
             <div class="form-item">

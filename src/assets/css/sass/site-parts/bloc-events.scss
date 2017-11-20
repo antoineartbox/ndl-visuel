@@ -28,6 +28,7 @@
             @include font-title;
             font-style: italic;
             color: $mainBlue;
+            margin-bottom: 20px;
             // Responsive
             @media screen and (max-width: 1290px) {
                 margin-bottom: 15px;
@@ -53,11 +54,23 @@
                 font-style: italic;
             }
         }
+        .line-blue {
+            display: block;
+            border: solid $mainBlue 1px;
+            background-color:$mainBlue;
+            margin: 0 auto;
+            margin-bottom: 25px;
+            width: 25%;
+        }
         color: $mainBlue;
     }
 
     p {
+
+        @include font-regular-bloc;
+        margin:0 auto;
         text-align: center;
+        width:60%;
         // Responsive
         @media screen and (max-width: 600px) {
             font-size: 14px;

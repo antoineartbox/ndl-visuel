@@ -18,7 +18,7 @@
 				<a href="#block-infos"><li class="menu-about menu-item menu-about">À propos</li></a>
 				<a href="#bloc-events-anchor"><li class="menu-events menu-item">Événements</li></a>
 				<a href="#bloc-involve-infos"><li class="menu-involve menu-item">Impliquez-vous</li></a>
-				<a href="#bloc-questions-anchor"><li class="menu-question menu-item">Questions</li></a>
+				<a href="#bloc-questions-anchor"><li class="menu-question menu-item">Contact</li></a>
 
 
                 <?php if(isset($_SESSION["is_logged_in"]) == FALSE) { ?>

@@ -8,15 +8,16 @@
 				<div class="text-center-container">
 					<div class="center-content">
 						<div class="text-center">
-							<h3>Vous souhaitez redonner au Collège </br>en contribuant à l'avenir des étudiants?</h3>
+							<h3>Vous souhaitez redonner au Collège </br>en contribuant à l'avenir des élèves?</h3>
 						</div>
 						<span class="white-line"></span>
 						<div class="list-center-infos">
-							<span>Impliquez-vous à votre façon</span>
+							<span>Impliquez-vous à votre façon...</span>
 							<ul>
-								<li>- en offrant de votre temps ou de votre expertise</li>
+								<li>- en offrant de votre temps ou expertise</li>
 								<li>- en développant un projet novateur avec votre employeur</li>
 								<li>- en contribuant monétairement</li>
+								<li>- pour soutenir un projet.</li>
 								<li>- ou toutes autres idées originales</li>
 							</ul>
 						</div>

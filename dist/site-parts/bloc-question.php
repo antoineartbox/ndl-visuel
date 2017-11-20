@@ -6,7 +6,7 @@
 		<div class="text-center-container">
 			<div class="text-center">
 				<h3>Vous avez des questions à propos du programme?</h3>
-				<p>Remplissez le formulaire suivant et un membre de notre équipe vous contactera sous peu.</p>
+				<p>Remplissez le formulaire suivant et un membre de notre équipe Alumni vous contactera sous peu.</p>
 			</div>
 
 			<span class="line"></span>
@@ -38,29 +38,32 @@
 					</div>
 
 					<div
-					<div style="display:none;" class="form-item">
+					<div style="" class="form-item">
 						<span class="label">Téléphone :</span> <input type="text" name="phone" value=""><br>
 					</div>
 
-					<div class="form-item">
-						<span class="label">Message :</span>
-						<input class="message-form-object" type="text" name="object" value=""><br>
-					</div>
 
-					<div style="display:none" class="newsletter-choice">
-						<input type="checkbox" name="newsletter" value="">
-						<span class="label"><p>*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni et de ses événements.</p></span>
-					</div>
-					<input style="display:none;" type="form-type" name="form-type" value="question">
-					<div class="button call-to-action question submit main-page-button">
-						<span>Envoyer</span>
-					</div>
+					<div class="form-item message">
 
-					<input style="display:none;" id="" type="submit" name="" value="">
-				</form>
+						<div class="label">Message :</div>
+						<textarea class="message-form-object" id="text-area-question" rows="4" cols="50" name="object" form="form-question"></textarea>
+
+						<input style="display:none;" class="message-form-object" type="text" name="object" value="">
+					</div>
 			</div>
-		</div>
 
+			<div style="display:none" class="newsletter-choice">
+				<input type="checkbox" name="newsletter" value="">
+				<span class="label"><p>*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni et de ses événements.</p></span>
+			</div>
+			<input style="display:none;" type="form-type" name="form-type" value="question">
+			<div class="button call-to-action question submit main-page-button">
+				<span>Envoyer</span>
+			</div>
+
+			<input style="display:none;" id="" type="submit" name="" value="">
+			</form>
+		</div>
 	</div>
 	<div class="arrow-container">
 		<a href="#bloc-home">
@@ -68,6 +71,8 @@
 		</a>
 		<a href="#bloc-home"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-blue-reverse.png" alt=""></span></a>
 	</div>
+</div>
+
 </div>
 
 <!-- Is hidden by default -->

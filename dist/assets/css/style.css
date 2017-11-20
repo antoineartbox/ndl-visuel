@@ -1422,8 +1422,7 @@ header {
             background-color: #7fc214;
             color: #FFFFFF; }
         header #menu-container nav ul .connection {
-          display: inline-block;
-          margin-left: 40px; }
+          display: inline-block; }
           header #menu-container nav ul .connection h3, header #menu-container nav ul .connection p {
             margin: 0px; }
           header #menu-container nav ul .connection h3 {
@@ -1625,7 +1624,7 @@ header {
             width: 90%; } }
       #bloc-infos .content-container .dual-block-container .group-left {
         font-style: normal;
-        font-size: 25px;
+        font-size: 20px;
         line-height: 25px;
         font-weight: 100;
         text-align: right;
@@ -1749,7 +1748,7 @@ header {
         margin-bottom: 7px; } }
   #bloc-infos .bloc-infos-container {
     font-style: normal;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 25px;
     display: block;
     width: 75%;
@@ -1760,7 +1759,7 @@ header {
         font-size: 17px; } }
   #bloc-infos .bloc-infos-bullet-container {
     font-style: normal;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 25px;
     display: block;
     margin: 0 auto;
@@ -1968,7 +1967,8 @@ header {
         #bloc-membership-overlay.active-membership .membership-form-container h3 {
           font-size: 22px; } }
     #bloc-membership-overlay.active-membership .membership-form-container .form-item {
-      margin-top: 10px; }
+      margin-top: 10px;
+      margin-left: -100px; }
       @media screen and (max-width: 600px) {
         #bloc-membership-overlay.active-membership .membership-form-container .form-item {
           margin-left: -40px; } }
@@ -2190,7 +2190,7 @@ header {
         margin-top: 0px; } }
     #bloc-question .text-center-container p {
       font-style: normal;
-      font-size: 25px;
+      font-size: 20px;
       line-height: 25px;
       font-size: 20px;
       font-weight: 900;
@@ -2258,6 +2258,9 @@ header {
         #bloc-question .question-form-container .form-item {
           margin-top: 5px;
           margin-left: -15px; } }
+      #bloc-question .question-form-container .form-item.message {
+        display: flex;
+        justify-content: center; }
       #bloc-question .question-form-container .form-item .label {
         text-align: right;
         padding-right: 15px;
@@ -2279,25 +2282,42 @@ header {
           #bloc-question .question-form-container .form-item .label {
             display: inline-block;
             font-size: 12px; } }
+      #bloc-question .question-form-container .form-item textarea,
       #bloc-question .question-form-container .form-item input {
         height: 25px;
         width: 50%; }
+        #bloc-question .question-form-container .form-item textarea.message-form-object,
         #bloc-question .question-form-container .form-item input.message-form-object {
           height: 100px; }
         @media screen and (max-width: 1300px) {
+          #bloc-question .question-form-container .form-item textarea,
           #bloc-question .question-form-container .form-item input {
             width: 45%; } }
         @media screen and (max-width: 800px) {
+          #bloc-question .question-form-container .form-item textarea,
           #bloc-question .question-form-container .form-item input {
             margin-top: 15px;
             width: 60%; } }
         @media screen and (max-width: 600px) {
+          #bloc-question .question-form-container .form-item textarea,
           #bloc-question .question-form-container .form-item input {
             display: inline-block;
             width: 60%;
             font-size: 12px; } }
+      #bloc-question .question-form-container .form-item .message-wrapper {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        height: 70px; }
+        #bloc-question .question-form-container .form-item .message-wrapper .left-container-message {
+          left: 18.5%;
+          position: absolute; }
+        #bloc-question .question-form-container .form-item .message-wrapper textarea#text-area-question {
+          width: 100%; }
     #bloc-question .question-form-container .newsletter-choice {
       margin-top: 30px; }
+      #bloc-question .question-form-container .newsletter-choice textarea {
+        display: none; }
       #bloc-question .question-form-container .newsletter-choice .label p {
         font-size: 15px;
         line-height: 18px;
@@ -2429,7 +2449,8 @@ header {
       color: white;
       text-align: center;
       font-style: italic;
-      color: #004588; }
+      color: #004588;
+      margin-bottom: 20px; }
       @media screen and (max-width: 1290px) {
         #bloc-events .text-center-container h3 {
           margin-bottom: 15px; } }
@@ -2451,8 +2472,23 @@ header {
           padding-left: 15px;
           padding-right: 15px;
           font-style: italic; } }
+    #bloc-events .text-center-container .line-blue {
+      display: block;
+      border: solid #004588 1px;
+      background-color: #004588;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      width: 25%; }
   #bloc-events p {
-    text-align: center; }
+    font-style: normal;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%; }
+    @media screen and (max-width: 600px) {
+      #bloc-events p {
+        font-size: 17px; } }
     @media screen and (max-width: 600px) {
       #bloc-events p {
         font-size: 14px;
@@ -2759,7 +2795,8 @@ header {
         display: none; } }
   #bloc-involve-infos h3 {
     font-style: italic;
-    font-size: 40px; }
+    font-size: 40px;
+    margin-bottom: 2px; }
     @media screen and (max-width: 950px) {
       #bloc-involve-infos h3 {
         font-size: 23px; } }
@@ -3039,5 +3076,5 @@ body a:active {
   color: #004588; }
 
 #bloc-involve-infos .text-center-container .white-line {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
