@@ -5,7 +5,7 @@
 
     .line-left {
         @media screen and (max-width: 1350px) {
-            width:10%;
+            width: 10%;
         }
 
         @media screen and (max-width: 900px) {
@@ -24,7 +24,7 @@
 
     .line-right {
         @media screen and (max-width: 1350px) {
-            width:10%;
+            width: 10%;
         }
         @media screen and (max-width: 900px) {
             display: none;
@@ -70,6 +70,10 @@
         @include center-content;
         @media screen and (max-width: 1300px) {
             transform: translate(-50%, -60%);
+        }
+
+        @media screen and (max-width: 480px) {
+            transform: translate(-50%, -65%);
         }
         .line-wrapper {
             padding: 60px;
@@ -121,7 +125,6 @@
                     margin: 0 auto;
                 }
                 @include font-regular-bloc;
-
                 font-weight: 100;
                 text-align: right;
                 left: 0px;
@@ -143,6 +146,10 @@
 
                         @media screen and (max-width: 600px) {
                             font-size: 14px;
+                            line-height: 14px;
+                        }
+                        @media screen and (max-width: 480px) {
+                            font-size: 11px;
                             line-height: 14px;
                         }
 
@@ -171,9 +178,7 @@
                     li {
                         padding-top: 5px;
                         line-height: 25px;
-
                     }
-
 
                     @media screen and (max-width: 900px) {
                         font-size: 20px;
@@ -209,20 +214,27 @@
                                     line-height: 14px;
                                 }
 
-
                                 @media screen and (max-width: 600px) {
                                     font-size: 14px;
                                 }
-
+                                @media screen and (max-width: 480px) {
+                                    font-size:11px;
+                                    line-height: 8px;
+                                }
 
                             }
                         }
                         @media screen and (max-width: 750px) {
-                            padding-top:15px;
+                            padding-top: 15px;
                             text-align: left;
                         }
                         @media screen and (max-width: 525px) {
                             text-align: left;
+                        }
+
+                        // Responsive
+                        @media screen and (max-width: 480px) {
+                            padding-top: 0px;
                         }
                     }
                 }
@@ -232,6 +244,7 @@
         }
 
     }
+
     // Remove unwanted margin
     .bloc-title-center {
 
@@ -258,6 +271,14 @@
                 margin-bottom: 7px;
             }
 
+            // Responsive
+            @media screen and (max-width: 480px) {
+                font-size: 17px;
+                max-width: 100%;
+                padding-top: 0px;
+                margin-bottom: 7px;
+            }
+
         }
         .underline {
             display: block;
@@ -273,6 +294,7 @@
 
         }
     }
+
     .bloc-infos-container {
         @include font-regular-bloc;
         display: block;
@@ -280,6 +302,7 @@
         margin: 0 auto;
         margin-top: 5%;
     }
+
     .bloc-infos-bullet-container {
         @include font-regular-bloc;
         display: block;
@@ -308,6 +331,7 @@
         }
 
     }
+
     .bloc-bottom {
         position: absolute;
         bottom: 0px;
@@ -320,7 +344,7 @@
             width: 100%;
             bottom: 7%;
             @media screen and (max-width: 1300px) {
-                padding-top:0px;
+                padding-top: 0px;
             }
             // Responsive
             @media screen and (max-height: 775px) {
@@ -330,17 +354,16 @@
             // Responsive
             @media screen and (max-width: 620px) {
                 padding-top: 15px;
-                margin-top:50px;
+                margin-top: 50px;
             }
 
             // Responsive
             @media screen and (max-width: 420px) {
                 height: 100px;
-                margin-top:0px;
+                margin-top: 0px;
             }
 
         }
     }
-
 
 }

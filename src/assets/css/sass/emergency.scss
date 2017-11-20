@@ -1,5 +1,5 @@
 /*Plase use carefully*/
-body  {
+body {
 
     a:link {
         color: $mainBlue;
@@ -9,11 +9,9 @@ body  {
         color: $mainBlue;
     }
 
-
     a:hover {
         color: $mainBlue;
     }
-
 
     a:active {
         color: $mainBlue;
@@ -21,7 +19,11 @@ body  {
 }
 
 #bloc-involve-infos .text-center-container .white-line {
-    margin-top:30px;
-    margin-bottom:30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 600px) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
 

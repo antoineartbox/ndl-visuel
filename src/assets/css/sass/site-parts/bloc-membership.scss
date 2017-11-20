@@ -63,6 +63,11 @@
             height:54%;
             min-width: 320px;
         }
+        @media screen and (max-width: 480px) {
+            width:95%;
+            height:75%;
+            min-width: 320px;
+        }
         h3 {
 
             @include font-title;

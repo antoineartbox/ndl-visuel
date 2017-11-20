@@ -1156,7 +1156,7 @@ body #menu-linker {
       border-radius: 100%;
       width: 9px;
       height: 9px; }
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 480px) {
         body #menu-linker ul .white-rounder {
           margin-top: 10px; } }
     body #menu-linker ul li {
@@ -1596,6 +1596,9 @@ header {
     @media screen and (max-width: 1300px) {
       #bloc-infos .content-container {
         transform: translate(-50%, -60%); } }
+    @media screen and (max-width: 480px) {
+      #bloc-infos .content-container {
+        transform: translate(-50%, -65%); } }
     #bloc-infos .content-container .line-wrapper {
       padding: 60px;
       border: solid rgba(255, 255, 255, 0.5) 1px; }
@@ -1672,6 +1675,10 @@ header {
               #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container p {
                 font-size: 14px;
                 line-height: 14px; } }
+            @media screen and (max-width: 480px) {
+              #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container p {
+                font-size: 11px;
+                line-height: 14px; } }
       #bloc-infos .content-container .dual-block-container .group-right {
         position: absolute;
         right: 0px;
@@ -1719,6 +1726,10 @@ header {
               @media screen and (max-width: 600px) {
                 #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
                   font-size: 14px; } }
+              @media screen and (max-width: 480px) {
+                #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
+                  font-size: 11px;
+                  line-height: 8px; } }
           @media screen and (max-width: 750px) {
             #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container {
               padding-top: 15px;
@@ -1726,6 +1737,9 @@ header {
           @media screen and (max-width: 525px) {
             #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container {
               text-align: left; } }
+          @media screen and (max-width: 480px) {
+            #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container {
+              padding-top: 0px; } }
   #bloc-infos .bloc-title-center h3 {
     margin-top: 0px;
     font-size: 40px;
@@ -1744,6 +1758,12 @@ header {
     @media screen and (max-width: 600px) {
       #bloc-infos .bloc-title-center h3 {
         font-size: 22px;
+        max-width: 100%;
+        padding-top: 0px;
+        margin-bottom: 7px; } }
+    @media screen and (max-width: 480px) {
+      #bloc-infos .bloc-title-center h3 {
+        font-size: 17px;
         max-width: 100%;
         padding-top: 0px;
         margin-bottom: 7px; } }
@@ -1978,6 +1998,11 @@ header {
       #bloc-membership-overlay.active-membership .membership-form-container {
         width: 95%;
         height: 54%;
+        min-width: 320px; } }
+    @media screen and (max-width: 480px) {
+      #bloc-membership-overlay.active-membership .membership-form-container {
+        width: 95%;
+        height: 75%;
         min-width: 320px; } }
     #bloc-membership-overlay.active-membership .membership-form-container h3 {
       margin-top: 0px;
@@ -2292,7 +2317,7 @@ header {
         #bloc-question .question-form-container .form-item {
           margin-top: 5px;
           margin-left: -50px; } }
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 480px) {
         #bloc-question .question-form-container .form-item {
           margin-top: 5px;
           margin-left: -15px; } }
@@ -2853,6 +2878,9 @@ header {
     @media screen and (max-width: 690px) {
       #bloc-involve-infos h3 {
         font-size: 22px; } }
+    @media screen and (max-width: 480px) {
+      #bloc-involve-infos h3 {
+        font-size: 17px; } }
   #bloc-involve-infos .bloc-bottom {
     height: 200px;
     width: 100%;
@@ -2868,7 +2896,7 @@ header {
       margin-bottom: 75px; }
     #bloc-involve-infos .bloc-bottom .main-page-button {
       margin-top: 15px; }
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 480px) {
         #bloc-involve-infos .bloc-bottom .main-page-button {
           margin-top: 60px; } }
   #bloc-involve-infos .bloc-container {
@@ -2896,12 +2924,15 @@ header {
     transform: translate(-50%, -50%);
     color: white; }
     #bloc-involve-infos .text-center-container .white-line {
+      display: none;
       display: inline-block;
-      margin-top: 30px;
-      margin-bottom: 30px;
       height: 2px;
       background-color: white;
       width: 25%; }
+      @media screen and (max-width: 600px) {
+        #bloc-involve-infos .text-center-container .white-line {
+          margin-top: 15px;
+          margin-bottom: 15px; } }
     @media screen and (max-width: 1200px) {
       #bloc-involve-infos .text-center-container {
         width: 75%; } }
@@ -3034,7 +3065,7 @@ header {
           padding-left: 0px;
           padding-top: 50px;
           padding-bottom: 50px; } }
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 480px) {
         #bloc-home .content-container h3 {
           font-size: 22px; } }
     #bloc-home .content-container .arrow-container {
@@ -3163,3 +3194,7 @@ body a:active {
 #bloc-involve-infos .text-center-container .white-line {
   margin-top: 30px;
   margin-bottom: 30px; }
+  @media screen and (max-width: 600px) {
+    #bloc-involve-infos .text-center-container .white-line {
+      margin-top: 15px;
+      margin-bottom: 15px; } }
