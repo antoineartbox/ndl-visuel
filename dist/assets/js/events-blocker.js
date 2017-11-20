@@ -1,10 +1,6 @@
 $(document).ready(function () {
 
-	$(".single-event-container").click(function() {
-
-		$(".menu-membership").trigger("click");
-	});
-	if ($(".blocked-access").length > 0) {
+	if ($(".blocked-access").length == false) {
 		$(".single-event-container").click(function () {
 			$(this).addClass("animated shake");
 

@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 		// Build datas
 		var datastring = $("#form-involve").serialize();
-		console.log(datastring);
+
 
 		// Clear error message
 		$(".errors-container").html("");
@@ -37,15 +37,15 @@ $(document).ready(function () {
 	$(".button.question.submit").click(function () {
 
 		var valueText = $("#text-area-question").val();
-		console.log(valueText);
+
 		$(".message-form-object").val(valueText);
 		// Build datas
 		var datastring = $("#form-question").serialize();
-		console.log(datastring);
+
 
 		// Clear error message
 		$(".errors-container").html("");
-		if (false) {
+		if (true) {
 			submitQuestionForm(datastring);
 		}
 	});
@@ -65,10 +65,10 @@ $(document).ready(function () {
 				url: "utils/forms/forms_process.php",
 				data: datastring,
 				success: function (output) {
-					console.log(output);
+
 					if (output.length > 2) {
 						var decode = JSON.parse(output);
-						console.log(decode);
+
 						if (decode.flag) {
 							verifyError($(".membership-form-container .errors-container"), decode.flag);
 							enableFormDisplay($("#form-membership"));
@@ -117,7 +117,7 @@ $(document).ready(function () {
 
 				// Build the function when the asynchronous call is success
 				success: function (output) {
-					console.log(output);
+
 					if (output.length > 2) {
 
 						// Decode the JSON answer
@@ -182,7 +182,7 @@ $(document).ready(function () {
 
 				// Build the function when the asynchronous call is success
 				success: function (output) {
-					console.log(output);
+
 					if (output.length > 2) {
 
 						// Decode the JSON answer
@@ -206,7 +206,7 @@ $(document).ready(function () {
 						killLoader();
 
 						// Initiate the form success
-						validatedFormSuccess($(".question-form-container"), "<h4>Merci de votre question</h4>");
+						validatedFormSuccess($(".question-form-container"), "<h4 style='color:#004588;'>Merci de votre message</h4>");
 
 						//
 						setTimeout(function () {
@@ -214,7 +214,7 @@ $(document).ready(function () {
 						}, 300);
 
 						function otherMessage() {
-							validatedFormSuccess($(".question-form-container"), "<h4>Un administrateur vous contactera sous peu.</h4>");
+							validatedFormSuccess($(".question-form-container"), "<h4 style='color:#004588;'>Un administrateur vous contactera sous peu.</h4>");
 						}
 
 						$(document).click(function () {

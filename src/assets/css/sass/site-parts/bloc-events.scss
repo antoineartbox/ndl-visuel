@@ -11,7 +11,7 @@
         padding-top: 7.5%;
         width: 100%;
         // Responsive
-        @media screen and (max-width: 1290px) {
+        @media screen and (max-width: 1390px) {
             padding-top: 120px;
         }
 
@@ -30,7 +30,7 @@
             color: $mainBlue;
             margin-bottom: 20px;
             // Responsive
-            @media screen and (max-width: 1290px) {
+            @media screen and (max-width: 1390px) {
 
                 font-size: 25px;
                 margin-bottom: 25px;
@@ -71,7 +71,7 @@
             @include font-regular-bloc;
             margin: 0 auto;
             text-align: center;
-            width: 60%;
+            width: 50%;
             &.blue {
                 font-size:12px;
             }
@@ -98,7 +98,7 @@
         color: $mainBlue;
         text-align: center;
         // Responsive
-        @media screen and (max-width: 1300px) {
+        @media screen and (max-width: 1390px) {
             margin-top: 25px;
         }
         &.blocked-access {
@@ -124,38 +124,64 @@
             display: inline-block;
             background-color: $mainWhite;
             position: relative;
-            width: 250px;
-            height: 360px;
+            width: 180px;
+            height: 260px;
             text-align: center;
             margin-left: 15px;
             margin-right: 15px;
             margin-bottom: 15px;
             h4 {
                 margin-top: 20px;
-                margin-bottom: 20px;
-                font-size: 25px;
-                height: 20px;
+                margin-bottom: 5px;
+                font-size: 12px;
+                height: 10px;
+                text-transform:uppercase;
+            }
+            .event-date {
+                font-size:12px;
             }
             img {
-                width: 150px;
-                height: 150px;
+                width: 100px;
+                height: 100px;
                 margin: 0 auto;
                 display: block;
-                margin-bottom: 15px;
+                margin-bottom: 3px;
             }
             .event-price {
-                font-size: 17px;
+                font-size: 16px;
+                margin-bottom:3px;
+                margin-top:3px;
             }
             .event-description {
-                font-size: 15px;
+                font-size: 16px;
+                margin-top:3px;
                 margin-bottom: 5px;
+            }
+            .link-to-event {
+                color: $mainWhite;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: $mainWhite;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $mainWhite;
+                text-decoration: none;
+            }
+
+            a:active {
+                color: $mainWhite;
+                text-decoration: none;
             }
             .button {
                 padding: 10px 20px 10px 20px;
                 transition: all 0.5s;
                 font-size: 20px;
                 &:hover {
-                    padding: 12px 22px 12px 22px;
+
                 }
             }
 

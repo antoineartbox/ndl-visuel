@@ -8,7 +8,7 @@
 				<div class="text-center-container">
 					<div class="center-content">
 						<div class="text-center">
-							<h3>Vous souhaitez redonner au Collège </br>en contribuant à l'avenir des élèves?</h3>
+							<h3>Vous souhaitez redonner au Collège en contribuant à l'avenir des élèves?</h3>
 						</div>
 						<span class="white-line"></span>
 						<div class="list-center-infos">

@@ -3,7 +3,7 @@
 header {
     position: fixed;
     top: 0px;
-    height: 100px;
+    height:75px;
     z-index: 200;
     width: 100%;
     background-color: $mainWhite;
@@ -27,7 +27,7 @@ header {
         /* Video starts at 10*/
         z-index: 11;
         img {
-            height: 75px;
+            height: 50px;
             @media screen and (max-width: 1175px) {
                 padding-top: 9px;
                 height: 50px;
@@ -48,7 +48,9 @@ header {
         @media screen and (max-width: 1175px) {
             text-align: right;
         }
-
+        #menu-div {
+            margin-top:3px;
+        }
         nav {
             color: $mainBlue;
             text-transform: uppercase;
@@ -66,10 +68,11 @@ header {
             ul {
                 list-style: none;
                 a {
+                    font-size: 12px;
                     // Macbook 13 inches
-                    @media screen and (max-width: 1300px) {
+                    @media screen and (max-width: 1390px) {
                         width: 10px;
-                        font-size: 13px;
+                        font-size: 12px;
                     }
                 }
                 li {
@@ -102,7 +105,7 @@ header {
                     h3 {
                         padding-top: 15px;
                     }
-                    @media screen and (max-width: 1300px) {
+                    @media screen and (max-width: 1390px) {
                         margin-left: 0px;
                         display: inline;
                     }
@@ -111,6 +114,7 @@ header {
                     }
                 }
                 .menu-membership {
+                    font-size:12px;
                     margin-top: -1px;
                     padding:13.5px;
                 }

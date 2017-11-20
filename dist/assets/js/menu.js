@@ -109,10 +109,10 @@ $( document ).ready(function () {
 
 			$("header").css({"background-color":"white"});
 
-			console.log(scroll);
+
 
 		} else if(scroll > blocInfos[0] - limiter && scroll < (blocInfos[0] + window.innerHeight - limiter)) {
-			console.log(scroll);
+
 			menuAbout.css({
 				"background-color":"#004588",
 				"color" : "white"

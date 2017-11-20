@@ -15,8 +15,7 @@
 					<div class="group-left">
 						<div class="bloc-infos-container">
 							<div class="text-right-container">
-								<p>Nous vous invitons à contribuer à la notoriété du Collège en vous impliquant dans des projets novateurs et inspirants tout en profitant d’événements exclusifs. Une belle façon de renforcer votre réseau professionnel et personnel et de rencontrer de talentueux élèves et parents de la cohorte actuelle.</p>
-								<p>Devenez membre de la grande communauté des anciens de NDL.</p></p>
+								<p>Nous vous invitons à contribuer à la notoriété du Collège en vous impliquant dans des projets novateurs et inspirants tout en profitant d’événements exclusifs. Une belle façon de renforcer votre réseau professionnel et personnel et de rencontrer de talentueux élèves et parents de la cohorte actuelle. Devenez membre de la grande communauté des anciens de NDL.</p>
 							</div>
 						</div>
 					</div>
@@ -26,6 +25,9 @@
 								<h3>Le programme Alumni, c'est: </h3>
 								<div class="bullet-list-container">
 									<ul>
+										<li></li>
+										<li></li>
+
 										<li class="first">- des rencontres enrichissantes</li>
 										<li>- des événements uniques</li>
 										<li>- du réseautage professionnel</li>
@@ -62,7 +64,7 @@
 <div id="bloc-membership-overlay">
 	<span class="closing-button">x</span>
     <div class="membership-form-container">
-        <h3>Complétez le formulaire ci-dessous pour vous inscrire pour vous inscrire</h3>
+        <h3>Complétez le formulaire ci-dessous pour vous inscrire</h3>
 
 
 		<div class="errors-container">
@@ -92,11 +94,11 @@
                 <span class="label">Courriel :</span> <input type="email" name="email" value="">
             </div>
 
-            <div class="form-item username-container">
+            <div style="display:none;"class="form-item username-container">
                 <span class="label">Nom d'utilisateur :</span> <input type="text" name="username" value="">
             </div>
 
-            <div class="form-item password-setter-container">
+            <div style="display:none; "class="form-item password-setter-container">
                 <span class="label">Mot de passe :</span> <input type="text" name="password" value="">
 				<span class="password-message-container"></span>
             </div>

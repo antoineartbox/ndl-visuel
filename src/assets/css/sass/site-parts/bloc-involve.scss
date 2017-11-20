@@ -58,7 +58,7 @@
         h3 {
             @include font-title;
 
-            @media screen and (max-width: 1300px) {
+            @media screen and (max-width: 1390px) {
                 margin-top: 0px;
                 font-size: 29px;
             }
@@ -101,7 +101,7 @@
             input {
                 height: 25px;
                 width: 35%;
-                @media screen and (max-width: 1300px) {
+                @media screen and (max-width: 1390px) {
                     height: 15px;
                     width: 55%;
                 }
@@ -135,46 +135,53 @@
 #bloc-involve-infos {
 
     .line-left {
-        @media screen and (max-width: 1100px) {
-            width:10%;
-        }
 
-        @media screen and (max-width: 900px) {
-            display: none;
-        }
 
         @include center-content;
         display: inline-block;
         width: 15%;
         border: solid rgba(255, 255, 255, 0.5) 1px;
         left: 10%;
-    }
-
-    .line-right {
         @media screen and (max-width: 1100px) {
-            width:10%;
+            width: 5%;
+            left: 8%;
         }
+
         @media screen and (max-width: 900px) {
             display: none;
         }
+    }
+
+    .line-right {
+
         @include center-content;
         display: inline-block;
         right: 15px;
         width: 15%;
         left: 90%;
         border: solid rgba(255, 255, 255, 0.5) 1px;
+        @media screen and (max-width: 1100px) {
+            width: 5%;
+            right: 8%;
+        }
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
     }
 
     h3 {
         font-style: italic;
         font-size:40px;
         margin-bottom:2px;
-        @media screen and (max-width: 1300px) {
+        max-width: 72%;
+        margin:0 auto;
+        @media screen and (max-width: 1390px) {
             font-size: 25px;
         }
 
 
         @media screen and (max-width: 690px) {
+            max-width: 100%;
             font-size: 22px;
         }
         @media screen and (max-width: 480px) {
@@ -210,6 +217,11 @@
     }
     .bloc-container {
         @include center-content;
+        @media screen and (max-width: 480px) {
+
+
+        }
+
         width: 90%;
     }
     .bloc-bottom {
@@ -221,6 +233,14 @@
         border: solid 1px $whiteTransparent;
         padding: 15px;
         width: 60%;
+        @media screen and (max-width: 600px) {
+            margin-top:15px;
+            margin-bottom:15px;
+
+        }
+        @media screen and (max-width: 480px) {
+            top:-45px;
+        }
         .white-line {
             display: none;
             @media screen and (max-width: 600px) {
@@ -253,6 +273,7 @@
         }
 
         @media screen and (max-width: 650px) {
+            padding:10px;
             width: 95%;
         }
 
@@ -268,19 +289,23 @@
             font-size: 20px;
             text-align: left;
             padding-left: 130px;
-            @media screen and (max-width: 1300px) {
+            @media screen and (max-width: 1390px) {
                 padding-left: 65px;
             }
             @media screen and (max-width: 600px) {
                 padding-left: 0px;
             }
+            @media screen and (max-width: 480px) {
+                font-size:14px;
+            }
+
             ul {
                 padding-left: 0;
                 list-style: none;
                 li {
                     font-size: 20px;
                     font-weight: 100;
-                    @media screen and (max-width: 1300px) {
+                    @media screen and (max-width: 1390px) {
                         font-size: 15px;
                     }
                     @media screen and (max-width: 600px) {

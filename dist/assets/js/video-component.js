@@ -12,7 +12,7 @@ $( document ).ready(function() {
 		// Clone the prototype node
 		var videoContainer = $("#prototype .video-component").clone();
 
-		console.log($("évideo-component"));
+
 		// Erase all references to the protoypeNode
 		videoContainer;
 

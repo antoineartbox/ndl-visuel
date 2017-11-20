@@ -1,6 +1,6 @@
 "use strict"
 $( document ).ready(function() {
-	console.log("oenis");
+
 	$("br").remove();
 
 // Code to be executed when the whole document object model has loaded
@@ -101,7 +101,7 @@ function enableScrolling(element) {
 }
 
 $(".white-rounder").click(function() {
-    console.log("salut");
+    
 });
 
 
