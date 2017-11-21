@@ -26,11 +26,6 @@
 								<div class="bullet-list-container">
 									<ul>
 										<li></li>
-										<li></li>
-										<li></li>
-										<li></li>
-
-
 										<li class="first">- des rencontres enrichissantes</li>
 										<li>- des événements uniques</li>
 										<li>- du réseautage professionnel</li>

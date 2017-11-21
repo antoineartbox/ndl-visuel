@@ -77,13 +77,13 @@ $(document).ready(function () {
 					} else {
 						// If no error
 						killLoader();
-						validatedFormSuccess($(".membership-form-container"), "<h4>Merci de vous être inscrit</h4>");
+						validatedFormSuccess($(".membership-form-container"), "<h4>Merci de vous être inscrit.</h4>");
 						setTimeout(function () {
 							otherMessage();
 						}, 300);
 
 						function otherMessage() {
-							validatedFormSuccess($(".membership-form-container"), "<h4>Contactez vos courriels pour terminer l'inscription.</h4>");
+							validatedFormSuccess($(".membership-form-container"), "<h4>Vous faites maintenant partie de la liste d’envoi du programme Alumni. Vous recevrez des informations sur les événements à venir et les projets réalisés.</h4>");
 						}
 
 						$(document).click(function () {
@@ -141,7 +141,7 @@ $(document).ready(function () {
 						killLoader();
 
 						// Initiate the form success
-						validatedFormSuccess($(".invole-form-container"), "<h4>Merci de votre implication</h4>");
+						validatedFormSuccess($(".invole-form-container"), "<h4>Merci de votre implication.</h4>");
 
 						//
 						setTimeout(function () {
@@ -149,7 +149,7 @@ $(document).ready(function () {
 						}, 300);
 
 						function otherMessage() {
-							validatedFormSuccess($(".invole-form-container"), "<h4>Un adminisatrateur vous contactera sous peu.</h4>");
+							validatedFormSuccess($(".invole-form-container"), "<h4>Un membre de l’équipe Alumni vous contactera sous peu.</h4>");
 						}
 
 						$(document).click(function () {
@@ -206,7 +206,7 @@ $(document).ready(function () {
 						killLoader();
 
 						// Initiate the form success
-						validatedFormSuccess($(".question-form-container"), "<h4 style='color:#004588;'>Merci de votre message</h4>");
+						validatedFormSuccess($(".question-form-container"), "<h4 style='color:#004588;'>Merci de votre message.</h4>");
 
 						//
 						setTimeout(function () {
@@ -214,7 +214,7 @@ $(document).ready(function () {
 						}, 300);
 
 						function otherMessage() {
-							validatedFormSuccess($(".question-form-container"), "<h4 style='color:#004588;'>Un administrateur vous contactera sous peu.</h4>");
+							validatedFormSuccess($(".question-form-container"), "<h4 style='color:#004588;'> Un membre de l’équipe Alumni vous contactera sous peu.</h4>");
 						}
 
 						$(document).click(function () {
