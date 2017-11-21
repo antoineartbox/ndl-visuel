@@ -104,6 +104,7 @@
         &.blocked-access {
 
             .single-event-container {
+
                 .over-blocker {
                     display: inline-block;
                     left: 0px;
@@ -126,11 +127,16 @@
             background-color: $mainWhite;
             position: relative;
             width: 250px;
-            height: 358px;
+
             text-align: center;
             margin-left: 15px;
             margin-right: 15px;
             margin-bottom: 15px;
+            @media screen and (max-width: 1300px) {
+                height: 302px;
+
+
+            }
             h4 {
                 margin-top: 20px;
                 margin-bottom:25px;
@@ -151,6 +157,11 @@
                 display: block;
                 margin-top:15px;
                 margin-bottom: 15px;
+                @media screen and (max-width: 1300px) {
+                    width: 100px;
+                    height:100px;
+
+                }
             }
             .event-price {
                 margin-top: 20px;
