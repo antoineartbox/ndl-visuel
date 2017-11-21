@@ -14,7 +14,7 @@
 <!-- Is hidden by default -->
 <div id="bloc-membership-overlay">
     <div class="membership-form-container">
-        <h3>Remplissez le formulaire ci-dessous<br> pour vous iscrire</h3>
+        <h3>Remplissez le formulaire ci-dessous<br> pour vous iscrire.</h3>
         <span class="closing-button">x</span>
         <form class="" action="utils/forms/forms_process.php" method="post">
 

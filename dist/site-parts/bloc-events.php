@@ -27,7 +27,7 @@
 				<p class="event-price">15 $</p>
 				<p class="event-description">Avec bouchées et vin</p>
 				<div class="button call-to-action">
-					<a class="link-to-event" href="https://www.eventbrite.ca/e/billets-lancement-du-programme-alumni-du-college-notre-dame-de-lourdes-39576088145?aff=es2"><span>RSVP</span></a>
+					<a class="link-to-event" onclick="window.open('https://www.eventbrite.ca/e/billets-lancement-du-programme-alumni-du-college-notre-dame-de-lourdes-39576088145?aff=es2', '_blank')" href=""><span>RSVP</span></a>
 				</div>
 			</div>
 			<div class="single-event-container <?= "events-" . $i ?>">

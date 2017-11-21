@@ -1706,7 +1706,7 @@ header {
         position: absolute;
         right: 0px;
         text-align: left;
-        padding-top: 6px; }
+        padding-top: 0px; }
         @media screen and (max-width: 800px) {
           #bloc-infos .content-container .dual-block-container .group-right {
             position: relative;
@@ -1745,7 +1745,7 @@ header {
               line-height: 25px; }
               @media screen and (max-width: 1450px) {
                 #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
-                  font-size: 18px;
+                  font-size: 15px;
                   line-height: 16px; } }
               @media screen and (max-width: 600px) {
                 #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
@@ -3011,6 +3011,7 @@ header {
     height: 200px;
     width: 100%;
     bottom: 0px;
+    height: 20%;
     position: absolute; }
     @media screen and (max-height: 750px) {
       #bloc-involve-infos .bloc-bottom {
@@ -3021,7 +3022,7 @@ header {
     #bloc-involve-infos .bloc-bottom .become-involve {
       margin-bottom: 75px; }
     #bloc-involve-infos .bloc-bottom .main-page-button {
-      margin-top: 15px; }
+      margin-top: 0px; }
       @media screen and (max-width: 480px) {
         #bloc-involve-infos .bloc-bottom .main-page-button {
           margin-top: 60px; } }
@@ -3041,7 +3042,7 @@ header {
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
     border: solid 1px rgba(255, 255, 255, 0.5);
-    padding: 60px;
+    padding: 50px;
     width: 60%;
     position: absolute;
     top: 50%;
@@ -3057,6 +3058,8 @@ header {
       #bloc-involve-infos .text-center-container {
         top: -45px; } }
     #bloc-involve-infos .text-center-container .white-line {
+      margin-top: 15px;
+      margin-bottom: 15px;
       display: none;
       display: inline-block;
       height: 2px;
@@ -3091,7 +3094,7 @@ header {
       font-size: 22px;
       text-align: left; }
       #bloc-involve-infos .text-center-container .list-center-infos .by-pass-h3 {
-        font-size: 18px;
+        font-size: 17px;
         font-weight: bold; }
       @media screen and (max-width: 1450px) {
         #bloc-involve-infos .text-center-container .list-center-infos {
@@ -3338,8 +3341,8 @@ body a:active {
   color: #004588; }
 
 #bloc-involve-infos .text-center-container .white-line {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 25px;
+  margin-bottom: 25px; }
   @media screen and (max-width: 600px) {
     #bloc-involve-infos .text-center-container .white-line {
       margin-top: 15px;

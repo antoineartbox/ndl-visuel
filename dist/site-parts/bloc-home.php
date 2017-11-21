@@ -3,7 +3,7 @@
 	<div id="fullScreenDiv">
 
 
-			<video controls muted preload="preload" id="video" autoplay="autoplay" loop="loop">
+			<video style="pointer-events: none" muted preload="preload" id="video" autoplay="autoplay" loop="loop">
 				<source src="assets/video/birds.webm" volume="0" type="video/webm"></source>
 				<source src="assets/video/ndl-back-video.mp4" type="video/mp4"></source>
 			</video>

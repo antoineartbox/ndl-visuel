@@ -233,6 +233,7 @@
         height: 200px;
         width: 100%;
         bottom: 0px;
+        height: 20%;
         position: absolute;
         @media screen and (max-height: 750px) {
             height: 180px;
@@ -244,7 +245,7 @@
             margin-bottom: 75px;
         }
         .main-page-button {
-            margin-top: 15px;
+            margin-top: 0px;
             @media screen and (max-width: 480px) {
                 margin-top:60px;
             }
@@ -267,7 +268,7 @@
     .text-center-container {
         @include center-content;
         border: solid 1px $whiteTransparent;
-        padding: 60px;
+        padding: 50px;
         width: 60%;
         @media screen and (max-width: 600px) {
             margin-top:15px;
@@ -278,6 +279,8 @@
             top:-45px;
         }
         .white-line {
+            margin-top:15px;
+            margin-bottom:15px;
             display: none;
             @media screen and (max-width: 600px) {
                 margin-top:15px;
@@ -289,8 +292,6 @@
             height: 2px;
             background-color: white;
             width: 25%;
-
-
 
         }
 
@@ -327,7 +328,7 @@
 
 
             .by-pass-h3 {
-                font-size: 18px;
+                font-size: 17px;
                 font-weight:bold;
             }
             @media screen and (max-width: 1450px) {
