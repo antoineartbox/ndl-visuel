@@ -1564,6 +1564,9 @@ header {
     @media screen and (max-width: 1450px) {
       #bloc-infos .line-left {
         width: 10%; } }
+    @media screen and (max-width: 900px) {
+      #bloc-infos .line-left {
+        display: none; } }
     @media screen and (max-height: 1200px) {
       #bloc-infos .line-left {
         width: 5%;
@@ -1582,6 +1585,9 @@ header {
     @media screen and (max-width: 1450px) {
       #bloc-infos .line-right {
         width: 10%; } }
+    @media screen and (max-height: 1200px) {
+      #bloc-infos .line-right {
+        width: 5%; } }
     @media screen and (max-width: 900px) {
       #bloc-infos .line-right {
         display: none; } }

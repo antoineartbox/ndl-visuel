@@ -4,6 +4,11 @@
 #bloc-infos {
 
     .line-left {
+        @include center-content;
+        display: inline-block;
+        width: 15%;
+        border: solid rgba(255, 255, 255, 0.5) 1px;
+        left: 10%;
         @media screen and (max-width: 1450px) {
             width: 10%;
         }
@@ -11,34 +16,39 @@
         @media screen and (max-width: 1200px) {
 
         }
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
         @media screen and (max-height: 1200px) {
             width: 5%;
             left: 8%;
         }
-        @include center-content;
-        display: inline-block;
-        width: 15%;
-        border: solid rgba(255, 255, 255, 0.5) 1px;
-        left: 10%;
+
     }
 
     .line-right {
-        @media screen and (max-width: 1450px) {
-            width: 10%;
-        }
-        @media screen and (max-width: 900px) {
-            display: none;
-        }
-        @media screen and (max-height: 900px) {
-            width: 5%;
-            margin-left: 2%;
-        }
+
         @include center-content;
         display: inline-block;
         right: 15px;
         width: 15%;
         left: 90%;
         border: solid rgba(255, 255, 255, 0.5) 1px;
+        @media screen and (max-width: 1450px) {
+            width: 10%;
+        }
+
+        @media screen and (max-height: 1200px) {
+            width: 5%;
+        }
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
+        @media screen and (max-height: 900px) {
+            
+            width: 5%;
+            margin-left: 2%;
+        }
     }
     position: relative;
     margin: 0px;
