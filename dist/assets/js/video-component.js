@@ -1,12 +1,10 @@
 $( document ).ready(function() {
 
-
-
 	$("#bloc-home .button-video").click(function() {
 		$("#bloc-home .video-xyz").html("");
-		initVideo($("#bloc-home .video-xyz"), "https://www.youtube.com/embed/68trlBXtCfI?autoplay=1");
+		initVideo($("#bloc-home .video-xyz"), "https://player.vimeo.com/video/92932917");
+
 	})
-	<iframe
 	function initVideo(parentContainer, videoSrc) {
 
 		// Clone the prototype node
