@@ -130,7 +130,11 @@
                 }
 
             }
+
             .group-left {
+                h3 {
+                    text-align:right;
+                }
                 p {
                     margin: 0 auto;
                 }
@@ -168,6 +172,7 @@
 
             }
             .group-right {
+
                 position: absolute;
                 right: 0px;
                 text-align: left;
@@ -175,14 +180,21 @@
                 @media screen and (max-width: 800px) {
                     position: relative;
                     width: 100%;
-                    text-align: center;
-                }
 
+                }
+                .bloc-infos-container {
+                    margin-top:0px;
+                    p {
+                        margin-top:0px;
+                        line-height:30px;
+                        font-weight:100;
+                    }
+                }
                 .bloc-infos-bullet-container {
                     text-align: left;
                     width: 100%;
                     margin-bottom: -50px;
-                    margin-top: 0px;
+                    margin-top: 10%;
                     margin-left: 0px;
 
                     li {
@@ -198,7 +210,7 @@
                     }
                     .bullet-right-container {
                         h3 {
-
+                            text-align: left;
                             // Macbook 13 inches
                             @media screen and (max-width: 1450px) {
 
@@ -218,10 +230,12 @@
                         }
                         ul {
 
-                            margin-top: 0px;
+
                             li {
-                                font-size: 22px;
+                                font-size: 20px;
                                 line-height: 25px;
+                                padding-top:0px;
+                                font-weight:100;
                                 @media screen and (max-width: 1450px) {
                                     font-size: 15px;
                                     line-height: 16px;
@@ -251,7 +265,9 @@
                         }
                     }
                 }
-
+                .bloc-infos-container {
+                    width: 100%;
+                }
             }
 
         }
@@ -266,8 +282,9 @@
             margin-top: 0px;
             margin-bottom: 25px;
             text-align: center;
+            line-height:35px;
             font-style: italic;
-
+            line-height: 35px;
             // Responsive
             @media screen and (max-width: 1450px) {
                 font-size: 25px;
@@ -293,8 +310,9 @@
 
         }
         .underline {
-            display: block;
+            display: none;
             border: solid white 1px;
+
             margin: 0 auto;
             margin-bottom: 25px;
             width: 25%;
@@ -313,6 +331,9 @@
         width: 75%;
         margin: 0 auto;
         margin-top: 5%;
+        .text-right-container {
+            width:100%;
+        }
     }
 
     .bloc-infos-bullet-container {
@@ -320,8 +341,8 @@
         display: block;
         margin: 0 auto;
         margin-top: 10%;
-        text-align: center;
-        width: 50%;
+        text-align: right;
+        width: 100%;
 
         // Responsive
         @media screen and (max-width: 675px) {
@@ -343,7 +364,11 @@
         }
 
     }
-
+    .become-member-container {
+        width: 48%;
+        display: inline-block;
+        text-align: right;
+    }
     .bloc-bottom {
         position: absolute;
         bottom: 0px;

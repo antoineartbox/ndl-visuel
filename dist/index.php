@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
+<h1 style="display:none">Notre-Dame-de-Lourdes</h1>
 <div id="site-container">
 	<div id="menu-linker">
 		<ul>
