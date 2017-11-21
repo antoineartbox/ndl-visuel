@@ -12,12 +12,11 @@
 						</div>
 						<span class="white-line"></span>
 						<div class="list-center-infos">
-							<span>Impliquez-vous à votre façon...</span>
+							<span class="by-pass-h3">Impliquez-vous à votre façon...</span>
 							<ul>
 								<li>- en offrant de votre temps ou expertise</li>
 								<li>- en développant un projet novateur avec votre employeur</li>
-								<li>- en contribuant monétairement</li>
-								<li>- pour soutenir un projet.</li>
+								<li>- en contribuant monétairement pour soutenir un projet</li>
 								<li>- ou toutes autres idées originales</li>
 							</ul>
 						</div>
@@ -46,7 +45,7 @@
 	<span class="closing-button">x</span>
 	<div class="invole-form-container">
 
-		<h3>Impliquez-vous</h3>
+		<h3>Complétez le formulaire ci-dessous et un membre de l’équipe Alumni vous contactera pour déterminer avec vous la meilleure forme d'implication.</h3>
 
 		<span class="errors-display"></span>
 
@@ -63,19 +62,19 @@
 			<div class="form-item">
 				<span class="label">Âge : </span> <input type="number" name="age" value=""><br>
 			</div>
-			<div class="form-item">
-				<span class="label">Employeur :</span> <input class="capital" type="text" name="employer" value=""><br>
+			<div style=""class="form-item">
+				<span class="label">Profession :</span> <input class="capital" type="text" name="employer" value=""><br>
 			</div>
 			<div class="form-item">
-				<span class="label">Poste Occupé :</span> <input class="capital" type="email" name="jobtitle" value="">
-			</div>
-
-			<div class="form-item">
-				<span class="label">Email :</span> <input type="email" name="email" value="">
+				<span class="label">Téléphone :</span> <input class="capital" type="text" name="jobtitle" value="">
 			</div>
 
-			<div class="form-item selector-item">
-				<span class="label">À quel moment est-il mieux de vous contacter :</span>
+			<div class="form-item">
+				<span class="label">Courriel :</span> <input type="email" name="email" value="">
+			</div>
+
+			<div style="display:none;" class="form-item selector-item">
+				<span class="label">À quel moment voulez-vous être contacté? :</span>
 				<select id="involve-moment-selection">
 					<option value="am">AM</option>
 					<option value="midi">Midi</option>

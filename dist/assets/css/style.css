@@ -1143,6 +1143,13 @@ input {
   padding: 15px;
   cursor: pointer; }
 
+.button.call-to-action.get-involve-submit {
+  display: none; }
+
+.button.get-involve {
+  text-transform: uppercase;
+  margin-top: 10px; }
+
 body #menu-linker {
   width: 15px;
   height: 100px;
@@ -1695,7 +1702,8 @@ header {
       #bloc-infos .content-container .dual-block-container .group-right {
         position: absolute;
         right: 0px;
-        text-align: left; }
+        text-align: left;
+        padding-top: 6px; }
         @media screen and (max-width: 800px) {
           #bloc-infos .content-container .dual-block-container .group-right {
             position: relative;
@@ -1760,7 +1768,6 @@ header {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 25px;
-    padding-top: 45px;
     text-align: center;
     font-style: italic; }
     @media screen and (max-width: 1390px) {
@@ -1964,6 +1971,13 @@ header {
   padding: 15px;
   cursor: pointer; }
 
+.button.call-to-action.get-involve-submit {
+  display: none; }
+
+.button.get-involve {
+  text-transform: uppercase;
+  margin-top: 10px; }
+
 #bloc-membership {
   background-color: rgba(255, 255, 255, 0.5);
   height: 30vh;
@@ -2004,6 +2018,7 @@ header {
     transform: translate(-50%, -50%);
     z-index: 500;
     padding-top: 20px;
+    padding-bottom: 20px;
     position: relative;
     background-color: #004588;
     padding: 30px;
@@ -2019,22 +2034,25 @@ header {
       #bloc-membership-overlay.active-membership .membership-form-container {
         width: 95%;
         height: 54%;
-        min-width: 320px; } }
+        min-width: 320px;
+        max-height: 280px;
+        margin-top: 25px; } }
     @media screen and (max-width: 480px) {
       #bloc-membership-overlay.active-membership .membership-form-container {
         width: 95%;
         height: 75%;
-        min-width: 320px; } }
+        min-width: 320px;
+        max-height: 280px; } }
     #bloc-membership-overlay.active-membership .membership-form-container h3 {
       margin-top: 0px;
       font-size: 40px;
       color: white;
       text-align: center;
-      margin-top: 40px; }
+      font-size: 24px;
+      margin-top: 0px; }
       @media screen and (max-width: 1390px) {
         #bloc-membership-overlay.active-membership .membership-form-container h3 {
-          margin-top: 0px;
-          font-size: 29px; } }
+          margin-top: 0px; } }
       @media screen and (max-width: 950px) {
         #bloc-membership-overlay.active-membership .membership-form-container h3 {
           font-size: 22px; } }
@@ -2082,13 +2100,16 @@ header {
       text-align: left;
       display: inline-block;
       width: 100%;
-      font-size: 10px; }
+      font-size: 12px; }
+      @media screen and (max-width: 900px) {
+        #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice .wrapper-item-news {
+          font-size: 10px; } }
       @media screen and (max-width: 600px) {
         #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice .wrapper-item-news {
-          width: 54%; } }
+          width: 80%; } }
     #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice input {
       display: inline-block;
-      width: 4%; }
+      width: 2%; }
     #bloc-membership-overlay.active-membership .membership-form-container .newsletter-choice p {
       width: 100%;
       display: inline-block;
@@ -2181,6 +2202,13 @@ header {
   transition: all 0.5s;
   padding: 15px;
   cursor: pointer; }
+
+.button.call-to-action.get-involve-submit {
+  display: none; }
+
+.button.get-involve {
+  text-transform: uppercase;
+  margin-top: 10px; }
 
 @font-face {
   font-family: intro;
@@ -2300,7 +2328,8 @@ header {
           line-height: 15px; } }
     #bloc-question .text-center-container .list-center-infos ul {
       padding-left: 0;
-      list-style: none; }
+      list-style: none;
+      margin-bottom: 0px; }
       #bloc-question .text-center-container .list-center-infos ul li {
         font-size: 25px;
         font-weight: 100; }
@@ -2458,10 +2487,7 @@ header {
     width: 75%;
     z-index: 500; }
     #bloc-question-overlay.active-involving .invole-form-container h3 {
-      margin-top: 0px;
-      font-size: 40px;
-      color: white;
-      text-align: center; }
+      margin-top: 15px; }
       @media screen and (max-width: 1000px) {
         #bloc-question-overlay.active-involving .invole-form-container h3 {
           font-size: 30px; } }
@@ -2487,11 +2513,6 @@ header {
         display: inline-block; }
     #bloc-question-overlay.active-involving .invole-form-container .button {
       background-color: #004588; }
-      #bloc-question-overlay.active-involving .invole-form-container .button.get-involve {
-        font-style: normal;
-        font-size: 22px;
-        text-transform: uppercase;
-        margin-top: 25px; }
 
 /*This file mixins for helping centering, disposing and placing elements*/
 @font-face {
@@ -2619,34 +2640,45 @@ header {
       display: inline-block;
       background-color: #FFFFFF;
       position: relative;
-      width: 180px;
-      height: 260px;
+      width: 250px;
+      height: 358px;
       text-align: center;
       margin-left: 15px;
       margin-right: 15px;
       margin-bottom: 15px; }
       #bloc-events #events-container .single-event-container h4 {
         margin-top: 20px;
-        margin-bottom: 5px;
+        margin-bottom: 25px;
         font-size: 12px;
         height: 10px;
         text-transform: uppercase; }
       #bloc-events #events-container .single-event-container .event-date {
-        font-size: 12px; }
+        font-size: 12px;
+        margin-bottom: 8px;
+        display: block; }
       #bloc-events #events-container .single-event-container img {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         margin: 0 auto;
         display: block;
-        margin-bottom: 3px; }
+        margin-top: 15px;
+        margin-bottom: 15px; }
       #bloc-events #events-container .single-event-container .event-price {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        height: 10px;
+        text-transform: uppercase;
         font-size: 16px;
         margin-bottom: 3px;
         margin-top: 3px; }
       #bloc-events #events-container .single-event-container .event-description {
         font-size: 16px;
         margin-top: 3px;
-        margin-bottom: 5px; }
+        margin-bottom: 15px;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 12px; }
       #bloc-events #events-container .single-event-container .link-to-event {
         color: #FFFFFF;
         text-decoration: none; }
@@ -2663,6 +2695,9 @@ header {
         padding: 10px 20px 10px 20px;
         transition: all 0.5s;
         font-size: 20px; }
+      #bloc-events #events-container .single-event-container .void-event {
+        pointer-events: none;
+        background-color: rgba(127, 194, 20, 0.5); }
 
 @font-face {
   font-family: intro;
@@ -2750,6 +2785,13 @@ header {
   padding: 15px;
   cursor: pointer; }
 
+.button.call-to-action.get-involve-submit {
+  display: none; }
+
+.button.get-involve {
+  text-transform: uppercase;
+  margin-top: 10px; }
+
 @font-face {
   font-family: intro;
   src: url("../fonts/intro.otf") format("opentype"); }
@@ -2807,35 +2849,52 @@ header {
     transform: translate(-50%, -50%);
     background-color: #004588;
     color: white;
+    margin-top: 15px;
     padding: 30px;
-    padding-top: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     text-align: center;
-    width: 75%;
+    width: 46%;
     z-index: 500; }
+    @media screen and (max-width: 900px) {
+      #bloc-involve-overlay.active-involving .invole-form-container {
+        width: 60%; } }
+    @media screen and (max-width: 680px) {
+      #bloc-involve-overlay.active-involving .invole-form-container {
+        width: 100%; } }
     #bloc-involve-overlay.active-involving .invole-form-container h3 {
       margin-top: 0px;
       font-size: 40px;
       color: white;
-      text-align: center; }
-      @media screen and (max-width: 1390px) {
-        #bloc-involve-overlay.active-involving .invole-form-container h3 {
-          margin-top: 0px;
-          font-size: 29px; } }
+      text-align: center;
+      margin-top: 25px;
+      font-size: 24px;
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 25px; }
       @media screen and (max-width: 950px) {
         #bloc-involve-overlay.active-involving .invole-form-container h3 {
-          font-size: 22px; } }
+          font-size: 13px; } }
     #bloc-involve-overlay.active-involving .invole-form-container .closing-button {
       position: absolute;
       top: 15px;
       right: 15px; }
     #bloc-involve-overlay.active-involving .invole-form-container .form-item {
-      margin-top: 10px; }
+      margin-top: 10px;
+      margin-left: -95px; }
+      @media screen and (max-width: 500px) {
+        #bloc-involve-overlay.active-involving .invole-form-container .form-item.selector-item {
+          margin-left: -31px;
+          display: block;
+          width: 118%; } }
       #bloc-involve-overlay.active-involving .invole-form-container .form-item.selector-item .label {
         width: 50%; }
       #bloc-involve-overlay.active-involving .invole-form-container .form-item .label {
         color: white;
         display: inline-block;
-        width: 150px; }
+        width: 150px;
+        text-align: right; }
         @media screen and (max-width: 950px) {
           #bloc-involve-overlay.active-involving .invole-form-container .form-item .label {
             display: inline-block;
@@ -2865,10 +2924,7 @@ header {
     #bloc-involve-overlay.active-involving .invole-form-container .button {
       background-color: #7fc214; }
       #bloc-involve-overlay.active-involving .invole-form-container .button.get-involve {
-        font-style: normal;
-        font-size: 22px;
-        text-transform: uppercase;
-        margin-top: 15px;
+        margin-top: 25px;
         padding: 15px; }
 
 .involve-form-validation-message {
@@ -2964,7 +3020,7 @@ header {
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
     border: solid 1px rgba(255, 255, 255, 0.5);
-    padding: 15px;
+    padding: 60px;
     width: 60%;
     position: absolute;
     top: 50%;
@@ -3011,9 +3067,12 @@ header {
       color: white;
       text-align: center; }
     #bloc-involve-infos .text-center-container .list-center-infos {
-      font-size: 20px;
+      font-size: 22px;
       text-align: left;
       padding-left: 130px; }
+      #bloc-involve-infos .text-center-container .list-center-infos .by-pass-h3 {
+        font-size: 24px;
+        font-weight: bold; }
       @media screen and (max-width: 1390px) {
         #bloc-involve-infos .text-center-container .list-center-infos {
           padding-left: 65px; } }
@@ -3025,9 +3084,10 @@ header {
           font-size: 14px; } }
       #bloc-involve-infos .text-center-container .list-center-infos ul {
         padding-left: 0;
-        list-style: none; }
+        list-style: none;
+        margin-bottom: 0px; }
         #bloc-involve-infos .text-center-container .list-center-infos ul li {
-          font-size: 20px;
+          font-size: 22px;
           font-weight: 100; }
           @media screen and (max-width: 1390px) {
             #bloc-involve-infos .text-center-container .list-center-infos ul li {

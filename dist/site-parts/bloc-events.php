@@ -19,20 +19,41 @@
 		<div id="events-container" <?php if (!$_SESSION["is_logged_in"]): ?>
 			class="blocked-access blurred"
 		<?php endif; ?>>
-			<?php for ($i = 1; $i < 4; $i++) { ?>
-				<div class="single-event-container <?= "events-" . $i ?>">
-					<span class=""></span>
-					<h4><?= "Événement " . $i; ?></h4>
-					<span class="event-date">8 FEV</span>
-					<img src="assets/images/events/event_void.png" alt="Single event void">
-					<p class="event-price">25$</p>
-					<p class="event-description">Inc bouchés et vin</p>
-					<div class="button call-to-action">
-						<a class="link-to-event" href="https://www.eventbrite.ca/e/billets-lancement-du-programme-alumni-du-college-notre-dame-de-lourdes-39576088145?aff=es2"><span>RSVP</span></a>
-					</div>
+			<div class="single-event-container <?= "events-" . $i ?>">
+				<span class=""></span>
+				<h4>Une vision sur le monde, un panel animé par François Cardinal</h4>
+				<span class="event-date">8 février 2017 - 17 h 30</span>
+				<img src="assets/images/events/francois-cardinal.png" alt="Single event void">
+				<p class="event-price">15 $</p>
+				<p class="event-description">Avec bouchées et vin</p>
+				<div class="button call-to-action">
+					<a class="link-to-event" href="https://www.eventbrite.ca/e/billets-lancement-du-programme-alumni-du-college-notre-dame-de-lourdes-39576088145?aff=es2"><span>RSVP</span></a>
 				</div>
-			<?php } ?>
+			</div>
+			<div class="single-event-container <?= "events-" . $i ?>">
+				<span class=""></span>
+				<h4>À venir</h4>
+				<span class="event-date">10 mai 2017 - 17 h 30 </span>
+				<img src="assets/images/events/event_void.png" alt="Single event void">
+				<p class="event-price">15 $</p>
+				<p class="event-description">Avec bouchées et vin</p>
+				<div class="button call-to-action void-event">
+					<a class="link-to-event " href="https://www.eventbrite.ca/e/billets-lancement-du-programme-alumni-du-college-notre-dame-de-lourdes-39576088145?aff=es2"><span>RSVP</span></a>
+				</div>
+			</div>
+			<div class="single-event-container <?= "events-" . $i ?>">
+				<span class=""></span>
+				<h4>À venir</h4>
+				<span class="event-date">6 septembre 2017 - 17 h 30</span>
+				<img src="assets/images/events/event_void.png" alt="Single event void">
+				<p class="event-price">15 $</p>
+				<p class="event-description">Avec bouchées et vin</p>
+				<div class="button call-to-action void-event">
+					<a class="link-to-event" href="https://www.eventbrite.ca/e/billets-lancement-du-programme-alumni-du-college-notre-dame-de-lourdes-39576088145?aff=es2"><span>RSVP</span></a>
+				</div>
+			</div>
 		</div>
+
 
 		<div class="arrow-container">
 			<a href="#bloc-involve-infos">

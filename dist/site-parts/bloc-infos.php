@@ -22,16 +22,18 @@
 					<div class="group-right">
 						<div class="bloc-infos-bullet-container">
 							<div class="bullet-right-container">
-								<h3>Le programme Alumni, c'est: </h3>
+								<h3>Le programme Alumni, c'est : </h3>
 								<div class="bullet-list-container">
 									<ul>
 										<li></li>
 										<li></li>
+										<li></li>
+										<li></li>
+
 
 										<li class="first">- des rencontres enrichissantes</li>
 										<li>- des événements uniques</li>
 										<li>- du réseautage professionnel</li>
-										<li>- une implication volontaire</li>
 										<li>- une implication volontaire</li>
 										<li>- une contribution personnalisée </li>
 										<li class="last">- une communauté dynamique</li>
@@ -65,7 +67,6 @@
 	<span class="closing-button">x</span>
     <div class="membership-form-container">
         <h3>Complétez le formulaire ci-dessous pour vous inscrire</h3>
-
 
 		<div class="errors-container">
 			<!-- Refers to JS -->

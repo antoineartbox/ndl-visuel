@@ -50,20 +50,35 @@
         @include centered;
         background-color: $mainBlue;
         color: white;
+        margin-top:15px;
         padding: 30px;
-        padding-top: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
         text-align: center;
-        width: 75%;
+        width:46%;
         z-index: 500;
+        @media screen and (max-width: 900px) {
+            width:60%;
+
+        }
+        @media screen and (max-width: 680px) {
+            width:100%;
+        }
         h3 {
             @include font-title;
-
+            margin-top: 25px;
+            font-size:24px;
+            width:80%;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom:25px;
             @media screen and (max-width: 1390px) {
-                margin-top: 0px;
-                font-size: 29px;
+
+
+
             }
             @media screen and (max-width: 950px) {
-                font-size: 22px;
+                font-size: 13px;
             }
         }
         .closing-button {
@@ -73,7 +88,15 @@
         }
         .form-item {
             margin-top: 10px;
+            margin-left:-95px;
             &.selector-item {
+                @media screen and (max-width: 500px) {
+
+                    margin-left: -31px;
+                    display: block;
+                    width: 118%;
+                }
+
                 .label {
                     width: 50%;
                 }
@@ -82,7 +105,7 @@
                 color: white;
                 display: inline-block;
                 width: 150px;
-
+                text-align: right;
                 @media screen and (max-width: 950px) {
                     display: inline-block;
                     width: 100%;
@@ -120,9 +143,8 @@
         .button {
             background-color: $mainGreen;
             &.get-involve {
-                @include font-button-main-page;
-                margin-top: 15px;
-                padding: 15px;
+                margin-top: 25px;
+                padding:15px;
             }
         }
     }
@@ -231,7 +253,7 @@
     .text-center-container {
         @include center-content;
         border: solid 1px $whiteTransparent;
-        padding: 15px;
+        padding: 60px;
         width: 60%;
         @media screen and (max-width: 600px) {
             margin-top:15px;
@@ -286,9 +308,14 @@
         }
 
         .list-center-infos {
-            font-size: 20px;
+            font-size: 22px;
             text-align: left;
             padding-left: 130px;
+
+            .by-pass-h3 {
+                font-size: 24px;
+                font-weight:bold;
+            }
             @media screen and (max-width: 1390px) {
                 padding-left: 65px;
             }
@@ -300,10 +327,12 @@
             }
 
             ul {
+
                 padding-left: 0;
                 list-style: none;
+                margin-bottom:0px;
                 li {
-                    font-size: 20px;
+                    font-size: 22px;
                     font-weight: 100;
                     @media screen and (max-width: 1390px) {
                         font-size: 15px;
