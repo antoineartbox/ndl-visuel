@@ -4,7 +4,7 @@
 #bloc-infos {
 
     .line-left {
-        @media screen and (max-width: 1350px) {
+        @media screen and (max-width: 1450px) {
             width: 10%;
         }
 
@@ -23,7 +23,7 @@
     }
 
     .line-right {
-        @media screen and (max-width: 1350px) {
+        @media screen and (max-width: 1450px) {
             width: 10%;
         }
         @media screen and (max-width: 900px) {
@@ -47,7 +47,7 @@
     color: white;
     overflow: hidden;
     // Mostly 13 inches
-    @media screen and (max-width: 1390px) {
+    @media screen and (max-width: 1450px) {
     }
     // Center content
     .content-container {
@@ -56,7 +56,7 @@
             width: 75%;
         }
         // Mobile
-        @media screen and (max-width: 1390px) {
+        @media screen and (max-width: 1450px) {
             width: 65%;
         }
         @media screen and (max-width: 650px) {
@@ -68,7 +68,7 @@
             width: 95%;
         }
         @include center-content;
-        @media screen and (max-width: 1390px) {
+        @media screen and (max-width: 1450px) {
             transform: translate(-50%, -60%);
         }
 
@@ -93,7 +93,7 @@
             @media screen and (max-width: 1500px) {
                 padding: 60px;
             }
-            @media screen and (max-width: 1390px) {
+            @media screen and (max-width: 1450px) {
                 padding: 50px;
             }
 
@@ -139,7 +139,7 @@
                         line-height: 30px;
                         font-size: 20px;
                         // Mostly mac book
-                        @media screen and (max-width: 1390px) {
+                        @media screen and (max-width: 1450px) {
                             font-size: 15px;
                             line-height: 20px;
                         }
@@ -190,7 +190,7 @@
                         h3 {
 
                             // Macbook 13 inches
-                            @media screen and (max-width: 1390px) {
+                            @media screen and (max-width: 1450px) {
 
                                 font-size: 18px;
                                 margin-bottom: 5px;
@@ -212,7 +212,7 @@
                             li {
                                 font-size: 22px;
                                 line-height: 25px;
-                                @media screen and (max-width: 1390px) {
+                                @media screen and (max-width: 1450px) {
                                     font-size: 18px;
                                     line-height: 16px;
                                 }
@@ -259,7 +259,7 @@
             font-style: italic;
 
             // Responsive
-            @media screen and (max-width: 1390px) {
+            @media screen and (max-width: 1450px) {
                 font-size: 25px;
                 max-width: 90%;
                 padding-top: 0px;
@@ -345,7 +345,7 @@
             bottom: 0px;
             width: 100%;
             bottom: 7%;
-            @media screen and (max-width: 1390px) {
+            @media screen and (max-width: 1450px) {
                 padding-top: 0px;
             }
             // Responsive

@@ -72,7 +72,7 @@
             text-align: center;
             margin: 0 auto;
             margin-bottom:25px;
-            @media screen and (max-width: 1390px) {
+            @media screen and (max-width: 1450px) {
 
 
 
@@ -124,7 +124,7 @@
             input {
                 height: 25px;
                 width: 35%;
-                @media screen and (max-width: 1390px) {
+                @media screen and (max-width: 1450px) {
                     height: 15px;
                     width: 55%;
                 }
@@ -197,7 +197,7 @@
         margin-bottom:2px;
         max-width: 72%;
         margin:0 auto;
-        @media screen and (max-width: 1390px) {
+        @media screen and (max-width: 1450px) {
             font-size: 25px;
         }
 
@@ -310,13 +310,13 @@
         .list-center-infos {
             font-size: 22px;
             text-align: left;
-            padding-left: 130px;
+
 
             .by-pass-h3 {
-                font-size: 24px;
+                font-size: 18px;
                 font-weight:bold;
             }
-            @media screen and (max-width: 1390px) {
+            @media screen and (max-width: 1450px) {
                 padding-left: 65px;
             }
             @media screen and (max-width: 600px) {
@@ -334,7 +334,7 @@
                 li {
                     font-size: 22px;
                     font-weight: 100;
-                    @media screen and (max-width: 1390px) {
+                    @media screen and (max-width: 1450px) {
                         font-size: 15px;
                     }
                     @media screen and (max-width: 600px) {

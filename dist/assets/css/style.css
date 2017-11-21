@@ -1561,7 +1561,7 @@ header {
     width: 15%;
     border: solid rgba(255, 255, 255, 0.5) 1px;
     left: 10%; }
-    @media screen and (max-width: 1350px) {
+    @media screen and (max-width: 1450px) {
       #bloc-infos .line-left {
         width: 10%; } }
     @media screen and (max-width: 900px) {
@@ -1582,7 +1582,7 @@ header {
     width: 15%;
     left: 90%;
     border: solid rgba(255, 255, 255, 0.5) 1px; }
-    @media screen and (max-width: 1350px) {
+    @media screen and (max-width: 1450px) {
       #bloc-infos .line-right {
         width: 10%; } }
     @media screen and (max-width: 900px) {
@@ -1602,7 +1602,7 @@ header {
     @media screen and (max-height: 900px) {
       #bloc-infos .content-container {
         width: 75%; } }
-    @media screen and (max-width: 1390px) {
+    @media screen and (max-width: 1450px) {
       #bloc-infos .content-container {
         width: 65%; } }
     @media screen and (max-width: 650px) {
@@ -1613,7 +1613,7 @@ header {
       #bloc-infos .content-container {
         top: 56%;
         width: 95%; } }
-    @media screen and (max-width: 1390px) {
+    @media screen and (max-width: 1450px) {
       #bloc-infos .content-container {
         transform: translate(-50%, -60%); } }
     @media screen and (max-width: 480px) {
@@ -1637,7 +1637,7 @@ header {
       @media screen and (max-width: 1500px) {
         #bloc-infos .content-container .line-wrapper {
           padding: 60px; } }
-      @media screen and (max-width: 1390px) {
+      @media screen and (max-width: 1450px) {
         #bloc-infos .content-container .line-wrapper {
           padding: 50px; } }
       @media screen and (max-width: 920px) {
@@ -1687,7 +1687,7 @@ header {
           #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container p {
             line-height: 30px;
             font-size: 20px; }
-            @media screen and (max-width: 1390px) {
+            @media screen and (max-width: 1450px) {
               #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container p {
                 font-size: 15px;
                 line-height: 20px; } }
@@ -1726,7 +1726,7 @@ header {
               font-size: 18px; } }
           #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container h3 {
             margin-top: 0px; }
-            @media screen and (max-width: 1390px) {
+            @media screen and (max-width: 1450px) {
               #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container h3 {
                 font-size: 18px;
                 margin-bottom: 5px; } }
@@ -1740,7 +1740,7 @@ header {
             #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
               font-size: 22px;
               line-height: 25px; }
-              @media screen and (max-width: 1390px) {
+              @media screen and (max-width: 1450px) {
                 #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
                   font-size: 18px;
                   line-height: 16px; } }
@@ -1770,7 +1770,7 @@ header {
     margin-bottom: 25px;
     text-align: center;
     font-style: italic; }
-    @media screen and (max-width: 1390px) {
+    @media screen and (max-width: 1450px) {
       #bloc-infos .bloc-title-center h3 {
         font-size: 25px;
         max-width: 90%;
@@ -1854,7 +1854,7 @@ header {
       bottom: 0px;
       width: 100%;
       bottom: 7%; }
-      @media screen and (max-width: 1390px) {
+      @media screen and (max-width: 1450px) {
         #bloc-infos .bloc-bottom .become-member-container {
           padding-top: 0px; } }
       @media screen and (max-height: 775px) {
@@ -2918,7 +2918,7 @@ header {
       #bloc-involve-overlay.active-involving .invole-form-container .form-item input {
         height: 25px;
         width: 35%; }
-        @media screen and (max-width: 1390px) {
+        @media screen and (max-width: 1450px) {
           #bloc-involve-overlay.active-involving .invole-form-container .form-item input {
             height: 15px;
             width: 55%; } }
@@ -2982,7 +2982,7 @@ header {
     margin-bottom: 2px;
     max-width: 72%;
     margin: 0 auto; }
-    @media screen and (max-width: 1390px) {
+    @media screen and (max-width: 1450px) {
       #bloc-involve-infos h3 {
         font-size: 25px; } }
     @media screen and (max-width: 690px) {
@@ -3074,12 +3074,11 @@ header {
       text-align: center; }
     #bloc-involve-infos .text-center-container .list-center-infos {
       font-size: 22px;
-      text-align: left;
-      padding-left: 130px; }
+      text-align: left; }
       #bloc-involve-infos .text-center-container .list-center-infos .by-pass-h3 {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: bold; }
-      @media screen and (max-width: 1390px) {
+      @media screen and (max-width: 1450px) {
         #bloc-involve-infos .text-center-container .list-center-infos {
           padding-left: 65px; } }
       @media screen and (max-width: 600px) {
@@ -3095,7 +3094,7 @@ header {
         #bloc-involve-infos .text-center-container .list-center-infos ul li {
           font-size: 22px;
           font-weight: 100; }
-          @media screen and (max-width: 1390px) {
+          @media screen and (max-width: 1450px) {
             #bloc-involve-infos .text-center-container .list-center-infos ul li {
               font-size: 15px; } }
           @media screen and (max-width: 600px) {
@@ -3170,7 +3169,8 @@ header {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
-    width: 50%; }
+    width: 100%;
+    text-align: center; }
     @media screen and (max-width: 800px) {
       #bloc-home .content-container {
         width: 100%; } }
@@ -3182,15 +3182,20 @@ header {
       color: #004588;
       background-color: rgba(255, 255, 255, 0.25);
       text-align: center;
-      width: 100%;
+      display: inline-block;
+      width: 50%;
       padding-top: 75px;
-      padding-bottom: 75px; }
+      padding-bottom: 75px;
+      font-size: 36px; }
       @media screen and (max-width: 1390px) {
         #bloc-home .content-container h3 {
-          font-size: 45px;
+          font-size: 36px;
           padding-left: 0px;
           padding-top: 50px;
           padding-bottom: 50px; } }
+      @media screen and (max-width: 800px) {
+        #bloc-home .content-container h3 {
+          width: 100%; } }
       @media screen and (max-width: 480px) {
         #bloc-home .content-container h3 {
           font-size: 22px; } }
