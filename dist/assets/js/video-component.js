@@ -4,9 +4,9 @@ $( document ).ready(function() {
 
 	$("#bloc-home .button-video").click(function() {
 		$("#bloc-home .video-xyz").html("");
-		initVideo($("#bloc-home .video-xyz"), "https://www.youtube.com/embed/I3X_tj-MWPM?autoplay=1");
+		initVideo($("#bloc-home .video-xyz"), "https://www.youtube.com/embed/68trlBXtCfI?autoplay=1");
 	})
-
+	<iframe
 	function initVideo(parentContainer, videoSrc) {
 
 		// Clone the prototype node
