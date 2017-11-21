@@ -6,10 +6,11 @@
 		<div class="text-center-container">
 			<div class="text-center">
 				<h3>Vous avez des questions à propos du programme?</h3>
+				<span class="line"></span>
 				<p>Remplissez le formulaire suivant et un membre de notre équipe Alumni vous contactera sous peu.</p>
 			</div>
 
-			<span class="line"></span>
+
 
 			<div class="question-form-container">
 				<div class="error-container"></div>

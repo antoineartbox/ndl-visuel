@@ -18,8 +18,8 @@
             color: $mainBlue;
             font-style: italic;
             margin-bottom: 5px;
-            @media screen and (max-width: 1390px) {
-                font-size: 34px;
+            @media screen and (max-width: 1450px) {
+                font-size: 25px;
             }
             @media screen and (max-width: 800px) {
                 font-size: 22px;
@@ -60,7 +60,7 @@
         width: 100%;
 
         // Responsive
-        @media screen and (max-width: 1390px) {
+        @media screen and (max-width: 1450px) {
             margin-top: 50px;
         }
         // Responsive
@@ -75,21 +75,23 @@
 
         p {
             @include font-regular-bloc;
-            @media screen and (max-width: 1390px) {
-                font-size: 22px;
+            @media screen and (max-width: 1450px) {
+                font-size: 15px;
+                font-weight: 500;
+                width:50%;
             }
             @media screen and (max-width: 600px) {
-                font-size: 16px;
+                font-size: 15px;
             }
-            font-size: 20px;
-            font-weight: 900;
+            font-size: 15px;
+            font-weight: 500;
             line-height: 33px;
             color: $mainBlue;
             width: 80%;
             text-align: center;
             display: block;
             margin: 0 auto;
-            @media screen and (max-width: 1390px) {
+            @media screen and (max-width: 1450px) {
                 line-height: 24px;
                 font-size: 16px;
             }
@@ -143,7 +145,7 @@
 
 
             margin-top: 25px;
-            @media screen and (max-width: 1390px) {
+            @media screen and (max-width: 1450px) {
                 margin-top: 15px;
                 margin-left: -50px;
             }
@@ -174,7 +176,7 @@
                 display: inline-block;
                 width: 150px;
 
-                @media screen and (max-width: 1390px) {
+                @media screen and (max-width: 1450px) {
                     font-size: 14px;
                     display: inline-block;
                 }
@@ -199,7 +201,7 @@
                 &.message-form-object {
                     height: 100px;
                 }
-                @media screen and (max-width: 1390px) {
+                @media screen and (max-width: 1450px) {
                     width: 45%;
                 }
                 @media screen and (max-width: 800px) {
@@ -229,7 +231,7 @@
                     display: inline-block;
                     text-align: left;
                 }
-                @media screen and (max-width: 1390px) {
+                @media screen and (max-width: 1450px) {
                     font-size: 14px;
                     p {
                         display: inline-block;
