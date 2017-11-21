@@ -3,14 +3,14 @@
 @import "../core/layout-rules.scss";
 
 #bloc-question {
-    background: url("../images/bloc-background/bloc-events-whitey.png") no-repeat center center fixed;
+    background: url("../images/bloc-background/qbg.jpg") no-repeat center center fixed;
     background-size: cover;
-    height: 110vh;
+    height: 100vh;
     position: relative;
     text-align: center;
     .content-container {
         padding-top: 50px;
-        background-color: $whiteTransparent;
+        background-color: $whiteTransparentBackForm;
         width: 60%;
         padding-bottom: 50px;
         h3 {

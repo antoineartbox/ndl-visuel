@@ -2229,14 +2229,14 @@ header {
 
 /*This file mixins for helping centering, disposing and placing elements*/
 #bloc-question {
-  background: url("../images/bloc-background/bloc-events-whitey.png") no-repeat center center fixed;
+  background: url("../images/bloc-background/qbg.jpg") no-repeat center center fixed;
   background-size: cover;
-  height: 110vh;
+  height: 100vh;
   position: relative;
   text-align: center; }
   #bloc-question .content-container {
     padding-top: 50px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.5);
     width: 60%;
     padding-bottom: 50px;
     position: absolute;
