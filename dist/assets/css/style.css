@@ -1592,7 +1592,7 @@ header {
     @media screen and (max-width: 8000px) {
       #bloc-infos .line-right {
         width: 10%; } }
-    @media screen and (max-height: 1060px) {
+    @media screen and (max-width: 1060px) {
       #bloc-infos .line-right {
         display: none; } }
     @media screen and (max-width: 900px) {
@@ -3495,3 +3495,15 @@ body a:active {
 @media screen and (max-width: 500px) {
   #block #bloc-infos {
     height: 250vw; } }
+
+@media screen and (max-width: 1300px) {
+  #bloc-question {
+    height: 120vh; } }
+
+@media screen and (max-width: 1300px) {
+  #bloc-infos {
+    height: 120vh; } }
+
+@media screen and (max-width: 1060px) {
+  #bloc-infos .content-container .dual-block-container .group-right {
+    margin-right: 0px; } }

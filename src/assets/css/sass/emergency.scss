@@ -109,7 +109,23 @@ body {
 #block #bloc-infos {
     @media screen and (max-width: 500px) {
         height:250vw;
-
     }
+}
 
+#bloc-question {
+    @media screen and (max-width: 1300px) {
+        height:120vh;
+    }
+}
+
+#bloc-infos {
+    @media screen and (max-width: 1300px) {
+        height:120vh;
+    }
+}
+
+#bloc-infos .content-container .dual-block-container .group-right {
+    @media screen and (max-width: 1060px) {
+        margin-right:0px;
+    }
 }

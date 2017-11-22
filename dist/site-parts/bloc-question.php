@@ -68,7 +68,7 @@
 	</div>
 	<div class="arrow-container">
 		<a href="#bloc-home">
-			<div><p class="blue">Retour vers le haut</p></div>
+			<div><p>Retour vers le haut</p></div>
 		</a>
 		<!-- <a href="#bloc-home"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-blue-reverse.png" alt=""></span></a> -->
 	</div>
