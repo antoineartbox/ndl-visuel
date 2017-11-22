@@ -3492,10 +3492,6 @@ body a:active {
   #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-container .text-right-container p {
     line-height: 15px; } }
 
-@media screen and (max-width: 500px) {
-  #block #bloc-infos {
-    height: 250vw; } }
-
 @media screen and (max-width: 1300px) {
   #bloc-question {
     height: 120vh; } }
@@ -3504,6 +3500,26 @@ body a:active {
   #bloc-infos {
     height: 120vh; } }
 
+@media screen and (max-width: 790px) {
+  #bloc-infos {
+    height: 175vh; } }
+
+@media screen and (max-width: 500px) {
+  #bloc-infos {
+    height: 250vw; } }
+
 @media screen and (max-width: 1060px) {
   #bloc-infos .content-container .dual-block-container .group-right {
-    margin-right: 0px; } }
+    margin-left: 0px; } }
+
+@media screen and (max-width: 600px) {
+  #bloc-question .text-center-container p {
+    font-size: 12px;
+    line-height: 14px; } }
+
+@media screen and (max-width: 600px) {
+  #bloc-question .content-container h3 {
+    font-size: 19px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-style: italic; } }

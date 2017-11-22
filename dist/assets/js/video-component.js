@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
 	$("#bloc-home .button-video").click(function() {
 		$("#bloc-home .video-xyz").html("");
-		initVideo($("#bloc-home .video-xyz"), "https://player.vimeo.com/video/92932917");
+		initVideo($("#bloc-home .video-xyz"), "https://player.vimeo.com/video/238467632");
 
 	})
 	function initVideo(parentContainer, videoSrc) {

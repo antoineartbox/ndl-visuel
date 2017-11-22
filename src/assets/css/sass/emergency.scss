@@ -107,9 +107,7 @@ body {
     }
 }
 #block #bloc-infos {
-    @media screen and (max-width: 500px) {
-        height:250vw;
-    }
+
 }
 
 #bloc-question {
@@ -119,13 +117,46 @@ body {
 }
 
 #bloc-infos {
+
+
+
     @media screen and (max-width: 1300px) {
+
         height:120vh;
+
+    }
+    @media screen and (max-width: 790px) {
+
+        height:175vh;
+    }
+    @media screen and (max-width: 500px) {
+        height:250vw;
     }
 }
 
 #bloc-infos .content-container .dual-block-container .group-right {
     @media screen and (max-width: 1060px) {
-        margin-right:0px;
+        margin-left:0px;
     }
 }
+
+#bloc-question .text-center-container p {
+    @media screen and (max-width: 600px) {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+}
+
+
+#bloc-question .content-container h3 {
+    @media screen and (max-width: 600px) {
+        font-size: 19px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-style: italic;
+    }
+
+}
+
+
