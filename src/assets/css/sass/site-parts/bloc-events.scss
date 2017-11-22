@@ -2,7 +2,7 @@
 @import "../general/font.scss";
 
 #bloc-events {
-    background: url("../images/bloc-background/bloc-events-whitey.png") no-repeat center center;
+    background: url("../images/bloc-background/bloc-events-bg.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -11,7 +11,7 @@
         padding-top: 7.5%;
         width: 100%;
         // Responsive
-        @media screen and (max-width: 1450px) {
+        @media screen and (max-width: 8000px) {
             padding-top: 120px;
         }
 
@@ -30,7 +30,7 @@
             color: $mainBlue;
 
             // Responsive
-            @media screen and (max-width: 1450px) {
+            @media screen and (max-width: 8000px) {
 
                 font-size: 25px;
                 margin-bottom: 25px;
@@ -100,7 +100,7 @@
         color: $mainBlue;
         text-align: center;
         // Responsive
-        @media screen and (max-width: 1450px) {
+        @media screen and (max-width: 8000px) {
             margin-top: 25px;
         }
         &.blocked-access {

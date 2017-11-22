@@ -34,11 +34,6 @@
 			</div>
 
 
-			<div class="white-rounder">
-				<a href="#bloc-involve-infos">
-					<li class="menu-involve-anchor"></li>
-				</a>
-			</div>
 
 
 			<div class="white-rounder">

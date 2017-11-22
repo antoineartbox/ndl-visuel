@@ -45,6 +45,14 @@ function initNewUser($form, $db) {
     /*
         For processing the SQL request let's build our data
     */
+	if (isset($form["newsletter"])) {
+
+		// set form newsletter
+		$form["newsletter"] = 1;
+
+	} else {
+		$form["newsletter"] = 0;
+	}
 
     // Build datas for query
     $firstname = $form["firstname"];
@@ -56,6 +64,7 @@ function initNewUser($form, $db) {
     $password = $form["password"];
     // Let's encrypt the password
     $password = encryptPassword($password);
+    $newsletter = $form["newsletter"];
 
     // Populate a token
 	$x = array();
@@ -78,6 +87,17 @@ function initNewUser($form, $db) {
     } else {
 
     }
+
+    // Let's init new user newsletter
+	$sqlNewsletter = "INSERT INTO ndl_newsletter (firstname, lastname, email)
+    VALUES ('$firstname', '$lastname', '$email')";
+
+
+	if ($db->query($sqlNewsletter) === TRUE) {
+
+	} else {
+		echo "Error: " . $sqlNewsletter . "<br>" . $db->error;
+	}
 
     // Send email of new user
     $messageContent = buildSubscriptionMessage($messageContent);

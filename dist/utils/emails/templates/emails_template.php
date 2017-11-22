@@ -62,7 +62,9 @@ function buildQuestionMessageContent($content) {
 	$message .= "<li>".$content["firstname"]  . "   " . $content["lastname"]."</li>";
 	$message .= "<li>"."Email : " . $content["email"]."</li>";
 	$message .= "</ul>";
-	$message .= "<h4> Joignez" . $content["firstname"] . " " . $content["lastname"] . " au <a href='tel:". $content["phone"] ."'>" . $content["phone"] . "</a></h4>";
+	$message .= "<h4> Joignez " . $content["firstname"] . " " . $content["lastname"] . " au <a href='tel:". $content["phone"] ."'>" . $content["phone"] . "</a></h4>";
+	$message .= "<h4>Le contenu du message est ci-dessous.</h4>";
+	$message .= "<p>".$content["object"]."</p>";
 	$message .= "<h3>Merci de ne pas répondre à ce message.</h3>";
 	$message .= "<h3>Ce message est généré par le système de mail de Artbox.</h3>";
 	$message .= "</div>";

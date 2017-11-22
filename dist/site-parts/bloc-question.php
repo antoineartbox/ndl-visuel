@@ -17,30 +17,30 @@
 				<form class="form-user-input" id="form-question" action="" method="post">
 
 					<div class="form-item">
-						<span class="label first">Prénom :</span>
-						<input class="capital" type="text" name="firstname" value=""><br>
+						<span class="label first">Prénom* :</span>
+						<input class="capital required" type="text" autocomplete="off" name="firstname" value=""><br>
 					</div>
 					<div class="form-item">
-						<span class="label">Nom :</span>
-						<input class="capital" type="text" name="lastname" value=""><br>
+						<span class="label">Nom* :</span>
+						<input class="capital required" type="text" autocomplete="off" name="lastname" value=""><br>
 					</div>
 
 					<div style="display:none;" class="form-item">
-						<span class="label">Âge : </span> <input type="age" name="age" value=""><br>
+						<span class="label">Âge : </span> <input type="age" autocomplete="off" name="age" value=""><br>
 					</div>
 
 					<div
 					<div style="display:none;" class="form-item">
-						<span class="label">Profession :</span> <input class="capital" type="text" name="profession" value=""><br>
+						<span class="label">Profession :</span> <input class="capital" autocomplete="off" type="text" name="profession" value=""><br>
 					</div>
 
 					<div class="form-item">
-						<span class="label">Courriel :</span> <input type="text" name="email" class="no-capitalize" value=""><br>
+						<span class="label">Courriel* :</span> <input type="text" name="email"  autocomplete="off" class="required no-capitalize" value=""><br>
 					</div>
 
 					<div
 					<div style="" class="form-item">
-						<span class="label">Téléphone :</span> <input type="text" name="phone" value=""><br>
+						<span class="label">Téléphone* :</span> <input class="required" autocomplete="off" type="text" name="phone" value=""><br>
 					</div>
 
 

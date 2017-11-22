@@ -15,9 +15,11 @@ $( document ).ready(function() {
         $(".menu-membership").trigger("click");
     });
 
-    $(".menu-membership").click(function() {
-        enableMembershipForm();
-    });
+    $(".call-to-action.main-page-button.become-member").click(function() {
+		enableMembershipForm();
+	})
+
+
     function enableMembershipForm() {
 		$("#bloc-membership-overlay").addClass("active-membership");
 		blockScrolling('body')

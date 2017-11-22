@@ -14,6 +14,7 @@ function processNewUser($form) {
 
     if ($form) {
 
+
         if(initNewUser($form, connectToDb()) == false) {
 			return false;
 		}
@@ -35,6 +36,7 @@ function processMembershipForm($form = false) {
 function processInvolveForm($form = false) {
 
     if ($form) {
+
         processInvolveFormValidation($form);
 
     } else {
@@ -105,7 +107,7 @@ function processInvolveFormValidation($form){
     foreach ($form as $key => $value) {
 
         // Flag if an item contains something different than letter and digit or email @ and characters.
-        if (preg_match("/[^A-Za-z0-9@.:;¨ç^!@#$%?&*()+=_!', âàäÂÄÀêëéèÉÈÊËÎÏîïöÖüû; ]/", $value)) {
+        if (preg_match("/[^A-Za-z0-9@.:;¨ç^!@#$%?&*()+=_!', \-\ âàäÂÄÀêëéèÉÈÊËÎÏîïöÖüû; ]/", $value)) {
 
             // Than put it on the error stack
             $errors["unvalid-character"][$key] = $value;

@@ -14,21 +14,21 @@
 <!-- Is hidden by default -->
 <div id="bloc-membership-overlay">
     <div class="membership-form-container">
-        <h3>Remplissez le formulaire ci-dessous<br> pour vous iscrire.</h3>
+        <h3>.</h3>
         <span class="closing-button">x</span>
-        <form class="" action="utils/forms/forms_process.php" method="post">
+        <form id="form-membership" class="" action="utils/forms/forms_process.php" method="post">
 
             <div class="form-item">
                 <span class="label">Prénom :</span>
-                <input type="text" name="firstname" value=""><br>
+                <input class="required firstname" type="text" name="firstname" value=""><br>
             </div>
             <div class="form-item">
                 <span class="label">Nom :</span>
-                <input type="text" name="lastname" value=""><br>
+                <input class="required lastname" type="text" name="lastname" value=""><br>
             </div>
 
             <div class="form-item">
-                <span class="label">Âge : </span> <input type="number" name="age" value=""><br>
+                <span class="label">Âge : </span> <input class="required age" type="number" name="age" value=""><br>
             </div>
 
             <div class="form-item">
@@ -36,12 +36,12 @@
             </div>
 
             <div class="form-item">
-                <span class="label">Courriel :</span> <input type="tel" name="email" value="">
+                <span class="label">Courriel :</span> <input class="required email"type="tel" name="email" value="">
             </div>
 
 
-            <div class="newsletter-choice">
-                <input type="checkbox" name="newsletter" value="">
+            <div style="" class="newsletter-choice">
+                <input type="checkbox" name="newsletter" value="" checked>
                 <p>*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni.</p>
             </div>
             <div class="button  call-to-action become-member">

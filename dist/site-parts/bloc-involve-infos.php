@@ -45,32 +45,32 @@
 	<span class="closing-button">x</span>
 	<div class="invole-form-container">
 
-		<h3>Complétez le formulaire ci-dessous et un membre de l’équipe Alumni vous contactera pour déterminer avec vous la meilleure forme d'implication.</h3>
+		<h3>Remplissez le formulaire ci-dessous pour vous inscrire et afin qu’un membre de l’équipe Alumni communique avec vous pour déterminer de quelle façon vous pourriez vous impliquer.</h3>
 
 		<span class="errors-display"></span>
 
 		<form id="form-involve" class="form-user-input" action="" method="post">
 			<div class="form-item">
-				<span class="label">Prénom :</span>
-				<input class="capital" type="text" name="firstname" value=""><br>
+				<span class="label username">Prénom* :</span>
+				<input class="capital username required" type="text" name="firstname" value=""><br>
 			</div>
 			<div class="form-item">
-				<span class="label">Nom :</span>
-				<input class="capital" type="text" name="lastname" value=""><br>
+				<span class="label">Nom* :</span>
+				<input class="capital lastname required" type="text" name="lastname" value=""><br>
 			</div>
 
 			<div class="form-item">
-				<span class="label">Âge : </span> <input type="number" name="age" value=""><br>
+				<span class="label">Âge* : </span> <input class="required age" min="16" max="115" type="number" name="age" value=""><br>
 			</div>
 			<div style=""class="form-item">
 				<span class="label">Profession :</span> <input class="capital" type="text" name="employer" value=""><br>
 			</div>
 			<div class="form-item">
-				<span class="label">Téléphone :</span> <input class="capital" type="text" name="jobtitle" value="">
+				<span class="label">Téléphone* :</span> <input class="capital required telephone" type="text" name="jobtitle" value="">
 			</div>
 
 			<div class="form-item">
-				<span class="label">Courriel :</span> <input type="email" name="email" value="">
+				<span class="label">Courriel* :</span> <input class="required email" type="email" name="email" value="">
 			</div>
 
 			<div style="display:none;" class="form-item selector-item">

@@ -17,14 +17,13 @@
 				<a href="#bloc-home"><li class="menu-home menu-item">Intro</li></a>
 				<a href="#block-infos"><li class="menu-about menu-item menu-about">À propos</li></a>
 				<a href="#bloc-events-anchor"><li class="menu-events menu-item">Événements</li></a>
-				<a href="#bloc-involve-infos"><li class="menu-involve menu-item">Impliquez-vous</li></a>
 				<a href="#bloc-questions-anchor"><li class="menu-question menu-item">Contact</li></a>
 
 
                 <?php if(isset($_SESSION["is_logged_in"]) == FALSE) { ?>
                 <a style="display:none;"class="connection container-connection"><li class="menu-item">Connectez-vous</li></a>
                 <?php }  ?>
-				<li class="menu-membership">Devenir Membre</li>
+				<a href="#block-infos"><li class="menu-membership">Devenir Membre</li></a>
                 <?php if ($_SESSION["is_logged_in"]) { ?>
                     <div class="disconnect-user-container">
                         <div class="user-greeting">

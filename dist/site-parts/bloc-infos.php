@@ -18,29 +18,34 @@
 
 						<div class="bloc-infos-container">
 							<div class="text-right-container">
-								<p>Joignez la grande communauté des anciens de NDL et profitez d’événements exclusifs avec d’autres alumnis du Collège. Une belle façon de renforcer
+								<p>Joignez la grande communauté des anciens de NDL et profitez d’événements exclusifs avec d’autres alumni du Collège. Une belle façon de renforcer
 									votre réseau professionnel et personnel et de rencontrer de talentueux élèves et parents de la cohorte actuelle. Devenez membre et faites partie
 									de notre liste d’envoi pour rester informés des événements de la communauté. </p>
 							</div>
 						</div>
-						<div class="bloc-infos-bullet-container">
-							<div class="bullet-right-container">
-								<h3>Le programme Alumni, c'est : </h3>
-								<div class="bullet-list-container">
-									<ul>
 
-										<li class="first">- des rencontres enrichissantes</li>
-										<li>- des événements uniques</li>
-										<li>- du réseautage professionnel</li>
-										<li class="last">- une communauté dynamique</li>
-									</ul>
+
+						<div class="bloc-bottom-infos">
+							<div class="bloc-infos-bullet-container">
+								<div class="bullet-right-container">
+									<h3>Le programme Alumni, c'est : </h3>
+									<div class="bullet-list-container">
+										<ul>
+
+											<li class="first">- des rencontres enrichissantes</li>
+											<li>- des événements uniques</li>
+											<li>- du réseautage professionnel</li>
+											<li class="last">- une communauté dynamique</li>
+										</ul>
+									</div>
 								</div>
+							</div>
+
+							<div class="button call-to-action main-page-button  become-member">
+								<span>Je m'inscris</span>
 							</div>
 						</div>
 
-						<div class="button call-to-action main-page-button  become-member">
-							<span>Devenez membre</span>
-						</div>
 
 					</div>
 
@@ -52,28 +57,29 @@
 								<div class="text-right-container">
 									<p>Vous souhaitez redonner au Collège NDL en contribuant à l'avenir des élèves? Impliquez-vous dans des projets novateurs et inspirants qui
 										seront créés sur mesure pour vous. Chaque alumni désirant s’impliquer sera contacté par un membre de notre équipe, afin de développer un
-										projet unique à votre expertise et profession. </p>
+										projet unique à son expertise et profession. </p>
 								</div>
 							</div>
 						</div>
-						<div class="bloc-infos-bullet-container">
-							<div class="bullet-right-container">
-								<h3>Impliquez-vous à votre façon : </h3>
-								<div class="bullet-list-container">
-									<ul>
 
-										<li class="first">- en offrant de votre temps ou expertise</li>
-										<li>- en développant un projet novateur avec votre employeur</li>
-										<li>- en contribuant monétairement pour soutenir un projet</li>
-										<li class="last">- ou toutes autres idées originales</li>
-									</ul>
+						<div class="bloc-bottom-infos">
+							<div class="bloc-infos-bullet-container">
+								<div class="bullet-right-container">
+									<h3>Impliquez-vous à votre façon : </h3>
+									<div class="bullet-list-container">
+										<ul>
+
+											<li class="first">- en offrant de votre temps ou expertise</li>
+											<li>- en développant un projet novateur avec votre employeur</li>
+											<li>- en contribuant monétairement pour soutenir un projet</li>
+											<li class="last">- ou toutes autres idées originales</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-
 							<div class="button call-to-action  main-page-button become-involve">
-								<span>Devenez membre et impliquez-vous</span>
+								<span>Je m'inscris et je m'implique</span>
 							</div>
-
 						</div>
 
 					</div>
@@ -99,7 +105,7 @@
 <div id="bloc-membership-overlay">
 	<span class="closing-button">x</span>
 	<div class="membership-form-container">
-		<h3>Complétez le formulaire ci-dessous pour vous inscrire.</h3>
+		<h3>Remplissez le formulaire ci-dessous pour vous inscrire.</h3>
 
 		<div class="errors-container">
 			<!-- Refers to JS -->
@@ -108,16 +114,16 @@
 		<form id="form-membership" class="form-user-input" action="" method="post">
 
 			<div class="form-item">
-				<span class="label">Prénom :</span>
-				<input class="capital" type="text" name="firstname" value=""><br>
+				<span class="label">Prénom* :</span>
+				<input class="capital firstname required" type="text" name="firstname" value=""><br>
 			</div>
 			<div class="form-item">
-				<span class="label">Nom :</span>
-				<input class="capital" type="text" name="lastname" value=""><br>
+				<span class="label">Nom* :</span>
+				<input class="capital lastname required" type="text" name="lastname" value=""><br>
 			</div>
 
 			<div class="form-item">
-				<span class="label">Âge : </span> <input type="number" name="age" value=""><br>
+				<span class="label ">Âge* : </span> <input class="age required" type="number" name="age" value="" min="16" max="110"><br>
 			</div>
 
 			<div class="form-item">
@@ -125,7 +131,7 @@
 			</div>
 
 			<div class="form-item email-container">
-				<span class="label">Courriel :</span> <input type="email" name="email" value="">
+				<span class="label">Courriel* :</span> <input class="required email" type="email" name="email" value="">
 			</div>
 
 			<div style="display:none;" class="form-item username-container">
@@ -139,13 +145,12 @@
 
 			<input style="display:none;" type="form-type" name="form-type" value="membership-new-user">
 
-			<div class="newsletter-choice">
+			<div style="display:none;" class="newsletter-choice">
 				<div class="wrapper-item-news">
-
-					<p><input type="checkbox" name="newsletter" value="">*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni.</p>
+					<p><input type="checkbox" name="newsletter" value="newsletter">*En m’inscrivant, j’accepte de recevoir les informations provenant du programme Alumni.</p>
 				</div>
 			</div>
-			<div class="button main-page-button call-to-action become-member submit">
+			<div style="margin-top:15px;"class="button main-page-button call-to-action become-member submit">
 				<span>Envoyer</span>
 			</div>
 

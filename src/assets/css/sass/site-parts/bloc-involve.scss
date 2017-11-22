@@ -72,7 +72,7 @@
             text-align: center;
             margin: 0 auto;
             margin-bottom:25px;
-            @media screen and (max-width: 1450px) {
+            @media screen and (max-width: 8000px) {
 
 
 
@@ -124,7 +124,7 @@
             input {
                 height: 25px;
                 width: 35%;
-                @media screen and (max-width: 1450px) {
+                @media screen and (max-width: 8000px) {
                     height: 15px;
                     width: 55%;
                 }
@@ -155,7 +155,7 @@
 }
 
 #bloc-involve-infos {
-
+    display:none;
     .line-left {
 
 
@@ -164,7 +164,7 @@
         width: 15%;
         border: solid rgba(255, 255, 255, 0.5) 1px;
         left: 10%;
-        @media screen and (max-width: 1450px) {
+        @media screen and (max-width: 8000px) {
             width: 10%;
         }
 
@@ -188,7 +188,7 @@
         width: 15%;
         left: 90%;
         border: solid rgba(255, 255, 255, 0.5) 1px;
-        @media screen and (max-width: 1450px) {
+        @media screen and (max-width: 8000px) {
             width: 10%;
         }
 
@@ -211,7 +211,7 @@
         margin-bottom:2px;
         max-width: 72%;
         margin:0 auto;
-        @media screen and (max-width: 1450px) {
+        @media screen and (max-width: 8000px) {
             font-size: 25px;
         }
 
@@ -331,7 +331,7 @@
                 font-size: 17px;
                 font-weight:bold;
             }
-            @media screen and (max-width: 1450px) {
+            @media screen and (max-width: 8000px) {
                 padding-left: 65px;
             }
             @media screen and (max-width: 600px) {
@@ -349,7 +349,7 @@
                 li {
                     font-size: 22px;
                     font-weight: 100;
-                    @media screen and (max-width: 1450px) {
+                    @media screen and (max-width: 8000px) {
                         font-size: 15px;
                     }
                     @media screen and (max-width: 600px) {

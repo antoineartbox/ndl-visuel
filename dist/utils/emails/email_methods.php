@@ -157,7 +157,7 @@ function sendQuestionMessage($messageContent) {
 	$mail->addReplyTo(REPLYER, 'ALUNI');
 
 
-    $emails = unserialize (RECEIVERS);
+    $emails = unserialize (RECEIVERS_ALUMNI);
 
 
     //Set who the message is to be sent to

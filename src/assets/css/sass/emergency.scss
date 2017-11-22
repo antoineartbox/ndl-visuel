@@ -28,3 +28,88 @@ body {
     }
 }
 
+#bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container .text-right-container p {
+    @media screen and (max-width: 1060px) {
+        width: 70%;
+        margin-top: 0px;
+    }
+
+}
+
+#bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul {
+    @media screen and (max-width: 1060px) {
+        text-align: center;
+    }
+}
+
+#bloc-infos .content-container .dual-block-container .group-left h3 {
+    @media screen and (max-width: 1060px) {
+        margin-top: 15px;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+
+}
+
+#bloc-infos .bloc-infos-bullet-container .bullet-right-container li {
+    @media screen and (max-width: 720px) {
+        font-size: 12px;
+    }
+
+}
+
+#bloc-infos .content-container .dual-block-container .group-right .bloc-infos-container .text-right-container p {
+    @media screen and (max-width: 720px) {
+        width: 70%;
+        font-size: 12px;
+    }
+}
+
+#bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container .text-right-container p {
+    @media screen and (max-width: 720px) {
+        font-size: 12px;
+    }
+
+}
+
+#bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container h3 {
+    @media screen and (max-width: 720px) {
+        margin-top: 15px;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+}
+
+#bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
+    @media screen and (max-width: 720px) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+}
+
+#bloc-events .text-center-container p {
+    font-weight: 600;
+}
+
+#bloc-infos .content-container .dual-block-container .group-right .bloc-infos-bullet-container .bullet-right-container ul li {
+    @media screen and (max-width: 720px) {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+}
+
+#bloc-infos .content-container .dual-block-container .group-right .bloc-infos-container .text-right-container p {
+    @media screen and (max-width: 500px) {
+
+        line-height: 15px;
+    }
+}
+#block #bloc-infos {
+    @media screen and (max-width: 500px) {
+        height:250vw;
+
+    }
+
+}

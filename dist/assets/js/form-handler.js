@@ -13,8 +13,9 @@ $(document).ready(function () {
 		// Clear error message
 		$(".errors-container").html("");
 
-		submitMembershipForm(datastring);
-
+		if (verifyField($("#form-membership"))) {
+			submitMembershipForm(datastring);
+		}
 	});
 
 	// Detect click on button
@@ -26,7 +27,8 @@ $(document).ready(function () {
 
 		// Clear error message
 		$(".errors-container").html("");
-		if (true) {
+
+		if (verifyField($("#form-involve"))) {
 			submitInvolveForm(datastring);
 		}
 
@@ -45,11 +47,35 @@ $(document).ready(function () {
 
 		// Clear error message
 		$(".errors-container").html("");
-		if (true) {
+		if (verifyField($("#form-question"))) {
 			submitQuestionForm(datastring);
 		}
 	});
 
+
+	// Take a form object and then verify it
+	function verifyField(form) {
+		// Get all required field
+		var requiredField = $(form).find(".required");
+		var stackerError = 0;
+
+		// Process Field
+		for (var i = 0; i < requiredField.length; i++) {
+			var currentField = $(requiredField[i]).val();
+			if (currentField.length == 0) {
+				$(requiredField[i]).css({"border": "solid #DC143C 1px"});
+				$(requiredField[i]).attr("placeholder", "Requis");
+				stackerError++;
+			} else {
+				$(requiredField[i]).css({"border": "none"});
+			}
+		}
+		if (stackerError == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
 	function submitMembershipForm(datastring) {
 
@@ -77,6 +103,7 @@ $(document).ready(function () {
 					} else {
 						// If no error
 						killLoader();
+						$(".membership-form-container h3").hide();
 						validatedFormSuccess($(".membership-form-container"), "<h4>Merci de vous être inscrit.</h4>");
 						setTimeout(function () {
 							otherMessage();
@@ -85,6 +112,8 @@ $(document).ready(function () {
 						function otherMessage() {
 							validatedFormSuccess($(".membership-form-container"), "<h4>Vous faites maintenant partie de la liste d’envoi du programme Alumni. Vous recevrez des informations sur les événements à venir et les projets réalisés.</h4>");
 						}
+
+
 
 						$(document).click(function () {
 							$("#bloc-membership-overlay").fadeOut(500);
@@ -141,15 +170,17 @@ $(document).ready(function () {
 						killLoader();
 
 						// Initiate the form success
-						validatedFormSuccess($(".invole-form-container"), "<h4>Merci de votre implication.</h4>");
+						validatedFormSuccess($(".invole-form-container"), "<h4>Merci de vous être inscrit.</h4>");
 
 						//
+						$(".invole-form-container h3").hide();
 						setTimeout(function () {
 							otherMessage();
 						}, 300);
 
 						function otherMessage() {
-							validatedFormSuccess($(".invole-form-container"), "<h4>Un membre de l’équipe Alumni vous contactera sous peu.</h4>");
+							validatedFormSuccess($(".invole-form-container"), "<h4>Vous faites maintenant partie de la liste d’envoi du programme Alumni. Vous recevrez des informations sur les événements à venir et les projets réalisés.\n</h4>" +
+								"<h4>Un membre de l’équipe Alumni vous contactera aussi sous peu pour déterminer de quelle façon vous pourriez vous impliquer. </h4>");
 						}
 
 						$(document).click(function () {
@@ -206,17 +237,28 @@ $(document).ready(function () {
 						killLoader();
 
 						// Initiate the form success
-						validatedFormSuccess($(".question-form-container"), "<h4 style='color:#004588;'>Merci de votre message.</h4>");
+						validatedFormSuccess($(".question-form-container"), "<h4 class='new-message-send' style='colorwhite;'>Merci de votre message.</h4>");
 
 						//
+
+						function otherMessage() {
+							validatedFormSuccess($(".question-form-container"), "<h4 class='new-message-send' style='color:white;'>Un membre de l’équipe Alumni vous contactera sous peu.</h4>");
+						}
 						setTimeout(function () {
 							otherMessage();
 						}, 300);
 
-						function otherMessage() {
-							validatedFormSuccess($(".question-form-container"), "<h4 style='color:#004588;'> Un membre de l’équipe Alumni vous contactera sous peu.</h4>");
-						}
+						setTimeout(function () {
+							// Fade out message sender
+							$(".new-message-send").fadeOut(400);
 
+							// Removing all previous message
+							$("#form-question input").val("");
+							$("#form-question textarea").val("");
+							// Display the form
+							$("#form-question").show();
+
+						}, 4000);
 						$(document).click(function () {
 							$("#bloc-involve-overlay").fadeOut(500);
 							enableScrolling($("body"));
@@ -251,7 +293,7 @@ $(document).ready(function () {
 	}
 
 	function validatedFormSuccess(domElement, validationMessage) {
-		domElement.append("<div class='animated bounceInLeft form-validation-message'>" + validationMessage + "</div>")
+		domElement.append("<div class='form-validation-message'>" + validationMessage + "</div>")
 	}
 
 	/*
