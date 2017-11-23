@@ -42,7 +42,8 @@ function buildInvolveMessageContent($content) {
 	$message .= "<ul>";
 	$message .= "<li>".$content["firstname"]  . "   " . $content["lastname"]."</li>";
 	$message .= "<li>"."Email : " . $content["email"]."</li>";
-	$message .= "<li>"."Profession : " . $content["jobtitle"]. "chez " ."<strong> : ".$content["employer"] ."</strong></li>";
+	$message .= "<li>"."Profession : " . $content["employer"]. "</li>";
+	$message .= "<li>"."Téléphone : " . $content["jobtitle"].  "</li>";
 	$message .= "</ul>";
 	$message .= "<h3>Merci de ne pas répondre à ce message.</h3>";
 	$message .= "<h3>Ce message est généré par le système de mail de Artbox.</h3>";
