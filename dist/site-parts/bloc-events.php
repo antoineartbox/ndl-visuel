@@ -27,7 +27,7 @@
 				<p class="event-price">20 $</p>
 				<p class="event-description">Avec bouchées et consommations</p>
 				<div class="button call-to-action">
-					<a class="link-to-event" onclick="window.open('https://www.eventbrite.ca/e/billets-lancement-du-programme-alumni-du-college-notre-dame-de-lourdes-39576088145?aff=es2', '_blank')" href="#bloc-events-anchor"><span>RSVP</span></a>
+					<a class="link-to-event" onclick="window.open('https://www.eventbrite.ca/e/une-vision-sur-le-monde-un-panel-anime-par-francois-cardinal-tickets-40115057216', '_blank')" href="#bloc-events-anchor"><span>RSVP</span></a>
 				</div>
 			</div>
 			<div class="single-event-container <?= "events-" . $i ?>">
