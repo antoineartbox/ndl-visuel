@@ -1407,7 +1407,6 @@ header {
       height: 50px; }
       @media screen and (max-width: 1175px) {
         header .logo-container img {
-          padding-top: 9px;
           height: 50px; } }
       @media screen and (max-width: 1060px) {
         header .logo-container img {
@@ -1442,7 +1441,7 @@ header {
         header #menu-container nav ul li {
           display: inline-block;
           transition: all 0.5s;
-          padding: 15px;
+          padding: 13px;
           cursor: pointer; }
           header #menu-container nav ul li.active-menu-user {
             display: none; }
@@ -1561,7 +1560,7 @@ header {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
-    display: inline-block;
+    display: none;
     width: 15%;
     border: solid rgba(255, 255, 255, 0.5) 1px;
     left: 10%; }
@@ -1584,7 +1583,7 @@ header {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
-    display: inline-block;
+    display: none;
     right: 15px;
     width: 15%;
     left: 90%;
@@ -1602,6 +1601,9 @@ header {
       #bloc-infos .line-right {
         width: 5%;
         margin-left: 2%; } }
+    @media screen and (max-height: 1200px) {
+      #bloc-infos .line-right {
+        width: 5%; } }
   #bloc-infos .content-container {
     width: 60%;
     position: absolute;
@@ -1636,8 +1638,7 @@ header {
       #bloc-infos .content-container {
         transform: translate(-50%, -65%); } }
     #bloc-infos .content-container .line-wrapper {
-      padding: 60px;
-      border: solid rgba(255, 255, 255, 0.5) 1px; }
+      padding: 60px; }
       @media screen and (max-width: 1700px) {
         #bloc-infos .content-container .line-wrapper {
           padding: 90px; } }
@@ -2327,7 +2328,6 @@ header {
     padding-top: 50px;
     width: 60%;
     padding-bottom: 50px;
-    border: solid 1px rgba(255, 255, 255, 0.9);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2489,7 +2489,7 @@ header {
             display: inline-block; } }
         @media screen and (max-width: 700px) {
           #bloc-question .question-form-container .form-item .label {
-            width: 70px; } }
+            width: 75px; } }
         @media screen and (max-width: 600px) {
           #bloc-question .question-form-container .form-item .label {
             display: inline-block;
@@ -3290,7 +3290,7 @@ header {
       font-weight: 900;
       font-size: 68px;
       color: #004588;
-      background-color: rgba(255, 255, 255, 0.25);
+      background-color: rgba(255, 255, 255, 0.35);
       text-align: center;
       display: inline-block;
       width: 50%;
@@ -3493,10 +3493,6 @@ body a:active {
     line-height: 15px; } }
 
 @media screen and (max-width: 1300px) {
-  #bloc-question {
-    height: 120vh; } }
-
-@media screen and (max-width: 1300px) {
   #bloc-infos {
     height: 120vh; } }
 
@@ -3523,3 +3519,56 @@ body a:active {
     padding-left: 15px;
     padding-right: 15px;
     font-style: italic; } }
+
+#bloc-infos .line-wrapper .dual-block-container .bloc-infos-container .text-right-container h3 {
+  font-size: 17.55px;
+  font-style: normal;
+  margin-bottom: 0px;
+  line-height: 20px; }
+
+#bloc-infos .line-wrapper .dual-block-container .group-right .bloc-infos-container .text-right-container h3 {
+  font-size: 17.55px;
+  font-style: normal;
+  margin-bottom: 0px;
+  line-height: 20px;
+  text-align: left;
+  margin-left: 0px; }
+
+#bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container .text-right-container p {
+  text-align: justify; }
+
+#bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container .text-right-container p {
+  text-align: justify; }
+
+#bloc-infos .content-container .dual-block-container .group-right .bloc-infos-container .text-right-container p, #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container .text-right-container p {
+  text-align: justify; }
+
+#bloc-infos .bloc-title-center h3.first-title {
+  margin-bottom: 0px; }
+
+.button.call-to-action.main-page-button.become-involve {
+  min-width: 280px;
+  text-align: center; }
+
+.button.call-to-action.main-page-button.become-member {
+  font-weight: 400;
+  min-width: 280px;
+  text-align: center; }
+
+.button.call-to-action.main-page-button.become-involve {
+  min-width: 280px; }
+
+@media screen and (max-width: 700px) {
+  #bloc-infos .line-wrapper .dual-block-container .group-right .bloc-infos-container .text-right-container h3 {
+    text-align: center; } }
+
+#bloc-infos .content-container .dual-block-container .group-right .bloc-infos-container .text-right-container p, #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container .text-right-container p {
+  margin-top: 0px; }
+
+@media screen and (max-width: 790px) {
+  #bloc-infos .content-container .dual-block-container .group-right {
+    margin-top: 75px; } }
+
+@media screen and (max-height: 775px) {
+  #bloc-infos .content-container .dual-block-container .group-left h3 {
+    font-size: 17.55px; } }

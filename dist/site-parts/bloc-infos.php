@@ -11,15 +11,18 @@
 				<div class="dual-block-container">
 
 					<div class="bloc-title-center">
-						<h3>Ancien élève de NDL? Notre groupe Alumni s’adresse à vous! </h3>
+						<h3 class="first-title">Ancien élève de NDL?</h3>
+						<h3>Notre groupe Alumni s’adresse à vous!</h3>
 						<span class="underline"></span>
 					</div>
 					<div class="group-left">
 
 						<div class="bloc-infos-container">
+
 							<div class="text-right-container">
+								<h3>Un h3 vide</h3>
 								<p>Joignez la grande communauté des anciens de NDL et profitez d’événements exclusifs avec d’autres alumni du Collège. Une belle façon de renforcer
-									votre réseau professionnel et personnel et de rencontrer de talentueux élèves et parents de la cohorte actuelle. Devenez membre et faites partie
+									votre réseau professionnel et personnel et de rencontrer de talentueux élèves et parents de la cohorte actuelle. Faites partie
 									de notre liste d’envoi pour rester informés des événements de la communauté. </p>
 							</div>
 						</div>
@@ -54,7 +57,9 @@
 
 							<span class="underline"></span>
 							<div class="bloc-infos-container">
+
 								<div class="text-right-container">
+									<h3>Un h3 vide</h3>
 									<p>Vous souhaitez redonner au Collège NDL en contribuant à l'avenir des élèves? Impliquez-vous dans des projets novateurs et inspirants qui
 										seront créés sur mesure pour vous. Chaque alumni désirant s’impliquer sera contacté par un membre de notre équipe, afin de développer un
 										projet unique à son expertise et profession. </p>

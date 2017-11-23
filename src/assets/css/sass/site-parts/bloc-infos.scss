@@ -7,7 +7,7 @@
     }
     .line-left {
         @include center-content;
-        display: inline-block;
+        display: none;
         width: 15%;
         border: solid rgba(255, 255, 255, 0.5) 1px;
         left: 10%;
@@ -31,7 +31,8 @@
     .line-right {
 
         @include center-content;
-        display: inline-block;
+        display: none;
+
         right: 15px;
         width: 15%;
         left: 90%;
@@ -50,6 +51,10 @@
 
             width: 5%;
             margin-left: 2%;
+        }
+        @media screen and (max-height: 1200px) {
+            width: 5%;
+
         }
     }
     position: relative;
@@ -105,7 +110,7 @@
         .line-wrapper {
 
             padding: 60px;
-            border: solid rgba(255, 255, 255, 0.5) 1px;
+
             @media screen and (max-width: 1700px) {
                 padding: 90px;
             }

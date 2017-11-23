@@ -12,7 +12,7 @@
 				<h3>Une programmation aux couleurs du Collège NDL</h3>
 				<span class="line-blue"></span>
 				<p>Prenez part à nos événements exclusifs sous forme de 5@7 réseautage suivi d’une représentation offerte par des membres Alumni ou parents de la cohorte actuelle.
-					Les dimensions culture, sports et vision internationale, chères à NDL, seront au rendez-vous.</p>
+					Les dimensions culture, sport et vision internationale, chères à NDL, seront au rendez-vous.</p>
 			</div>
 		</div>
 

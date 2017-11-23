@@ -70,6 +70,9 @@
 		<a href="#bloc-home">
 			<div><p>Retour vers le haut</p></div>
 		</a>
+		<a href="http://www.ndl.qc.ca/">
+			<div><p>Retour vers le site du Collège NDL</p></div>
+		</a>
 		<!-- <a href="#bloc-home"><span class="arrow-bottom"><img width="" height="auto" src="assets/images/component/arrow-bottom-blue-reverse.png" alt=""></span></a> -->
 	</div>
 </div>

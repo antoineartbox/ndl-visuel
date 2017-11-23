@@ -99,12 +99,15 @@ function initNewUser($form, $db) {
 		echo "Error: " . $sqlNewsletter . "<br>" . $db->error;
 	}
 
+
     // Send email of new user
     $messageContent = buildSubscriptionMessage($messageContent);
 
     // TODO: Create a function for sending email to the user for account validation
-    sendNewUserMail($messageContent, $email);
-
+	if(FALSE) {
+		sendNewUserMail($messageContent, $email);
+	}
+	return true;
 }
 
 function validateNewUser($token, $db) {

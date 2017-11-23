@@ -80,9 +80,8 @@ function buildSubscriptionMessage($content) {
 	$message .= "<h1 style=''>Bonjour,</h1>";
 	$message .= "<div id='container'>";
 	$message .= "<h2>Merci de votre inscription!<h2>";
-	$message .= "<h3> Pour valider votre inscription, veuillez cliquer sur le lien ci-dessous:</h3>";
-	$message .= "<div class='button-blue'>";
-	$message .= "<a href='". "http://alumni.ndl.qc.ca" .  "/validate-user.php?token=" . $content["token"] ."'><h3>Valider.</h3></a>";
+
+	//$message .= "<a href='". "http://alumni.ndl.qc.ca" .  "/validate-user.php?token=" . $content["token"] ."'><h3>Valider.</h3></a>";
 	$message .= "</div>";
 	$message .= "</div>";
 	$message .= "</div>";
