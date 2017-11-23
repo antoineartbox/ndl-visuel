@@ -102,41 +102,34 @@ body {
 
 #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-container .text-right-container p {
     @media screen and (max-width: 500px) {
-
         line-height: 15px;
     }
 }
-#block #bloc-infos {
 
+#block #bloc-infos {
 }
 
 #bloc-question {
     @media screen and (max-width: 1300px) {
-
     }
 }
 
 #bloc-infos {
 
-
-
     @media screen and (max-width: 1300px) {
-
-        height:120vh;
-
+        height: 120vh;
     }
     @media screen and (max-width: 790px) {
-
-        height:175vh;
+        height: 175vh;
     }
     @media screen and (max-width: 500px) {
-        height:250vw;
+        height: 250vw;
     }
 }
 
 #bloc-infos .content-container .dual-block-container .group-right {
     @media screen and (max-width: 1060px) {
-        margin-left:0px;
+        margin-left: 0px;
     }
 }
 
@@ -148,7 +141,6 @@ body {
 
 }
 
-
 #bloc-question .content-container h3 {
     @media screen and (max-width: 600px) {
         font-size: 19px;
@@ -159,87 +151,119 @@ body {
 
 }
 
-
-
-#bloc-infos .line-wrapper .dual-block-container .bloc-infos-container .text-right-container h3{
+#bloc-infos .line-wrapper .dual-block-container .bloc-infos-container .text-right-container h3 {
     font-size: 17.55px;
-    font-style:normal;
-    margin-bottom:0px;
-    line-height:20px;
-
+    font-style: normal;
+    margin-bottom: 0px;
+    line-height: 20px;
+    padding-bottom: 15px;
 }
 
 // H3 for the group right
-#bloc-infos .line-wrapper .dual-block-container .group-right .bloc-infos-container .text-right-container h3{
+#bloc-infos .line-wrapper .dual-block-container .group-right .bloc-infos-container .text-right-container h3 {
     font-size: 17.55px;
-    font-style:normal;
-    margin-bottom:0px;
-    line-height:20px;
-    text-align:left;
-    margin-left:0px;
-
-}
-
-#bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container .text-right-container p  {
-
-    text-align:justify;
+    font-style: normal;
+    margin-bottom: 0px;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 0px;
+    padding-bottom: 15px;
 }
 
 #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container .text-right-container p {
+    text-align: justify;
+}
 
-    text-align:justify;
+#bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container .text-right-container p {
+    text-align: justify;
 }
 
 #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-container .text-right-container p, #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container .text-right-container p {
-
-    text-align:justify;
+    text-align: justify;
 }
 
 #bloc-infos .bloc-title-center h3.first-title {
-    margin-bottom:0px;
+    margin-bottom: 0px;
 }
 
 .button.call-to-action.main-page-button.become-involve {
-    min-width:280px;
-    text-align:center;
+    min-width: 280px;
+    text-align: center;
 }
 
 // Button membership
 .button.call-to-action.main-page-button.become-member {
     font-weight: 400;
-    min-width:280px;
-    text-align:center;
+    min-width: 280px;
+    text-align: center;
 }
 
 .button.call-to-action.main-page-button.become-involve {
-    min-width:280px;
+    min-width: 280px;
 }
 
-
 #bloc-infos .line-wrapper .dual-block-container .group-right .bloc-infos-container .text-right-container h3 {
-    @media screen and (max-width: 700px) {
-
-        text-align:center;
-
+    @media screen and (max-width: 1060px) {
+        text-align: center;
     }
 }
 
-
 #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-container .text-right-container p, #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container .text-right-container p {
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 #bloc-infos .content-container .dual-block-container .group-right {
 
-    @media screen and (max-width: 790px) {
-
-     margin-top:75px;
+    @media screen and (max-width: 1060px) {
+        margin-top: 75px;
     }
 }
 
-
 #bloc-infos .content-container .dual-block-container .group-left h3 {
     @media screen and (max-height: 775px) {
-        font-size:17.55px;
+        font-size: 17.55px;
     }
+}
+
+#bloc-infos .content-container .dual-block-container .group-right {
+    margin-left: 18px;
+    @media screen and (max-width: 1200px) {
+        margin-left: 30px;
+    }
+    @media screen and (max-width: 1060px) {
+        margin-left: 0px;
+    }
+}
+
+#bloc-infos .content-container .dual-block-container .group-right .bloc-infos-container .text-right-container p, #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container .text-right-container p {
+    @media screen and (max-height: 1060px) {
+        width: 75%;
+    }
+}
+
+#bloc-infos .line-wrapper .dual-block-container .bloc-infos-container .text-right-container h3 {
+}
+
+#bloc-infos .line-wrapper .dual-block-container .group-right .bloc-infos-container .text-right-container h3 {
+    @media screen and (max-width: 1060px) {
+        max-width: 100%;
+    }
+
+}
+
+#bloc-infos .content-container .dual-block-container .group-right .bloc-infos-container .text-right-container p, #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container .text-right-container p {
+
+    @media screen and (max-width: 600px) {
+        line-height:14px;
+    }
+}
+
+#bloc-infos .content-container .dual-block-container .bloc-bottom-infos {
+    @media screen and (max-width: 1200px) {
+        width:100%;
+    }
+}
+
+#bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container, #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-container {
+    margin-bottom:15px;
 }
