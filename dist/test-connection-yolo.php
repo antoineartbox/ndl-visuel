@@ -21,7 +21,8 @@ if ($conn->connect_error) {
 	echo "<h1>If you see a dog, you are well connected to the DB <3 <3</h1>";
 	echo "<img src='https://i.imgflip.com/4a8he.jpg'>";
 }
-$task = "delete";
+$task = $_GET["task"];
+
 if($task == "select") {
 	$sql = "SELECT * FROM ndl_users";
 	$result = $conn->query($sql);
