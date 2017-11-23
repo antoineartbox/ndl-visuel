@@ -196,10 +196,19 @@ body {
     font-weight: 400;
     min-width: 280px;
     text-align: center;
+    margin-top:12px;
+    @media screen and (max-width: 1250px) {
+        margin-left:-10%;
+    }
+    @media screen and (max-width: 1060px) {
+        margin-left: 0%;
+    }
+
 }
 
 .button.call-to-action.main-page-button.become-involve {
     min-width: 280px;
+    margin-top:12px;
 }
 
 #bloc-infos .line-wrapper .dual-block-container .group-right .bloc-infos-container .text-right-container h3 {
@@ -266,4 +275,13 @@ body {
 
 #bloc-infos .content-container .dual-block-container .group-left .bloc-infos-container, #bloc-infos .content-container .dual-block-container .group-right .bloc-infos-container {
     margin-bottom:15px;
+}
+
+#bloc-membership-overlay.active-membership .membership-form-container .button {
+    margin-left:0px;
+    min-width: 0px;
+}
+
+#bloc-involve-overlay.active-involving .invole-form-container .button.get-involve {
+    padding:16px;
 }
