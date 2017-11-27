@@ -179,7 +179,8 @@ $(document).ready(function () {
 						}, 300);
 
 						function otherMessage() {
-							validatedFormSuccess($(".invole-form-container"), "<h4>Vous faites maintenant partie de la liste d’envoi du programme Alumni. Vous recevrez des informations sur les événements à venir et les projets réalisés.\n</h4>" +
+							validatedFormSuccess($(".invole-form-container"), "<h4>Vous faites maintenant partie de la liste d’envoi du programme Alumni. </h4>" +
+								"<h4>Vous recevrez des informations sur les événements à venir et les projets réalisés.\n</h4>" +
 								"<h4>Un membre de l’équipe Alumni vous contactera aussi sous peu pour déterminer de quelle façon vous pourriez vous impliquer. </h4>");
 						}
 

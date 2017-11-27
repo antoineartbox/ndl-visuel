@@ -89,6 +89,15 @@
 <script src="assets/js/menu-behaviour.js"></script>
 <script src="assets/js/video-component.js"></script>
 <script src="assets/js/arrow-section-behaviour.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110253487-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-110253487-1');
+</script>
 <!-- Check for error -->
 <?php if ($_GET["errors"] || $_GET["success"]) { ?>
 

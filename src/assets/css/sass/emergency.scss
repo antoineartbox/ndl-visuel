@@ -235,7 +235,7 @@ body {
 }
 
 #bloc-infos .content-container .dual-block-container .group-right {
-    margin-left: 18px;
+    margin-left: 25px;
     @media screen and (max-width: 1200px) {
         margin-left: 30px;
     }
@@ -288,4 +288,18 @@ body {
 
 #bloc-question .arrow-container a div {
     display: inline-block;
+}
+
+
+#bloc-involve-overlay.active-involving .invole-form-container h3 {
+    font-size:20px;
+}
+
+#bloc-infos .line-wrapper .dual-block-container .group-right .bloc-infos-container .text-right-container h3 {
+
+    font-size:20px;
+}
+
+#bloc-infos .line-wrapper .dual-block-container .bloc-infos-container .text-right-container h3 {
+    font-size:20px;
 }

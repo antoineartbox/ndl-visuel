@@ -45,7 +45,7 @@
 	<span class="closing-button">x</span>
 	<div class="invole-form-container">
 
-		<h3>Remplissez le formulaire ci-dessous pour vous inscrire et afin qu’un membre de l’équipe Alumni communique avec vous pour déterminer de quelle façon vous pourriez vous impliquer.</h3>
+		<h3>Remplissez le formulaire ci-dessous pour vous inscrire afin qu’un membre de l’équipe Alumni communique avec vous pour déterminer de quelle façon vous pourriez vous impliquer.</h3>
 
 		<span class="errors-display"></span>
 
